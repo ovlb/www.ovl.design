@@ -1,0 +1,38 @@
+{% extends 'layouts/base.njk' %}
+{% set usesBlock = true %}
+
+{% block content %}
+  <main class="atw-post h-entry" id="main" tabindex="-1">
+    <header class="atw-post-header">
+      <h1 class="main-headline p-name">Around the Web</h1>
+      <p>Issue No.&nbsp;{{ page.fileSlug }}</p>
+      <p>Collected between {{ dateRange.start }} and {{ dateRange.end }}.</p>
+      <nav aria-label="Follow Around the Web">
+        <ul role="list">
+          <li>
+            <a href="/around-the-web/feed.xml">RSS Feed</a>
+          </li>
+          <li>
+            <a href="https://buttondown.email/around-the-web">Newsletter</a>
+          </li>
+          <li>
+            <a href="/around-the-web/">Archive</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <p>Topics: {% for category in tags | getCategories %}
+            {{ category | displayCategory }}<br/>
+          {% endfor %}
+        </p>
+      </section>
+    </header>
+    <section class="text__body e-content">
+      <p class="atw-post__intro u-floral-heart-gradient">{{ intro }}</p>
+      <p>
+        <small>Note: While the post is written in English, some links lead to articles in German.</small>
+      </p>
+      {{ content | safe }}
+    </section>
+  </main>
+{% endblock %}

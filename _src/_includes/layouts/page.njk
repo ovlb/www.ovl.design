@@ -1,0 +1,18 @@
+{% extends 'layouts/base.njk' %}
+
+{% set usesBlock = true %}
+{% set pageCSS = 'textDetail' %}
+
+
+{% block content %}
+<main id="main" class="text" tabindex="-1">
+  <header class="text__header u-floral-heart-gradient">
+    <h1 class="main-headline">{{ title }}</h1>
+    <p class="text__subline">{{ subline }}</p>
+  </header>
+
+  <div class="text__body">
+    {{ content | safe }}
+  </div>
+</main>
+{% endblock %}

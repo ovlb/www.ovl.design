@@ -1,0 +1,17 @@
+<nav class="site-nav {{ navClass }}" aria-label="Site">
+  <ul class="site-nav__list">
+    {% for item in site.navItems %}
+      {% set currentAttribute = '' %}
+      {% set navClass = 'site-nav__item type-small-caps' %}
+
+      {% if page.url == item.url %}
+        {% set currentAttribute = 'aria-current="page"' %}
+        {% set navClass = navClass + ' -is-active' %}
+      {% endif %}
+
+      <li>
+        {% navLink item %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

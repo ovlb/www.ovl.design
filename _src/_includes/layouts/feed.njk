@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
+  {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
+  <icon>{{ iconUrl }}</icon>
+  <updated>{{ lastUpdated | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}text</id>
+  <author>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  {{ content }}
+</feed>

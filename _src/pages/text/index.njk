@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+permalink: '/text/'
+templateClass: 'tmpl-article-list'
+title: 'Text'
+pageCSS: 'text'
+meta:
+  description: 'A collection of written pieces on design, code & the society.'
+---
+
+<main id="main" class="homepage-content" tabindex="-1">
+  <header class="archive-header u-floral-heart-gradient">
+    <h1 class="main-headline">Scribbles on digital paper</h1>
+  </header>
+  <ol class="article-list u-global-padding" role="list">
+    {% for post in articles.posts %}
+      {% set linkClass = 'article-card__link' %}
+
+      {% if post.isInternal === false %}
+        {% set linkClass = linkClass + ' -external' %}
+      {% endif %}
+
+      <li>
+        <article
+          class="article-card"
+          aria-labelledby="title-{{ post.id }}"
+          lang="{{ post.locale }}"
+        >
+          <h2
+            class="article-card__headline"
+            id="title-{{ post.id }}"
+          >
+            <a
+                href="{{ post.permalink }}"
+                class="{{ linkClass }}"
+              >{{ post.title | alwaysEndWithFullstop | safe }}</a>
+          </h2>
+          <p class="article-card__date ">
+            <span class="sr-only">Published in </span>
+            <time datetime="{{ post.date }}" class="type-is-aside">{{ post.date | displayDate }}</time>
+          </p>
+          <p>{{ post.intro }}</p>
+          {% if post.isInternal === false %}
+            {% set published = 'Veröffentlicht bei' if post.locale == 'de' else 'Published at'%}
+            <p class="type-is-aside">{{ published }}
+              {{ post.externalPost.fields.medium }}</p>
+          {% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</main>
