@@ -1,0 +1,33 @@
+.atw-post {
+  display: grid;
+  padding: 4vmin;
+
+  @media (min-width: 1034px) {
+    gap: 4vmin;
+    grid-template-columns: 30ch 70ch;
+  }
+}
+
+.atw-post-header {
+  margin-bottom: 2vmin;
+
+  @media (min-width: 1034px) {
+    align-self: start;
+    position: sticky;
+    top: calc(var(--layout-header-height) + 4vmin);
+  }
+
+  h1 {
+    font-size: var(--type-xlarge);
+  }
+}
+
+.atw-post__intro {
+  --gradient-bottom-offset: calc(100% - 0.5rem);
+  --fleuron-bottom-offset: 0.06rem;
+
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding: 0 2vmin 2rem;
+  /* font-size: var(--type-medium); */
+}

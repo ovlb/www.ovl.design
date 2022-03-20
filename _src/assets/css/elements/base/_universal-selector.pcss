@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  scroll-margin-block-start: calc(2 * var(--layout-header-height));
+}
+
+::selection {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg);
+}
+
+:focus {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
+}
+/*
+:focus:not(:focus-visible) {
+  outline: none;
+} */
+
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
+}

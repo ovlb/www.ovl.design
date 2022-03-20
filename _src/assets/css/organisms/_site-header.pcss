@@ -1,0 +1,31 @@
+.site-header {
+  background-color: var(--clr-bg);
+  border-bottom: 1px solid var(--clr-main-light);
+  display: flex;
+  flex-flow: row nowrap;
+  height: var(--layout-header-height);
+  overflow: hidden;
+  padding: 0 4vmin;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  & > * {
+    display: flex;
+  }
+}
+
+.site-header__logo {
+  flex: 0 0 33%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 100px;
+  width: 33%;
+
+  @media (min-width: 380px) {
+  }
+
+  & > svg {
+    width: 100%;
+  }
+}

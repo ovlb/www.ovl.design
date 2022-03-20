@@ -1,0 +1,40 @@
+.tmpl-home {
+  background-color: var(--clr-main);
+  color: var(--clr-light);
+
+  & a {
+    color: currentColor;
+    outline-color: currentColor;
+  }
+}
+
+.tmpl-home__nav {
+  padding-left: 8vmin;
+  padding-top: 4vmin;
+
+  & a {
+    color: currentColor;
+  }
+}
+
+.content-home {
+  font-size: 110%;
+  max-width: 40rem;
+  min-height: 100vh;
+  padding: 4vmin 8vmin 8vmin;
+  width: 100vw;
+
+  & .main-headline {
+    color: inherit;
+    margin: 0;
+  }
+
+  & p {
+    margin-bottom: 0.5em;
+  }
+
+  ::selection {
+    background-color: var(--clr-bg);
+    color: var(--clr-accent);
+  }
+}

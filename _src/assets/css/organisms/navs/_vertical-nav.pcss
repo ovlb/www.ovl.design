@@ -1,0 +1,36 @@
+.vertical-nav {
+  & > ul li + li {
+    margin-top: 0.5rem;
+  }
+}
+
+.vertical-nav__link {
+  align-items: center;
+  display: flex;
+
+  text-decoration: none;
+
+  &::before {
+    /* background-image: url('/'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    margin-right: 0.5rem;
+    width: 1rem;
+  }
+
+  &.-is-twitter {
+    &::before {
+      background-image: url('/img/twitter-red.png');
+    }
+  }
+
+  &.-is-github {
+    &::before {
+      background-image: url('/img/github-red.png');
+    }
+  }
+}

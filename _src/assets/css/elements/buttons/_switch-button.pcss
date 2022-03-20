@@ -1,0 +1,48 @@
+.switch-button {
+  margin: 2vmin 0;
+}
+
+.switch-button__label {
+  display: block;
+}
+
+.switch-button__button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0.25em 0.5em;
+
+  &[aria-checked='true'] {
+    & .switch-button__text.-checked {
+      font-weight: bold;
+    }
+
+    & .switch-button__text.-unchecked {
+      opacity: 0.75;
+      transform: scale(0.8);
+    }
+  }
+
+  &[aria-checked='false'] {
+    & .switch-button__text.-unchecked {
+      font-weight: bold;
+    }
+
+    & .switch-button__text.-checked {
+      opacity: 0.75;
+      transform: scale(0.8);
+    }
+  }
+}
+
+.switch-button__text {
+  transition: transform 0.2s ease-out;
+
+  & + & {
+    margin-left: 0.5em;
+  }
+}
+
+.switch-button__clear {
+  display: flex;
+}

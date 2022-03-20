@@ -1,0 +1,135 @@
+$bp-text-one: 777px;
+
+.text {
+  display: flex;
+  display: grid;
+  flex-flow: row wrap;
+  grid-template-columns: [main-start content-start] 3fr [main-end aside-start] 1fr [aside-end content-end];
+  grid-template-rows: max(30rem, calc(100vh - var(--layout-header-height))) auto;
+  margin: 0 auto;
+  max-width: 900px;
+
+  @media screen and (min-width: $bp-text-one) {
+    grid-template-columns: [main-start content-start] minmax(65ch, 3fr) [main-end content-end aside-start] 2fr [aside-end];
+  }
+
+  @media screen and (min-width: 1500px) {
+    grid-template-columns: 1fr [main-start content-start] 44rem [main-end content-end] 1fr [aside-start] 33vw [aside-end];
+  }
+
+  @supports (display: grid) {
+    max-width: unset;
+
+    & > * {
+      margin: 0 !important;
+    }
+  }
+}
+
+.text__header {
+  display: flex;
+  flex: -1 0 75%;
+  flex-direction: column;
+  grid-column: main;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 1.6rem 4vmin 3rem;
+  transition: opacity 0.1s cubic-bezier(0, 0.1, 0.3, 1);
+  width: 75%;
+
+  @supports (display: grid) {
+    width: auto;
+  }
+}
+
+.text__hero-image {
+  flex: 0 0 25%;
+}
+
+.text__subline {
+  order: -1;
+}
+
+.text__headline {
+  color: var(--clr-accent);
+  margin-top: 1rem;
+}
+
+.text__intro {
+  /* color: var(--clr-fg); */
+  font-size: var(--type-medium);
+
+  & > p {
+    font-size: inherit;
+  }
+}
+
+.text__hero-image {
+  align-self: stretch;
+  background-color: var(--clr-accent);
+  background-image: linear-gradient(
+    to bottom left,
+    var(--clr-accent-dark),
+    var(--clr-main-light)
+  );
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 6vmin 100%);
+  grid-column: aside;
+  top: var(--layout-header-height);
+
+  @media screen and (min-width: $bp-text-one) {
+    position: sticky;
+    width: 100%;
+  }
+
+  & > img {
+    height: 100%;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.text__body {
+  background-color: var(--clr-bg);
+  display: grid;
+  grid-column: content;
+  grid-template-columns: 2vmin [full-start] 2vmin [main-start] 1fr [main-end] 2vmin [full-end] 2vmin;
+  padding: 4vmin 0;
+  /* Used to push body over sticky image */
+  z-index: 1;
+
+  & > * {
+    grid-column: main;
+  }
+
+  & > .-is-video {
+    aspect-ratio: 16/9;
+    grid-column: full;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  sup {
+    line-height: 1;
+  }
+
+  & pre {
+    --clr-accent: #28caf0;
+
+    background-color: #2b2b2b;
+    border-radius: 0.25em;
+    font-family: var(--fonts-mono);
+    font-size: 85%;
+    grid-column: full;
+    line-height: 1.7;
+    margin-top: 2vmin;
+    overflow: auto;
+    padding: 2vmin 4vmin;
+    width: 100%;
+  }
+}
+
+.text__pagination {
+  grid-column: main;
+  padding-left: 4vmin;
+}

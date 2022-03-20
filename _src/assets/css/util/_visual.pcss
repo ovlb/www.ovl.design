@@ -1,0 +1,43 @@
+.u-floral-heart-gradient {
+  @supports (color: var(--clr)) {
+    --gradient-size: 45% 0.125rem;
+    --gradient-bottom-offset: calc(100% - 2rem);
+    --fleuron-bottom-offset: 1.66rem;
+
+    background-image: linear-gradient(
+        to right,
+        var(--clr-bg),
+        var(--clr-accent-light),
+        var(--clr-accent-dark)
+      ),
+      var(--layout-fleuron),
+      linear-gradient(
+        to right,
+        var(--clr-accent-dark),
+        var(--clr-accent-light),
+        var(--clr-bg)
+      );
+    background-position: 0 var(--gradient-bottom-offset),
+      center calc(100% - var(--fleuron-bottom-offset)),
+      100% var(--gradient-bottom-offset);
+    background-repeat: no-repeat;
+    background-size: var(--gradient-size), 1rem, var(--gradient-size);
+  }
+}
+
+.u-global-padding {
+  padding-left: 4vmin !important;
+  padding-right: 4vmin !important;
+}
+
+.ds-inline-flex {
+  display: inline-flex;
+}
+
+.u-center {
+  align-items: center;
+}
+
+[hidden] {
+  display: none !important;
+}

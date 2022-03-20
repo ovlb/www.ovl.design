@@ -1,0 +1,23 @@
+a {
+  color: var(--clr-accent);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.skip-link {
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+  left: 0;
+  padding: space(full, relative);
+  position: absolute;
+  top: 0;
+  transform: translate(-500%);
+  transition: transform 0.2s ease-out;
+
+  &:focus {
+    transform: translate(0);
+  }
+}

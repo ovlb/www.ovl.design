@@ -1,0 +1,26 @@
+.terminal-row {
+  & + & {
+    margin-top: space(full, viewport);
+  }
+
+  & > * + * {
+    margin-top: 0.25rem;
+  }
+}
+
+.terminal-row__path {
+  color: var(--clr-accent);
+  opacity: 0.66;
+}
+
+.terminal-row__output {
+}
+
+.terminal-row__input {
+  position: relative;
+
+  &::before {
+    color: var(--clr-red);
+    content: '❯ ';
+  }
+}

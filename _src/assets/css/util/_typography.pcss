@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  margin: 1em 0 0.5em 0;
+}
+
+.main-headline {
+  color: var(--clr-accent);
+  font-family: var(--fonts-secondary);
+  font-size: var(--type-splash);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.sub-headline,
+.text__body h2:not([class]) {
+  font-family: var(--fonts-headline);
+  font-size: var(--type-xlarge);
+  font-weight: bold;
+  margin-left: -2vmin;
+  /*margin: space(full, relative) 0 space(half, relative);*/
+
+  @media (min-width: 1500px) {
+    margin-left: -4vmin;
+  }
+}
+
+.small-headline,
+.text__body h3 {
+  font-family: var(--fonts-headline);
+  font-size: var(--type-large);
+  font-weight: 600;
+
+  @media (min-width: 1500px) {
+    margin-left: -2vmin;
+  }
+}
+
+.text__body h4 {
+  font-family: var(--fonts-headline);
+  font-size: var(--type-medium);
+}
+
+p {
+  font-size: var(--type-base);
+  line-height: 1.6;
+  margin-bottom: 0.25em;
+}
+
+.text__body p + p {
+  margin-top: 0.5rem;
+
+  @media (min-width: 777px) {
+    margin-top: 0.25rem;
+    text-indent: 1rem;
+  }
+}
+
+small,
+.p-small {
+  font-size: var(--type-small);
+}
+
+.type-is-aside {
+  color: var(--clr-decent);
+  font-size: var(--type-small);
+}
+
+abbr,
+.type-small-caps {
+  font-size: 80%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  word-spacing: 0.05em;
+
+  @supports (font-variant-caps: all-small-caps) {
+    font-size: inherit;
+    font-variant-caps: all-small-caps;
+    text-transform: none;
+  }
+}

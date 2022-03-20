@@ -1,0 +1,18 @@
+.content-code {
+  --clr-accent: #28caf0;
+  --clr-red: #f76050;
+  --clr-bg: #222325;
+
+  background-color: var(--clr-bg);
+  color: var(--clr-dark);
+  font-family: var(--fonts-mono);
+  padding: 4vmin;
+
+  @supports (color: var(--clr-light)) {
+    color: var(--clr-light);
+  }
+}
+
+.content-code__intro {
+  margin-bottom: 2vmin;
+}

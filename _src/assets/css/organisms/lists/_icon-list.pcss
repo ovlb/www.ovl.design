@@ -1,0 +1,53 @@
+.icon-list {
+  display: grid;
+  grid-auto-rows: 2em;
+  grid-gap: 0.75em;
+  grid-template-columns: repeat(auto-fit, 1.75em);
+}
+
+.icon-list__item {
+  list-style: none;
+}
+
+.icon-list__link {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  position: relative;
+
+  &--website {
+    background-image: url('/img/icons/open-site-light.svg');
+  }
+
+  &--code {
+    background-image: url('/img/icons/code-light.svg');
+  }
+}
+
+.icon-list__link-text {
+  background-color: var(--clr-fg);
+  border-radius: 0.25em;
+  color: var(--clr-light);
+  display: block;
+  font-size: var(--type-small);
+  left: -0.25em;
+  line-height: 1;
+  opacity: 0;
+  padding: 0.25em;
+  position: absolute;
+  top: calc(100% + 0.25em);
+  transform: translateY(-0.25em);
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+  width: auto;
+  z-index: 5;
+
+  .icon-list__link:hover > &,
+  .icon-list__link:focus > &,
+  .icon-list__link:active > & {
+    opacity: 1;
+    transform: none;
+  }
+}

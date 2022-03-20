@@ -1,0 +1,96 @@
+.article-card {
+  align-items: start;
+  background-image: var(--layout-fleuron);
+  background-position: center calc(100% - 0.66rem);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  contain: content;
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin-left: -2vmin;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  padding-left: 2vmin;
+  position: relative;
+
+  &:focus-within {
+    & .article-card__headline {
+      transform: translateX(-1vmin);
+
+      &::before {
+        transform: translateX(100%);
+      }
+    }
+  }
+}
+
+.article-card__date {
+  order: -1;
+}
+
+.article-card__headline {
+  backface-visibility: hidden;
+  display: inline-block;
+  font-family: var(--fonts-headline);
+  font-size: var(--type-medium);
+
+  margin-top: 0;
+  position: relative;
+  transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
+
+  &::before {
+    backface-visibility: hidden;
+    background-color: var(--clr-decent);
+    bottom: 0;
+    content: '';
+    height: 0.125rem;
+    left: -1rem;
+    position: absolute;
+    transform: translateX(-50%) scale(0.5, 0.5);
+    transform-origin: left top;
+    transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
+    width: calc(100% + 1.25rem);
+    z-index: -1;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  &:hover {
+    transform: translateX(-0.25rem);
+
+    /* IE11 gets confused when trying to do this, hide it from it */
+    @supports (transform: translateX(-1vmin)) {
+      transform: translateX(-1vmin);
+    }
+
+    &::before {
+      transform: none;
+    }
+  }
+}
+
+.article-card__link {
+  font-weight: bold;
+  text-decoration: none;
+
+  &.-external {
+    &::after {
+      background-image: url('/img/icons/baseline-launch-24px-light.svg');
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      height: 0.8em;
+      margin-left: 0.25em;
+      transform: translateY(0.1em);
+      width: 0.8em;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid var(--clr-decent);
+    outline-offset: 1px;
+  }
+}
