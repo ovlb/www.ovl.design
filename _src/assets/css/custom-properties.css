@@ -1,5 +1,75 @@
-@import 'open-props/src/index.css';
-
 :root {
-  --clr-base: '#001312';
+  --fonts-main: 'Bridge Text', 'Times New Roman', serif;
+  --fonts-headline: 'Bridge Head', 'Times New Roman', serif;
+  --fonts-secondary: 'LautsprecherDJR', cursive;
+  --fonts-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+  /* Values based on http://www.modularscale.com/?1&em&1.125 */
+  --type-very-small: 0.694em;
+  --type-small: 0.833em;
+  --type-base: 1em;
+  --type-medium: 1.125em;
+  --type-large: 1.266em;
+  --type-xlarge: 1.424em;
+  --type-splash: 2.072em;
+
+  --layout-header-height: 5.75rem;
+
+  @media (min-width: 380px) {
+    --layout-header-height: 3.75rem;
+  }
+
+  @media (min-width: 37.5rem) {
+    /* Values based on http://www.modularscale.com/?1&em&1.2 */
+    --type-very-small: 0.694em;
+    --type-small: 0.833em;
+    --type-base: 1em;
+    --type-medium: 1.2em;
+    --type-large: 1.728em;
+    --type-xlarge: 2.488em;
+    --type-splash: 3.583em;
+  }
+
+  --clr-main: #b00000;
+  --clr-main-darker: #d23838;
+  --clr-main-light: #ff4a4a;
+  --clr-main-dark: #7d0000;
+  --clr-light: #f8f2e3;
+  --clr-dark: #0e0e0e;
+  --clr-dark-lighter: #161616;
+  --clr-dark-light: #685d5d;
+  --clr-light-dark: #cdc9bd;
+
+  --clr-bg: var(--clr-light);
+  --clr-fg: var(--clr-dark);
+  --clr-accent: var(--clr-main);
+  --clr-accent-dark: var(--clr-main-dark);
+  --clr-accent-light: var(--clr-main-light);
+  --clr-decent: var(--clr-dark-light);
+
+  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-user-theme='light']) {
+    --clr-fg: var(--clr-light);
+    --clr-bg: var(--clr-dark-lighter);
+    --clr-accent: var(--clr-main-light);
+    --clr-accent-dark: var(--clr-main-darker);
+    --clr-accent-light: var(--clr-main-dark);
+    --clr-decent: var(--clr-light-dark);
+
+    --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+  }
+}
+
+:root[data-user-theme='dark'] {
+  --clr-fg: var(--clr-light);
+  --clr-bg: var(--clr-dark-lighter);
+  --clr-accent: var(--clr-main-light);
+  --clr-accent-dark: var(--clr-main-darker);
+  --clr-accent-light: var(--clr-main-dark);
+  --clr-decent: var(--clr-light-dark);
+
+  --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
 }
