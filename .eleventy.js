@@ -3,6 +3,7 @@ const del = require('del')
 
 const { ELEVENTY_ENV } = process.env
 
+const filter = require('./_filters/')
 const functions = require('./_functions')
 const plugins = require('./_plugins')
 const shortcodes = require('./_shortcodes')
@@ -14,6 +15,10 @@ const STATIC_FOLDERS = require('./_helper/paths')
 const IS_PROD = ELEVENTY_ENV === 'production'
 
 module.exports = function (eleventyConfig) {
+  filter.forEach(({ name, func }) => {
+    eleventyConfig.addFilter(name, func)
+  })
+
   plugins.always.forEach((plugin) => {
     eleventyConfig.addPlugin(plugin.plugin, plugin.pluginOptions || {})
   })
