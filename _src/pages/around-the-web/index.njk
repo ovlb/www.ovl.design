@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+permalink: '/around-the-web/'
+templateClass: 'tmpl-article-list'
+title: 'Around the Web'
+pageCSS: 'text'
+meta:
+  description: 'Around the Web is a (weekly) digest of interesting links from, you might have guessed it, around the web.'
+  image:
+    src: https://www.ovl.design/img/around-the-web/archive.jpg
+    alt: 'A library in Prague. The ceiling is decorated with magnificent frescoes. The shelfes are old, you can smell the history contained in these books, it oozes from the picture. Written on top are the words «Around the web».'
+---
+
+<main id="main" class="homepage-content" tabindex="-1">
+  <header class="archive-header u-floral-heart-gradient">
+    <h1 class="main-headline">{{ title }}</h1>
+    <p>
+      {{ meta.description }}
+      <br/>
+      You can follow it using the <a href="/around-the-web/feed.xml">RSS feed</a> or by subscribing to the <a href="https://buttondown.email/around-the-web">newsletter</a>.
+    </p>
+  </header>
+  <ol class="article-list u-global-padding" role="list">
+    {%- for post in collections.aroundTheWeb | reverse %}
+      {% set linkClass = 'article-card__link' %}
+      {% set id = post.dates.publish %}
+      <li>
+        <article class="article-card" aria-labelledby="title-{{ id }}">
+          <p>No.&nbsp;{{post.data.page.fileSlug}}</p>
+          <h2
+            class="article-card__headline"
+            id="title-{{ id }}"
+          >
+            <a
+                href="{{ post.data.permalink }}"
+                class="{{ linkClass }}"
+              >{{ post.data.dateRange.start }}–{{ post.data.dateRange.end }}</a>
+          </h2>
+          <p>{{ post.data.intro }}</p>
+        </article>
+      </li>
+    {% endfor -%}
+  </ol>
+</main>
