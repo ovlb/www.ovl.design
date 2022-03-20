@@ -69,6 +69,8 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
+  eleventyConfig.addLayoutAlias('digest', 'layouts/digest.njk')
+  eleventyConfig.addLayoutAlias('feed', 'layouts/feed.njk')
 
   eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.static}**/*`)
   eleventyConfig.addWatchTarget('./_helper/**/*')
