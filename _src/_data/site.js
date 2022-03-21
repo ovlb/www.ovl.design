@@ -15,10 +15,10 @@ module.exports = {
   },
   baseURL: process.env.BASE_URL || 'https://www.ovl.design',
   navItems: [
-    { url: '/', text: 'Home', exact: true },
-    { url: '/code/', text: 'Code' },
-    { url: '/text/', text: 'Text' },
-    { url: 'https://talks.ovl.design/', text: 'Talks' },
+    { url: '/', title: 'Home', exact: true },
+    { url: '/code/', title: 'Code' },
+    { url: '/text/', title: 'Text' },
+    { url: 'https://talks.ovl.design/', title: 'Talks' },
   ],
   socialNavItems: [
     { title: 'GitHub', url: 'https://github.com/ovlb' },

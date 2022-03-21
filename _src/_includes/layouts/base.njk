@@ -54,15 +54,11 @@
       }
     </script>
 
-    <style>
-      {{css.customProperties | safe}}
-    </style>
-    <style>
-      {{css.main | safe}}
-    </style>
+    <link rel="stylesheet" href="/css/custom-properties.css">
+    <link rel="stylesheet" href="/css/main.css">
     {% if pageCSS %}
       <style>
-        {{css[pageCSS] | safe}}
+        {{css[pageCSS].parsed | safe}}
       </style>
     {% endif %}
 
