@@ -1,5 +1,11 @@
 [[plugins]]
     package = "netlify-plugin-11ty"
+    [plugins.inputs]
+        cache_img = './img'
+        cache_img_httpHeader = false
+
+        cache_assets = '../.cache'
+        cache_other = ['../.husky/_']
 
 [[redirects]]
   from = "https://11ty.owlish.dev/*"
