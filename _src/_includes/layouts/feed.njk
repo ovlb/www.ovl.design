@@ -11,6 +11,7 @@
   <author>
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
+    <uri>{{ site.baseURL }}</uri>
   </author>
-  {{ content }}
+  {{ content | safe }}
 </feed>

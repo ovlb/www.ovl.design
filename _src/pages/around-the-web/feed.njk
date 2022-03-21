@@ -8,9 +8,6 @@ metadata:
     subtitle: 'links from around the web'
     feedID: '/around-the-web'
 ---
-
-{% set lastUpdated = collections.aroundTheWeb | getNewestCollectionItemDate | dateToRfc3339 %}
-
 {%- for post in collections.aroundTheWeb -%}
   {% set absolutePostUrl %}{{ post.data.permalink | absoluteUrl(site.baseURL) }}{% endset %}
   <entry>
