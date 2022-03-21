@@ -10,12 +10,11 @@ class Post {
       permalink: (data) => data.post.permalink,
       pageCSS: 'textDetail',
       templateClass: 'tmpl-single-post',
-      templateEngineOverride: '11ty.js,md',
     }
   }
 
   render(data) {
-    return data.post.content
+    return data.post.templateContent
   }
 }
 

@@ -1,4 +1,5 @@
 const getPosts = require('../../_helper/getPosts')
+const markdown = require('../../_libraries/markdown')
 
 const localPosts = [
   {
@@ -24,6 +25,10 @@ module.exports = async function () {
       : article.externalPost.fields.link
 
     article.date = new Date(article.date)
+
+    if (article.content) {
+      article.templateContent = markdown.render(article.content)
+    }
 
     article.locale = article.locale || 'en'
 
