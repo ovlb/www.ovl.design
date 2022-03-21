@@ -1,0 +1,45 @@
+---json
+{
+  "permalink": "text/feed.xml",
+  "layout": null,
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "ovl.design » blog feed",
+    "subtitle": "code, design & opinions",
+    "url": "https://www.ovl.design/",
+    "feedUrl": "https://www.ovl.design/text/feed.xml",
+    "author": {
+      "name": "Oscar Braunert",
+      "email": "o@ovl.design"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
+  {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
+  <icon>{{ iconUrl }}</icon>
+  <updated>{{ articles.lastUpdated | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}text</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in articles.ownPosts %}
+    {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary type="html">{{ post.intro }}</summary>
+      <content type="html">
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+      </content>
+    </entry>
+  {%- endfor %}
+</feed>
