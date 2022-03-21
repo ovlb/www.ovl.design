@@ -17,7 +17,7 @@ metadata:
     <id>{{ absolutePostUrl }}</id>
     <summary type="html">{{ post.data.intro }}</summary>
     <content type="html">
-      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
     </content>
   </entry>
 {%- endfor %}
