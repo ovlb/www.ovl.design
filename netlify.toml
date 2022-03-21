@@ -1,2 +1,14 @@
 [[plugins]]
     package = "netlify-plugin-11ty"
+
+[[redirects]]
+  from = "https://11ty.owlish.dev/*"
+  to = "https://www.ovl.design/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://reading.ovl.design/*"
+  to = "https://www.ovl.design/around-the-web/"
+  status = 301
+  force = true
