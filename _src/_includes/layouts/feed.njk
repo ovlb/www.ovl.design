@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
-  {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
+  <link href="{{ site.baseURL + metadata.feedID + '/feed.xml' }}" rel="self"/>
+  <link href="{{ site.baseURL + metadata.feedID + '/' }}" rel="alternate"/>
+  {% set iconUrl = site.baseURL + '/img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
-  <updated>{{ lastUpdated | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}text</id>
+  <updated>{{ collections[collection] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ site.baseURL + metadata.feedID + '/' }}</id>
   <author>
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>

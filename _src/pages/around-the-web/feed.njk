@@ -1,43 +1,26 @@
----json
-{
-  "permalink": "/around-the-web/feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "ovl.design » around the web",
-    "subtitle": "links from around the web",
-    "author": {
-      "name": "Oscar Braunert",
-      "email": "o@ovl.design"
-    }
-  }
-}
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ site.baseURL + '/around-the-web/feed.xml' }}" rel="self"/>
-  <link href="{{ site.baseURL + '/around-the-web/' }}" rel="alternate"/>
-  {% set iconUrl = site.baseURL + '/img/favicon/favicon-32x32.png' %}
-  <icon>{{ iconUrl }}</icon>
-  <updated>{{ collections.aroundTheWeb | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ site.baseURL }}/around-the-web/</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-    <uri>{{ site.baseURL }}</uri>
-  </author>
-  {%- for post in collections.aroundTheWeb -%}
-    {% set absolutePostUrl %}{{ post.data.permalink | absoluteUrl(site.baseURL) }}{% endset %}
-    <entry>
-      <title>{{ post.data.title }}</title>
-      <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ post.date | dateToRfc3339 }}</updated>
-      <id>{{ absolutePostUrl }}</id>
-      <summary type="html">{{ post.data.intro }}</summary>
-      <content type="html">
-        <![CDATA[ {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }} ]]>
-      </content>
-    </entry>
-  {%- endfor %}
-</feed>
+layout: 'feed'
+permalink: '/around-the-web/feed.xml'
+eleventyExcludeFromCollections: true
+collection: aroundTheWeb
+metadata:
+    title: 'ovl.design » around the web'
+    subtitle: 'links from around the web'
+    feedID: '/around-the-web'
+---
+
+{% set lastUpdated = collections.aroundTheWeb | getNewestCollectionItemDate | dateToRfc3339 %}
+
+{%- for post in collections.aroundTheWeb -%}
+  {% set absolutePostUrl %}{{ post.data.permalink | absoluteUrl(site.baseURL) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <summary type="html">{{ post.data.intro }}</summary>
+    <content type="html">
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+    </content>
+  </entry>
+{%- endfor %}
