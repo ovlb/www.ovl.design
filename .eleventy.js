@@ -77,6 +77,7 @@ module.exports = function (eleventyConfig) {
 
   // copy static assets to dist folder
   eleventyConfig.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img/' })
+  eleventyConfig.addPassthroughCopy({ [`./${STATIC_FOLDERS.js}`]: '/js/' })
   eleventyConfig.addPassthroughCopy({
     [`./${STATIC_FOLDERS.files}`]: '/files/',
   })
