@@ -1,3 +1,5 @@
-const { default: markdown } = import('../_libraries/markdown.mjs')
+const markdown = require('../_libraries/markdown.js')
 
-module.exports = markdown
+module.exports = function (raw) {
+  return markdown.render(raw)
+}
