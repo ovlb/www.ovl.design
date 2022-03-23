@@ -8,7 +8,7 @@ metadata:
     subtitle: 'links from around the web'
     feedID: '/around-the-web'
 ---
-{%- for post in collections.aroundTheWeb -%}
+{%- for post in collections.aroundTheWeb | reverse -%}
   {% set absolutePostUrl %}{{ post.data.permalink | absoluteUrl(site.baseURL) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>

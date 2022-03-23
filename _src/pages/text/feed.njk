@@ -38,7 +38,7 @@
       <id>{{ absolutePostUrl }}</id>
       <summary type="html">{{ post.intro }}</summary>
       <content type="html">
-        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
       </content>
     </entry>
   {%- endfor %}
