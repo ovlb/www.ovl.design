@@ -14,19 +14,21 @@ module.exports = {
         ogImageType: 'image/jpg',
       }
     },
-    dateRange: function (data) {
-      const parsedStart = new Date(data.dates.start)
-      const parsedPublish = new Date(data.dates.publish)
-
+    parsedDates: function (data) {
       return {
-        start: parsedStart.toLocaleDateString('de'),
-        end: parsedPublish.toLocaleDateString('de'),
+        start: new Date(data.dates.start),
+        publish: this.setPublishDate(new Date(data.dates.publish)),
       }
     },
     title: function (data) {
-      const { start, end } = data.dateRange
+      const { start, publish } = data.parsedDates
 
-      return `Around the Web (${start}–${end})`
+      if (start && publish) {
+        return `Around the Web (${this.displayDate(
+          start,
+          'short',
+        )}–${this.displayDate(publish, 'short')})`
+      }
     },
     permalink: function (data) {
       return `/around-the-web/${data.page.fileSlug}/`

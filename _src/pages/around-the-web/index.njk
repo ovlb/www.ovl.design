@@ -34,7 +34,7 @@ meta:
             <a
                 href="{{ post.data.permalink }}"
                 class="{{ linkClass }}"
-              >{{ post.data.dateRange.start }}–{{ post.data.dateRange.end }}</a>
+              >{{ post.data.parsedDates.start | displayDate("short") }}–{{ post.data.parsedDates.publish | displayDate("short") }}</a>
           </h2>
           <p>{{ post.data.intro }}</p>
         </article>
