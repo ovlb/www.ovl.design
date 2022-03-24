@@ -61,6 +61,25 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+  eleventyConfig.addCollection('atwCategories', function (collectionAPI) {
+    /** @type Array */
+    const posts = collectionAPI.getFilteredByGlob(
+      '_src/pages/around-the-web/posts/*.md',
+    )
+
+    const categories = new Set()
+
+    for (const post of posts) {
+      const { tags } = post.data
+
+      tags
+        .filter((tag) => tag.startsWith('cat:'))
+        .forEach((tag) => categories.add(tag))
+    }
+
+    return [...categories]
+  })
+
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('digest', 'layouts/digest.njk')
   eleventyConfig.addLayoutAlias('feed', 'layouts/feed.njk')
