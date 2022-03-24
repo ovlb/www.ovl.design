@@ -14,7 +14,7 @@ meta:
 
 <main id="main" class="content-code" tabindex="-1">
   <h1 class="sr-only">Code</h1>
-  <p>{{ site.buildTime | terminalLogin }}</p>
+  <p>{{ build.buildTime | terminalLogin }}</p>
   <div class="terminal-row content-code__intro">
     {% set terminalPath = '~/dev/' %}
     {% set command = 'show-projects --verbose --directories' %}
