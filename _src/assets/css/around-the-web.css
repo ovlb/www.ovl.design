@@ -8,7 +8,7 @@
   }
 }
 
-.atw-post-header {
+.atw-column-wrapper {
   margin-bottom: 2vmin;
 
   @media (min-width: 1034px) {
@@ -16,9 +16,26 @@
     position: sticky;
     top: calc(var(--layout-header-height) + 4vmin);
   }
+}
+
+.atw-post-header {
+  margin-bottom: 2vmin;
 
   h1 {
     font-size: var(--type-xlarge);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.atw-post-meta {
+  font-size: smaller;
+
+  & * {
+    font-size: inherit;
+  }
+
+  & > * + * {
+    margin-top: 0.5rem;
   }
 }
 
