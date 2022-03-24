@@ -1,14 +1,7 @@
-require('dotenv').config()
-const path = require('path')
-
-const { version } = require(path.join(process.cwd(), 'package.json'))
-
 module.exports = {
   locale: 'en',
   title: 'ovl',
   description: 'code & design',
-  version,
-  buildTime: new Date(),
   author: {
     name: 'Oscar',
     email: 'o@ovl.design',

@@ -19,15 +19,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter(name, func)
   })
 
-  plugins.always.forEach((plugin) => {
+  plugins.forEach((plugin) => {
     eleventyConfig.addPlugin(plugin.plugin, plugin.pluginOptions || {})
   })
-
-  if (IS_PROD) {
-    plugins.prod.forEach((plugin) => {
-      eleventyConfig.addPlugin(plugin.plugin, plugins.pluginOptions || {})
-    })
-  }
 
   shortcodes.forEach(({ name, func }) => {
     eleventyConfig.addShortcode(name, func)
