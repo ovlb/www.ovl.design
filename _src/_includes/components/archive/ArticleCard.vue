@@ -2,7 +2,7 @@
   <article class="article-card" aria-labelledby="title-{{ id }}">
     <p class="type-is-aside"><slot name="eyebrow" /></p>
     <h2 id="title-{{ id }}" class="article-card__headline">
-      <a href="{{ data.permalink }}" class="article-card__link">
+      <a :href="data.permalink" class="article-card__link">
         {{ data.title }}
       </a>
     </h2>
