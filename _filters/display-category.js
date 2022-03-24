@@ -1,11 +1,15 @@
+const { startCase, camelCase } = require('lodash')
+
 module.exports = function (rawName) {
   const displayNames = new Map([
     ['cat:ai', 'Artificial (Un)intelligence'],
-    ['cat:surveillance-state', 'Surveillance State'],
     ['cat:nft', 'NFT'],
-    ['cat:cryptocurrency', 'Cryptocurrency'],
-    ['cat:postcolonialism', 'Postcolonialism'],
+    ['cat:climate', 'Climate Crisis'],
+    ['cat:web', 'World Wide Web'],
   ])
 
-  return displayNames.get(rawName)
+  return (
+    displayNames.get(rawName) ||
+    startCase(camelCase(rawName.replace('cat:', '').replace('-', ' ')))
+  )
 }
