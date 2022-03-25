@@ -32,6 +32,7 @@ export default {
         data: 'collections.atwCategories',
         size: 1,
         alias: 'category',
+        addAllPagesToCollections: true,
       },
       eleventyComputed: {
         permalink: (data) =>
