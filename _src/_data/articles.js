@@ -17,23 +17,25 @@ const localPosts = [
 module.exports = async function () {
   const all = await getPosts({ type: 'article', order: '-fields.date' })
 
-  const posts = [...localPosts, ...all].map((article) => {
-    const isInternal = article.isInternal || !article.externalPost
+  const posts = [...localPosts, ...all]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .map((article) => {
+      const isInternal = article.isInternal || !article.externalPost
 
-    article.permalink = isInternal
-      ? `/text/${article.slug}/`
-      : article.externalPost.fields.link
+      article.permalink = isInternal
+        ? `/text/${article.slug}/`
+        : article.externalPost.fields.link
 
-    article.date = new Date(article.date)
+      article.date = new Date(article.date)
 
-    if (article.content) {
-      article.templateContent = markdown.render(article.content)
-    }
+      if (article.content) {
+        article.templateContent = markdown.render(article.content)
+      }
 
-    article.locale = article.locale || 'en'
+      article.locale = article.locale || 'en'
 
-    return article
-  })
+      return article
+    })
 
   const ownPosts = posts.filter((post) => post.isInternal)
   const toRender = ownPosts.filter((post) => !post.noRender)
