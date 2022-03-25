@@ -6,6 +6,7 @@ const abbr = require('markdown-it-abbr')
 const attribution = require('markdown-it-attribution')
 const container = require('markdown-it-container')
 const attrs = require('markdown-it-attrs')
+const implicitFigures = require('markdown-it-image-figures')
 
 const markdown = md({
   html: true,
@@ -23,6 +24,11 @@ markdown.use(attribution, {
   removeMarker: true,
 })
 markdown.use(attrs)
+markdown.use(implicitFigures, {
+  figcaption: true,
+  lazy: true,
+  async: true,
+})
 
 markdown.renderer.rules.footnote_block_open = () =>
   '<section class="footnotes">\n' +
