@@ -13,6 +13,7 @@ metadata:
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
+    <published>{{ post.data.parsedDates.publish | dateToRfc3339 }}</published>
     <updated>{{ post.data.parsedDates.publish | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <summary type="html">{{ post.data.intro }}</summary>
