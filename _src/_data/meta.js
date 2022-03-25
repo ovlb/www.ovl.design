@@ -6,7 +6,7 @@ module.exports = {
     height: 1260,
   },
   ogType: 'blog',
-  ogImageType: 'image/png',
+  ogImageType: 'image/jpg',
   site_name: 'www.ovl.design',
   description:
     'Hi, I am Oscar. I write code and design for web and print. And this is my website.',
