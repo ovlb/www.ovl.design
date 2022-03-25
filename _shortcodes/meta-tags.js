@@ -40,6 +40,7 @@ module.exports = function (meta = {}, post) {
     <meta property="og:image" content="${meta.image.src}?w=1478&h=831&fm=jpg&q=100">
     <meta name="twitter:image" content="${meta.image.src}?w=1478&h=831&fm=jpg&q=100">
     <meta name="twitter:image:alt" content="${meta.image.alt}">
+    <meta name="og:image:alt" content="${meta.image.alt}">
   `
 
   const rendered = this.tags
