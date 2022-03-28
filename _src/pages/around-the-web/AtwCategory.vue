@@ -1,5 +1,5 @@
 <template>
-  <archive-header :title="title">
+  <archive-header :title="displayCategory(category)">
     <template #sub>
       <p>
         This is an automatically generated archive of
@@ -37,7 +37,8 @@ export default {
       eleventyComputed: {
         permalink: (data) =>
           this.categoryPermalink(data.category, data.categoryBase),
-        title: (data) => this.displayCategory(data.category),
+        title: (data) =>
+          `${this.displayCategory(data.category)} | Around the Web`,
       },
     }
   },
@@ -53,12 +54,11 @@ export default {
   methods: {
     postToCardItem(post) {
       return {
+        ...post.data,
         title: `${this.displayDate(
           post.data.parsedDates.start,
           'short',
         )}–${this.displayDate(post.data.parsedDates.publish, 'short')}`,
-        permalink: post.data.permalink,
-        intro: post.data.intro,
       }
     },
   },
