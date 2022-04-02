@@ -1,19 +1,21 @@
 <template>
-  <archive-header :title="displayCategory(category)">
-    <template #sub>
-      <p>
-        This is an automatically generated archive of
-        <a href="/around-the-web/">Around the Web</a> posts.
-      </p>
-    </template>
-  </archive-header>
-  <ol class="article-list u-global-padding" role="list">
-    <li v-for="post in posts" :key="post.data.dates.publish">
-      <article-card :data="postToCardItem(post)">
-        <template #eyebrow>No.&nbsp;{{ post.data.page.fileSlug }}</template>
-      </article-card>
-    </li>
-  </ol>
+  <main id="main" tabindex="-1">
+    <archive-header :title="displayCategory(category)">
+      <template #sub>
+        <p>
+          This is an automatically generated archive of
+          <a href="/around-the-web/">Around the Web</a> posts.
+        </p>
+      </template>
+    </archive-header>
+    <ol class="article-list u-global-padding" role="list">
+      <li v-for="post in posts" :key="post.data.dates.publish">
+        <article-card :data="postToCardItem(post)">
+          <template #eyebrow>No.&nbsp;{{ post.data.page.fileSlug }}</template>
+        </article-card>
+      </li>
+    </ol>
+  </main>
 </template>
 
 <script>
