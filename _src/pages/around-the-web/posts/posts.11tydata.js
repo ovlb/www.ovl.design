@@ -1,3 +1,5 @@
+const { parseHTML } = require('linkedom')
+
 module.exports = {
   layout: 'digest',
   tags: ['aroundTheWeb'],
@@ -32,6 +34,23 @@ module.exports = {
     },
     permalink: function (data) {
       return `/around-the-web/${data.page.fileSlug}/`
+    },
+    sources: async function (data) {
+      if (!data.page) return
+
+      const rendered = await this.renderFile(data.page.inputPath)
+
+      const { document } = parseHTML(rendered)
+      const allLinks = document.querySelectorAll('a')
+      const sources = new Set()
+
+      for (const link of allLinks) {
+        if (!link.href.startsWith('http')) continue
+
+        sources.add(new URL(link.href).origin)
+      }
+
+      return { count: allLinks.length, distinct: sources.size }
     },
   },
 }
