@@ -2,13 +2,22 @@
   <main id="main" tabindex="-1">
     <archive-header :title="title">
       <template #sub>
-        <p>
+        <p class="t-content-2">
           {{ meta.description }}
-          <br />
-          You can follow it using the
-          <a href="/around-the-web/feed.xml">RSS feed</a> or by subscribing to
-          the <a href="https://buttondown.email/around-the-web">newsletter</a>.
         </p>
+        <the-stack tag-name="section" flows="horizontal">
+          <icon-link href="/around-the-web/feed.xml" aria-label="RSS Feed">
+            <template #icon><rss-box-icon /></template>
+            <template #content>RSS Feed</template>
+          </icon-link>
+          <icon-link
+            href="https://buttondown.email/around-the-web"
+            aria-label="Newsletter"
+          >
+            <template #icon><mailbox-up-icon /></template>
+            <template #content>Newsletter</template>
+          </icon-link>
+        </the-stack>
       </template>
     </archive-header>
     <ol class="article-list u-global-padding" role="list">
@@ -24,11 +33,19 @@
 <script>
 import ArchiveHeader from '~components/archive/ArchiveHeader.vue'
 import ArticleCard from '~components/archive/ArticleCard.vue'
+import TheStack from '~components/core/TheStack.vue'
+import IconLink from '~components/core/IconLink.vue'
+import RssBoxIcon from '~icons/RssBox.vue'
+import MailboxUpIcon from '~icons/MailboxUp.vue'
 
 export default {
   components: {
     ArchiveHeader,
     ArticleCard,
+    TheStack,
+    IconLink,
+    RssBoxIcon,
+    MailboxUpIcon,
   },
 
   data() {

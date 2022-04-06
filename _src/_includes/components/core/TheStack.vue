@@ -26,4 +26,33 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.l-stack {
+  --stack-space: 1.5rem;
+  --flex-direction: row;
+
+  display: flex;
+  flex-direction: var(--flex-direction);
+}
+
+.l-stack--horizontal {
+  align-items: center;
+}
+
+.l-stack--horizontal > * + * {
+  margin-left: var(--stack-space);
+}
+
+.l-stack--vertical {
+  --flex-direction: column;
+}
+
+.l-stack--vertical > * + * {
+  margin-top: var(--stack-space);
+  margin-bottom: 0 !important;
+}
+
+.l-stack--narrow {
+  --stack-space: 0.5rem;
+}
+</style>
