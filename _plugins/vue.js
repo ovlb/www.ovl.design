@@ -30,6 +30,13 @@ module.exports = {
                 '_src/_includes/components',
               ),
             },
+            {
+              find: '~icons',
+              replacement: path.join(
+                process.cwd(),
+                'node_modules/vue-material-design-icons',
+              ),
+            },
           ],
         }),
       ],

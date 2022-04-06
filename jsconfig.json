@@ -14,6 +14,9 @@
       ],
       "~components/*": [
         "./_src/_includes/components/*"
+      ],
+      "~icons/*": [
+        "./node_modules/vue-material-design-icons/*"
       ]
     }
   }
