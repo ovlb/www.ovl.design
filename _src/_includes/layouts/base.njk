@@ -61,7 +61,9 @@
         {{css[pageCSS].parsed | safe}}
       </style>
     {% endif %}
-
+    <style>
+      {{page.url | getVueComponentCssForPage | safe}}
+    </style>
     <link rel="alternate" href="/text/feed.xml" title="ovl.design » blog feed" type="application/atom+xml">
     <link rel="alternate" href="/around-the-web/feed.xml" title="ovl.design » around the web" type="application/atom+xml">
 
