@@ -2,9 +2,9 @@
   <main id="main" tabindex="-1">
     <archive-header :title="title">
       <template #sub>
-        <p class="t-content-2">
-          {{ meta.description }}
-        </p>
+        {{ meta.description }}
+      </template>
+      <template #footer>
         <the-stack tag-name="section" flows="horizontal">
           <icon-link href="/around-the-web/feed.xml" aria-label="RSS Feed">
             <template #icon><rss-box-icon /></template>
