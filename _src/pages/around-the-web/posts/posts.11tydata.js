@@ -45,7 +45,12 @@ module.exports = {
       const sources = new Set()
 
       for (const link of allLinks) {
-        if (!link.href.startsWith('http')) continue
+        // as i dont link to gopher anything without http is most likely a link to my own page
+        if (!link.href.startsWith('http')) {
+          sources.add(data.site.baseURL)
+
+          continue
+        }
 
         sources.add(new URL(link.href).origin)
       }
