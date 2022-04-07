@@ -23,7 +23,11 @@ module.exports = function (meta = {}, post) {
     { attrName: 'property', attrValue: 'og:image:type', key: 'ogImageType' },
     { attrName: 'property', attrValue: 'og:image:width', value: '1478' },
     { attrName: 'property', attrValue: 'og:image:height', value: '831' },
-    { attrName: 'property', attrValue: 'og:site_name', key: 'site_name' },
+    {
+      attrName: 'property',
+      attrValue: 'og:site_name',
+      value: this.ctx.site.baseURL.replace(/^https?:\/\//, ''),
+    },
   ]
 
   if (post) {
