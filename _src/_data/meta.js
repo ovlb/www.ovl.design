@@ -1,11 +1,11 @@
 module.exports = {
   image: {
-    src: 'https://images.ctfassets.net/0qq78o7muy2j/41AVLQd3q0oEaQKwcW0Ck2/1adc1e0fc0c7525b4f25b45570847396/ovl-og-image-generic.png',
-    alt: 'An owl sitting on a branch. The letters o v l are added in the top right corner.',
-    width: 2240,
-    height: 1260,
+    src: `${process.env.BASE_URL}/ovl-og-image-generic-v2.jpg`,
+    alt: 'An owl sitting on a branch. The letters o v l are added in the bottom left corner.',
+    width: 1178,
+    height: 831,
   },
-  ogType: 'blog',
+  ogType: 'website',
   ogImageType: 'image/jpg',
   site_name: 'www.ovl.design',
   description:

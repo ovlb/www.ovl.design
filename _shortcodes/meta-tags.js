@@ -1,7 +1,11 @@
 module.exports = function (meta = {}, post) {
   this.tags = [
     { attrName: 'name', attrValue: 'description', key: 'description' },
-    { attrName: 'name', attrValue: 'twitter:description', key: 'description' },
+    {
+      attrName: 'property',
+      attrValue: 'twitter:description',
+      key: 'description',
+    },
     { attrName: 'property', attrValue: 'og:description', key: 'description' },
     {
       attrName: 'property',
