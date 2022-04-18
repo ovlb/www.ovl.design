@@ -56,16 +56,22 @@
 
 img {
   display: inline-block;
+  height: auto;
   max-width: 100%;
+  object-fit: cover;
 }
 
 figure {
   margin: 0.5rem 0;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 figure figcaption {
   font-size: smaller;
   font-style: italic;
+}
+
+figure:has(img[src$='.gif']) figcaption {
   max-width: 50%;
 }
