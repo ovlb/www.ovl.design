@@ -1,8 +1,8 @@
 {
-  "name": "ut-11ty-base",
-  "version": "0.0.1",
-  "description": "Starter template for 11ty builds",
-  "main": "index.js",
+  "name": "www.ovl.design",
+  "version": "11.1.0",
+  "description": "My homepage",
+  "main": ".eleventy.js",
   "scripts": {
     "build": "ELEVENTY_ENV=production eleventy",
     "build:clean": "npm run clean && npm run build",
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/inframanufaktur/ut-11ty-base.git"
+    "url": "git+ssh://git@github.com/ovlb/www.ovl.design.git"
   },
   "author": "ovl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/inframanufaktur/ut-11ty-base/issues"
+    "url": "https://github.com/ovlb/www.ovl.design/issues"
   },
-  "homepage": "https://github.com/inframanufaktur/ut-11ty-base#readme",
+  "homepage": "https://github.com/ovlb/www.ovl.design#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-img": "^2.0.0",
@@ -37,10 +37,10 @@
     "@11ty/eleventy-plugin-vue": "^1.0.0-canary.8",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.1",
+    "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.2",
     "@quasibit/eleventy-plugin-sitemap": "^2.1.5",
     "@rollup/plugin-alias": "^3.1.8",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.4",
     "ava": "^3.15.0",
     "axios": "^0.24.0",
     "concurrently": "^6.4.0",
