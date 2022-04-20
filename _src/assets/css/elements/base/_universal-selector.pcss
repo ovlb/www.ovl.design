@@ -6,6 +6,7 @@
   font-family: inherit;
   font-size: inherit;
   margin: 0;
+  scroll-margin-block-end: calc(2 * var(--layout-header-height));
   scroll-margin-block-start: calc(2 * var(--layout-header-height));
 }
 
@@ -18,12 +19,14 @@
   outline: 2px solid var(--clr-accent);
   outline-offset: 2px;
 }
-/*
-:focus:not(:focus-visible) {
-  outline: none;
-} */
 
-:focus-visible {
-  outline: 2px solid var(--clr-accent);
-  outline-offset: 2px;
+@supports selector(:focus-visible) {
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 2px;
+  }
 }
