@@ -4,7 +4,7 @@ const { parseHTML } = require('linkedom')
 const getFullSource = require('../_helper/get-full-source')
 const IS_PROD = process.env.ELVENTY_ENV === 'production'
 const defaultOptions = {
-  widths: [140, 320, null],
+  widths: [320, 640, 770, 1280, null],
   sizes: process.env.CONTENT_IMAGE_SIZES || '100%',
   formats: ['avif', 'webp', 'jpeg'],
   urlPath: '/img/',
