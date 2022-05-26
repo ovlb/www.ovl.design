@@ -1,4 +1,4 @@
-$bp-text-one: 777px;
+/* 48rem: 777px; */
 
 .text {
   display: flex;
@@ -9,7 +9,7 @@ $bp-text-one: 777px;
   margin: 0 auto;
   max-width: 900px;
 
-  @media screen and (min-width: $bp-text-one) {
+  @media screen and (min-width: 48rem) {
     grid-template-columns: [main-start content-start] minmax(65ch, 3fr) [main-end content-end aside-start] 2fr [aside-end];
   }
 
@@ -76,7 +76,7 @@ $bp-text-one: 777px;
   grid-column: aside;
   top: var(--layout-header-height);
 
-  @media screen and (min-width: $bp-text-one) {
+  @media screen and (min-width: 48rem) {
     position: sticky;
     width: 100%;
   }

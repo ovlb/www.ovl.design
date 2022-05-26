@@ -3,6 +3,7 @@ permalink: '/imprint/'
 title: 'Imprint'
 subline: 'The important legal stuff'
 layout: 'layouts/page.njk'
+pageCSS: 'textDetail'
 ---
 
 ## Contact

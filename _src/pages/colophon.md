@@ -3,6 +3,7 @@ permalink: '/colophon/'
 title: 'Colophon'
 subline: 'Saying thank you'
 layout: 'layouts/page.njk'
+pageCSS: 'textDetail'
 meta:
   description: 'No site is an island. Here I say thanks.'
 ---
