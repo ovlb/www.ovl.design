@@ -55,7 +55,12 @@ module.exports = {
         sources.add(new URL(link.href).origin)
       }
 
-      return { count: allLinks.length, distinct: sources.size }
+      return {
+        links: [...allLinks],
+        count: allLinks.length,
+        sources,
+        distinct: sources.size,
+      }
     },
   },
 }
