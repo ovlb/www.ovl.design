@@ -27,8 +27,6 @@
         <b>{{ textData.totalChars }}</b> characters.
       </p>
     </section>
-    <!-- <p>The issue with the most links is <a :href="issueData.mostLinks.link">{{ issueData.mostLinks.issue }}</a> with <b>{{ issueData.mostLinks.count }}</b>. Issue <a :href="issueData.mostUnique.link">{{ issueData.mostUnique.issue }}</a> had the most unique sources, <b>{{ issueData.mostUnique.count }}</b>.
-      </p> -->
     <section class="block-stats">
       <section>
         <h2 class="sub-headline">Top Domains</h2>
