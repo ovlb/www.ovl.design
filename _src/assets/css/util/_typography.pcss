@@ -70,6 +70,16 @@ small,
   font-size: var(--type-small);
 }
 
+:where(.text__body > :is(h2, h3, h4, p)):target {
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 224, 0, 0.13),
+    rgba(255, 224, 0, 0.24) 85%,
+    rgba(255, 224, 0, 0.09)
+  );
+  border-radius: 0.25em;
+}
+
 abbr,
 .type-small-caps {
   font-size: 80%;
