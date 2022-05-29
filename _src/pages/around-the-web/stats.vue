@@ -1,7 +1,7 @@
 <template>
   <main id="main" tabindex="-1">
     <archive-header title="Around the Numbers">
-      <template #sub>Statistics for Around the Web</template>
+      <template #sub>{{ meta.description }}</template>
       <template #footer>
         <icon-link href="/around-the-web/" aria-label="Around the Web Archive">
           <template #icon><folder-icon /></template>
@@ -69,6 +69,18 @@ export default {
     return {
       permalink: '/around-the-web/statistics/',
       title: 'Around the Numbers | Around the Web',
+      eleventyComputed: {
+        meta: function ({ meta, site }) {
+          return {
+            ...meta,
+            description: 'Statistics for Around the Web',
+            image: {
+              src: `${site.baseURL}/img/around-the-web/around-the-numbers.jpg`,
+              alt: 'An image of actor Zach Galifianakis from The Hangover thinking hard as math equations fly by his head, similar to the Math Lady meme. The image is coloured in red. The word «Around the Numbers» are written on top.',
+            },
+          }
+        },
+      },
     }
   },
 
