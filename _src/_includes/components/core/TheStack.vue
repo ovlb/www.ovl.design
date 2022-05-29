@@ -1,10 +1,5 @@
 <template>
-  <component
-    :is="tagName"
-    :class="`l-stack--${flows}`"
-    class="l-stack"
-    v-bind="$attrs"
-  >
+  <component :is="tagName" :class="classes" class="l-stack" v-bind="$attrs">
     <slot />
   </component>
 </template>
@@ -22,6 +17,19 @@ export default {
       default: 'vertical',
       validator: (flow) => flow === 'vertical' || flow === 'horizontal',
     },
+    wraps: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  computed: {
+    classes() {
+      return {
+        [`l-stack--${this.flows}`]: true,
+        ['l-stack--wraps']: this.wraps,
+      }
+    },
   },
 }
 </script>
@@ -33,6 +41,10 @@ export default {
 
   display: flex;
   flex-direction: var(--flex-direction);
+}
+
+.l-stack--wraps {
+  flex-wrap: wrap;
 }
 
 .l-stack--horizontal {

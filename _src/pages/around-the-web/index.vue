@@ -5,7 +5,7 @@
         {{ meta.description }}
       </template>
       <template #footer>
-        <the-stack tag-name="section" flows="horizontal">
+        <the-stack tag-name="section" flows="horizontal" :wraps="true">
           <icon-link href="/around-the-web/feed.xml" aria-label="RSS Feed">
             <template #icon><rss-box-icon /></template>
             <template #content>RSS Feed</template>
@@ -16,6 +16,10 @@
           >
             <template #icon><mailbox-up-icon /></template>
             <template #content>Newsletter</template>
+          </icon-link>
+          <icon-link href="/around-the-web/statistics/" aria-label="Statistics">
+            <template #icon><chart-icon /></template>
+            <template #content>Statistics</template>
           </icon-link>
         </the-stack>
       </template>
@@ -37,6 +41,7 @@ import TheStack from '~components/core/TheStack.vue'
 import IconLink from '~components/core/IconLink.vue'
 import RssBoxIcon from '~icons/RssBox.vue'
 import MailboxUpIcon from '~icons/MailboxUp.vue'
+import ChartIcon from '~icons/Finance.vue'
 
 export default {
   components: {
@@ -46,6 +51,7 @@ export default {
     IconLink,
     RssBoxIcon,
     MailboxUpIcon,
+    ChartIcon,
   },
 
   data() {

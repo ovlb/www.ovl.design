@@ -1,5 +1,10 @@
 <template>
-  <header class="archive-header u-floral-heart-gradient">
+  <the-stack
+    tag-name="header"
+    flows="vertical"
+    class="archive-header u-floral-heart-gradient"
+    style="--stack-space: 1rem; align-items: center"
+  >
     <h1 class="main-headline">{{ title }}</h1>
     <p class="t-content-2">
       <slot name="sub" />
@@ -7,11 +12,16 @@
     <section class="archive-header__footer">
       <slot name="footer" />
     </section>
-  </header>
+  </the-stack>
 </template>
 
 <script>
+import TheStack from '~components/core/TheStack.vue'
+
 export default {
+  components: {
+    TheStack,
+  },
   props: {
     title: {
       type: String,
