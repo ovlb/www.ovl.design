@@ -5,7 +5,12 @@
         {{ meta.description }}
       </template>
       <template #footer>
-        <the-stack tag-name="section" flows="horizontal" :wraps="true">
+        <the-stack
+          tag-name="section"
+          flows="horizontal"
+          class="archive-header__icons"
+          :wraps="true"
+        >
           <icon-link href="/around-the-web/feed.xml" aria-label="RSS Feed">
             <template #icon><rss-box-icon /></template>
             <template #content>RSS Feed</template>

@@ -1,12 +1,22 @@
 <template>
-  <a class="icon-link">
+  <the-stack
+    tag-name="a"
+    flows="horizontal"
+    class="icon-link"
+    style="--stack-space: 0.5rem"
+  >
     <slot name="icon" />
-    <slot name="content" />
-  </a>
+    <span><slot name="content" /></span>
+  </the-stack>
 </template>
 
 <script>
-export default {}
+import TheStack from '~components/core/TheStack.vue'
+export default {
+  components: {
+    TheStack,
+  },
+}
 </script>
 
 <style>
@@ -16,6 +26,7 @@ export default {}
   font-weight: bold;
   text-decoration: none;
   padding: 0.25em;
+  white-space: nowrap;
 }
 
 .icon-link:hover {
@@ -23,6 +34,6 @@ export default {}
 }
 
 .icon-link .material-design-icon {
-  margin-right: 0.5rem;
+  display: contents;
 }
 </style>
