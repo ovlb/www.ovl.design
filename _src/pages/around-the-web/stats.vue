@@ -181,7 +181,7 @@ export default {
 
         enriched.push({
           name: this.displayCategory(category),
-          href: this.categoryPermalink(category, 'around-the-web'),
+          href: this.categoryPermalink(category, '/around-the-web'),
           count: posts.length,
         })
       }
