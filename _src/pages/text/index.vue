@@ -16,7 +16,7 @@
         <article-card :data="post">
           <template v-if="post.date" #date>
             <span class="sr-only">Published in </span>
-            <time :datetime="post.date">
+            <time :datetime="formattedDate(post.date)">
               {{ displayDate(post.date) }}
             </time>
           </template>
@@ -34,6 +34,8 @@ import ArchiveHeader from '~components/archive/ArchiveHeader.vue'
 import IconLink from '~components/core/IconLink.vue'
 import RssBoxIcon from '~icons/RssBox.vue'
 import ArticleCard from '~components/archive/ArticleCard.vue'
+
+import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss'
 
 export default {
   components: {
@@ -58,6 +60,12 @@ export default {
         },
       },
     }
+  },
+
+  methods: {
+    formattedDate(date) {
+      return dateToRfc3339(date)
+    },
   },
 }
 </script>
