@@ -251,9 +251,9 @@ export default {
 .block-stats {
   display: flex;
   flex-flow: row wrap;
-  gap: 4vmin;
+  gap: var(--padding-base);
   justify-content: space-evenly;
-  padding: 4vmin;
+  padding: var(--padding-base);
 }
 
 li::marker {

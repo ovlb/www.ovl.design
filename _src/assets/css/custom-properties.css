@@ -47,6 +47,8 @@
   --clr-accent-light: var(--clr-main-light);
   --clr-decent: var(--clr-dark-light);
 
+  --padding-base: 4vmin;
+
   --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
 }
 

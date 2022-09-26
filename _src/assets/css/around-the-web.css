@@ -1,10 +1,10 @@
 .atw-post {
   display: grid;
   max-width: 120ch;
-  padding: 4vmin;
+  padding: var(--padding-base);
 
   @media (min-width: 1034px) {
-    gap: 4vmin;
+    gap: var(--padding-base);
     grid-template-columns: 30ch 1fr;
   }
 }
@@ -15,7 +15,7 @@
   @media (min-width: 1034px) {
     align-self: start;
     position: sticky;
-    top: calc(var(--layout-header-height) + 4vmin);
+    top: calc(var(--layout-header-height) + var(--padding-base));
   }
 }
 
