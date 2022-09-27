@@ -1,8 +1,8 @@
 <template>
   <main id="main" class="cache-content" tabindex="-1">
     <header class="cache-content__header">
-      <h1 class="main-headline">Artificial (Un)intelligence</h1>
-      <p>fragments on ai/machine learning and society</p>
+      <h1 class="main-headline">{{ headline }}</h1>
+      <p>{{ meta.description }}</p>
       <nav aria-label="Collections">
         <ul class="id-list">
           <li
@@ -70,7 +70,15 @@ export default {
   },
   data() {
     return {
+      headline: 'Artificial (Un)intelligence',
       permalink: '/cache/ai/',
+      eleventyComputed: {
+        meta: ({ meta }) => ({
+          ...meta,
+          description: 'fragments on ai/machine learning and society',
+        }),
+        title: (data) => `${data.headline} | Cache`,
+      },
     }
   },
 
