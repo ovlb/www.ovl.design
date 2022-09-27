@@ -19,6 +19,17 @@
       </nav>
     </header>
     <section class="cache-content__content">
+      <section class="content-block">
+        <h2 class="sub-headline">Around the Web</h2>
+        <ul class="post-list inline-list">
+          <li
+            v-for="issue in aroundTheWebIssues"
+            :key="issue.data.dates.publish"
+          >
+            <a :href="issue.data.permalink">{{ issue.data.page.fileSlug }}</a>
+          </li>
+        </ul>
+      </section>
       <section
         v-for="collection in postCollections"
         :id="slug(collection.title)"
@@ -87,6 +98,12 @@ export default {
       return [this.journalism, this.science, this.talks, this.podcasts].filter(
         (c) => c.data.length > 0,
       )
+    },
+
+    aroundTheWebIssues() {
+      return this.collections.aroundTheWeb
+        .filter((post) => post.data.tags.includes(this.aroundTheWebCategory))
+        .reverse()
     },
   },
 

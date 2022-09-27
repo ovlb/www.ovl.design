@@ -64,6 +64,7 @@ module.exports = async function () {
         },
       ],
     },
+    aroundTheWebCategory: 'cat:ai',
     podcasts: { title: 'Podcasts', data: [] },
     journalism: {
       title: 'Articles & Interviews',
