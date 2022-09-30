@@ -33,7 +33,7 @@
   grid-column: main;
   justify-content: center;
   margin-bottom: 1rem;
-  padding: 1.6rem 4vmin 3rem;
+  padding: 1.6rem var(--padding-base) 3rem;
   transition: opacity 0.1s cubic-bezier(0, 0.1, 0.3, 1);
   width: 75%;
 
@@ -94,7 +94,7 @@
   display: grid;
   grid-column: content;
   grid-template-columns: 2vmin [full-start] 2vmin [main-start] 1fr [main-end] 2vmin [full-end] 2vmin;
-  padding: 4vmin 0;
+  padding: var(--padding-base) 0;
   /* Used to push body over sticky image */
   z-index: 1;
 
@@ -124,12 +124,12 @@
     line-height: 1.7;
     margin-top: 2vmin;
     overflow: auto;
-    padding: 2vmin 4vmin;
+    padding: 2vmin var(--padding-base);
     width: 100%;
   }
 }
 
 .text__pagination {
   grid-column: main;
-  padding-left: 4vmin;
+  padding-left: var(--padding-base);
 }

@@ -36,7 +36,7 @@ export default {
 
 <style>
 .l-stack {
-  --stack-space: 1.5rem;
+  --stack-space-default: 1.5rem;
   --flex-direction: row;
 
   display: flex;
@@ -52,15 +52,19 @@ export default {
 }
 
 .l-stack--horizontal > * + * {
-  margin-left: var(--stack-space);
+  margin-left: var(--stack-space, var(--stack-space-default));
 }
 
 .l-stack--vertical {
   --flex-direction: column;
 }
 
+.l-stack--vertical > * {
+  margin-bottom: 0 !important;
+}
+
 .l-stack--vertical > * + * {
-  margin-top: var(--stack-space);
+  margin-top: var(--stack-space, var(--stack-space-default));
   margin-bottom: 0 !important;
 }
 

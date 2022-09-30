@@ -1,5 +1,10 @@
 <template>
-  <article class="code-card" :aria-labelledby="`code-${project.slug}`">
+  <the-stack
+    tag-name="article"
+    class="code-card"
+    :aria-labelledby="`code-${project.slug}`"
+    style="--stack-space: 0.5rem"
+  >
     <div class="terminal-row">
       <terminal-decorator
         :terminal-path="terminalPath"
@@ -24,7 +29,7 @@
         class="icon-list code-card__icons"
         role="list"
       >
-        <li class="icon-list__item">
+        <li v-if="project.website" class="icon-list__item">
           <a
             :href="project.website"
             class="icon-list__link icon-list__link--website"
@@ -50,15 +55,17 @@
         </li>
       </ul>
     </div>
-  </article>
+  </the-stack>
 </template>
 
 <script>
 import TerminalDecorator from '~components/code/TerminalDecorator.vue'
+import TheStack from '../core/TheStack.vue'
 
 export default {
   components: {
     TerminalDecorator,
+    TheStack,
   },
 
   props: {

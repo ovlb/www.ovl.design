@@ -1,0 +1,10 @@
+{
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.pcss",
+    "node_modules/open-props/open-props.min.css"
+  ]
+}

@@ -1,6 +1,6 @@
 module.exports = {
   image: {
-    src: `${process.env.BASE_URL}/ovl-og-image-generic-v2.jpg`,
+    src: `${process.env.BASE_URL}/img/open-graph/ovl-og-image-generic-v2.jpg`,
     alt: 'An owl sitting on a branch. The letters o v l are added in the bottom left corner.',
   },
   ogType: 'website',

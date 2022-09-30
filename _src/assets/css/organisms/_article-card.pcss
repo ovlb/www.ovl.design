@@ -1,18 +1,31 @@
 .article-card {
+  --card-offset: 2vmin;
+
   align-items: start;
   background-image: var(--layout-fleuron);
-  background-position: center calc(100% - 0.66rem);
+  background-position: calc(50% + calc(0.5 * var(--card-offset)))
+    calc(100% - 0.5rem);
   background-repeat: no-repeat;
   background-size: 1rem;
   contain: content;
   display: flex;
   flex-flow: column;
+  gap: 0.25rem;
   list-style: none;
-  margin-left: -2vmin;
+  margin-left: calc(-1 * var(--card-offset));
   overflow: hidden;
   padding-bottom: 2rem;
-  padding-left: 2vmin;
+  /* offset margin */
+  padding-left: var(--card-offset);
   position: relative;
+
+  & > * {
+    margin: 0;
+  }
+
+  & > *:empty {
+    display: none;
+  }
 
   &:focus-within {
     & .article-card__headline {
