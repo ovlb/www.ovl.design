@@ -63,13 +63,15 @@ img {
 
 figure {
   margin: 0.5rem 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: calc(-0.5 * var(--padding-base));
+  margin-right: calc(-0.5 * var(--padding-base));
 }
 
 figure figcaption {
   font-size: smaller;
   font-style: italic;
+  padding-left: calc(0.5 * var(--padding-base));
+  padding-right: calc(0.5 * var(--padding-base));
 }
 
 figure:has(img[src$='.gif']) figcaption {
