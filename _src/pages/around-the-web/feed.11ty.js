@@ -18,7 +18,7 @@ module.exports = class AtwFeed {
   }
 
   get feedURL() {
-    return `${baseURL}/around-the-web/feed.xml`
+    return `${baseURL}${this.metadata.feedID}/feed.xml`
   }
 
   get metadata() {
@@ -34,7 +34,7 @@ module.exports = class AtwFeed {
       ...baseData,
       ...this.metadata,
       id: this.feedURL,
-      link: absoluteUrl('/around-the-web/', baseURL),
+      link: absoluteUrl(`${this.metadata.feedID}/`, baseURL),
       updated: getNewestCollectionItemDate(collection),
       feedLinks: {
         json: this.feedURL,
