@@ -12,8 +12,7 @@
     "lint:css": "stylelint '**/*.pcss' --fix",
     "lint:js": "eslint \"**/*.{js,vue,mjs}\" --ignore-pattern 'node_modules/**/*' --fix",
     "serve": "ELEVENTY_ENV=development eleventy --serve --quiet --port 7777",
-    "test": "ava",
-    "prepare": "is-ci || husky install"
+    "test": "ava"
   },
   "engines": {
     "node": "16"
