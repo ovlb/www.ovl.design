@@ -58,7 +58,7 @@ module.exports = class AtwFeed {
         date: post.data.parsedDates.publish,
         description: post.data.intro,
         content: await convertHtmlToAbsoluteUrls(
-          await this.feedImages(post.templateContent),
+          await this.feedImages(this.fixCite(post.templateContent)),
           this.feedURL,
         ),
         image: post.data.meta.image.src,
