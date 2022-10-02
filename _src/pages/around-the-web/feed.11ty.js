@@ -43,7 +43,7 @@ module.exports = class AtwFeed {
     })
   }
 
-  async render({ feed: feedData, collections, site, css }) {
+  async render({ feed: feedData, collections, site }) {
     const { aroundTheWeb } = collections
 
     const feed = this.makeFeed(feedData, aroundTheWeb)
@@ -57,12 +57,10 @@ module.exports = class AtwFeed {
         id: link,
         date: post.data.parsedDates.publish,
         description: post.data.intro,
-        content: `
-          ${css.newsletter.parsed}
-          ${await convertHtmlToAbsoluteUrls(
-            await this.feedImages(this.fixCite(post.templateContent)),
-            this.feedURL,
-          )}`,
+        content: await convertHtmlToAbsoluteUrls(
+          await this.feedImages(this.fixCite(post.templateContent)),
+          this.feedURL,
+        ),
         image: post.data.meta.image.src,
       })
     }
