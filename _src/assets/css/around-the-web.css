@@ -1,3 +1,7 @@
+@import './0-base/_img.pcss';
+@import './0-base/_figure.pcss';
+@import 'eleventy-plugin-embed-tweet/tweet.css';
+
 .atw-post {
   display: grid;
   max-width: 120ch;
@@ -48,30 +52,4 @@
   margin-bottom: 2rem;
   padding: 0 2vmin 2rem;
   /* font-size: var(--type-medium); */
-}
-
-.text__body picture {
-  display: contents;
-}
-
-img {
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-figure {
-  margin: 0.5rem 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-figure figcaption {
-  font-size: smaller;
-  font-style: italic;
-}
-
-figure:has(img[src$='.gif']) figcaption {
-  max-width: 50%;
 }

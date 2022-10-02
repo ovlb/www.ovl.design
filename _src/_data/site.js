@@ -1,3 +1,9 @@
+const { DEPLOY_PRIME_URL, BASE_URL, PULL_REQUEST } = process.env
+
+function getBaseURL() {
+  return PULL_REQUEST ? DEPLOY_PRIME_URL : BASE_URL || 'https://www.ovl.design'
+}
+
 module.exports = {
   locale: 'en',
   title: 'ovl',
@@ -6,7 +12,7 @@ module.exports = {
     name: 'Oscar',
     email: 'o@ovl.design',
   },
-  baseURL: process.env.BASE_URL || 'https://www.ovl.design',
+  baseURL: getBaseURL(),
   navItems: [
     { url: '/', title: 'Home', exact: true },
     { url: '/code/', title: 'Code' },
