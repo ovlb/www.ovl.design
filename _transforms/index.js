@@ -13,8 +13,15 @@ const transforms = {
 transformFiles
   .filter((fileName) => fileName !== 'index.js')
   .forEach((fileName) => {
-    const { when, transform } = require(path.join(__dirname, fileName))
+    const { when, transform, disabled } = require(path.join(
+      __dirname,
+      fileName,
+    ))
     const name = camelCase(fileName.replace('.js', ''))
+
+    if (disabled) {
+      return
+    }
 
     if (when === 'prod') {
       transforms.prod.push({ name, transform })

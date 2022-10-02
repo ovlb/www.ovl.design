@@ -2,6 +2,7 @@ const { parseHTML } = require('linkedom')
 
 module.exports = {
   when: 'prod',
+  disabled: true,
   transform: function (content) {
     if (this.outputPath && this.outputPath.endsWith('.html')) {
       let numberP = 0
