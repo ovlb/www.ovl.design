@@ -10,3 +10,8 @@
 @import './organisms/_code.pcss';
 
 @import 'eleventy-plugin-embed-tweet/tweet.css';
+
+blockquote {
+  border: none;
+  color: var(--clr-fg);
+}
