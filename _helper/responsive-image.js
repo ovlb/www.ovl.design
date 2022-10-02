@@ -38,7 +38,10 @@ function setImgAttributes(img, meta, options) {
   if (origType !== 'gif') {
     img.setAttribute('height', last.height)
   }
-  img.setAttribute('src', meta[origType][0].url)
+  img.setAttribute(
+    'src',
+    meta[origType][Math.floor(meta[origType].length / 2)].url,
+  )
   img.setAttribute('decoding', 'async')
   img.setAttribute('loading', 'lazy')
 
