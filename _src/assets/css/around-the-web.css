@@ -1,3 +1,7 @@
+@import './0-base/_img.pcss';
+@import './0-base/_figure.pcss';
+@import 'eleventy-plugin-embed-tweet/tweet.css';
+
 .atw-post {
   display: grid;
   max-width: 120ch;
@@ -49,6 +53,3 @@
   padding: 0 2vmin 2rem;
   /* font-size: var(--type-medium); */
 }
-
-@import './0-base/_img.pcss';
-@import './0-base/_figure.pcss';

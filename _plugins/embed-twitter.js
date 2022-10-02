@@ -5,5 +5,6 @@ module.exports = {
   pluginOptions: {
     cacheDirectory: 'tweets',
     autoEmbed: true,
+    useInlineStyles: false,
   },
 }
