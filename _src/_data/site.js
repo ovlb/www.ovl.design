@@ -1,7 +1,9 @@
-const { DEPLOY_PRIME_URL, BASE_URL, PULL_REQUEST } = process.env
+const { DEPLOY_PRIME_URL, BASE_URL } = process.env
 
 function getBaseURL() {
-  return PULL_REQUEST ? DEPLOY_PRIME_URL : BASE_URL || 'https://www.ovl.design'
+  return DEPLOY_PRIME_URL?.includes('main--')
+    ? BASE_URL || 'https://www.ovl.design'
+    : DEPLOY_PRIME_URL
 }
 
 module.exports = {
