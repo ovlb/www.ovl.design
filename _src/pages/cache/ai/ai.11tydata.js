@@ -105,10 +105,21 @@ module.exports = async function () {
       data: [
         {
           title:
+            'Algorithmic discrimination causes less moral outrage than human discrimination.',
+          url: 'https://psycnet.apa.org/record/2022-73886-001',
+          publication: 'Journal of Experimental Psychology',
+          date: '2022-06-27',
+          authors:
+            'Bigman, Y. E., Wilson, D., Arnestad, M. N., Waytz, A., & Gray, K.',
+        },
+        {
+          title:
             'AI recognition of patient race in medical imaging: a modelling study',
           url: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00063-2/fulltext',
+          publication: 'Lancet Digit Health',
           authors:
             'Judy Wawira Gichoya, MD, Imon Banerjee, PhD, Ananth Reddy Bhimireddy, MS, John L Burns, MS, Leo Anthony Celi, MD, Li-Ching Chen, BS, et al.',
+          date: '2022-05-11',
           topics: ['bias', 'model training'],
         },
         {
