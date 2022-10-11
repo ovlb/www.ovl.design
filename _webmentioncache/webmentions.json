@@ -1,0 +1,906 @@
+{
+  "lastFetched": "2022-10-03T14:11:25.696Z",
+  "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/accessibility/comments/ftbvl1/inclusive_inputs_an_exploration_into_how_to_make/",
+      "published": null,
+      "wm-received": "2022-08-30T18:39:29Z",
+      "wm-id": 1507153,
+      "wm-source": "https://www.reddit.com/r/accessibility/comments/ftbvl1/inclusive_inputs_an_exploration_into_how_to_make/",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/accessibility/comments/ftbvl1/inclusive_inputs_an_exploration_into_how_to_make/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.reddit.com/r/web_design/comments/ftbvcn/inclusive_inputs_an_exploration_into_how_to_make/",
+      "published": null,
+      "wm-received": "2022-08-30T18:39:28Z",
+      "wm-id": 1507152,
+      "wm-source": "https://www.reddit.com/r/web_design/comments/ftbvcn/inclusive_inputs_an_exploration_into_how_to_make/",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.reddit.com/r/web_design/comments/ftbvcn/inclusive_inputs_an_exploration_into_how_to_make/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1526091935861047298",
+      "published": "2022-05-16T06:47:25+00:00",
+      "wm-received": "2022-05-16T10:12:56Z",
+      "wm-id": 1399174,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1526091935861047298",
+      "wm-target": "https://www.ovl.design/around-the-web/009/",
+      "content": {
+        "html": "Published this yesterday, a wild ride through a wild week on the interwebs.\n<a class=\"u-mention\" href=\"https://www.ovl.design/around-the-web/009/\"></a>",
+        "text": "Published this yesterday, a wild ride through a wild week on the interwebs."
+      },
+      "mention-of": "https://www.ovl.design/around-the-web/009/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "EPICCASH & EPICENTER",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/76fa607c55fe1e2aa30c2a46cedeaf13e41f2bad34c4980e99eee617a6275dcb.jpg",
+        "url": "https://twitter.com/EpicCash__007"
+      },
+      "url": "https://twitter.com/_ovlb/status/1525897490389684224#favorited-by-1376247339703226369",
+      "published": null,
+      "wm-received": "2022-05-16T02:17:12Z",
+      "wm-id": 1399062,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1525897490389684224/1376247339703226369",
+      "wm-target": "https://www.ovl.design/around-the-web/009/",
+      "like-of": "https://www.ovl.design/around-the-web/009/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marcus Herrmann 🇺🇦",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/72c80119cece59908e6cb2895d65ba6d88bad1944f8f29ef4e4a2bd99dd38a9d.jpg",
+        "url": "https://twitter.com/_marcusherrmann"
+      },
+      "url": "https://twitter.com/_ovlb/status/1520707439670214656#favorited-by-11659852",
+      "published": null,
+      "wm-received": "2022-05-04T12:57:52Z",
+      "wm-id": 1391466,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1520707439670214656/11659852",
+      "wm-target": "https://www.ovl.design/around-the-web/008/",
+      "like-of": "https://www.ovl.design/around-the-web/008/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Désennuyer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/752848f9878223fe7c5640eb42d79a0ab0be47b1802c035f9f1b56506daf4901.jpg",
+        "url": "https://twitter.com/achneeee"
+      },
+      "url": "https://twitter.com/achneeee/status/1513435118689570817",
+      "published": "2022-04-11T08:33:45+00:00",
+      "wm-received": "2022-04-11T12:04:01Z",
+      "wm-id": 1378422,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1513246857480265732/1513435118689570817",
+      "wm-target": "https://www.ovl.design/around-the-web/006/",
+      "content": {
+        "html": "The first link (Huffpost article about the Amazon unionizing efforst is broken because of the %0A at the end. Also: Thanks for these roundups, I enjoy them a lot. :)\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "The first link (Huffpost article about the Amazon unionizing efforst is broken because of the %0A at the end. Also: Thanks for these roundups, I enjoy them a lot. :)"
+      },
+      "in-reply-to": "https://www.ovl.design/around-the-web/006/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1513424788043223044",
+      "published": "2022-04-11T07:52:42+00:00",
+      "wm-received": "2022-04-11T12:03:34Z",
+      "wm-id": 1378421,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1513424788043223044",
+      "wm-target": "https://www.ovl.design/around-the-web/006/",
+      "content": {
+        "html": "Published Sunday evening and on Monday morning Musk will no longer be part of the board. \n\nNonetheless, still good:\n<a class=\"u-mention\" href=\"https://www.ovl.design/around-the-web/006/\"></a>",
+        "text": "Published Sunday evening and on Monday morning Musk will no longer be part of the board. \n\nNonetheless, still good:"
+      },
+      "mention-of": "https://www.ovl.design/around-the-web/006/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1513441820444958723",
+      "published": "2022-04-11T09:00:23+00:00",
+      "wm-received": "2022-04-11T12:03:33Z",
+      "wm-id": 1378419,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1513246857480265732/1513441820444958723",
+      "wm-target": "https://www.ovl.design/around-the-web/006/",
+      "content": {
+        "html": "Oooops. Fixed in a minute. And even thanks for the feedback! Glad you like it :)\n<a class=\"u-mention\" href=\"https://twitter.com/achneeee\"></a>",
+        "text": "Oooops. Fixed in a minute. And even thanks for the feedback! Glad you like it :)"
+      },
+      "in-reply-to": "https://www.ovl.design/around-the-web/006/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Désennuyer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/752848f9878223fe7c5640eb42d79a0ab0be47b1802c035f9f1b56506daf4901.jpg",
+        "url": "https://twitter.com/achneeee"
+      },
+      "url": "https://twitter.com/_ovlb/status/1513246857480265732#favorited-by-103003153",
+      "published": null,
+      "wm-received": "2022-04-11T12:03:33Z",
+      "wm-id": 1378420,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1513246857480265732/103003153",
+      "wm-target": "https://www.ovl.design/around-the-web/006/",
+      "like-of": "https://www.ovl.design/around-the-web/006/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeannie Writing",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fe79227deaf7246d9fa9d175ad83eabc44d9464569d37603ebe7ad44e656ed83.jpg",
+        "url": "https://twitter.com/ReadingJeannie"
+      },
+      "url": "https://twitter.com/_ovlb/status/1513246857480265732#favorited-by-3643698254",
+      "published": null,
+      "wm-received": "2022-04-11T04:07:21Z",
+      "wm-id": 1378320,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1513246857480265732/3643698254",
+      "wm-target": "https://www.ovl.design/around-the-web/006/",
+      "like-of": "https://www.ovl.design/around-the-web/006/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Felix Schürmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ea8c71a0f95ce0f59fbf1b152fa43116042dcb35a65684f1c446c133ab855d71.jpg",
+        "url": "https://twitter.com/FelixSchurmann"
+      },
+      "url": "https://twitter.com/_ovlb/status/1510635807677333510#favorited-by-795971574381875200",
+      "published": null,
+      "wm-received": "2022-04-03T19:50:21Z",
+      "wm-id": 1374690,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1510635807677333510/795971574381875200",
+      "wm-target": "https://www.ovl.design/around-the-web/005/",
+      "like-of": "https://www.ovl.design/around-the-web/005/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Felix Schürmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ea8c71a0f95ce0f59fbf1b152fa43116042dcb35a65684f1c446c133ab855d71.jpg",
+        "url": "https://twitter.com/FelixSchurmann"
+      },
+      "url": "https://twitter.com/_ovlb/status/1509084387467538441#favorited-by-795971574381875200",
+      "published": null,
+      "wm-received": "2022-03-31T23:59:54Z",
+      "wm-id": 1372951,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1509084387467538441/795971574381875200",
+      "wm-target": "https://www.ovl.design/around-the-web/004/",
+      "like-of": "https://www.ovl.design/around-the-web/004/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Wolstenholme",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7319fa9e2e2a3825bfc27bbe885cbebc5d5230bef94d8b2782c48e95cedb5dd3.jpg",
+        "url": "https://twitter.com/philw_"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-38276082",
+      "published": null,
+      "wm-received": "2022-03-26T14:33:24Z",
+      "wm-id": 1369485,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/38276082",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507575382815428610",
+      "published": "2022-03-26T04:29:15+00:00",
+      "wm-received": "2022-03-26T05:28:00Z",
+      "wm-id": 1369348,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507575382815428610",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "Awww. That’s great to hear. 🦉\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/koitaki\"></a>",
+        "text": "Awww. That’s great to hear. 🦉"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Biilmann",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg",
+        "url": "https://twitter.com/biilmann"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-24203304",
+      "published": null,
+      "wm-received": "2022-03-26T02:36:17Z",
+      "wm-id": 1369320,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/24203304",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher Adams",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b9ad3e0e7eb4163ba9fb3e79e8a41d3766556e89b2dbb88a392884995718cebf.jpg",
+        "url": "https://twitter.com/koitaki"
+      },
+      "url": "https://twitter.com/koitaki/status/1507501884063780865",
+      "published": "2022-03-25T23:37:11+00:00",
+      "wm-received": "2022-03-26T00:10:35Z",
+      "wm-id": 1369263,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507501884063780865",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "Thanks Oscar, this is damn useful, appreciate you taking the time &amp; effort to write it 🏆🙂\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "Thanks Oscar, this is damn useful, appreciate you taking the time & effort to write it 🏆🙂"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507480347864440834",
+      "published": "2022-03-25T22:11:37+00:00",
+      "wm-received": "2022-03-26T00:10:06Z",
+      "wm-id": 1369262,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1507480347864440834",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "One more time for the people in the evening. New article on my blog.\n<a class=\"u-mention\" href=\"https://www.ovl.design/text/how-i-built-around-the-web/\"></a>",
+        "text": "One more time for the people in the evening. New article on my blog."
+      },
+      "mention-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher Adams",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b9ad3e0e7eb4163ba9fb3e79e8a41d3766556e89b2dbb88a392884995718cebf.jpg",
+        "url": "https://twitter.com/koitaki"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-15608209",
+      "published": null,
+      "wm-received": "2022-03-26T00:10:05Z",
+      "wm-id": 1369261,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/15608209",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Buttondown",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/307f45080dcd3ff8e1a568e5dd77e63dbeeb75b290853ced4a52f61d626cd2d5.jpg",
+        "url": "https://twitter.com/buttondown"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-862776451409620992",
+      "published": null,
+      "wm-received": "2022-03-25T21:47:44Z",
+      "wm-id": 1369158,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/862776451409620992",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eduardo Uribe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0a291ea9afff0430dd801bceaf71eb5db28fa001c93d57745696a20cfbc17b94.jpg",
+        "url": "https://twitter.com/Eduardo__Uribe"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-3165967183",
+      "published": null,
+      "wm-received": "2022-03-25T21:47:44Z",
+      "wm-id": 1369159,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/3165967183",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈 2.0.0-canary.4",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1507386003622928392",
+      "published": "2022-03-25T15:56:43+00:00",
+      "wm-received": "2022-03-25T17:56:40Z",
+      "wm-id": 1369077,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507386003622928392",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "wait am I supposed to be issuing and revoking licenses 😅\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "wait am I supposed to be issuing and revoking licenses 😅"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507385354160164866",
+      "published": "2022-03-25T15:54:08+00:00",
+      "wm-received": "2022-03-25T17:56:39Z",
+      "wm-id": 1369076,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507385354160164866",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "I guess publishing an anti-<a href=\"https://twitter.com/search?q=%23UseThePlatform\">#UseThePlatform</a> post would immediately revoke my 11ty license, and I neither can nor want to risk that. 🤡\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>",
+        "text": "I guess publishing an anti-#UseThePlatform post would immediately revoke my 11ty license, and I neither can nor want to risk that. 🤡"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507376095422730243",
+      "published": "2022-03-25T15:17:21+00:00",
+      "wm-received": "2022-03-25T17:56:38Z",
+      "wm-id": 1369075,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507376095422730243",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "Oh gosh no. It’s very much a love the platform blog posts.\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>",
+        "text": "Oh gosh no. It’s very much a love the platform blog posts."
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507397479834296328",
+      "published": "2022-03-25T16:42:19+00:00",
+      "wm-received": "2022-03-25T17:56:14Z",
+      "wm-id": 1369074,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507397479834296328",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "It will make things infinitely more annoying, and that’s why we use the Web today, wasn’t it?\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>",
+        "text": "It will make things infinitely more annoying, and that’s why we use the Web today, wasn’t it?"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈 2.0.0-canary.4",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1507377844149706754",
+      "published": "2022-03-25T15:24:18+00:00",
+      "wm-received": "2022-03-25T17:56:12Z",
+      "wm-id": 1369072,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507377844149706754",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "Yes! 🏆\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "Yes! 🏆"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Wallace",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg",
+        "url": "https://twitter.com/ecrosstexas"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-758056",
+      "published": null,
+      "wm-received": "2022-03-25T17:56:12Z",
+      "wm-id": 1369073,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/758056",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507397657882468359",
+      "published": "2022-03-25T16:43:02+00:00",
+      "wm-received": "2022-03-25T17:56:11Z",
+      "wm-id": 1369071,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507397657882468359",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "jk fuck every garden that has a wall around it.\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>",
+        "text": "jk fuck every garden that has a wall around it."
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈 2.0.0-canary.4",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1507347904666742793",
+      "published": "2022-03-25T13:25:20+00:00",
+      "wm-received": "2022-03-25T15:17:31Z",
+      "wm-id": 1368981,
+      "wm-source": "https://brid.gy/repost/twitter/_ovlb/1507309845384421392/1507347904666742793",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "text": "🖊 New article! \n\nIn which I reflect how I built Around the Web. I orchestrate @eleven_ty, @zapier, and @buttondown to distribute a weekly post format on my website to a broader audience. This is is how it went.\n\novl.design/text/how-i-bui…"
+      },
+      "repost-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈 2.0.0-canary.4",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1507361633714253842",
+      "published": "2022-03-25T14:19:53+00:00",
+      "wm-received": "2022-03-25T15:17:30Z",
+      "wm-id": 1368979,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1507309845384421392/1507361633714253842",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "content": {
+        "html": "my first reaction here was “Build around the web? Is this an anti-<a href=\"https://twitter.com/search?q=%23UseThePlatform\">#UseThePlatform</a> blog post?” 😅\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/buttondown\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zapier\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "my first reaction here was “Build around the web? Is this an anti-#UseThePlatform blog post?” 😅"
+      },
+      "in-reply-to": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈 2.0.0-canary.4",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-949639269433380864",
+      "published": null,
+      "wm-received": "2022-03-25T15:17:30Z",
+      "wm-id": 1368980,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/949639269433380864",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feminism & sharks",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0c9765ae096b4fc4cbf09ac171d0d9c03ec3f226c12e01b9fb47aa001a43fde3.jpg",
+        "url": "https://twitter.com/messypixels"
+      },
+      "url": "https://twitter.com/_ovlb/status/1507309845384421392#favorited-by-13266022",
+      "published": null,
+      "wm-received": "2022-03-25T15:17:03Z",
+      "wm-id": 1368978,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1507309845384421392/13266022",
+      "wm-target": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "like-of": "https://www.ovl.design/text/how-i-built-around-the-web/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kellerkinder OstBLN",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/50b5e5226ceba39eb5c96d2ade6f8728e29f24df99115688537b313d35446b5a.jpg",
+        "url": "https://twitter.com/KOstberl"
+      },
+      "url": "https://twitter.com/_ovlb/status/1505156596799840261#favorited-by-4824189737",
+      "published": null,
+      "wm-received": "2022-03-20T02:01:30Z",
+      "wm-id": 1366000,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1505156596799840261/4824189737",
+      "wm-target": "https://www.ovl.design/around-the-web/003/",
+      "like-of": "https://www.ovl.design/around-the-web/003/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "uschikotze",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9ae6d3aace4676a3bb2bb1918e8992c4a4a95de0532dce7218a898b92d1a6ee5.jpg",
+        "url": "https://twitter.com/uschikotze"
+      },
+      "url": "https://twitter.com/_ovlb/status/1502988577772347393#favorited-by-884181749743407104",
+      "published": null,
+      "wm-received": "2022-03-13T14:27:43Z",
+      "wm-id": 1362741,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1502988577772347393/884181749743407104",
+      "wm-target": "https://www.ovl.design/around-the-web/002/",
+      "like-of": "https://www.ovl.design/around-the-web/002/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Taib 🤦🏽🤷🏽",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cc1762e9083264ede40406f9f1696de0601ba61f902b92ed014767ae475baa71.jpg",
+        "url": "https://twitter.com/Tabibi161"
+      },
+      "url": "https://twitter.com/_ovlb/status/1502988577772347393#favorited-by-1349707679439187971",
+      "published": null,
+      "wm-received": "2022-03-13T14:27:43Z",
+      "wm-id": 1362742,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1502988577772347393/1349707679439187971",
+      "wm-target": "https://www.ovl.design/around-the-web/002/",
+      "like-of": "https://www.ovl.design/around-the-web/002/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jonathonbellew",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fb8f79e4558cdf5f1f04e76d971754a30c977e7dae9dbed36a78e98bfb27a3b3.jpg",
+        "url": "https://twitter.com/jonathonbellew"
+      },
+      "url": "https://twitter.com/_ovlb/status/1501647259863326724#favorited-by-1153294561411764224",
+      "published": null,
+      "wm-received": "2022-03-10T16:19:32Z",
+      "wm-id": 1361631,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1501647259863326724/1153294561411764224",
+      "wm-target": "https://www.ovl.design/around-the-web/001/",
+      "like-of": "https://www.ovl.design/around-the-web/001/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kitty Giraudel",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c99ec79948ae75726a13e5daec89ce06f1d41db932b5ee2dbbcfb563d3b54829.jpg",
+        "url": "https://twitter.com/KittyGiraudel"
+      },
+      "url": "https://twitter.com/_ovlb/status/1491534565533442057#favorited-by-551949534",
+      "published": null,
+      "wm-received": "2022-02-11T04:39:13Z",
+      "wm-id": 1349894,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1491534565533442057/551949534",
+      "wm-target": "https://www.ovl.design/text/memoiren-eines-prueflings/",
+      "like-of": "https://www.ovl.design/text/memoiren-eines-prueflings/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://austingil.com/how-to-build-html-forms-right-accessibility/",
+      "published": null,
+      "wm-received": "2021-06-13T14:12:48Z",
+      "wm-id": 1188667,
+      "wm-source": "https://austingil.com/how-to-build-html-forms-right-accessibility/",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://austingil.com/how-to-build-html-forms-right-accessibility/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Capcan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/079add52aa46ab3a7ceb731e8d8e9d8ebd1534bc1e41db1d02b6d3c921f8e5b4.jpg",
+        "url": "https://twitter.com/capcan"
+      },
+      "url": "https://twitter.com/capcan/status/1386868624057507841",
+      "published": "2021-04-27T02:23:41+00:00",
+      "wm-received": "2021-04-27T20:09:48Z",
+      "wm-id": 1134738,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1386868624057507841",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "content": {
+        "html": "An enlightening article about making form inputs inclusive. <a href=\"https://twitter.com/search?q=%23a11y\">#a11y</a> <a href=\"https://twitter.com/search?q=%23accessibility\">#accessibility</a>  <a href=\"https://www.ovl.design/text/inclusive-inputs/\">ovl.design/text/inclusive…</a>",
+        "text": "An enlightening article about making form inputs inclusive. #a11y #accessibility  ovl.design/text/inclusive…"
+      },
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Laura Kalbag",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/aff868925171a025abdb3d49a66a94fe8e3f0a43e12c4144b447a84ef60a7fde.jpg",
+        "url": "https://twitter.com/LauraKalbag"
+      },
+      "url": "https://twitter.com/LauraKalbag/status/1374659589078200330",
+      "published": "2021-03-24T09:49:20+00:00",
+      "wm-received": "2021-03-24T10:00:45Z",
+      "wm-id": 1090771,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1374006773342945281/1374659589078200330",
+      "wm-target": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "content": {
+        "html": "Oh I feel you on the tired! I tried generating some of the initial variables as part of my Hugo theme templating. Which worked, but having them separate from where they were used felt like it might be harder to understand for anyone coming to the theme for the first time.\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "Oh I feel you on the tired! I tried generating some of the initial variables as part of my Hugo theme templating. Which worked, but having them separate from where they were used felt like it might be harder to understand for anyone coming to the theme for the first time."
+      },
+      "in-reply-to": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Laura Kalbag",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/aff868925171a025abdb3d49a66a94fe8e3f0a43e12c4144b447a84ef60a7fde.jpg",
+        "url": "https://twitter.com/LauraKalbag"
+      },
+      "url": "https://twitter.com/LauraKalbag/status/1374651110380728320",
+      "published": "2021-03-24T09:15:39+00:00",
+      "wm-received": "2021-03-24T10:00:43Z",
+      "wm-id": 1090769,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1374006773342945281/1374651110380728320",
+      "wm-target": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "content": {
+        "html": "Fabulous post, thanks! I’ve got a similar approach but with vanilla CSS. Maybe that’s one reason why my variables feel hard to manage…\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "Fabulous post, thanks! I’ve got a similar approach but with vanilla CSS. Maybe that’s one reason why my variables feel hard to manage…"
+      },
+      "in-reply-to": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1374655716263350278",
+      "published": "2021-03-24T09:33:57+00:00",
+      "wm-received": "2021-03-24T10:00:43Z",
+      "wm-id": 1090770,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1374006773342945281/1374655716263350278",
+      "wm-target": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "content": {
+        "html": "Hear you. I since implemented something similar in a site without SCSS and it’s tedious. Design tokens and generating the variable definition outside of CSS might be a solution. Didn’t try it out just yet, though, since it was a very short term/timeline project. And I’m tired.\n<a class=\"u-mention\" href=\"https://twitter.com/LauraKalbag\"></a>",
+        "text": "Hear you. I since implemented something similar in a site without SCSS and it’s tedious. Design tokens and generating the variable definition outside of CSS might be a solution. Didn’t try it out just yet, though, since it was a very short term/timeline project. And I’m tired."
+      },
+      "in-reply-to": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
+      "published": null,
+      "wm-received": "2021-03-23T00:04:20Z",
+      "wm-id": 1087770,
+      "wm-source": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Antonius",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b9f3c9100136e57d6639a597f3f0a96aefc4fc39390f79608240b502adcc3066.jpg",
+        "url": "https://twitter.com/Okkido"
+      },
+      "url": "https://twitter.com/_ovlb/status/1374006773342945281#favorited-by-5399562",
+      "published": null,
+      "wm-received": "2021-03-22T19:33:23Z",
+      "wm-id": 1087541,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1374006773342945281/5399562",
+      "wm-target": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "like-of": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Laura Kalbag",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/aff868925171a025abdb3d49a66a94fe8e3f0a43e12c4144b447a84ef60a7fde.jpg",
+        "url": "https://twitter.com/LauraKalbag"
+      },
+      "url": "https://twitter.com/_ovlb/status/1374006773342945281#favorited-by-14849130",
+      "published": null,
+      "wm-received": "2021-03-22T19:33:23Z",
+      "wm-id": 1087542,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1374006773342945281/14849130",
+      "wm-target": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "like-of": "https://www.ovl.design/text/die-naechte-sind-erfuellt-von-maskenfesten/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "FullStack Bulletin",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3704dca248c3d9c00a5f50b5e009639cb4224d1d2e29be0e81ed4cd7c98619af.jpg",
+        "url": "https://twitter.com/fstackbulletin"
+      },
+      "url": "https://twitter.com/fstackbulletin/status/1367804594429042688",
+      "published": "2021-03-05T11:50:02+00:00",
+      "wm-received": "2021-03-06T09:12:17Z",
+      "wm-id": 1059385,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1367804594429042688",
+      "wm-target": "https://www.ovl.design/text/an-async-function-walks-into-a-loop/",
+      "content": {
+        "html": "An async function walks into a loop. <a href=\"https://www.ovl.design/text/an-async-function-walks-into-a-loop/\">ovl.design/text/an-async-…</a>",
+        "text": "An async function walks into a loop. ovl.design/text/an-async-…"
+      },
+      "mention-of": "https://www.ovl.design/text/an-async-function-walks-into-a-loop/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    }
+  ]
+}

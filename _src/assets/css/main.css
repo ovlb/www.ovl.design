@@ -4,6 +4,8 @@
 @import './elements/_body.pcss';
 @import './elements/base/_main.pcss';
 @import './util/_typography.pcss';
+@import './0-base/_img.pcss';
+@import './0-base/_figure.pcss';
 @import './elements/_a.pcss';
 @import './elements/_icon.pcss';
 @import './elements/_pill.pcss';

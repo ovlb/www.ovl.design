@@ -8,6 +8,7 @@
   grid-template-rows: max(30rem, calc(100vh - var(--layout-header-height))) auto;
   margin: 0 auto;
   max-width: 900px;
+  row-gap: 1rem;
 
   @media screen and (min-width: 48rem) {
     grid-template-columns: [main-start content-start] minmax(65ch, 3fr) [main-end content-end aside-start] 2fr [aside-end];
@@ -42,10 +43,6 @@
   }
 }
 
-.text__hero-image {
-  flex: 0 0 25%;
-}
-
 .text__subline {
   order: -1;
 }
@@ -73,6 +70,7 @@
     var(--clr-main-light)
   );
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 6vmin 100%);
+  flex: 0 0 25%;
   grid-column: aside;
   top: var(--layout-header-height);
 
@@ -81,7 +79,7 @@
     width: 100%;
   }
 
-  & > img {
+  & img {
     height: 100%;
     mix-blend-mode: multiply;
     object-fit: cover;
@@ -94,7 +92,7 @@
   display: grid;
   grid-column: content;
   grid-template-columns: 2vmin [full-start] 2vmin [main-start] 1fr [main-end] 2vmin [full-end] 2vmin;
-  padding: var(--padding-base) 0;
+  /* padding: var(--padding-base) 0; */
   /* Used to push body over sticky image */
   z-index: 1;
 
@@ -126,6 +124,18 @@
     overflow: auto;
     padding: 2vmin var(--padding-base);
     width: 100%;
+  }
+}
+
+.webmention-likes {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 2rem);
+
+  li {
+    border-radius: 50%;
+    height: 2rem;
+    overflow: hidden;
   }
 }
 

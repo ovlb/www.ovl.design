@@ -96,6 +96,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Google AI ethics co-lead Timnit Gebru says she was fired over an email](https://venturebeat.com/2020/12/03/google-ai-ethics-co-lead-timnit-gebru-says-she-was-fired-over-an-email/)
 - [Timnit Gebru: Google’s ‘dehumanizing’ memo paints me as an angry Black woman](https://venturebeat.com/2020/12/10/timnit-gebru-googles-dehumanizing-memo-paints-me-as-an-angry-black-woman/)
 - [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922)
+- [NLP Seminar: On the Dangers of Stochastic Parrots: Can Language Models be Too big? - Emily M. Bender](https://www.youtube.com/watch?app=desktop&v=yu4zps5wKck)
 - [Groundbreaking Language Model AI GPT-3 is Already 'Racist,' 'Sexist,' and Antisemitic](https://nationalfile.com/groundbreaking-language-model-ai-gpt-3-is-already-racist-sexist-and-antisemitic/)
 - [Google fires Margaret Mitchell, another top researcher on its AI ethics team](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team)
 
@@ -155,6 +156,8 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Future Histories S02E02 - Frederike Kaltheuner zu Datafizierung und A.I. Snake Oil](https://futurehistories.podbean.com/e/s02e03-frederike-kaltheuner-zu-datensouveranitat-und-ai-snake-oil/)
 - [Wer sind wir? Warum künstliche Intelligenz immer ideologisch ist](https://www.republik.ch/2021/04/06/warum-kuenstliche-intelligenz-immer-ideologisch-ist)
 - [Casual Conversations Dataset](https://ai.facebook.com/datasets/casual-conversations-dataset/)
+- [AI Is Probably Using Your Images and It's Not Easy to Opt Out](https://www.vice.com/en/article/3ad58k/ai-is-probably-using-your-images-and-its-not-easy-to-opt-out)
+- [Have I Been Trained?](https://haveibeentrained.com/)
 
 ### Was tun?
 

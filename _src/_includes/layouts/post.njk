@@ -7,11 +7,11 @@
   .categories[0]
   .fields
   .title + ' —' if post
-  .categories else 
+  .categories else
     '' %}
 
 {% block content %}
-  <main id="main" class="text h-entry" tabindex="-1" lang={{ post.locale }}>
+  <main id="main" class="text h-entry l-stack" tabindex="-1" lang={{ post.locale }}>
     <header class="text__header u-floral-heart-gradient">
       <h1 class="main-headline p-name">{{ post.title }}</h1>
       <p class="text__subline type-is-aside">
@@ -31,9 +31,36 @@
     <div class="text__body e-content">
       {{ content | safe }}
     </div>
+    {% if currentPostMentions.likes.length %}
+      <section
+        class="u-global-padding"
+        style="grid-column: main;"
+        aria-label="{{ postMentionCount }} Webmentions"
+      >
+        {%- set postMentionCount = webmentions | webmentionCountForPage(post.permalink) -%}
+        {%- set currentPostMentions = webmentions | webmentionsForPage(post.permalink) -%}
+        <h2 class="pagination-navigation__sub-headline type-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
+        <ul class="webmention-likes">
+          {% for post in currentPostMentions.likes %}
+            <li><a
+              href="{{ post.author.url }}"
+              aria-label="Profile of {{ post.author.name }}"
+            >
+              <img
+                src="{{ post.author.photo }}"
+                alt="{{ post.author.name }}"
+                data-process-image
+                data-image-widths="[32, 64]"
+                data-image-sizes="2rem"
+              >
+            </a>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
     {% if hidePaginationNav !== true %}
       <section role="region" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
-        <h2 id="pgntn-hdln" class="pagination-navigation__headline">Other things I’ve written</h2>
+        <h2 id="pgntn-hdln" class="small-headline pagination-navigation__headline">Other things I’ve written</h2>
         {% paginationItem 'previous',
         pagination.href.previous,
         articles.ownPosts %}

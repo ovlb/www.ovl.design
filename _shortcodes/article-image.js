@@ -61,7 +61,7 @@ module.exports = function (img) {
   const imgSizes = '(min-width: 1500px) 33vw, 25vw'
 
   return `
-      <picture class="text__hero-image">
+      <figure class="text__hero-image"><picture class="">
         <source srcset="${webP}" sizes="${imgSizes}" />
         <source srcset="${jpg}" sizes="${imgSizes}" />
         <img src="${makeImageString(
@@ -69,6 +69,6 @@ module.exports = function (img) {
           { width: 420, height: 1024 },
           jpgOptions,
         )}" alt="${img.fields.description}" />
-      </picture>
+      </picture></figure>
     `
 }
