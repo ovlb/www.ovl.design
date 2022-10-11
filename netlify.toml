@@ -18,3 +18,9 @@
   to = "https://www.ovl.design/around-the-web/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://www.ovl.design/atw"
+  to = "https://www.ovl.design/around-the-web/"
+  status = 301
+  force = true
