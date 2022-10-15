@@ -53,3 +53,7 @@
   padding: 0 2vmin 2rem;
   /* font-size: var(--type-medium); */
 }
+
+.atw-post__collections {
+  margin-top: 4vmin;
+}

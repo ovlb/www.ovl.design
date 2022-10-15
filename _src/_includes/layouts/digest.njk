@@ -32,18 +32,18 @@
         <small>Note: While the post is written in English, some links lead to articles in German.</small>
       </p>
       {{ content | safe }}
-      <section aria-labelledby="hdl-collections">
-        <h2 class="small-headline" id="hdl-collections">Collections</h2>
-        <ul class="inline-list" role="list">
-          {% for category in tags | getCategories | aToZ %}
-            <li>
-              <a
-                href="{{ category | categoryPermalink(categoryBase) }}"
-              >{{ category | displayCategory }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
+    </section>
+    <section class="atw-post__collections" aria-labelledby="hdl-collections">
+      <h2 class="small-headline" id="hdl-collections">Collections</h2>
+      <ul class="inline-list" role="list">
+        {% for category in tags | getCategories | aToZ %}
+          <li>
+            <a
+              href="{{ category | categoryPermalink(categoryBase) }}"
+            >{{ category | displayCategory }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </section>
   </main>
 {% endblock %}
