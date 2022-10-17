@@ -31,14 +31,14 @@
     <div class="text__body e-content">
       {{ content | safe }}
     </div>
+    {%- set currentPostMentions = webmentions | webmentionsForPage(post.permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
         class="u-global-padding"
         style="grid-column: main;"
-        aria-label="{{ postMentionCount }} Webmentions"
+        aria-label="Post likes"
       >
         {%- set postMentionCount = webmentions | webmentionCountForPage(post.permalink) -%}
-        {%- set currentPostMentions = webmentions | webmentionsForPage(post.permalink) -%}
         <h2 class="pagination-navigation__sub-headline type-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
         <ul class="webmention-likes">
           {% for post in currentPostMentions.likes %}
