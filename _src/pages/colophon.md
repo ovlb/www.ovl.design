@@ -24,6 +24,6 @@ The image I use for the generic Open Graph/Twitter card/and so forth image has b
 
 ## Code & Infrastructure
 
-This page is made with [Eleventy](https://www.11ty.dev), data is hosted with [Contentful](https://www.contentful.com/). The [source code](https://github.com/ovlb/home-11ty) is on GitHub from where I deploy with [Netlify](https://www.netlify.com) into the wild, wild interwebs.
+This page is made with [Eleventy](https://www.11ty.dev). It’s based on the start [no-11](https://github.com/inframanufaktur/no-11), which is, coincidentally, maintained by me.
 
-I use [PostCSS](https://postcss.org/) and [PreCSS](https://github.com/jonathantneal/precss) to compile my style sheets.
+Most data is hosted with [Contentful](https://www.contentful.com/). The [source code](https://github.com/ovlb/www.ovl.design) is on GitHub from where I deploy with [Netlify](https://www.netlify.com) into the wild, wild interwebs.
