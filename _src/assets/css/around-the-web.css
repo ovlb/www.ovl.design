@@ -59,5 +59,6 @@
 }
 
 .atw-post__collections {
+  grid-column-end: -1;
   margin-top: 4vmin;
 }
