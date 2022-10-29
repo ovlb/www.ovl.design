@@ -54,6 +54,10 @@
   /* font-size: var(--type-medium); */
 }
 
+.text__body {
+  max-width: max(75vw, 75ch);
+}
+
 .atw-post__collections {
   margin-top: 4vmin;
 }
