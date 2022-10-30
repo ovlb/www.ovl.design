@@ -26,12 +26,19 @@ module.exports = {
       const { start, publish } = data.parsedDates
 
       if (start && publish) {
-        return `Around the Web (${this.displayDate(
-          start,
+        let title = `${this.displayDate(start, 'short')}–${this.displayDate(
+          publish,
           'short',
-        )}–${this.displayDate(publish, 'short')})`
+        )}`
+
+        if (data.issueTitle) {
+          title = `${data.issueTitle} (${title})`
+        }
+
+        return `${title} « Around the Web`.trim()
       }
     },
+    pageTitle: ({ issueTitle }) => issueTitle || 'Around the Web',
     permalink: function (data) {
       return `/around-the-web/${data.page.fileSlug}/`
     },
