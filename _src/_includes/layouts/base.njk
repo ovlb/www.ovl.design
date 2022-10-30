@@ -2,7 +2,7 @@
 <html lang="{{ site.locale }}">
   {% set metaTitle = site.title + ' — ' + site.description %}
   {% if title %}
-    {% set metaTitle = title + ' « ' + metaTitle %}
+    {% set metaTitle = title + ' « ' + site.title %}
   {% endif %}
   <head>
     <meta charset="utf-8" />
