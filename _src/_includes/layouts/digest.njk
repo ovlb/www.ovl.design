@@ -5,8 +5,11 @@
   <main class="atw-post h-entry" id="main" tabindex="-1">
     <div class="atw-column-wrapper">
       <header class="atw-post-header">
-        <h1 class="main-headline p-name">Around the Web</h1>
-        <p>Issue No.&nbsp;{{ page.fileSlug }}</p>
+        <h1 class="main-headline p-name">{{ pageTitle }}</h1>
+        <p>{% if issueTitle %}
+          Around the Web<br>
+        {% endif %}
+        Issue No.&nbsp;{{ page.fileSlug }}</p>
       </header>
       <aside class="atw-post-meta">
         <p>Collected between {{ parsedDates.start | displayDate("short") }} and {{ parsedDates.publish | displayDate("short") }}. It discusses {{ sources.count }} links from {{ sources.distinct }} sources.</p>
