@@ -26,6 +26,12 @@ module.exports = {
   socialNavItems: [
     { title: 'GitHub', url: 'https://github.com/ovlb' },
     { title: 'Twitter', url: 'https://twitter.com/_ovlb', rel: 'me' },
+    {
+      title: 'Mastodon',
+      url: 'https://mastodon.xyz/web/@o',
+      rel: 'me',
+      logo: '/assets/img/mastodon_gradient.svg',
+    },
   ],
   metaImage:
     'https://images.ctfassets.net/0qq78o7muy2j/41AVLQd3q0oEaQKwcW0Ck2/1adc1e0fc0c7525b4f25b45570847396/ovl-og-image-generic.png',
