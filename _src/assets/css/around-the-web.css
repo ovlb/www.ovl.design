@@ -8,7 +8,7 @@
   padding: var(--padding-base);
 
   @media (min-width: 1034px) {
-    gap: var(--padding-base);
+    gap: calc(2 * var(--padding-base));
     grid-template-columns: 30ch 1fr;
   }
 }
