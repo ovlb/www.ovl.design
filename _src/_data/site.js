@@ -28,7 +28,7 @@ module.exports = {
     { title: 'Twitter', url: 'https://twitter.com/_ovlb', rel: 'me' },
     {
       title: 'Mastodon',
-      url: 'https://mastodon.xyz/@o',
+      url: 'https://chaos.social/@o',
       rel: 'me',
       logo: '/assets/img/mastodon_gradient.svg',
     },
