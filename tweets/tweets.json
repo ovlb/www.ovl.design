@@ -52,5 +52,37 @@
       "profile_image_url_https": "https://pbs.twimg.com/profile_images/1550520415348527109/RW-ktFAH_normal.jpg"
     },
     "html": "<blockquote class=\"tweet-card\"><div class=\"tweet-header\"><a class=\"tweet-profile\" href=\"https://twitter.com/hankchizljaw\"><img src=\"https://pbs.twimg.com/profile_images/1550520415348527109/RW-ktFAH_normal.jpg\" alt=\"Avatar for hankchizljaw\"></a><div class=\"tweet-author\"><a class=\"tweet-author-name\" href=\"https://twitter.com/hankchizljaw\">Andy Bell </a><a class=\"tweet-author-handle\" href=\"https://twitter.com/hankchizljaw\">@hankchizljaw</a></div><a class=\"tweet-bird\" href=\"https://twitter.com/hankchizljaw/status/1576097071056056321\"><div class=\"tweet-bird-icon\" role=\"presentation\" aria-label=\"View on Twitter\" title=\"View on Twitter\"></div></a></div><p class=\"tweet-body\">Tesla unveils an “ai bot”</p><div class=\"tweet-images\"><img alt=\"Image from Tweet\" src=\"https://pbs.twimg.com/media/Fd9r7iaWIAES9v7.jpg\"></div><div class=\"tweet-footer\"><a class=\"tweet-like\" href=\"https://twitter.com/intent/like?tweet_id=1576097071056056321\"><div class=\"tweet-like-icon\" aria-label=\"Like\" title=\"Like\" role=\"img\"></div><span class=\"tweet-like-count\">23 </span></a><a class=\"tweet-date\" title=\"Time Posted: Oct 1, 2022 06:29:58 (UTC)\" href=\"https://twitter.com/hankchizljaw/status/1576097071056056321\">08:29 AM · Oct 1, 2022</a></div></blockquote>"
+  },
+  "1584569540238667777": {
+    "id_str": "1584569540238667777",
+    "htmlText": "we gave morning people way too much power",
+    "images": [],
+    "favorite_count": 125073,
+    "created_at": {
+      "display": "05:36 PM · Oct 24, 2022",
+      "meta": "Oct 24, 2022 03:36:32 (UTC)"
+    },
+    "user": {
+      "name": "Molly Priddy",
+      "screen_name": "mollypriddy",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1565878450136776705/P9kHy3lY_normal.jpg"
+    },
+    "html": "<blockquote class=\"tweet-card\"><div class=\"tweet-header\"><a class=\"tweet-profile\" href=\"https://twitter.com/mollypriddy\"><img src=\"https://pbs.twimg.com/profile_images/1565878450136776705/P9kHy3lY_normal.jpg\" alt=\"Avatar for mollypriddy\"></a><div class=\"tweet-author\"><a class=\"tweet-author-name\" href=\"https://twitter.com/mollypriddy\">Molly Priddy </a><a class=\"tweet-author-handle\" href=\"https://twitter.com/mollypriddy\">@mollypriddy</a></div><a class=\"tweet-bird\" href=\"https://twitter.com/mollypriddy/status/1584569540238667777\"><div class=\"tweet-bird-icon\" role=\"presentation\" aria-label=\"View on Twitter\" title=\"View on Twitter\"></div></a></div><p class=\"tweet-body\">we gave morning people way too much power</p><div class=\"tweet-images\"></div><div class=\"tweet-footer\"><a class=\"tweet-like\" href=\"https://twitter.com/intent/like?tweet_id=1584569540238667777\"><div class=\"tweet-like-icon\" aria-label=\"Like\" title=\"Like\" role=\"img\"></div><span class=\"tweet-like-count\">125073 </span></a><a class=\"tweet-date\" title=\"Time Posted: Oct 24, 2022 03:36:32 (UTC)\" href=\"https://twitter.com/mollypriddy/status/1584569540238667777\">05:36 PM · Oct 24, 2022</a></div></blockquote>"
+  },
+  "1585953468333826048": {
+    "id_str": "1585953468333826048",
+    "htmlText": "Ich verzeihe Musk nicht dass wir wegen ihm ständig über Mastodon schreiben.",
+    "images": [],
+    "favorite_count": 30,
+    "created_at": {
+      "display": "01:15 PM · Oct 28, 2022",
+      "meta": "Oct 28, 2022 11:15:47 (UTC)"
+    },
+    "user": {
+      "name": "Tara",
+      "screen_name": "Sternenrot",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1400384148620120064/Z0LdrJnb_normal.jpg"
+    },
+    "html": "<blockquote class=\"tweet-card\"><div class=\"tweet-header\"><a class=\"tweet-profile\" href=\"https://twitter.com/Sternenrot\"><img src=\"https://pbs.twimg.com/profile_images/1400384148620120064/Z0LdrJnb_normal.jpg\" alt=\"Avatar for Sternenrot\"></a><div class=\"tweet-author\"><a class=\"tweet-author-name\" href=\"https://twitter.com/Sternenrot\">Tara </a><a class=\"tweet-author-handle\" href=\"https://twitter.com/Sternenrot\">@Sternenrot</a></div><a class=\"tweet-bird\" href=\"https://twitter.com/Sternenrot/status/1585953468333826048\"><div class=\"tweet-bird-icon\" role=\"presentation\" aria-label=\"View on Twitter\" title=\"View on Twitter\"></div></a></div><p class=\"tweet-body\">Ich verzeihe Musk nicht dass wir wegen ihm ständig über Mastodon schreiben.</p><div class=\"tweet-images\"></div><div class=\"tweet-footer\"><a class=\"tweet-like\" href=\"https://twitter.com/intent/like?tweet_id=1585953468333826048\"><div class=\"tweet-like-icon\" aria-label=\"Like\" title=\"Like\" role=\"img\"></div><span class=\"tweet-like-count\">30 </span></a><a class=\"tweet-date\" title=\"Time Posted: Oct 28, 2022 11:15:47 (UTC)\" href=\"https://twitter.com/Sternenrot/status/1585953468333826048\">01:15 PM · Oct 28, 2022</a></div></blockquote>"
   }
 }
