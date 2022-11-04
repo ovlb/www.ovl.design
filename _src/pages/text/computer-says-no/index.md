@@ -26,7 +26,7 @@ Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https
 
 ---
 
-Im Folgenden werden wir sehen, wie die heute bestimmende Sicht auf Künstliche Intelligenz entstanden ist. Wir setzen uns mit den Auswirkungen algorithmischer Kontrolle auf dem Arbeitsmarkt auseinander und warum immer wieder der Vergleich mit der industriellen Revolution aufkommt. Inwiefern der Begriff der Zeit als zentraler Punkt in den Kämpfen der Arbeiter:innen vom 20. Jahrhundert bis zu Amazon Warenhäusern steht. Und warum die Roboter uns am Ende nicht die Arbeit wegnehmen, sondern uns gar nicht erst Arbeit bekommen lassen.
+Im Folgenden werden wir sehen, wie die heute bestimmende Sicht auf Künstliche Intelligenz entstanden ist. Wir setzen uns mit den Auswirkungen algorithmischer Kontrolle auf dem Arbeitsmarkt auseinander und warum immer wieder der Vergleich mit der industriellen Revolution aufkommt. Inwiefern der Begriff der Zeit als zentraler Punkt in den Kämpfen der Arbeiter\*innen vom 20. Jahrhundert bis zu Amazon Warenhäusern steht. Und warum die Roboter uns am Ende nicht die Arbeit wegnehmen, sondern uns gar nicht erst Arbeit bekommen lassen.
 
 Im zweiten Teil werden wir sehen wie Künstliche Intelligenz zum Mittel staatlicher Herrschaft wird und untersuchen die individualsierende Tendenz der Überwachung. Wir sehen Drohnen am Himmel und zentralisierende Tendenzen in dem Zugriff auf die nötigen Produktionsmittel.
 
@@ -34,7 +34,7 @@ Abschließend werfen wir einen Blick auf Möglichkeiten und Bedingungen des Wide
 
 ## Künstliche Intelligenz, oder was?
 
-Ich werde im Folgenden verallgemeinernd von Künstlicher Intelligenz sprechen. Einigen meiner Leser:innen wird dies, zurecht, als grobe Kategorie vorkommen.
+Ich werde im Folgenden verallgemeinernd von Künstlicher Intelligenz sprechen. Einigen meiner Leser\*innen wird dies, zurecht, als grobe Kategorie vorkommen.
 
 Es geht auf einer rein technischen Ebene vor allem um _Machine Learning (ML),_ oder auch _Deep Learning_. Also um spezifische Subfelder von KI.
 
@@ -61,7 +61,7 @@ Zehn Jahre vorher war es noch mit immensen Schwierigkeiten behaftet, Datensätze
 
 Die Kategorien, denen die Bilder in ImageNet zugeordnet wurden, wurden einem Datensatz namens WordNet entnommen. WordNet wurde in den 1980er Jahren George A. Miller entwickelt. Anhand der Worte in WordNet wurden Bildersuchen gescraped und die Ergebnisse gespeichert.
 
-Nun ergab sich ein zentrales Problem: Wie kann sichergestellt werden, dass die gespeicherten Bilder auch beinhalten was gesucht wurde? Vor ImageNet war diese Arbeit der Klassifikation für Studienanfänger:innen reserviert. Jia Deng, einer der Mitforschenden an ImageNet kalkulierte, dass es neunzehn Jahre dauern würde, alle Bilder in ImageNet auf diese Art und Weise zu klassifizieren. Die Arbeit zu automatisieren war unmöglich. Es gab (und gibt) keinen Algorithmus, der diese Zuordnungen fehlerfrei vornehmen kann.
+Nun ergab sich ein zentrales Problem: Wie kann sichergestellt werden, dass die gespeicherten Bilder auch beinhalten was gesucht wurde? Vor ImageNet war diese Arbeit der Klassifikation für Studienanfänger\*innen reserviert. Jia Deng, einer der Mitforschenden an ImageNet kalkulierte, dass es neunzehn Jahre dauern würde, alle Bilder in ImageNet auf diese Art und Weise zu klassifizieren. Die Arbeit zu automatisieren war unmöglich. Es gab (und gibt) keinen Algorithmus, der diese Zuordnungen fehlerfrei vornehmen kann.
 
 An dieser Stelle kommt Crowdworking ins Spiel, um genau zu sein Amazons Mechanical Turk Plattform.
 
@@ -82,7 +82,7 @@ Wie wir gleich sehen werden sind die Punkte der unsichtbaren Arbeit, des Fehlen 
 
 Im Zusammenhang mit Künstlicher Intelligenz sind im Allgemeinen drei Formen der Arbeit relevant:
 
-Die erste ist völlig unbezahlte Arbeit. Diese wird in aller Regel nicht als solche wahrgenommen. Die User:innen von Websites, die CAPTCHAs für Googles Recaptcha-Dienst lösen, sind hier sicher das bekannteste Beispiel. [Google verbessert damit seine eigenen Bilderkennungsalgorithmen](https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it).
+Die erste ist völlig unbezahlte Arbeit. Diese wird in aller Regel nicht als solche wahrgenommen. Die User\*innen von Websites, die CAPTCHAs für Googles Recaptcha-Dienst lösen, sind hier sicher das bekannteste Beispiel. [Google verbessert damit seine eigenen Bilderkennungsalgorithmen](https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it).
 
 ### Unsichtbare Arbeit
 
@@ -102,7 +102,7 @@ Ein Prozess, den Kate Crawford, in Anlehnung an die [Potemkinschen Dörfer](http
 > We could think of this as a kind of Potemkin AI – little more than facades, designed to demonstrate to investors and a credulous media what an automated system would look like while actually relying on human labor in the background.
 > -- Kate Crawford – Atlas of AI, S. 65
 
-Diese Menschen sorgen für den schönen Schein des Automatismus. Es soll von außen so aussehen, als würde alles vollautomatisch passieren, auch wenn es eigentlich menschliche Arbeit ist.
+Diese Menschen sorgen für den schönen Schein der Automatisierung. Es soll von außen so aussehen, als würde alles vollautomatisch passieren, auch wenn es eigentlich menschliche Arbeit ist.
 
 Versuche der Konzerne an Daten zu kommen können auch anders aussehen. In Atlanta, Georgia, testete Google seine Gesichtserkennungssoftware. [Im Austauch gegen fünf Dollar wurden gezielt Schwarze Obdachlose angesprochen](https://12ft.io/proxy?q=https://www.nydailynews.com/news/national/ny-witness-saw-homeless-people-selling-face-scans-google-five-dollars-20191004-j6z2vonllnerpiuakt6wrp6l44-story.html). Die Gegenleistung? Ein 3D-Scans des Gesichts zu Google hochladen. Google kam vorher wiederholt in die Kritik, weil ihre Bilderkennunsgalgorithmen Schwarze Menschen für Gorillas oder ein [Thermometer in einer schwarzen Hand für eine Waffe](https://algorithmwatch.org/en/google-vision-racism/) halten. Immer tut es Google sehr leid, was passiert ist. Bis zum nächsten Mal. 2021 schließlich macht Google Hochglanzwerbung damit wie gut die neuen Android-Telephone Schwarze Gesichter erkennen können.
 
@@ -118,15 +118,15 @@ Es ist in dieser Ausbeutung, in der der Kapitalismus zu sich selber findet. Den 
 
 ### Frühkapitalismus im digitalen Gewand
 
-Am 25. März 1911 [brannte in Manhattan die Triangle Shirtwaist Factory](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire). 146 Arbeiter:innen starben in den Flammen, oder als sie aus dem brennenden Gebäude auf die Straßen sprangen. Die Ausgänge der Fabrik waren während der Arbeitszeit verschlossen, die Fabrik wurde zur Todesfalle. Die meisten der Toten waren Migrant:innen.
+Am 25. März 1911 [brannte in Manhattan die Triangle Shirtwaist Factory](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire). 146 Arbeiter\*innen starben in den Flammen, oder als sie aus dem brennenden Gebäude auf die Straßen sprangen. Die Ausgänge der Fabrik waren während der Arbeitszeit verschlossen, die Fabrik wurde zur Todesfalle. Die meisten der Toten waren Migrant\*innen.
 
-Am 10.12. tobe ein Tornado über Illinois. Amazon verlangte von seinen Angestellten zur Arbeit zu kommen. Abends wurde ein Amazon-Lagerhaus [von einem Tornado getroffen](https://www.nytimes.com/2021/12/11/us/amazon-warehouse-deaths-tornado.html). Jeff Bezos war damit beschäftigt an ein Leben im Weltraum zu denken, während das Lagerhaus kollabierte und sechs der Arbeiter:innen starben. Larry Vriden [schrieb kurz vor seinem Tod seiner Freundin](https://twitter.com/MorePerfectUS/status/1470513075489054720): «Well I’ll be home after the storm. Amazon won’t let us go.» Er kam nie wieder zu Hause an. [Unfälle und Gesundheitsprobleme](https://www.vice.com/en/article/qjbv4q/amazon-workers-say-theyre-pressured-to-work-in-dangerous-weather) kommen bei Amazon [immer wieder vor](https://revealnews.org/article/how-amazon-hid-its-safety-crisis/). In den USA lagen sie 2020 doppelt so hoch wie im Industriedurchschnitt.
+Am 10.12. tobe ein Tornado über Illinois. Amazon verlangte von seinen Angestellten zur Arbeit zu kommen. Abends wurde ein Amazon-Lagerhaus [von einem Tornado getroffen](https://www.nytimes.com/2021/12/11/us/amazon-warehouse-deaths-tornado.html). Jeff Bezos war damit beschäftigt an ein Leben im Weltraum zu denken, während das Lagerhaus kollabierte und sechs der Arbeiter\*innen starben. Larry Vriden [schrieb kurz vor seinem Tod seiner Freundin](https://twitter.com/MorePerfectUS/status/1470513075489054720): «Well I’ll be home after the storm. Amazon won’t let us go.» Er kam nie wieder zu Hause an. [Unfälle und Gesundheitsprobleme](https://www.vice.com/en/article/qjbv4q/amazon-workers-say-theyre-pressured-to-work-in-dangerous-weather) kommen bei Amazon [immer wieder vor](https://revealnews.org/article/how-amazon-hid-its-safety-crisis/). In den USA lagen sie 2020 doppelt so hoch wie im Industriedurchschnitt.
 
 Inwiefern haben sich die Arbeitsverhältnisse in den letzten 140 Jahren verändert? Was ist Arbeit eigentlich in einer algorithmisierten Welt und sollten uns die Roboter nicht schon längst die Arbeit wegnehmen?
 
-Simon Schaupp beschreibt diese durch Algorithmen überwachten Arbeitsprozesse unter mit Begriff der «kybernetischen Verdichtung». Durch die fortschreitenden technischen Möglichkeiten kommt es zu einer systematischen Überwachung des Produktionsprozesses.
+Simon Schaupp beschreibt diese durch Algorithmen überwachten Arbeitsprozesse mit dem Begriff der «kybernetischen Verdichtung». Durch die fortschreitenden technischen Möglichkeiten kommt es zu einer systematischen Überwachung des Produktionsprozesses.
 
-In extrem arbeitsintensiven Branchen wie Lieferdiensten oder Logistik führt dies dazu, dass das Gegenteil einer Vollautomatisierung passiert. Immer und immer mehr Menschen werden eingestellt, um die Prozesse aufrechtzuerhalten. [Amazon hat seit Anfang 2020 670.000 Arbeiter:innen eingestellt](https://www.statista.com/chart/7581/amazons-global-workforce/), um mit dem gesteigerten Auftragsvolumen während der Pandemie mitzuhalten.
+In extrem arbeitsintensiven Branchen wie Lieferdiensten oder Logistik führt dies dazu, dass das Gegenteil einer Vollautomatisierung passiert. Immer und immer mehr Menschen werden eingestellt, um die Prozesse aufrechtzuerhalten. [Amazon hat seit Anfang 2020 670.000 Arbeiter\*innen eingestellt](https://www.statista.com/chart/7581/amazons-global-workforce/), um mit dem gesteigerten Auftragsvolumen während der Pandemie mitzuhalten.
 
 Die meisten dieser Jobs sind bis auf die Sekunde genau getaktet:
 
@@ -139,9 +139,9 @@ Gleichzeitig gilt aber auch, dass es
 > Teil der Aufgabe des kybernetischen Proletariats [ist], sich selbst überflüssig zu machen.
 > -- [Simon Schaupp – Future Histories Podcast S02E07](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/)
 
-Dies passiert zum Beispiel in Logistikprozessen, die getracked werden, um sie durch eine KI zu ersetzen oder wenn Facharbeiter:innen die Systeme schreiben müssen, die sie schlußendlich abschaffen werden.
+Dies passiert zum Beispiel in Logistikprozessen, die getracked werden, um sie durch eine KI zu ersetzen oder wenn Facharbeiter\*innen die Systeme schreiben müssen, die sie schlußendlich abschaffen werden.
 
-In der Zeit des Frühkapitalismus gab es schon Bestrebungen zur Automatisierung und damit einhergehenden Kontrolle der Arbeiter:innen. Aus Sicht des Kapitals waren Arbeiter:innen schon immer ein notwendiges Übel. Ohne geht’s halt nicht, aber mit wird der Profit eingeschränkt.
+In der Zeit des Frühkapitalismus gab es schon Bestrebungen zur Automatisierung und damit einhergehenden Kontrolle der Arbeiter\*innen. Aus Sicht des Kapitals waren Arbeiter\*innen schon immer ein notwendiges Übel. Ohne geht’s halt nicht, aber mit wird der Profit eingeschränkt.
 
 Engels’ zitiert schon 1844 Andrew Ure, dessen Hoffnung in die Produktivkraft der Maschine sich ohne Probleme auf die heutige Überhöhung der Robotisierung übertragen lässt:
 
@@ -150,14 +150,14 @@ Engels’ zitiert schon 1844 Andrew Ure, dessen Hoffnung in die Produktivkraft d
 
 Die Tendenz des Kapitals von Fordismus über Taylorismus den Produktionsprozess effektiver und effektiver zu gestalten, stellte die Arbeiterbewegung Streiks und Organisierung entgegen. Nicht ohne Erfolg. Reduzierung der Wochenarbeitstunden, soziale Absicherung, unbefristete Arbeitsverträge usw. sind nur durch starke gewerkschaftliche Bewegungen und den Willen zum Widerspruch entstanden.
 
-In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all die Errungenschaften der Arbeiter:innenbewegung – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff stehen und verteidigt bzw. zurückerobert werden müssen.
+In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all die Errungenschaften der Arbeiter\*innenbewegung – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff stehen und verteidigt bzw. zurückerobert werden müssen.
 
 Nicht viel hat sich geändert, es scheint nur neu:
 
 > Doch was als radikal neue Form der Arbeit daher kommt, ist im Licht der historischen Entwicklung oftmals mehr eine Wiederkehr früherer Arbeitsverhältnisse. Denn die Nutzung der Arbeitskraft durch die Unternehmen nur bei tatsächlichem Bedarf, der Stücklohn und die Tatsache, dass die Arbeitenden ihre eigenen Arbeitsmittel zur Verfügung stellen müssen, sind keineswegs neu und vielmehr so alt wie der Kapitalismus selbst. Konkret gleicht die digitalisierte Kurierarbeit wie auch viele andere Arten der Plattformarbeit dem proto-industriellen Verlagssystem der frühen Industrialisierung, das bereits im 19. Jahrhundert mit dem Begriff der «prekären Arbeit» gekennzeichnet wurde.
 > -- [Heiner Heiland – Zurück in die Zukunft](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
 
-Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedienen, um [Angestellte und Umweltaktivist:innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements) oder das [Textbuch Union Busting durchspielen](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s).
+Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedienen, um [Angestellte und Umweltaktivist\*innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements) oder das [Textbuch Union Busting durchspielen](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s).
 
 Man muss die Pathetik nicht teilen, aber am Ende bleibt es wie Engels es voraussagte:
 
@@ -168,17 +168,17 @@ Man muss die Pathetik nicht teilen, aber am Ende bleibt es wie Engels es vorauss
 
 Während der körperliche und geistige Tribut, den die Algorithmen in den Warenhäusern fordern, recht offensichtlich ist, gilt dies nicht in allen Bereichen des überwachten Arbeitens.
 
-Bei Lieferdiensten etwa bleibt zum Großteil verborgen welchen Einfluss die Algorithmen haben. Die Arbeiter:innen wissen nicht, wie ihre Aktionen sich auf die zukünftige Arbeitseinteilung auswirken. Ein Beispiel hierfür ist die immer wiederkehrende These von Gig-Worker:innen bei Lieferando & Co., dass es schlecht sei Lieferaufträge nicht anzunehmen.
+Bei Lieferdiensten etwa bleibt zum Großteil verborgen welchen Einfluss die Algorithmen haben. Die Arbeiter\*innen wissen nicht, wie ihre Aktionen sich auf die zukünftige Arbeitseinteilung auswirken. Ein Beispiel hierfür ist die immer wiederkehrende These von Gig-Worker\*innen bei Lieferando & Co., dass es schlecht sei Lieferaufträge nicht anzunehmen.
 
 Beweise dafür oder dagegen kann es nicht geben, solange die Algorithmen und gesammelten Daten nicht zugänglich gemacht werden. In seinem Vortrag [Die soziale Konstruktion von Algorithmen](https://media.ccc.de/v/fiffkon2021-161-die-soziale-konstruktion-von-algorithmen#t=1298) zitiert Heiner Heiland einen Manager eines Lieferdiensts, der sagt, dass der benutzte Algorithmus «sehr dumm» war und immer die nächste:n Fahrer:in gewählt hat. Aber selbst wenn der Algorithmus dumm war oder ist, gibt es keine Garantie, dass er es bleibt. Oder der Manager nicht von Anfang an gelogen hat.
 
-Grund zum Zweifeln gibt es umso mehr, wenn andere Firmen Produktivität als Teil ihrer Algorithmen implementiert haben. [Deliveroo wurde in Italien verurteilt](https://techcrunch.com/2021/01/04/italian-court-rules-against-discriminatory-deliveroo-rider-ranking-algorithm/), weil deren Algorithmus nicht zwischen «unproduktiven» Arbeiter:innen und jenen, die krank waren oder streikten, unterschied.
+Grund zum Zweifeln gibt es umso mehr, wenn andere Firmen Produktivität als Teil ihrer Algorithmen implementiert haben. [Deliveroo wurde in Italien verurteilt](https://techcrunch.com/2021/01/04/italian-court-rules-against-discriminatory-deliveroo-rider-ranking-algorithm/), weil deren Algorithmus nicht zwischen «unproduktiven» Arbeiter\*innen und jenen, die krank waren oder streikten, unterschied.
 
 Man kann es nicht wissen, weil die Plattformen, wie sich nennen, die einzigen sind, die die Daten haben.
 
 > Data, as it is conceived of now, simply flows away from workers and to the platform, where it becomes proprietary, valuable, and “big.” While platforms enjoy the advantages of gathering and analyzing big data, current data protection laws function at a “smaller” scale and are based around individual rights.
 
-Gig-Worker:innen auf der ganzen Welt fordern die Abschaffung dieses Ungleichgewichts. Einerseits [indem sie selber Daten sammeln, und andererseits verlangen, dass Unternehmen ihre Technologien offenlegen](https://www.wired.com/story/labor-organizing-unions-worker-algorithms/).
+Gig-Worker\*innen auf der ganzen Welt fordern die Abschaffung dieses Ungleichgewichts. Einerseits [indem sie selber Daten sammeln, und andererseits verlangen, dass Unternehmen ihre Technologien offenlegen](https://www.wired.com/story/labor-organizing-unions-worker-algorithms/).
 
 Nur durch eine Kombination aus Rechenschaft und Organisierung wird sich die Lage ändern können.
 
@@ -188,9 +188,9 @@ Die zunehmende Überwachung und Kontrolle führt zu einer Verdichtung der Zeit. 
 
 Schon zu analogen Zeiten war das miteinander Reden an einzelnen Fließbändern verboten, der wachsame Blick des Vorarbeiters immer lauernd. Hier kommt es zu einer paradoxen Situation: während die Zeit immer weiter kontrolliert wird, bietet die Abwesenheit des Menschen Raum für Unterhaltungen, neue Vernetzungen.
 
-[Der Soziologe Simon Schaupp macht im Future Histories Podcast](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/) noch einen anderen Punkt: Algorithmen lernen durch die Daten der Vergangenheit. Diese Daten werden durch die Arbeiter:innen geschaffen. Es ist also möglich durch kollektive Aktionen der Verlangsamung den Algorithmus zu zähmen.
+[Der Soziologe Simon Schaupp macht im Future Histories Podcast](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/) noch einen anderen Punkt: Algorithmen lernen durch die Daten der Vergangenheit. Diese Daten werden durch die Arbeiter\*innen geschaffen. Es ist also möglich durch kollektive Aktionen der Verlangsamung den Algorithmus zu zähmen.
 
-Diese Form der Selbstermächtigung ist nicht neu. Arbeiter:innen sind schon früh auf die Idee gekommen, dass eine Verlangsamung der Arbeit ein effektives Mittel des Arbeitskampfes ist.
+Diese Form der Selbstermächtigung ist nicht neu. Arbeiter\*innen sind schon früh auf die Idee gekommen, dass eine Verlangsamung der Arbeit ein effektives Mittel des Arbeitskampfes ist.
 
 Im Bummelstreik wird jede noch so kleine Anweisung penibelst ausgeführt, die Produktivkraft sinkt so ohne dass zur Arbeitsniederlegung aufgerufen werden muss.
 
@@ -239,11 +239,11 @@ Selbst wenn die Daten frei zugänglich bleiben, geschieht die Wertschöpfung dur
 
 Eine Abhängigkeitsdynamilk, die in der Geschichte des Kapitalismus nicht unbekannt ist. Man muss sich nur an das «Too big to fail»-Narrativ der letzten Bankenkrise erinnern, in der Unsummen an Steuergeld ausgegeben wurden, um den Finanzkapitalismus am Laufen zu halten. Unterstützt von großen Investitionen in Lobbyismus agieren Google, Facebook & Co. auf einem ähnlichen Level der vermeintlichen Systemrelevanz und versuchen ihre Zerschlagung zu verhindern.
 
-Wir User:innen und die Gesellschaft als solche sind nicht die einzigen, die von dem Wohlwollen der Immergleichen abhängig sind.
+Wir User\*innen und die Gesellschaft als solche sind nicht die einzigen, die von dem Wohlwollen der Immergleichen abhängig sind.
 
 ### Ökonomische Abhängigkeiten
 
-Auch für Forscher:innen wird es immer unmöglicher ihre Forschung zu betreiben, ohne auf deren immense Ressourcen im Bereich Rechenleistung und Datensammlung zuzugreifen.
+Auch für Forscher\*innen wird es immer unmöglicher ihre Forschung zu betreiben, ohne auf deren immense Ressourcen im Bereich Rechenleistung und Datensammlung zuzugreifen.
 
 > Big tech’s domination over the infrastructure of AI research and development extends beyond providing “neutral platforms.” These companies control the tooling, development environments, languages, and software that define the AI research process—they make the water in which AI research swims.
 > -- [Meredith Whittaker – The Steep Cost of Capture](https://mags.acm.org/interactions/november_december_2021/MobilePagedArticle.action?articleId=1742681#articleId1742681)
@@ -260,7 +260,7 @@ Dass das Google nicht in den Kram passt, verwundet kaum.
 
 Im Februar feuerte [Google schließlich Margaret Mitchell](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team), offiziell wegen Verstößen gegen den firmeninternen Code of Conduct und Sicherheitsrichtlinien.
 
-Dass führende Figuren in ihren Feldern nicht sicher sind, sendet ein klares Signal an den Rest der Forscher:innen: «Benehmt euch, oder ihr seid raus.»
+Dass führende Figuren in ihren Feldern nicht sicher sind, sendet ein klares Signal an den Rest der Forscher\*innen: «Benehmt euch, oder ihr seid raus.»
 
 In <cite>Die Lage der arbeitenden Klasse in England</cite> unternahm Engels den Versuch die «geschichtliche Bedeutung der Industrie» zu verstehen. Die Kohleminen und Fabriken waren die Industrie seiner Zeit. Er stellte fest:
 
@@ -316,11 +316,11 @@ Es reicht deswegen nicht gegen spezifische Waffensysteme oder Formen der Kollabo
 
 Während sich militärische Konflikte vorerst nach außen richten, blickt der Staat stetig nach innen. Vorausschauende Polizeiarbeit und Gesichtserkennung sollen hier stellvertretend für das Bestreben des Staates nach Gehorsam stehen. Der Angriff des Staates auf die Freiheitsrechte der Zivilgesellschaft erschöpft sich darin aber nicht, sondern zeigt sich auch in Projekten wie Staatstrojanern oder der Vorratsdatenspeicherung. Oft ergänzen sich solche Vorhaben gegenseitig.
 
-Ein Beispiel hierfür ist eine Datenbank der Polizei Hamburg. Als 2017 der G20-Gipfel in die Hansestadt kam, war die Polizei schnell dabei eine noch die dagewesene Gefahr durch linksradikale Chaot:innen herbeizuphantasieren und einen der größten Polizeieinsätze in der Geschichte der Bundesrepublik zu rechtfertigen.
+Ein Beispiel hierfür ist eine Datenbank der Polizei Hamburg. Als 2017 der G20-Gipfel in die Hansestadt kam, war die Polizei schnell dabei eine noch die dagewesene Gefahr durch linksradikale Chaot\*innen herbeizuphantasieren und einen der größten Polizeieinsätze in der Geschichte der Bundesrepublik zu rechtfertigen.
 
-Um diese Chaot:innen auch im Nachhinein zu erfassen schaffte die Polizei das System Videmo 360 an. Der Hamburger Datenschutzbeauftragte Johannes Caspar vermutete, dass auf diese Weise die biometrischen Daten von [hunderttausenden Menschen gespeichert wurden](https://www.golem.de/news/datenschutz-nie-da-gewesene-kontrollmacht-fuer-staatliche-stellen-1901-138760.html). Ohne jegliche Kontrollmöglichkeit.
+Um diese Chaot\*innen auch im Nachhinein zu erfassen schaffte die Polizei das System Videmo 360 an. Der Hamburger Datenschutzbeauftragte Johannes Caspar vermutete, dass auf diese Weise die biometrischen Daten von [hunderttausenden Menschen gespeichert wurden](https://www.golem.de/news/datenschutz-nie-da-gewesene-kontrollmacht-fuer-staatliche-stellen-1901-138760.html). Ohne jegliche Kontrollmöglichkeit.
 
-Diese Daten wurden genutzt um Verfahren gegen vermeintliche Gewalttäter:innen einzuleiten.
+Diese Daten wurden genutzt um Verfahren gegen vermeintliche Gewalttäter\*innen einzuleiten.
 
 Nach der Logik der Polizei reicht dabei mittlerweile die reine Teilnahme an einer Demonstration, um schweren Landfriedensbruch vorzuwerfen. In Hamburg läuft das sogenannte Rondenbarg-Verfahren, in dem fünf Jugendliche angeklagt sind, [ohne dass ihnen etwas konkretes vorgeworfen wird](https://gemeinschaftlich.noblogs.org/hintergrund/).
 
@@ -340,7 +340,7 @@ Derweil wird die bundesweite Infrastruktur für eine «Verfahrensübergreifende 
 
 Das Vorhaben der deutschen Polizei Gesichtserkennung zu normalisieren, passiert gegen einen internationalen Backlash.
 
-Seit Jahren zeigt die Forschung immer wieder, dass Gesichtserkennung [gegen Schwarze diskriminiert](https://www.media.mit.edu/projects/gender-shades/overview/), und selbst [Mitglieder des US-amerikansichen Kongresses für Straftäter:innen hält](https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28). Forscher:innen warnen davor, dass [Rassismus auch in der EU Teil automatisierter Prozesse ist](https://www.politico.eu/article/europe-artificial-intelligence-blindspot-race-algorithmic-harm/).
+Seit Jahren zeigt die Forschung immer wieder, dass Gesichtserkennung [gegen Schwarze diskriminiert](https://www.media.mit.edu/projects/gender-shades/overview/), und selbst [Mitglieder des US-amerikansichen Kongresses für Straftäter\*innen hält](https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28). Forscher\*innen warnen davor, dass [Rassismus auch in der EU Teil automatisierter Prozesse ist](https://www.politico.eu/article/europe-artificial-intelligence-blindspot-race-algorithmic-harm/).
 
 2020 machten die Unternehmen [Clearview](https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html) und [PimEyes](https://netzpolitik.org/2020/gesichter-suchmaschine-pimeyes-schafft-anonymitaet-ab/) internationale Schlagzeilen. Beide operieren mit riesigen Mengen an Daten, ohne Einverständnis aus dem Internet gewonnen.
 
@@ -378,7 +378,7 @@ Es muss nicht so sein. [Palantir selber gibt zu](https://www.vice.com/en/article
 
 Zwar werden wir alle von den Techniken der Datensammlung ins Visier genommen, aber sowohl auf ökonomischer als auch staatlicher Ebene trifft es Menschen unterschiedlich hart. Gegen die ökonomische Sammelwut der Werbenetzwerke kann man sich mit technischem Sachverstand zum Großteil wehren. Wenn man den Sachverstand hat, also die Zeit ihn sich anzueignen.
 
-Die staatliche Sammelwut hingegen trifft von vornherein nicht alle gleich. Zwar ist zum Beispiel das Speichern von Fingerabdrücken in Deutschland seit dem Sommer 2020 verpflichtend, gegen die Offenbarungseide, die etwas Hartz IV-Bezieher:innen oder Geflüchtete ablegen müssen, verblasst dies aber beinahe zur Randnote.
+Die staatliche Sammelwut hingegen trifft von vornherein nicht alle gleich. Zwar ist zum Beispiel das Speichern von Fingerabdrücken in Deutschland seit dem Sommer 2020 verpflichtend, gegen die Offenbarungseide, die etwas Hartz IV-Bezieher\*innen oder Geflüchtete ablegen müssen, verblasst dies aber beinahe zur Randnote.
 
 Francesca Schmidt und Johanna Luise Mellentin folgern im Buch <cite>[Wenn KI, dann feministisch](https://netzforma.org/publikation-wenn-ki-dann-feministisch-impulse-aus-wissenschaft-und-aktivismus)</cite>:
 
