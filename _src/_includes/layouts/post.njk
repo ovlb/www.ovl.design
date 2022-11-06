@@ -1,47 +1,43 @@
 {% extends 'layouts/base.njk' %}
 
-{% set title = post.title + ' | Text' %}
+{% set pageTitle = title + ' | Text' %}
 {% set usesBlock = true %}
 
-{% set categoriesString = post
-  .categories[0]
-  .fields
-  .title + ' —' if post
-  .categories else
-    '' %}
-
 {% block content %}
-  <main id="main" class="text h-entry l-stack" tabindex="-1" lang={{ post.locale }}>
+  <main id="main" class="text h-entry l-stack" tabindex="-1" lang={{ locale }}>
     <header class="text__header u-floral-heart-gradient">
-      <h1 class="main-headline p-name">{{ post.title }}</h1>
+      <h1 class="main-headline p-name">{{ title }}</h1>
       <p class="text__subline type-is-aside">
         {{ categoriesString }}
-        <time
-          datetime="{{ post.date }}"
-          class="dt-published"
-        >{{ post.date | displayDate }}</time>
+        {% if date %}
+          <time
+            datetime="{{ date }}"
+            class="dt-published"
+          >{{ date | displayDate }}</time>
+        {% endif %}
       </p>
-      {% if post.contentIntro %}
+      {% if subtitle %}
         <p class="text__intro p-summary">
-          {{ post.contentIntro }}
+          {{ subtitle }}
         </p>
       {% endif %}
     </header>
-    {% articleImage post.image %}
+    {% articleImage image %}
     <div class="text__body e-content" data-text-body>
       {{ content | safe }}
     </div>
-    {%- set currentPostMentions = webmentions | webmentionsForPage(post.permalink) -%}
+    {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
         class="u-global-padding"
         style="grid-column: main;"
         aria-label="Post likes"
       >
-        {%- set postMentionCount = webmentions | webmentionCountForPage(post.permalink) -%}
-        <h2 class="pagination-navigation__sub-headline type-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
+        {%- set postMentionCount = webmentions | webmentionCountForPage(permalink) -%}
+        <h2 class="pagination-navigation__sub-headline type-all-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
         <ul class="webmention-likes">
           {% for post in currentPostMentions.likes %}
+
             <li><a
               href="{{ post.author.url }}"
               aria-label="Profile of {{ post.author.name }}"
@@ -58,15 +54,20 @@
         </ul>
       </section>
     {% endif %}
-    {% if hidePaginationNav !== true %}
+    {% if hidePaginationNav !== true and tags.length %}
       <section role="region" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
-        <h2 id="pgntn-hdln" class="small-headline pagination-navigation__headline">Other things I’ve written</h2>
-        {% paginationItem 'previous',
-        pagination.href.previous,
-        articles.ownPosts %}
-        {% paginationItem 'next',
-        pagination.href.next,
-        articles.ownPosts %}
+        <h2 id="pgntn-hdln" class="small-headline pagination-navigation__headline">Filed under</h2>
+        <ul class="inline-list" role="list">
+          {% for tag in tags | getCategories %}
+            <li>
+              <a
+                href="{{ tag | categoryPermalink(categoryBase) }}"
+              >
+                {{ tag | displayCategory }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </section>
     {% endif %}
   </main>

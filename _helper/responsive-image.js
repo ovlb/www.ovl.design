@@ -89,6 +89,11 @@ async function parseImages(container) {
 
   for (const img of staticImages) {
     const src = img.getAttribute('src')
+
+    if (!src) {
+      continue
+    }
+
     const { imageSizes: sizes, imageWidths, imageFormats } = img.dataset
 
     // data-image-widths should be something along the lines of `data-image-widths="[300, 600, 900]"`

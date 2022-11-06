@@ -23,20 +23,20 @@
   <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
   {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
-  <updated>{{ articles.lastUpdated | dateToRfc3339 }}</updated>
+  <updated>{{ collections.publishedPosts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}text</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in articles.ownPosts %}
-    {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
+  {%- for post in collections.publishedPosts %}
+    {% set absolutePostUrl %}{{ post.data.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
     <entry>
-      <title>{{ post.title }}</title>
+      <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <updated>{{ post.date | toDate | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
-      <summary type="html">{{ post.intro }}</summary>
+      <summary type="html">{{ post.data.displayIntro }}</summary>
       <content type="html">
         {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
       </content>
