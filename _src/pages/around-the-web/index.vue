@@ -68,7 +68,13 @@ export default {
 
   computed: {
     posts() {
-      return [...this.collections.aroundTheWeb].reverse()
+      return [...this.collections.aroundTheWeb].sort((a, b) => {
+        if (parseInt(a.data.page.fileSlug) < parseInt(b.data.page.fileSlug)) {
+          return 1
+        }
+
+        return -1
+      })
     },
   },
 
