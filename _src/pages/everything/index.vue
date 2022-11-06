@@ -24,19 +24,29 @@
     </archive-header>
     <ul class="article-list u-global-padding t-center" role="list">
       <li v-for="thing in allTheThings" :key="thing">
-        <h2 class="small-headline">
+        <h2>
           <a :href="thing.permalink || thing.data.page.url">{{
-            thing.data.title
+            thing.data.pageTitle || thing.title || thing.data.title
           }}</a>
         </h2>
       </li>
     </ul>
+    <section class="u-global-padding t-content-wide">
+      <h2 class="sub-headline">Collections</h2>
+      <ul role="list" class="inline-list">
+        <li v-for="category in collections.categories" :key="category">
+          <a :href="categoryPermalink(category, '/everything')">{{
+            displayCategory(category)
+          }}</a>
+        </li>
+      </ul>
+    </section>
   </main>
 </template>
 
 <script>
 import ArchiveHeader from '~components/archive/ArchiveHeader.vue'
-import HomeIcon from '~icons/Home.vue'
+import HomeIcon from '~icons/HomeOutline.vue'
 import TheStack from '~components/core/TheStack.vue'
 import IconLink from '~components/core/IconLink.vue'
 
@@ -52,6 +62,7 @@ export default {
     return {
       permalink: '/everything/',
       title: 'Everything',
+      pageTitle: 'Everything',
       pageCSS: 'text',
     }
   },
