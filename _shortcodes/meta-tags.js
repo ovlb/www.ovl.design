@@ -1,4 +1,4 @@
-module.exports = function (meta = {}, post) {
+module.exports = function (meta = {}) {
   this.tags = [
     { attrName: 'name', attrValue: 'description', key: 'description' },
     {
@@ -29,20 +29,6 @@ module.exports = function (meta = {}, post) {
       value: this.ctx.site.baseURL.replace(/^https?:\/\//, ''),
     },
   ]
-
-  if (post) {
-    if (post.openGraphImage) {
-      meta.image = {
-        src: `https:${post.openGraphImage?.fields.file.url}`,
-        alt: post.image?.fields.description,
-      }
-    }
-
-    meta.description = post.intro
-    meta.ogType = 'article'
-  }
-
-  // const values = { ...SITE_DEFAULTS, ...meta }
 
   const img = `
     <meta property="og:image" content="${meta.image.src}?w=1478&h=831&fm=jpg&q=100">
