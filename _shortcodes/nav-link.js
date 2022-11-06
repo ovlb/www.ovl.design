@@ -15,7 +15,7 @@ module.exports = function (menuItem, extraClasses = '') {
   // highlight menu item if sub page is visited
   // e.g. `/blog/blog-post` should highlight `/blog/`
   // check for exact here, as `/` would always be highlighted
-  if (url.includes(menuItem.url) && !menuItem.exact) {
+  if (url && url.includes && url.includes(menuItem.url) && !menuItem.exact) {
     activeClass = ' -is-active'
   }
 
