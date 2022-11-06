@@ -28,12 +28,11 @@
   </nav>
   <nav class="vertical-nav" aria-label="Secondary">
     <ul class="vertical-nav__list" role="list">
-      <li>
-        <a href="/around-the-web/">Around the Web</a>
-      <li>
-        <a href="/imprint/">Imprint</a>
-      <li>
-        <a href="/colophon/">Colophon</a>
+      {% for item in navigation.secondary %}
+        <li>
+          <a href="{{ item.permalink }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
   <nav class="vertical-nav" aria-labelledby="hdl-footer-feeds">

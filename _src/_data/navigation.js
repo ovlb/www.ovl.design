@@ -11,8 +11,24 @@ module.exports = {
   ],
   secondary: [
     {
-      title: 'Partnerships & Certifications',
-      permalink: '/partnerships-certifications',
+      title: 'Around the Web',
+      permalink: '/around-the-web/',
+    },
+    {
+      title: 'Notes',
+      permalink: '/notes/',
+    },
+    {
+      title: 'Everything',
+      permalink: '/everything/',
+    },
+    {
+      title: 'Imprint',
+      permalink: '/imprint/',
+    },
+    {
+      title: 'Colophon',
+      permalink: '/colophon/',
     },
   ],
 }

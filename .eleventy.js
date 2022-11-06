@@ -55,6 +55,24 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+
+  eleventyConfig.addCollection('noteCategories', function (collectionAPI) {
+    /** @type Array */
+    const posts = collectionAPI.getFilteredByGlob('_src/pages/notes/notes/*.md')
+
+    const categories = new Set()
+
+    for (const post of posts) {
+      const { tags } = post.data
+
+      tags
+        .filter((tag) => tag.startsWith('cat:'))
+        .forEach((tag) => categories.add(tag))
+    }
+
+    return [...categories]
+  })
+
   eleventyConfig.addCollection('atwCategories', function (collectionAPI) {
     /** @type Array */
     const posts = collectionAPI.getFilteredByGlob(
