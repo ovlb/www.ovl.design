@@ -1,6 +1,6 @@
 {% extends 'layouts/base.njk' %}
 
-{% set title = title + ' | Notes' %}
+{% set pageTitle = title + ' | Notes' %}
 {% set usesBlock = true %}
 
 {% block content %}
@@ -8,7 +8,7 @@
     <a href="/notes/">Back to archive</a>
     <aside class="warning">This post is a note. It’s a collection of thoughts, and has a high likelihood to be incomplete or even wrong. If you think it can be approved, contact me.</aside>
     <header class="note-header">
-      <h1 class="p-name">{{ displayTitle }}</h1>
+      <h1 class="p-name">{{ title }}</h1>
       <p>Note started: {{ date | displayDate(short) }}</p>
       {% if state === 'frozen' %}
         This note is currently frozen.
@@ -21,7 +21,7 @@
       {{ content | safe }}
     </div>
     <section class="colletions">
-      <h2 class="pagination-navigation__sub-headline type-small-caps">Filed under</h2>
+      <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
       <ul role="list" class="inline-list">
         {% for collection in tags | getCategories %}
           <li>
@@ -42,7 +42,7 @@
         aria-label="Post likes"
       >
         {%- set postMentionCount = webmentions | webmentionCountForPage(permalink) -%}
-        <h2 class="pagination-navigation__sub-headline type-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
+        <h2 class="pagination-navigation__sub-headline type-all-small-caps">Liked by {{ currentPostMentions.likes.length }} friendly folks.</h2>
         <ul class="webmention-likes">
           {% for post in currentPostMentions.likes %}
             <li><a

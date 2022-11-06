@@ -1,7 +1,7 @@
 <template>
   <main id="main" tabindex="-1" class="u-global-padding">
     <header class="note-header">
-      <h1>Notes</h1>
+      <h1>{{ title }}</h1>
     </header>
     <section>
       <h2>Notes</h2>
@@ -34,6 +34,7 @@ export default {
       permalink: '/notes/',
       pageCSS: 'note',
       title: 'Notes',
+      pageTitle: 'Notes',
     }
   },
   computed: {

@@ -39,7 +39,7 @@ export default {
       eleventyComputed: {
         permalink: (data) =>
           this.categoryPermalink(data.category, data.categoryBase),
-        title: (data) =>
+        pageTitle: (data) =>
           `${this.displayCategory(data.category)} | Around the Web`,
       },
     }

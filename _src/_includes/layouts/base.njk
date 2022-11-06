@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale }}">
-  {% set metaTitle = site.title + ' — ' + site.description %}
-  {% if title %}
-    {% set metaTitle = title + ' « ' + site.title %}
+  {% if pageTitle %}
+    {% set metaTitle = pageTitle + ' « ' + site.title %}
+  {% else %}
+    {% set metaTitle = site.title + ' — ' + site.description %}
   {% endif %}
   <head>
     <meta charset="utf-8" />
