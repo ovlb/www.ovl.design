@@ -54,9 +54,9 @@
         </ul>
       </section>
     {% endif %}
-    {% if hidePaginationNav !== true and tags.length %}
-      <section role="region" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
-        <h2 id="pgntn-hdln" class="small-headline pagination-navigation__headline">Filed under</h2>
+    {% if tags.length %}
+      <section role="region" class="text__pagination" aria-labelledby="pgntn-hdln">
+        <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
         <ul class="inline-list" role="list">
           {% for tag in tags | getCategories %}
             <li>
