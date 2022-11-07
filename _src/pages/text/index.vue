@@ -12,10 +12,7 @@
       </template>
     </archive-header>
     <ol class="article-list u-global-padding" role="list">
-      <li
-        v-for="{ data: post } in collections.publishedPosts.reverse()"
-        :key="post.title"
-      >
+      <li v-for="{ data: post } in posts" :key="post.title">
         <article-card :data="post">
           <template v-if="post.date" #date>
             <span class="sr-only">Published in </span>
@@ -63,6 +60,16 @@ export default {
         },
       },
     }
+  },
+
+  computed: {
+    posts() {
+      return [...this.collections.publishedPosts]
+        .filter((post) => {
+          return post.data.skipInArchive !== true
+        })
+        .reverse()
+    },
   },
 
   methods: {
