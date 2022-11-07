@@ -2,10 +2,9 @@
 permalink: 'text/computer-says-no/quellen/'
 hidePaginationNav: true
 skipInArchive: true
-title: Quellen
+title: Computer says no
 date: '2021-12-26'
 subtitle: Quellen
-intro: Quellen zu meinem Text Computer says no.
 tags:
   - cat:ai
 ---

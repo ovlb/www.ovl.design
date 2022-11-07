@@ -1,10 +1,12 @@
 ---
 permalink: 'text/computer-says-no-en/'
-title: Computer says no EN
+title: Computer says no
 date: '2021-12-26'
 subtitle: Artificial Intelligence & Power
 intro: 'Reflections on the connection between artificial intelligence and state and economic power.'
+skipInArchive: true
 tags:
+  - cat:essay
   - cat:ai
 ---
 
