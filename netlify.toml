@@ -23,3 +23,15 @@
   to = "https://www.ovl.design/around-the-web/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/around-the-web/013/"
+  to = "/around-the-web/013-do-robots-eat-electric-salad/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/around-the-web/014/"
+  to = "/around-the-web/014-just-go-aahh-hardcore/"
+  status = 301
+  force = true
