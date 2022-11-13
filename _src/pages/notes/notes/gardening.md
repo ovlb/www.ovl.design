@@ -15,7 +15,7 @@ So this website shall become one. This is a loose collection of development note
 
 Text starts as a note. From there it is free to move around the site. Or stay as a note, that’s finished – for now. 11ty’s data deep merge makes this very simple. The posts are Markdown file. While in the notes folder, they automatically get the `notes` tag and and up in `collections.notes`.
 
-Once I think a note isn’t a note anymore, I might add it to the text folder. It can be a draft, or immediately published. As everything Markdown, I only need to add a bit more front data, to accomodate for the slightly more refined design of fully fledged articles.
+Once I think a note isn’t a note anymore, I might add it to the text folder. It can be a draft, or immediately published. As everything is Markdown, I only need to add a bit more frontmatter data, to accomodate for the slightly more refined design of fully fledged articles.
 
 All posts on this website use a common theme for categories, they are tags (so that they get picked up by 11ty’s collection feature), prefixed by `cat:`. This global taxonomy allows me to link newsletter issues, notes, and articles which share a common theme.
 
@@ -24,8 +24,9 @@ All posts on this website use a common theme for categories, they are tags (so t
 
 ## Content
 
+When starting this note I wrote: «Migrate away from Contentful, this should be the fast part». Well. It wasn’t. Copying everything went well. But then my build was inventing HTML tags in the output path of completely unrelated pages. It was mayhem.
+
 - How to keep Ulysses and the git repo in sync?
-- Migrate away from Contentful, this should be the fast part
 
 ## Dev & Design
 
