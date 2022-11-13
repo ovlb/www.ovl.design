@@ -1,6 +1,27 @@
 {
-  "lastFetched": "2022-10-30T07:00:04.298Z",
+  "lastFetched": "2022-11-13T20:08:31.284Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Machine Learning Bot",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c92a8366bbd8178b69f1abd3b16b7959468b688b137a83656bd857dd75873295.jpg",
+        "url": "https://twitter.com/ML_Tweet_Bot"
+      },
+      "url": "https://twitter.com/ML_Tweet_Bot/status/1586626711524970496",
+      "published": "2022-10-30T07:51:00+00:00",
+      "wm-received": "2022-10-30T22:47:36Z",
+      "wm-id": 1547375,
+      "wm-source": "https://brid.gy/repost/twitter/_ovlb/1586626689135689729/1586626711524970496",
+      "wm-target": "https://www.ovl.design/around-the-web/013/",
+      "content": {
+        "text": "Fresh of the presses: A new issue of Around the Web. \n\nA lettuce, machine learning’s stealing problem, an update on humanity’s end of life, and pictures from the beginning of life.\n\novl.design/around-the-web…"
+      },
+      "repost-of": "https://www.ovl.design/around-the-web/013/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
