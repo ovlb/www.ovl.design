@@ -2,6 +2,10 @@
 @import './0-base/_figure.pcss';
 @import 'eleventy-plugin-embed-tweet/tweet.css';
 
+.tweet-images img {
+  max-height: unset;
+}
+
 .atw-post {
   display: grid;
   max-width: 120ch;

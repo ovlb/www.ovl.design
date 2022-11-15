@@ -40,6 +40,12 @@ module.exports = {
     },
     title: ({ issueTitle }) => issueTitle || 'Around the Web',
     permalink: function (data) {
+      if (data.issueTitle) {
+        return `/around-the-web/${data.page.fileSlug}-${this.slugify(
+          data.issueTitle,
+        )}/`
+      }
+
       return `/around-the-web/${data.page.fileSlug}/`
     },
     sources: async function (data) {

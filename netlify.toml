@@ -5,7 +5,6 @@
         cache_img_httpHeader = false
 
         cache_assets = '../.cache'
-        cache_other = ['../tweets']
 
 [[redirects]]
   from = "https://11ty.owlish.dev/*"
@@ -22,5 +21,17 @@
 [[redirects]]
   from = "https://www.ovl.design/atw"
   to = "https://www.ovl.design/around-the-web/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/around-the-web/013/"
+  to = "/around-the-web/013-do-robots-eat-electric-salad/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/around-the-web/014/"
+  to = "/around-the-web/014-just-go-aahh-hardcore/"
   status = 301
   force = true
