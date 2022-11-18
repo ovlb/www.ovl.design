@@ -2,10 +2,7 @@
   <article class="article-card" :aria-labelledby="`title-${id}`">
     <p class="type-is-aside"><slot name="eyebrow" /></p>
     <h2 :id="`title-${id}`" class="article-card__headline">
-      <a
-        :href="data.permalink || data.external.source"
-        class="article-card__link"
-      >
+      <a :href="href" class="article-card__link" :class="extraClasses">
         {{ data.title }}
       </a>
     </h2>
@@ -32,6 +29,26 @@ export default {
     return {
       id: uuidv4(),
     }
+  },
+
+  computed: {
+    href() {
+      if (this.data.external) {
+        return this.data.external.source
+      }
+
+      if (typeof this.data.permalink === 'function') {
+        return this.data.permalink.bind(this)(this.data)
+      }
+
+      return this.data.permalink
+    },
+
+    extraClasses() {
+      return {
+        '-external': !!this.data.external,
+      }
+    },
   },
 }
 </script>
