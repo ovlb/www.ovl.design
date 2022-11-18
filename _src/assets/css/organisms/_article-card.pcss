@@ -58,16 +58,15 @@
     bottom: 0;
     content: '';
     height: 0.125rem;
-    left: -1rem;
+    left: calc(-1 * var(--card-offset));
     position: absolute;
     transform: translateX(-50%) scale(0.5, 0.5);
     transform-origin: left top;
-    transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
     width: calc(100% + 1.25rem);
     z-index: -1;
 
-    @media (prefers-reduced-motion: reduce) {
-      transition: none;
+    @media (prefers-reduced-motion: no-preference) {
+      transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
     }
   }
 
@@ -83,13 +82,32 @@
       transform: none;
     }
   }
+
+  @supports (div: has(a)) {
+    &:has(:link:focus-visible) {
+      transform: translateX(-0.25rem);
+
+      /* IE11 gets confused when trying to do this, hide it from it */
+      @supports (transform: translateX(-1vmin)) {
+        transform: translateX(-1vmin);
+      }
+
+      &::before {
+        transform: none;
+      }
+    }
+
+    .article-card__link {
+      outline-color: transparent;
+    }
+  }
 }
 
 .article-card__link {
   font-weight: bold;
   text-decoration: none;
 
-  &.-external {
+  &:where(.-external) {
     &::after {
       background-image: url('/img/icons/baseline-launch-24px-light.svg');
       background-size: contain;
@@ -100,10 +118,5 @@
       transform: translateY(0.1em);
       width: 0.8em;
     }
-  }
-
-  &:focus {
-    outline: 2px solid var(--clr-decent);
-    outline-offset: 1px;
   }
 }
