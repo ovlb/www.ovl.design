@@ -19,7 +19,12 @@ Once I think a note isn’t a note anymore, I might add it to the text folder. I
 
 All posts on this website use a common theme for categories, they are tags (so that they get picked up by 11ty’s collection feature), prefixed by `cat:`. This global taxonomy allows me to link newsletter issues, notes, and articles which share a common theme.
 
-- Re-use `cat:xyz` tags from Around the Web, aggregate all content based on these
+### Adding a bit of everything
+
+While that’s certainly useful, how about building something really useless with this? «Oh», I hear you say, «you are speaking about chaos?» Yes, I am. So I built [Everything](/everything/). It’s a randomly sorted page of, well, all pages. At its end it contains every category I use in this website, which is page of all posts in this category – random, of course.
+
+### Better read more
+
 - Use tags for further reading underneaths posts instead of (or in addition to?) previous/next
 
 ## Content
