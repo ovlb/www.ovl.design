@@ -2,7 +2,6 @@ const Image = require('@11ty/eleventy-img')
 
 module.exports = {
   tags: ['blog'],
-  markdownTemplateEngine: 'md',
   layout: 'post',
   pageCSS: 'textDetail',
   templateClass: 'tmpl-single-post',
@@ -17,7 +16,7 @@ module.exports = {
         return permalink
       }
 
-      return `/text/${this.slugify(title)}/`
+      return `/text/${this.slugify(title.trim())}/`
     },
 
     meta: async function ({ site, meta, displayIntro: description, image }) {

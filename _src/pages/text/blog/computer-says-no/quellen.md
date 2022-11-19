@@ -1,5 +1,5 @@
 ---
-permalink: 'text/computer-says-no/quellen/'
+permalink: '/text/computer-says-no/quellen/'
 hidePaginationNav: true
 skipInArchive: true
 title: Computer says no

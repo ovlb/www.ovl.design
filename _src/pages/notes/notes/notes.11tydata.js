@@ -3,7 +3,9 @@ module.exports = {
   layout: 'note',
   pageCSS: 'note',
 
-  permalink: function (data) {
-    return `/notes/${this.slugify(data.title)}/`
+  eleventyComputed: {
+    permalink: function ({ title }) {
+      return `/notes/${this.slugify(title)}/`
+    },
   },
 }

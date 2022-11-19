@@ -1,5 +1,5 @@
 ---
-permalink: 'text/computer-says-no-en/'
+permalink: '/text/computer-says-no-en/'
 title: Computer says no
 date: '2021-12-26'
 subtitle: Artificial Intelligence & Power
