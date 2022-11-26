@@ -18,7 +18,7 @@ module.exports = class TextFeed {
   }
 
   get feedURL() {
-    return `${baseURL}${this.permalink}`
+    return `${baseURL}${this.metadata.feedID}/feed.xml`
   }
 
   get metadata() {
@@ -34,6 +34,7 @@ module.exports = class TextFeed {
       ...baseData,
       ...this.metadata,
       id: this.feedURL,
+      description: this.metadata.subtitle,
       link: absoluteUrl(`${this.metadata.feedID}/`, baseURL),
       updated: getNewestCollectionItemDate(collection),
       feedLinks: {
