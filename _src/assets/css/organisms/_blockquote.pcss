@@ -2,7 +2,6 @@ blockquote:not(.tweet-card) {
   line-height: 1.4;
   margin: 1rem 0 2rem;
   margin-bottom: 0.5rem;
-  max-width: 55ch;
   padding: 1rem 0 1rem 2vmin;
   position: relative;
 
@@ -19,6 +18,7 @@ blockquote:not(.tweet-card) {
 
 .c-blockquote {
   margin-bottom: 2rem;
+  max-width: 55ch;
 
   & blockquote {
     padding-bottom: 0;
@@ -27,8 +27,6 @@ blockquote:not(.tweet-card) {
 
 .c-blockquote__attribution {
   font-style: italic;
-  max-width: 55ch;
-  padding-left: 1rem;
 
   &::before {
     color: var(--clr-accent);
