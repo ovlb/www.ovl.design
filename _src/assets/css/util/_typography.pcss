@@ -81,7 +81,7 @@ small,
 }
 
 abbr,
-.type-small-caps {
+.type-all-small-caps {
   font-size: 80%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -94,12 +94,26 @@ abbr,
   }
 }
 
+.type-small-caps {
+  @supports (font-variant-caps: small-caps) {
+    font-size: inherit;
+    font-variant-caps: small-caps;
+    text-transform: none;
+  }
+}
+
 .t-content-1 {
   width: var(--size-content-1);
 }
 
 .t-content-2 {
   max-inline-size: var(--size-content-2);
+}
+
+.t-content-wide {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-inline-size: calc(3 * var(--size-content-2));
 }
 
 .t-center {

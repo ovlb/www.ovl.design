@@ -1,0 +1,38 @@
+h1 {
+  font-weight: bold;
+  font-family: var(--fonts-headline);
+  font-size: var(--type-large);
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.note {
+  margin: var(--padding-base) auto;
+  max-width: 75ch;
+
+  .warning {
+    --bg-opacity: 0.6;
+
+    background-color: rgba(255, 255, 0, var(--bg-opacity));
+    padding: 2vmin;
+    margin: 2vmin -2vmin;
+    border-radius: 0.5rem;
+
+    @mixin dark-mode {
+      --bg-opacity: 1;
+
+      color: var(--clr-dark);
+    }
+  }
+}
+
+.note-header {
+  margin: var(--padding-base) 0;
+}

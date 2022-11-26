@@ -12,7 +12,7 @@
       </template>
     </archive-header>
     <ol class="article-list u-global-padding" role="list">
-      <li v-for="post in articles.posts" :key="post.id">
+      <li v-for="{ data: post } in posts" :key="post.title">
         <article-card :data="post">
           <template v-if="post.date" #date>
             <span class="sr-only">Published in </span>
@@ -20,8 +20,8 @@
               {{ displayDate(post.date) }}
             </time>
           </template>
-          <template v-if="!post.isInternal" #footer>
-            Published: {{ post.externalPost.fields.medium }}
+          <template v-if="post.external" #footer>
+            Published: {{ post.external.medium }}
           </template>
         </article-card>
       </li>
@@ -49,7 +49,7 @@ export default {
     return {
       permalink: '/text/',
       templateClass: 'tmpl-article-list',
-      title: 'Text',
+      pageTitle: 'Text',
       pageCSS: 'text',
       eleventyComputed: {
         meta: function (data) {
@@ -62,9 +62,19 @@ export default {
     }
   },
 
+  computed: {
+    posts() {
+      return [...this.collections.publishedPosts]
+        .filter((post) => {
+          return post.data.skipInArchive !== true
+        })
+        .reverse()
+    },
+  },
+
   methods: {
     formattedDate(date) {
-      return dateToRfc3339(date)
+      return dateToRfc3339(new Date(date))
     },
   },
 }

@@ -22,7 +22,7 @@ module.exports = {
         publish: this.setPublishDate(new Date(data.dates.publish)),
       }
     },
-    title: function (data) {
+    pageTitle: function (data) {
       const { start, publish } = data.parsedDates
 
       if (start && publish) {
@@ -35,10 +35,10 @@ module.exports = {
           title = `${data.issueTitle} (${title})`
         }
 
-        return `${title} « Around the Web`.trim()
+        return `${title} | Around the Web`.trim()
       }
     },
-    pageTitle: ({ issueTitle }) => issueTitle || 'Around the Web',
+    title: ({ issueTitle }) => issueTitle || 'Around the Web',
     permalink: function (data) {
       if (data.issueTitle) {
         return `/around-the-web/${data.page.fileSlug}-${this.slugify(

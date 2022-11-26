@@ -68,7 +68,7 @@ export default {
   data() {
     return {
       permalink: '/around-the-web/statistics/',
-      title: 'Around the Numbers | Around the Web',
+      pageTitle: 'Around the Numbers | Around the Web',
       eleventyComputed: {
         meta: function ({ meta, site }) {
           return {

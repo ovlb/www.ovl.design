@@ -13,7 +13,7 @@ module.exports = function (direction, paginationLink, allItems) {
   if (!fullItemInformation) return ''
 
   return `<div class="pagination-navigation__section">
-        <h3 class="pagination-navigation__sub-headline type-small-caps">${infos.headline}</h3>
+        <h3 class="pagination-navigation__sub-headline type-all-small-caps">${infos.headline}</h3>
         <a class="pagination-navigation__link ${infos.class}" href="${paginationLink}">${fullItemInformation.title}</a>
       </div>`
 }

@@ -45,7 +45,7 @@ module.exports = {
       for (const style of stylistic) {
         innerHTML = innerHTML.replaceAll(
           getMatcher(style),
-          `$1<span class="type-small-caps">${style}</span>$2`,
+          `$1<span class="type-all-small-caps">${style}</span>$2`,
         )
       }
 

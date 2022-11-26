@@ -1,6 +1,7 @@
 ---
 permalink: '/colophon/'
 title: 'Colophon'
+pageTitle: 'Colophon'
 subline: 'Saying thank you'
 layout: 'layouts/page.njk'
 pageCSS: 'textDetail'

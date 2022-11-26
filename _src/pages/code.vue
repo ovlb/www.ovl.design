@@ -29,6 +29,7 @@ export default {
     return {
       permalink: '/code/',
       title: 'Code',
+      pageTitle: 'Code',
       templateClass: 'tmpl-code',
       pageCSS: 'code',
       eleventyComputed: {

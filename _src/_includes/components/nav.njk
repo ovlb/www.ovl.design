@@ -2,7 +2,7 @@
   <ul class="site-nav__list">
     {% for item in site.navItems %}
       {% set currentAttribute = '' %}
-      {% set navClass = 'site-nav__item type-small-caps' %}
+      {% set navClass = 'site-nav__item type-all-small-caps' %}
 
       {% if page.url == item.url %}
         {% set currentAttribute = 'aria-current="page"' %}
@@ -10,7 +10,7 @@
       {% endif %}
 
       <li>
-        {% navLink item, 'type-small-caps' %}
+        {% navLink item, 'type-all-small-caps' %}
       </li>
     {% endfor %}
   </ul>

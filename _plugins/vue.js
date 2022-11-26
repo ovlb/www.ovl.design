@@ -20,6 +20,10 @@ module.exports = {
         alias({
           entries: [
             {
+              find: '@',
+              replacement: path.resolve(process.cwd(), '_src'),
+            },
+            {
               find: '~cwd',
               replacement: path.resolve(process.cwd()),
             },

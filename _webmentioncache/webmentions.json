@@ -1,6 +1,148 @@
 {
-  "lastFetched": "2022-11-13T20:08:31.284Z",
+  "lastFetched": "2022-11-19T11:35:02.154Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Felix von Hagen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7bd1b15d20ceba4e3e62354dc006f966dab7565d7b3452da43df069c758ce80a.jpg",
+        "url": "https://twitter.com/felixvhagen"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592936639546155008#favorited-by-1543657077519880192",
+      "published": null,
+      "wm-received": "2022-11-16T21:10:23Z",
+      "wm-id": 1560924,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1592936639546155008/1543657077519880192",
+      "wm-target": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "like-of": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Felix von Hagen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7bd1b15d20ceba4e3e62354dc006f966dab7565d7b3452da43df069c758ce80a.jpg",
+        "url": "https://twitter.com/felixvhagen"
+      },
+      "url": "https://twitter.com/felixvhagen/status/1592965839984041984",
+      "published": "2022-11-16T19:40:26+00:00",
+      "wm-received": "2022-11-16T21:10:22Z",
+      "wm-id": 1560922,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1592936639546155008/1592965839984041984",
+      "wm-target": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "content": {
+        "html": "That looks interesting. Will give it a closer look. Thanks!\n<a class=\"u-mention\" href=\"https://twitter.com/_ovlb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://www.ovl.design/\"></a>",
+        "text": "That looks interesting. Will give it a closer look. Thanks!"
+      },
+      "in-reply-to": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592978576084652032",
+      "published": "2022-11-16T20:31:03+00:00",
+      "wm-received": "2022-11-16T21:10:22Z",
+      "wm-id": 1560923,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1592936639546155008/1592978576084652032",
+      "wm-target": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "content": {
+        "html": "If anything is unclear, feel free to ask anytime. DMs are open (until the bots find me), but you can find a mail on my homepage :)\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/felixvhagen\"></a>",
+        "text": "If anything is unclear, feel free to ask anytime. DMs are open (until the bots find me), but you can find a mail on my homepage :)"
+      },
+      "in-reply-to": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592936639546155008",
+      "published": "2022-11-16T17:44:24+00:00",
+      "wm-received": "2022-11-16T19:29:25Z",
+      "wm-id": 1560881,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1592936639546155008/1592936639546155008",
+      "wm-target": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "content": {
+        "html": "I’ve written a bit about it here. \n\n<a href=\"https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/\">ovl.design/text/worry-sto…</a>\nSource is there: <a href=\"https://github.com/ovlb/www.ovl.design\">github.com/ovlb/www.ovl.d…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/felixvhagen\"></a>",
+        "text": "I’ve written a bit about it here. \n\novl.design/text/worry-sto…\nSource is there: github.com/ovlb/www.ovl.d…"
+      },
+      "in-reply-to": "https://www.ovl.design/text/worry-stones-diaries-no-2-the-blog/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Taib 🤦🏽🤷🏽",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cc1762e9083264ede40406f9f1696de0601ba61f902b92ed014767ae475baa71.jpg",
+        "url": "https://twitter.com/Tabibi161"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592093172779614208#favorited-by-1349707679439187971",
+      "published": null,
+      "wm-received": "2022-11-15T00:09:22Z",
+      "wm-id": 1559740,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1592093172779614208/1349707679439187971",
+      "wm-target": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "like-of": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592221111227650048",
+      "published": "2022-11-14T18:21:09+00:00",
+      "wm-received": "2022-11-14T22:20:50Z",
+      "wm-id": 1559686,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1592221111227650048",
+      "wm-target": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "content": {
+        "html": "One more time for the people of the evening. Early reviews say it’s «pretty good 👏».\n<a class=\"u-mention\" href=\"https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/\"></a>",
+        "text": "One more time for the people of the evening. Early reviews say it’s «pretty good 👏»."
+      },
+      "mention-of": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kellerkinder OstBLN",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/50b5e5226ceba39eb5c96d2ade6f8728e29f24df99115688537b313d35446b5a.jpg",
+        "url": "https://twitter.com/KOstberl"
+      },
+      "url": "https://twitter.com/_ovlb/status/1592093172779614208#favorited-by-4824189737",
+      "published": null,
+      "wm-received": "2022-11-14T15:19:33Z",
+      "wm-id": 1559330,
+      "wm-source": "https://brid.gy/like/twitter/_ovlb/1592093172779614208/4824189737",
+      "wm-target": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "like-of": "https://www.ovl.design/around-the-web/014-just-go-aahh-hardcore/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
