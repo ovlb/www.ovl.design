@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
     const published = posts.filter((post) => {
       const isFuture = post.date && new Date(post.date) > Date.now()
 
-      return IS_LIVE ? !post.tags.includes('state:draft') && !isFuture : true
+      return IS_LIVE ? !post.tags.includes('state:draft') || !isFuture : true
     })
 
     return published
