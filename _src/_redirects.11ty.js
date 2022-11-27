@@ -8,6 +8,15 @@ module.exports = class Redirects {
     }
   }
 
+  createAtwRedirects(posts) {
+    return posts
+      .filter((post) => !!post.data.issueTitle)
+      .map((post) => {
+        return `/around-the-web/${post.data.page.fileSlug}/ ${post.data.permalink} 301`
+      })
+      .join('\n')
+  }
+
   createLegacyRedirects(collection, currentBase) {
     const { slugify } = this
 
@@ -41,15 +50,14 @@ module.exports = class Redirects {
   }
 
   render({ collections }) {
-    const { blog, notes } = collections
+    const { blog, notes, aroundTheWeb } = collections
 
     return `
 https://11ty.owlish.dev/* /:splat 301
 https://reading.ovl.design/* https://www.ovl.design/around-the-web/ 301
-/around-the-web/013/ /around-the-web/013-do-robots-eat-electric-salad/ 301
-/around-the-web/014/ /around-the-web/014-just-go-aahh-hardcore/ 301
 ${this.createLegacyRedirects(blog, 'text')}
 ${this.createLegacyRedirects(notes, 'notes')}
+${this.createAtwRedirects(aroundTheWeb)}
 `.trim()
   }
 }
