@@ -66,3 +66,41 @@
   grid-column-end: -1;
   margin-top: 4vmin;
 }
+
+.embeddable-buttondown-form {
+  border: 1px solid var(--clr-fg);
+  border-radius: 0.25rem;
+  margin-top: var(--padding-base);
+  margin-left: calc(-1 * var(--padding-base));
+  margin-right: calc(-1 * var(--padding-base));
+  padding: var(--padding-base);
+
+  label {
+    display: block;
+  }
+
+  p {
+    text-indent: none;
+  }
+
+  input {
+    background-color: transparent;
+    border: 2px solid var(--clr-fg);
+    border-radius: 0.25rem;
+    color: inherit;
+    font: inherit;
+    padding: calc(0.25 * var(--padding-base));
+  }
+
+  [type='submit'] {
+    appearance: none;
+    border: none;
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
+    margin-left: calc(0.25 * var(--padding-base));
+  }
+
+  .form-section {
+    margin: calc(0.25 * var(--padding-base)) 0;
+  }
+}
