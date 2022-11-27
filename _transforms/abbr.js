@@ -7,6 +7,10 @@ const commonAbbreviations = [
   { text: 'AGI', title: 'Artificial General Intelligence' },
   { text: 'ML', title: 'Machine Learning' },
   { text: 'SPD', title: 'Sozialdemokratische Partei Deutschlands' },
+  { text: 'TERF', title: 'Trans Exclusionary Radical Feminist' },
+  { text: 'LGBTQ', title: 'Lesbian Gay Bi Trans Queer' },
+  { text: 'AIDS', title: 'Acquired Immune Deficiency Syndrome' },
+  { text: 'FIFA', title: 'Fédération Internationale de Football Association' },
   { text: 'GBP', title: 'Great Britisch Pound' },
   { text: 'EUR', title: 'Euro' },
   { text: 'NSU', title: 'Nationalsozialistischer Untergrund' },
@@ -30,7 +34,7 @@ module.exports = {
       let { innerHTML } = textContent
 
       const getMatcher = (text) => {
-        const punctuation = '[ .,:;?’]'
+        const punctuation = '[ .,:;?’#+«»”“]'
 
         return new RegExp(`(${punctuation})${text}(${punctuation})`, 'gm')
       }
