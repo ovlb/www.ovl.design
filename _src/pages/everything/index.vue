@@ -23,7 +23,12 @@
       </template>
     </archive-header>
     <ul class="article-list u-global-padding t-center" role="list">
-      <li v-for="thing in allTheThings" :key="thing">
+      <li
+        v-for="thing in allTheThings.filter(
+          (post) => !!post.data.external !== true,
+        )"
+        :key="thing"
+      >
         <h2>
           <a :href="thing.permalink || thing.data.page.url">{{
             thing.data.pageTitle || thing.title || thing.data.title

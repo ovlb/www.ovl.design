@@ -20,17 +20,15 @@
       </template>
     </archive-header>
     <ol class="article-list u-global-padding" role="list">
-      <li v-for="post in posts" :key="post.data.dates.publish">
-        <h3>
-          <a
-            :href="
-              post.data.external
-                ? post.data.external.source
-                : post.data.page.url
-            "
-            >{{ post.data.pageTitle || post.data.title }}</a
-          >
-        </h3>
+      <li
+        v-for="post in posts.filter((post) => !!post.data.external !== true)"
+        :key="post.data.dates.publish"
+      >
+        <h2>
+          <a :href="post.data.page.url">{{
+            post.data.pageTitle || post.data.title
+          }}</a>
+        </h2>
       </li>
     </ol>
   </main>
