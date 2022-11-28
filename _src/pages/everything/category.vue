@@ -22,9 +22,14 @@
     <ol class="article-list u-global-padding" role="list">
       <li v-for="post in posts" :key="post.data.dates.publish">
         <h3>
-          <a :href="post.data.page.url">{{
-            post.data.pageTitle || post.data.title
-          }}</a>
+          <a
+            :href="
+              post.data.external
+                ? post.data.external.source
+                : post.data.page.url
+            "
+            >{{ post.data.pageTitle || post.data.title }}</a
+          >
         </h3>
       </li>
     </ol>

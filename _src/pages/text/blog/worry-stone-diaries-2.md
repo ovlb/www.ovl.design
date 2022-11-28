@@ -4,6 +4,8 @@ subtitle: A website and a fleeting sense of safety
 intro: I restarted to build my website with Eleventy. Here’s why.
 date: '2020-04-25'
 permalink: '/text/worry-stone-diaries-no-2/'
+oldTitles:
+  - 'worry-stone-diaries-no-2-the-blog'
 series:
   name: 'Worry Stone Diaries'
   issue: 2
