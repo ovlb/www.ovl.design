@@ -5,6 +5,7 @@ module.exports = class Redirects {
     return {
       layout: null,
       permalink: '_redirects',
+      eleventyExcludeFromCollections: true,
     }
   }
 
