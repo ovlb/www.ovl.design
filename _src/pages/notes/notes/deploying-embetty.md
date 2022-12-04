@@ -146,7 +146,7 @@ docker run \
   --name embetty \
   --rm \
   -e VALID_ORIGINS=https://test.com/ \
-  -e 'LETSENCRYPT_EMAIL=admin@test.com
+  -e 'LETSENCRYPT_EMAIL=admin@test.com' \
   -e 'LETSENCRYPT_HOST=embetty.test.com' \
   -e VIRTUAL_HOST=embetty.test.com \
   heiseonline/embetty-server:latest
