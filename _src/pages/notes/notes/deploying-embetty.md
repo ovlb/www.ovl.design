@@ -8,9 +8,9 @@ tags:
   - 'cat:social-media'
 ---
 
-Embetty is a proxy developed by Heise, which allows you to tunnel requests to YouTube or Twitter. The proxy removes their traffic code, allowing you to embed content without
+Embetty is a proxy developed by Heise, which allows you to tunnel requests to YouTube or Twitter. The proxy removes their traffic code, allowing you to embed content without a cookie banner.
 
-Because the official docs are crap, here’s the steps I took to deploy the Docker image to DigitalOcean. Though it should work on any host that can install Docker.
+Because the official docs don’t explain the hard part, here’s the steps I took to deploy the Docker image to DigitalOcean. Though it should work on any host that can install Docker.
 
 Tech used:
 
@@ -70,7 +70,6 @@ Connection: keep-alive
 ```
 
 Okay, great. Actually, no. Let’s fix the issues from above.
-
 
 ```bash
 $ docker run \
@@ -151,7 +150,9 @@ docker run \
   heiseonline/embetty-server:latest
 ```
 
-Things to note: This command uses no `-p` flag anymore. As the proxy listens on the ports `VIRTUAL_HOST` lets the nginx proxy know which domain it should map to this container. With this setup you could use more Docker containers on the same host and let nginx figure out where what should lead.
+Things to note: This command uses no `-p` flag anymore. The proxy listens on the HTTP ports and uses `VIRTUAL_HOST` to pass the request to the correct container. Our `VIRTUAL_HOST` should be the domain added at the beginning.
+
+With this setup you could use more Docker containers on the same host and let nginx figure out where what should lead.
 
 Additionally we pass two variables for the Let’s Encrypt config.
 
