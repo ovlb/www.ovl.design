@@ -1,6 +1,71 @@
 {
-  "lastFetched": "2022-11-27T08:59:50.272Z",
+  "lastFetched": "2022-11-28T11:38:13.691Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Distributed AI Research Institute is on Mastodon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/49e31cac91ff31c7c8ec380f6cbb6071979b0f1b755ff17744a8052cd1be5eaf.png",
+        "url": "https://twitter.com/DAIRInstitute"
+      },
+      "url": "https://twitter.com/DAIRInstitute/status/1597003902695591936",
+      "published": "2022-11-27T23:06:15+00:00",
+      "wm-received": "2022-11-27T23:55:59Z",
+      "wm-id": 1569522,
+      "wm-source": "https://brid.gy/repost/twitter/_ovlb/1596812687077507073/1597003902695591936",
+      "wm-target": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/",
+      "content": {
+        "text": "Fresh of the presses: Around the Web Issue No. 15\n\nPrime time in diversity theatre\n\nAnother attack on queer spaces, diversity theatre, border regimes, maps of the world, and cows surviving a hurricane. I’ll post some highlights in a thread below.\n\novl.design/around-the-web…"
+      },
+      "repost-of": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1596951619161141248",
+      "published": "2022-11-27T19:38:30+00:00",
+      "wm-received": "2022-11-27T20:16:54Z",
+      "wm-id": 1569254,
+      "wm-source": "https://brid.gy/post/twitter/_ovlb/1596951619161141248",
+      "wm-target": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/",
+      "content": {
+        "html": "For the users of the evening: A new issue of Around the Web is on the web. 🗞\n<a class=\"u-mention\" href=\"https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/\"></a>",
+        "text": "For the users of the evening: A new issue of Around the Web is on the web. 🗞"
+      },
+      "mention-of": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52bb3dc8cf54d2a2e3bdd8af9cb0f7d8946e7821d48c4bd5986077a2c0e7753c.jpg",
+        "url": "https://twitter.com/_ovlb"
+      },
+      "url": "https://twitter.com/_ovlb/status/1596812745961361409",
+      "published": "2022-11-27T10:26:40+00:00",
+      "wm-received": "2022-11-27T10:38:56Z",
+      "wm-id": 1568892,
+      "wm-source": "https://brid.gy/comment/twitter/_ovlb/1596812745961361409/1596812745961361409",
+      "wm-target": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/#a-brief-look-at-twitter%E2%80%99s-state",
+      "content": {
+        "html": "I’ll skip the Twitter drama. The piece features a one minute redux of all the awful things that happened, so feel free to clock through if you are curios. 11/\n\n<a href=\"https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/#a-brief-look-at-twitter%E2%80%99s-state\">ovl.design/around-the-web…</a>",
+        "text": "I’ll skip the Twitter drama. The piece features a one minute redux of all the awful things that happened, so feel free to clock through if you are curios. 11/\n\novl.design/around-the-web…"
+      },
+      "in-reply-to": "https://www.ovl.design/around-the-web/015-prime-time-in-diversity-theatre/#a-brief-look-at-twitter%E2%80%99s-state",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
