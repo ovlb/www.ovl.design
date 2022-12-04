@@ -1,3 +1,5 @@
+@import './organisms/_code.pcss';
+
 h1 {
   font-weight: bold;
   font-family: var(--fonts-headline);
@@ -35,4 +37,19 @@ h3 {
 
 .note-header {
   margin: var(--padding-base) 0;
+}
+
+.md-content pre {
+  --clr-accent: #28caf0;
+
+  background-color: #2b2b2b;
+  border-radius: 0.25em;
+  font-family: var(--fonts-mono);
+  font-size: 85%;
+  grid-column: full;
+  line-height: 1.7;
+  margin-top: 2vmin;
+  overflow: auto;
+  padding: 2vmin var(--padding-base);
+  width: 100%;
 }

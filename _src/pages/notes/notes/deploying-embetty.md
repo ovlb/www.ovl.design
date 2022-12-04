@@ -54,7 +54,7 @@ Two problems:
 
 But you can still do this, to test that everything is working. It it is, you can `curl` the domain you added:
 
-```
+```bash
 $ curl -i http://embetty.test.com:8080/video/youtube/m6UOo2YGbIE-poster-image
 
 HTTP/1.1 200 OK
@@ -73,7 +73,7 @@ Connection: keep-alive
 Okay, great. Actually, no. Let’s fix the issues from above.
 
 
-```
+```bash
 $ docker run \
   -it \
   - d \
@@ -104,14 +104,14 @@ We’ll add two other Docker images. One for running the actual nginx, and the o
 
 Bur first, create a directory for the TLS certificates:
 
-```
+```bash
 cd ~
 mkdir certs
 ```
 
 Afterwards, start the nginx proxy:
 
-```
+```bash
 docker run -d -p 80:80 -p 443:443 \
     --name nginx-proxy \
     -v $HOME/certs:/etc/nginx/certs:ro \
@@ -126,7 +126,7 @@ Note that we are passing `-p` two times. The proxy now listens to the ports for 
 
 Next, Let’s Encrypt:
 
-```
+```bash
 docker run -d \
     --name nginx-letsencrypt \
     --volumes-from nginx-proxy \
@@ -139,7 +139,7 @@ This commands is mapping the previously created cert directory to the common loc
 
 The last step left is to start the embetty container again:
 
-```
+```bash
 docker run \
   -it \
   -d \
@@ -158,7 +158,7 @@ Additionally we pass two variables for the Let’s Encrypt config.
 
 And that’s it. The Embetty server is now secured and behind a proxy.
 
-```
+```bash
 $ curl -i https://embetty.test.com/video/youtube/m6UOo2YGbIE-poster-image
 
 HTTP/1.1 200 OK
