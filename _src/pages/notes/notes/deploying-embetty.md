@@ -1,8 +1,7 @@
 ---
 title: 'Deploying Embetty to Production'
 date: '2022-12-02'
-determination: high
-state: evolving
+state: done
 tags:
   - 'cat:web-development'
   - 'cat:privacy'
