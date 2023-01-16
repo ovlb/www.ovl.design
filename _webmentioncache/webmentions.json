@@ -1,6 +1,24 @@
 {
-  "lastFetched": "2022-12-13T13:07:12.437Z",
+  "lastFetched": "2023-01-16T10:14:43.528Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://www.htmhell.dev/adventcalendar/2022/23/",
+      "published": null,
+      "wm-received": "2022-12-30T10:25:20Z",
+      "wm-id": 1589369,
+      "wm-source": "https://www.htmhell.dev/adventcalendar/2022/23/",
+      "wm-target": "https://www.ovl.design/text/inclusive-inputs/",
+      "mention-of": "https://www.ovl.design/text/inclusive-inputs/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
