@@ -1,7 +1,8 @@
 const htmlmin = require('html-minifier')
 
 module.exports = {
-  when: 'prod',
+  when: 'always',
+  disabled: true,
   transform: function (content) {
     if (this.outputPath && this.outputPath.endsWith('.html')) {
       let minified = htmlmin.minify(content, {
