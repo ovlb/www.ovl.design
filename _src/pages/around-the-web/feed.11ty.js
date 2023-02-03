@@ -29,6 +29,22 @@ module.exports = class AtwFeed {
     }
   }
 
+  getMetaInfoString({ parsedDates, sources }) {
+    const startDate = this.displayDate(parsedDates.start, 'short')
+    const endDate = this.displayDate(parsedDates.publish, 'short')
+
+    return `<p>Collected between ${startDate} and ${endDate}. It discusses ${sources.count} links from ${sources.distinct} sources.</p>`
+  }
+
+  async enrichContent(post) {
+    const parsed = await convertHtmlToAbsoluteUrls(
+      await this.feedImages(this.fixCite(post.templateContent)),
+      this.feedURL,
+    )
+
+    return `${this.getMetaInfoString(post.data)}<hr />${parsed}`
+  }
+
   makeFeed(baseData, collection) {
     return new Feed({
       ...baseData,
@@ -57,10 +73,7 @@ module.exports = class AtwFeed {
         id: link,
         date: post.data.parsedDates.publish,
         description: post.data.intro,
-        content: await convertHtmlToAbsoluteUrls(
-          await this.feedImages(this.fixCite(post.templateContent)),
-          this.feedURL,
-        ),
+        content: await this.enrichContent(post),
         image: post.data.meta.image.src,
       })
     }
