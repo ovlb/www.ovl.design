@@ -32,7 +32,7 @@ module.exports = {
         )}`
 
         if (data.issueTitle) {
-          title = `${data.issueTitle} (${title})`
+          title = data.issueTitle
         }
 
         return `${title} | Around the Web`.trim()
