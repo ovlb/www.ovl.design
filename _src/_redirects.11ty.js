@@ -56,6 +56,7 @@ module.exports = class Redirects {
     return `
 https://11ty.owlish.dev/* /:splat 301
 https://reading.ovl.design/* https://www.ovl.design/around-the-web/ 301
+/atw /around-the-web/ 301
 ${this.createLegacyRedirects(blog, 'text')}
 ${this.createLegacyRedirects(notes, 'notes')}
 ${this.createAtwRedirects(aroundTheWeb)}

@@ -1,6 +1,15 @@
 @import './0-base/_img.pcss';
 @import './0-base/_figure.pcss';
 @import 'eleventy-plugin-embed-tweet/tweet.css';
+@import '@inframanufaktur/eleventy-plugin-embed-mastodon/post.css';
+
+.mastodon-embed {
+  margin: 1rem 0;
+
+  & p + p {
+    text-indent: 0;
+  }
+}
 
 .tweet-images img {
   max-height: unset;
@@ -70,9 +79,9 @@
 .embeddable-buttondown-form {
   border: 1px solid var(--clr-fg);
   border-radius: 0.25rem;
-  margin-top: var(--padding-base);
   margin-left: calc(-1 * var(--padding-base));
   margin-right: calc(-1 * var(--padding-base));
+  margin-top: var(--padding-base);
   padding: var(--padding-base);
 
   label {
@@ -94,8 +103,8 @@
 
   [type='submit'] {
     appearance: none;
-    border: none;
     background-color: var(--clr-accent);
+    border: none;
     color: var(--clr-bg);
     margin-left: calc(0.25 * var(--padding-base));
   }
