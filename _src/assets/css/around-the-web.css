@@ -16,13 +16,13 @@
 }
 
 .atw-post {
-  display: grid;
   max-width: 120ch;
   padding: var(--padding-base);
 
-  @media (min-width: 1034px) {
+  @media (min-width: 800px) {
+    display: grid;
     gap: calc(2 * var(--padding-base));
-    grid-template-columns: 30ch 1fr;
+    grid-template-columns: min(45vw, 30ch) 1fr;
   }
 }
 
