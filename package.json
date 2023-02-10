@@ -12,7 +12,8 @@
     "lint:css": "stylelint '**/*.pcss' --fix",
     "lint:js": "eslint \"**/*.{js,vue,mjs}\" --ignore-pattern 'node_modules/**/*' --fix",
     "serve": "ELEVENTY_ENV=development eleventy --serve --quiet --port 7777",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "node scripts/prepare.js"
   },
   "engines": {
     "node": "16"
@@ -28,11 +29,11 @@
   },
   "homepage": "https://github.com/ovlb/www.ovl.design#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-fetch": "^3.0.0",
-    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@11ty/eleventy-plugin-vue": "^1.0.0-canary.8",
     "@commitlint/cli": "^15.0.0",
