@@ -4,6 +4,9 @@
 @import '@inframanufaktur/eleventy-plugin-embed-mastodon/post.css';
 
 .mastodon-embed {
+  --pme-description-display: block;
+  --pme-description-width: min(55vw, 29rem);
+
   margin: 1rem 0;
 
   & p + p {
