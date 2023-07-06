@@ -21,6 +21,15 @@ module.exports = class TextFeed {
     return `${baseURL}${this.metadata.feedID}/feed.xml`
   }
 
+  async enrichContent(post) {
+    const parsed = await convertHtmlToAbsoluteUrls(
+      await this.feedImages(this.fixCite(post.templateContent)),
+      this.feedURL,
+    )
+
+    return parsed
+  }
+
   get metadata() {
     return {
       title: 'ovl.design » text',
@@ -64,10 +73,7 @@ module.exports = class TextFeed {
         description: post.data.displayIntro,
         image: post.data.meta.image.src,
         ...(post.templateContent && {
-          content: await convertHtmlToAbsoluteUrls(
-            await this.feedImages(this.fixCite(post.templateContent)),
-            this.feedURL,
-          ),
+          content: await this.enrichContent(post),
         }),
       })
     }

@@ -23,7 +23,7 @@
       {% endif %}
     </header>
     {% articleImage image %}
-    <div class="text__body e-content" data-text-body>
+    <div class="text__body e-content md-content" data-text-body>
       {{ content | safe }}
     </div>
     {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}

@@ -1,6 +1,6 @@
 const pluginMastodon = require('@inframanufaktur/eleventy-plugin-embed-mastodon')
 
-const { MASTODON_TOKEN: token } = process.env
+const { MASTODON_TOKEN: token, BASE_URL } = process.env
 
 module.exports = {
   plugin: pluginMastodon,
@@ -10,6 +10,7 @@ module.exports = {
       token,
     },
     imageOptions: {
+      urlPath: `${BASE_URL}/img/`,
       outputDir: './dist/img/',
     },
   },

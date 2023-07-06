@@ -36,10 +36,10 @@ module.exports = class AtwFeed {
     return `<p>Collected between ${startDate} and ${endDate}. It discusses ${sources.count} links from ${sources.distinct} sources.</p>`
   }
 
-  async enrichContent(post) {
+  async enrichContent(post, baseURL) {
     const parsed = await convertHtmlToAbsoluteUrls(
       await this.feedImages(this.fixCite(post.templateContent)),
-      this.feedURL,
+      baseURL,
     )
 
     return `${this.getMetaInfoString(post.data)}<hr />${parsed}`
@@ -73,7 +73,7 @@ module.exports = class AtwFeed {
         id: link,
         date: post.data.parsedDates.publish,
         description: post.data.intro,
-        content: await this.enrichContent(post),
+        content: await this.enrichContent(post, site.baseURL),
         image: post.data.meta.image.src,
       })
     }
