@@ -46,16 +46,6 @@ module.exports = function (eleventyConfig) {
     })
   }
 
-  eleventyConfig.on('eleventy.before', async function () {
-    const dist = path.join(process.cwd(), 'dist')
-
-    const deletedDirectoryPaths = await del([`${dist}/**`, `!${dist}/img`])
-
-    if (deletedDirectoryPaths.length) {
-      console.log('eleventy.before: 🗑 Deleted `dist`.')
-    }
-  })
-
   eleventyConfig.addCollection('publishedPosts', function (collectionAPI) {
     /** @type Array */
     const posts = collectionAPI.getFilteredByGlob(
