@@ -1,9 +1,9 @@
 @import './organisms/_code.pcss';
 
 h1 {
-  font-weight: bold;
   font-family: var(--fonts-headline);
   font-size: var(--type-large);
+  font-weight: bold;
 }
 
 h2 {
@@ -11,8 +11,8 @@ h2 {
 }
 
 h3 {
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
 }
 
 .note {
@@ -23,9 +23,9 @@ h3 {
     --bg-opacity: 0.6;
 
     background-color: rgba(255, 255, 0, var(--bg-opacity));
-    padding: 2vmin;
-    margin: 2vmin -2vmin;
     border-radius: 0.5rem;
+    margin: 2vmin -2vmin;
+    padding: 2vmin;
 
     @mixin dark-mode {
       --bg-opacity: 1;
@@ -37,6 +37,10 @@ h3 {
 
 .note-header {
   margin: var(--padding-base) 0;
+}
+
+.md-content p {
+  margin-block-start: var(--size-3);
 }
 
 .md-content pre {
@@ -52,4 +56,8 @@ h3 {
   overflow: auto;
   padding: 2vmin var(--padding-base);
   width: 100%;
+}
+
+.collections {
+  margin-block-start: var(--size-7);
 }
