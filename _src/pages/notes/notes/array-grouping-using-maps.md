@@ -6,7 +6,7 @@ tags:
   - 'cat:web-development'
 ---
 
-Over the last few days, I’ve been, slowly, rebuilding the Rillendisco website, using my 11ty starter No. 11.
+Over the last few days, I’ve been, slowly, rebuilding the Rillendisco website, using my [11ty starter, No. 11](https://github.com/inframanufaktur/no-11).
 
 The first version of the site uses Contentful and nested content types to split the events up by years. Which works, but is also a lot of manual labour. FOr the second version, I decided to try to automate this.
 
