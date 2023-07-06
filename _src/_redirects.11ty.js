@@ -19,7 +19,7 @@ module.exports = class Redirects {
   }
 
   createLegacyRedirects(collection, currentBase) {
-    const { slugify } = this
+    const slugify = this.slugify.bind(this)
 
     return collection
       .map((item) => {
