@@ -16,7 +16,7 @@
     "prepare": "node scripts/prepare.js"
   },
   "engines": {
-    "node": "16"
+    "node": "20"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ovlb/www.ovl.design#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
@@ -39,7 +39,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.2",
-    "@inframanufaktur/eleventy-plugin-embed-mastodon": "^0.1.0",
+    "@inframanufaktur/eleventy-plugin-embed-mastodon": "^0.3.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-alias": "^3.1.8",
     "autoprefixer": "^10.4.4",
