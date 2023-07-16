@@ -5,6 +5,7 @@ const commonAbbreviations = [
   { text: 'HTML', title: 'Hypertext Markup Language' },
   { text: 'AI', title: 'Artificial Intelligence' },
   { text: 'AGI', title: 'Artificial General Intelligence' },
+  { text: 'API', title: 'Application Programming Interface' },
   { text: 'ML', title: 'Machine Learning' },
   { text: 'SPD', title: 'Sozialdemokratische Partei Deutschlands' },
   { text: 'TERF', title: 'Trans Exclusionary Radical Feminist' },
