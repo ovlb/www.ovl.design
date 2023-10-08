@@ -15,16 +15,21 @@ module.exports = function (menuItem, extraClasses = '') {
   // highlight menu item if sub page is visited
   // e.g. `/blog/blog-post` should highlight `/blog/`
   // check for exact here, as `/` would always be highlighted
-  if (url && url.includes && url.includes(menuItem.url) && !menuItem.exact) {
+  if (
+    url &&
+    url.includes &&
+    url.includes(menuItem.permalink) &&
+    !menuItem.exact
+  ) {
     activeClass = ' -is-active'
   }
 
   // highlight exact match, mostly for homepage or something pretty specific
-  if (url === menuItem.url && menuItem.exact) {
+  if (url === menuItem.permalink && menuItem.exact) {
     activeClass = ' -is-active'
   }
 
-  let ariaCurrent = url === menuItem.url ? 'aria-current="page"' : ''
+  let ariaCurrent = url === menuItem.permalink ? 'aria-current="page"' : ''
   let linkClasses = [BASE_LINK_CLASSES, classes, extraClasses, activeClass]
     .join(' ')
     .trim()
@@ -33,5 +38,5 @@ module.exports = function (menuItem, extraClasses = '') {
     .map((key) => `${key}="${attributes[key]}"`)
     .join(' ')
 
-  return `<a href="${menuItem.url}" class="${linkClasses}" ${extraAttributes} ${ariaCurrent}>${menuItem.title}</a>`
+  return `<a href="${menuItem.permalink}" class="${linkClasses}" ${extraAttributes} ${ariaCurrent}>${menuItem.title}</a>`
 }

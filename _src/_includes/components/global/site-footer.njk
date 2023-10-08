@@ -24,7 +24,7 @@
     </p>
   </section>
   <nav class="vertical-nav" aria-label="Social profiles">
-    {% socialNavIcons site.socialNavItems %}
+    {% socialNavIcons navigation.social %}
   </nav>
   <nav class="vertical-nav" aria-label="Secondary">
     <ul class="vertical-nav__list" role="list">
@@ -38,10 +38,11 @@
   <nav class="vertical-nav" aria-labelledby="hdl-footer-feeds">
     <h2 id="hdl-footer-feeds" class="type-all-small-caps" style="margin-top:0;">RSS Feeds</h2>
     <ul class="vertical-nav__list" role="list">
-      <li>
-        <a href="/text/feed.xml">Blog</a>
-      <li>
-        <a href="/around-the-web/feed.xml">Around the Web</a>
+      {% for item in navigation.rss %}
+        <li>
+          <a href="{{ item.permalink }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </footer>
