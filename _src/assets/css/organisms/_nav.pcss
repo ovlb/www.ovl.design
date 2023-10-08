@@ -18,8 +18,11 @@
   height: var(--layout-header-height);
   position: relative;
   text-decoration: none;
-  transition: transform 0.2s ease-out;
   z-index: 1;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: transform 0.2s ease-out;
+  }
 
   &::after {
     backface-visibility: hidden;
