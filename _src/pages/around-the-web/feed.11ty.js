@@ -29,11 +29,11 @@ module.exports = class AtwFeed {
     }
   }
 
-  getMetaInfoString({ parsedDates, sources }) {
+  getMetaInfoString({ parsedDates }) {
     const startDate = this.displayDate(parsedDates.start, 'short')
     const endDate = this.displayDate(parsedDates.publish, 'short')
 
-    return `<p>Collected between ${startDate} and ${endDate}. It discusses ${sources.count} links from ${sources.distinct} sources.</p>`
+    return `<p>Collected between ${startDate} and ${endDate}.</p>`
   }
 
   async enrichContent(post, baseURL) {
