@@ -1,4 +1,5 @@
 @import './organisms/_code.pcss';
+@import './organisms/_webmentions.pcss';
 
 h1 {
   font-family: var(--fonts-headline);
@@ -6,11 +7,38 @@ h1 {
   font-weight: bold;
 }
 
+h2, h3 {
+  position: relative;
+
+  @media (min-width: 45rem) {
+    --bfr-position: absolute;
+  }
+
+  &:not([class]) {
+    &::before {
+      content: var(--bfr-content);
+      display: block;
+      left: 0;
+      opacity: 0.5;
+      margin-inline-end: 1ch;
+      position: var(--bfr-position, relative);
+      top: 0;
+      transform: translateX(-3ch);
+      width: auto;
+    }
+  }
+
+}
+
 h2 {
+  --bfr-content: '##';
+
   font-weight: bold;
 }
 
 h3 {
+  --bfr-content: '###';
+
   font-style: italic;
   font-weight: normal;
 }
@@ -60,4 +88,28 @@ h3 {
 
 .collections {
   margin-block-start: var(--size-7);
+}
+
+.change {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 10ch 1fr;
+
+  & + & {
+    margin-block-start: var(--size-4);
+  }
+}
+
+.change__time {
+  opacity: 0.8;
+}
+
+.change__title {
+  font-style: normal;
+  font-weight: bold;
+  margin-block-start: 0;
+
+  a {
+    color: var(--clr-fg);
+  }
 }

@@ -38,7 +38,7 @@
     {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
-        class="u-global-padding"
+        class="collections"
         style="grid-column: main;"
         aria-label="Post likes"
       >
@@ -47,12 +47,12 @@
         <ul class="webmention-likes">
           {% for post in currentPostMentions.likes %}
             <li><a
-              href="{{ author.url }}"
-              aria-label="Profile of {{ author.name }}"
+              href="{{ post.author.url }}"
+              aria-label="Profile of {{ post.author.name }}"
             >
               <img
-                src="{{ author.photo }}"
-                alt="{{ author.name }}"
+                src="{{ post.author.photo }}"
+                alt="{{ post.author.name }}"
                 data-process-image
                 data-image-widths="[32, 64]"
                 data-image-sizes="2rem"
@@ -61,6 +61,29 @@
           {% endfor %}
         </ul>
       </section>
+    {% endif %}
+    {% if changes %}
+    <section class="collections" aria-labelledby="changelogHdl" id="changelog">
+      <h2
+        class="pagination-navigation__sub-headline type-all-small-caps"
+        id="changelogHdl"
+      >Changelog</h2>
+      <ul class="changes">
+        {% for c in changes %}
+          <li class="change">
+            <time
+              class="change__time"
+              datetime="{{ c.date }}"
+            >
+              {{ c.date | displayDate('short') }}
+            </time>
+            <h3 class="change__title">
+              <a href="{{ c.hash | githubCommit }}">{{ c.message }}</a>
+            </h3>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
   </main>
 {% endblock %}

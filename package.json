@@ -101,6 +101,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^0.10.0",
+    "simple-git": "^3.20.0",
     "textics": "^1.2.0",
     "vue-material-design-icons": "^5.0.0"
   }
