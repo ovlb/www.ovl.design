@@ -15,7 +15,10 @@
       {% elif state === 'done' %}
         <p>I consider this note done.</p>
       {% elif state === 'evolving' %}
-        <p>This note is being worked on.</p>
+        <p>I’m working on the topic of this note.</p>
+        {% if changes %}
+          <p>I updated it <a href="#changelog">{{ changes.length }} times</a>.</p>
+        {% endif %}
       {% endif %}
     </header>
     <div class="e-content md-content" data-text-body>
