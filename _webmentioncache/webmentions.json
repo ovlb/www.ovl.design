@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2023-10-10T16:11:57.926Z",
+  "lastFetched": "2023-10-10T17:15:33.567Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah Moir",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/a1e9532db99ba7f553a7c2f4605ac21d77c0811c3ee8109f31620480dca886a8.jpg",
+        "url": "https://mstdn.social/@smore"
+      },
+      "url": "https://chaos.social/@o/111211665110703546#favorited-by-109503989527096394",
+      "published": null,
+      "wm-received": "2023-10-10T16:37:27Z",
+      "wm-id": 1725455,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111211665110703546/109503989527096394",
+      "wm-target": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
