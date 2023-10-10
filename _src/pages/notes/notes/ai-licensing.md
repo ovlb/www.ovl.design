@@ -35,15 +35,17 @@ So we don’t know _what_ to license, as we don’t know what’s the dataset of
 
 But even if we would now, how would you ensure payouts? Sure, it’s (kinda) easy for copyrighted works of art (music, books, paintings …) but a large part of CommonCrawl is just websites. Should only those in the dataset who are some kind of business get payouts?
 
-And, which license do you use? Do you pay per dataset entry or per training epoch? (Thanks to [Sarah Moir](https://thisisimportant.net/) for making this point.) Per model created or per output which might contain licensed data? To do this, we need way better understanding on the way a model generates text and what the sources for a specific answer are, a notoriously difficult problem.
+And, which license do you use? Do you pay per dataset entry or per training epoch? (Thanks to [Sarah Moir](https://thisisimportant.net/) for making this point.) Per model created or per output which might contain licensed data? To do this, we need way better understanding of the way a model generates text and what the sources for a specific answer are.
 
-Would we end up in such a situation as with music streaming rights, were the payout per stream is so miniscule, that it’s only useful for a small percentage of huge artists? tbf I see this happening in basically all licensing models I can think of? Are there protections against this?
+These are notoriously difficult and unsolved problems. Anthropic posted about a possible solution in [Decomposing Language Models Into Understandable Components](https://www.anthropic.com/index/decomposing-language-models-into-understandable-components), though this only helps to explain the model behaviour, not the data layer.
+
+Would we end up in a situation similar to music streaming rights, where the payout per stream is so miniscule, that it’s only useful for a small percentage of artists? tbf I see this happening in basically all licensing models I can think of? Are there protections against this?
 
 ### The Academic Veil of Commercial AI
 
 Another thing to note here: If you think on the data layer only, AI vendors might argue that the datasets have been collected for _scientific purposes_. It’s a great excuse, as scientific usage grants generous copyright excemptions.
 
-But in the end, this might be more of an excuse. Take for example LAION – a non-profit that maintains the LAION-5B image dataset used to train Stable Diffusion. LAION is a non-profit, [Stable Diffusion is open source](https://github.com/CompVis/stable-diffusion) and published by researchers at the Ludwig Maximilian University in Munich. Stability AI, essentially the marketing wrapper and funding machine for these non-profit initiatives has raised over $120 million in funding.
+But in the end, this might be little more than an excuse. Take for example LAION – a non-profit that maintains the LAION-5B image dataset used to train Stable Diffusion. LAION is a non-profit, [Stable Diffusion is open source](https://github.com/CompVis/stable-diffusion) and published by researchers at the Ludwig Maximilian University in Munich. Stability AI, essentially the marketing wrapper and funding machine for these non-profit initiatives has raised over $120 million in funding.
 
 If you are interested in diving deep into some of those challenges, Sarah Moir [wrote about the legal challenges in the context of music generating models](https://thisisimportant.net/posts/prompt-based-music-generation/#legal-challenges).
 
@@ -57,7 +59,7 @@ Another thing that we are currently seeing – which will not replace training o
 
 There’s ongoing [research in «model unlearning»](https://browse.arxiv.org/abs/2310.02238).
 
-If this becomes a feasible technique, I think that’s a probable way for AI companies to cop out of paying licensing fees. «Oh, sorry. Thanks for bringing this to our attention. We didn’t mean to include your stuff, look we removed it.»
+If this becomes a feasible technique, that’s a probable way for AI companies to cop out of paying licensing fees. «Oh, sorry. Thanks for bringing this to our attention. We didn’t mean to include your stuff, look we removed it.»
 
 Mind, the if in the previous sentence is doing a lot heavy lifting!
 
