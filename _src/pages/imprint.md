@@ -20,7 +20,7 @@ Transparency is important, right? This section declares any conflict of interest
 
 I work at DeepL, which heavily uses machine learning technology. My writing - on machine learning and in general - is independent of my work, and at no point has my employer tried to influence it. I sometimes use DeepL to translate text. In those cases, these texts are marked as translated.
 
-I do not hold any stock, options or short positions. Except for like 3 cents worth of Luna Classic (to teh moon!), I possess no cryptocurrencies and have not shorted them either.
+I do not hold any stock, options or short positions. Except for like 0.00000000003 cents worth of Luna Classic (to teh moon!) in a wallet I can’t access anymore, I possess no other cryptocurrencies and have not shorted them either.
 
 ## Disclaimer of Liability
 
