@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2023-10-08T19:58:35.012Z",
+  "lastFetched": "2023-10-10T16:11:57.926Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Glübi",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/152fce9e98fbe97a6c50e7298bffd227b8ab2ec86f90964edd2b52a93bb4d3f9.jpg",
+        "url": "https://chaos.social/@Gluebi"
+      },
+      "url": "https://chaos.social/@o/111204015522816279#favorited-by-109122376387265305",
+      "published": null,
+      "wm-received": "2023-10-09T16:32:29Z",
+      "wm-id": 1725135,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111204015522816279/109122376387265305",
+      "wm-target": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
