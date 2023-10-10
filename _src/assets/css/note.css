@@ -7,7 +7,7 @@ h1 {
   font-weight: bold;
 }
 
-h2, h3 {
+.md-content :is(h2, h3) {
   position: relative;
 
   @media (min-width: 45rem) {
