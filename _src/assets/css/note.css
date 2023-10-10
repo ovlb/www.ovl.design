@@ -23,7 +23,7 @@ h2, h3 {
       margin-inline-end: 1ch;
       position: var(--bfr-position, relative);
       top: 0;
-      transform: translateX(-3ch);
+      transform: translateX(-2rem);
       width: auto;
     }
   }
