@@ -15,15 +15,15 @@ Disclaimer: I’m not saying the following is good thinking. It’s fragments at
 
 ## What to license
 
-The fact that, at least for the commercial models we don’t really know which data is actually in them and which amount of the total training data a given dataset amounts to, makes it hard(er) to make such an argument in the first place.
+The fact that, at least for the commercial models we don’t really know which data is actually in them and which amount of the total training data a given dataset amounts to, makes it hard(er) to make any argument about compensation in the first place. I don’t think that’s an accident.
 
- We can look at Open Access models to get a bit of an understanding. [BLOOM](https://arxiv.org/abs/2211.05100) was trained on almost 500 different datasets, but those needed to be pre-processed and cleaned. For Falcon LLM there’s an [dedicated paper on the work](https://arxiv.org/abs/2306.01116).
+ We can look at Open Access models to get a bit of an understanding. [BLOOM](https://arxiv.org/abs/2211.05100) was trained on almost 500 different datasets, but those needed to be pre-processed and cleaned. For Falcon LLM there’s a [dedicated paper on the work](https://arxiv.org/abs/2306.01116).
 
- So, if we say OpenAI et al have to commit 20% of their profits to give back to license stuff in their datasets: OAI will not disclose what’s in their data (it’s a secret because they ~~need to make more money~~, sorry, to build safe systems).
+ So, if we say OpenAI et al have to commit 20% of their profits to give back to license stuff in their datasets: OAI will not disclose what’s in their data (it’s a secret because they ~~need to make more money~~, sorry, build safe systems).
 
 So either it’s all completely intransparent or we force commercial AI vendors to be transparent.
 
-For a general feeling of how a system could like, we should keep an eye on [Adobe’s Firefly payouts](https://techcrunch.com/2023/09/13/adobe-starts-paying-bonuses-to-stock-contributors-whose-content-is-being-used-to-train-firefly/) compared to their revenue. Afaik they are the only company that pays out the artists that are in their datasets. That they only trained Firefly on Adobe Stock images certainly makes this easier.
+For a general feeling of how a system could look like, we should keep an eye on [Adobe’s Firefly payouts](https://techcrunch.com/2023/09/13/adobe-starts-paying-bonuses-to-stock-contributors-whose-content-is-being-used-to-train-firefly/) compared to their revenue. Afaik they are the only company that pays out the artists that are in their datasets. That they only trained Firefly on Adobe Stock and public domain images, not _everything_, certainly makes this easier.
 
 But, honestly, I don’t know if that’s feasible for LLMs, as they require absurd amounts of data.
 
