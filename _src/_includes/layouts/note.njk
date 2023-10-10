@@ -6,7 +6,7 @@
 {% block content %}
   <main id="main" class="u-global-padding note h-entry l-stack" tabindex="-1" lang={{ locale }}>
     <a href="/notes/">Back to archive</a>
-    <aside class="warning">This post is a note. It’s a collection of thoughts, and has a high likelihood to be incomplete or even wrong. If you think it can be approved, contact me.</aside>
+    <aside class="warning">This post is a note. It’s a collection of thoughts, and has a (high) likelihood to be incomplete or even wrong. If you think it can be improved, contact me.</aside>
     <header class="note-header">
       <h1 class="p-name">{{ title }}</h1>
       <p>Note started: {{ date | displayDate(short) }}</p>
@@ -15,7 +15,7 @@
       {% elif state === 'done' %}
         <p>I consider this note done.</p>
       {% elif state === 'evolving' %}
-        <p>This note is being worked on. I have a <b>{{ determination }}</b> determination to continue this work.</p>
+        <p>This note is being worked on.</p>
       {% endif %}
     </header>
     <div class="e-content md-content" data-text-body>
