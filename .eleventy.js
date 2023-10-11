@@ -1,50 +1,21 @@
-const path = require('path')
-const del = require('del')
-
-const { ELEVENTY_ENV, PAGE_STATE } = process.env
-
-const filter = require('./_filters/')
-const functions = require('./_functions')
-const plugins = require('./_plugins')
-const shortcodes = require('./_shortcodes')
-const libraries = require('./_libraries')
-const transforms = require('./_transforms')
+const { PAGE_STATE } = process.env
 
 const STATIC_FOLDERS = require('./_helper/paths')
 
-const IS_PROD = ELEVENTY_ENV === 'production'
 const IS_LIVE = PAGE_STATE === 'live'
 
 module.exports = function (eleventyConfig) {
-  filter.forEach(({ name, func }) => {
-    eleventyConfig.addFilter(name, func)
-  })
+  eleventyConfig.addPlugin(require('./_libraries'))
 
-  plugins.forEach((plugin) => {
-    eleventyConfig.addPlugin(plugin.plugin, plugin.pluginOptions || {})
-  })
+  eleventyConfig.addPlugin(require('./_templates'))
 
-  shortcodes.forEach(({ name, func }) => {
-    eleventyConfig.addShortcode(name, func)
-  })
+  eleventyConfig.addPlugin(require('./_filters'))
+  eleventyConfig.addPlugin(require('./_functions'))
+  eleventyConfig.addPlugin(require('./_shortcodes'))
 
-  functions.forEach(({ name, func }) => {
-    eleventyConfig.addJavaScriptFunction(name, func)
-  })
+  eleventyConfig.addPlugin(require('./_plugins'))
 
-  libraries.forEach(({ name, library }) => {
-    eleventyConfig.setLibrary(name, library)
-  })
-
-  transforms.base.forEach(({ name, transform }) => {
-    eleventyConfig.addTransform(name, transform)
-  })
-
-  if (IS_PROD) {
-    transforms.prod.forEach(({ name, transform }) => {
-      eleventyConfig.addTransform(name, transform)
-    })
-  }
+  eleventyConfig.addPlugin(require('./_transforms'))
 
   eleventyConfig.addCollection('publishedPosts', function (collectionAPI) {
     /** @type Array */
@@ -117,8 +88,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('categories', function (collectionAPI) {
     return [...allCategories]
   })
-
-  eleventyConfig.addPlugin(require('./_templates'))
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('digest', 'layouts/digest.njk')
