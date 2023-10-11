@@ -1,6 +1,82 @@
 {
-  "lastFetched": "2023-10-10T17:15:33.567Z",
+  "lastFetched": "2023-10-11T12:44:16.458Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Monika Viktorova",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/a85cdceebbe7dc10f85737ffde8829462e5c8d048b31be3627e70c64e6e459ce.png",
+        "url": "https://mastodon.social/@mviktoro"
+      },
+      "url": "https://chaos.social/@o/111211665110703546#favorited-by-109302298361681057",
+      "published": null,
+      "wm-received": "2023-10-11T12:31:09Z",
+      "wm-id": 1725700,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111211665110703546/109302298361681057",
+      "wm-target": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oscar",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/52db9382a996f80965c5725faa072f93639161940bba6acedde170da34b41cb6.jpg",
+        "url": "https://chaos.social/@o"
+      },
+      "url": "https://chaos.social/@o/111211665110703546#reblogged-by-109256191192783569",
+      "published": null,
+      "wm-received": "2023-10-11T11:56:34Z",
+      "wm-id": 1725678,
+      "wm-source": "https://brid.gy/repost/mastodon/@o@chaos.social/111211665110703546/109256191192783569",
+      "wm-target": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sblw",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/9734a38ca182d54fba20596adb7835a26fda5c7a6e508349224df43682d21f6b.jpg",
+        "url": "https://chaos.social/@sblw"
+      },
+      "url": "https://chaos.social/@o/111204015522816279#favorited-by-109285346224374041",
+      "published": null,
+      "wm-received": "2023-10-10T21:21:49Z",
+      "wm-id": 1725550,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111204015522816279/109285346224374041",
+      "wm-target": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sblw",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/9734a38ca182d54fba20596adb7835a26fda5c7a6e508349224df43682d21f6b.jpg",
+        "url": "https://chaos.social/@sblw"
+      },
+      "url": "https://chaos.social/@o/111204015522816279#reblogged-by-109285346224374041",
+      "published": null,
+      "wm-received": "2023-10-10T21:21:49Z",
+      "wm-id": 1725551,
+      "wm-source": "https://brid.gy/repost/mastodon/@o@chaos.social/111204015522816279/109285346224374041",
+      "wm-target": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.ovl.design/around-the-web/022-taking-ducks-to-outer-space/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
