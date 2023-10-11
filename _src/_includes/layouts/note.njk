@@ -24,20 +24,6 @@
     <div class="e-content md-content" data-text-body>
       {{ content | safe }}
     </div>
-    <section class="collections">
-      <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
-      <ul role="list" class="inline-list">
-        {% for collection in tags | getCategories %}
-          <li>
-            <a
-              href="{{ collection | categoryPermalink(categoryBase) }}"
-            >
-              {{ collection | displayCategory }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
     {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
@@ -65,6 +51,20 @@
         </ul>
       </section>
     {% endif %}
+    <section class="collections">
+      <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
+      <ul role="list" class="inline-list">
+        {% for collection in tags | getCategories %}
+          <li>
+            <a
+              href="{{ collection | categoryPermalink(categoryBase) }}"
+            >
+              {{ collection | displayCategory }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
     {% if changes %}
     <section class="collections" aria-labelledby="changelogHdl" id="changelog">
       <h2
