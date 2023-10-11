@@ -1,3 +1,4 @@
 @import './pages/_text-detail.pcss';
 @import './organisms/_code.pcss';
 @import './organisms/_pagination.pcss';
+@import './organisms/_webmentions.pcss';

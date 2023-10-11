@@ -55,7 +55,6 @@ export default {
         alias: 'category',
         addAllPagesToCollections: true,
       },
-      pageCSS: 'text',
       eleventyComputed: {
         permalink: (data) =>
           this.categoryPermalink(data.category, data.categoryBase),

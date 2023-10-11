@@ -105,9 +105,7 @@
     <link rel="stylesheet" href="/css/custom-properties.css" />
     <link rel="stylesheet" href="/css/main.css" />
     {% if pageCSS %}
-    <style>
-      {{css[pageCSS].parsed | safe}}
-    </style>
+      <link rel="stylesheet" href="/css/{{pageCSS}}.css">
     {% endif %}
     <style>
       {{page.url | getVueComponentCssForPage | safe}}

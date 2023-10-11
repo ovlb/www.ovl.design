@@ -1,5 +1,6 @@
 module.exports = {
   categoryBase: '/notes/collections',
+  pageCSS: 'text',
   meta: {
     description: 'Pages in a virtual notebook.',
     image: {

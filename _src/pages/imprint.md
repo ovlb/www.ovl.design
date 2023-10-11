@@ -4,7 +4,7 @@ title: 'Imprint'
 pageTitle: 'Imprint'
 subline: 'The important legal stuff'
 layout: 'layouts/page.njk'
-pageCSS: 'textDetail'
+pageCSS: 'text-detail'
 ---
 
 ## Contact

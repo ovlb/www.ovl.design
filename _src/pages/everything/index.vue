@@ -68,7 +68,6 @@ export default {
       permalink: '/everything/',
       title: 'Everything',
       pageTitle: 'Everything',
-      pageCSS: 'text',
     }
   },
 

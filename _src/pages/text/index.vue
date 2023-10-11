@@ -50,7 +50,6 @@ export default {
       permalink: '/text/',
       templateClass: 'tmpl-article-list',
       pageTitle: 'Text',
-      pageCSS: 'text',
       eleventyComputed: {
         meta: function (data) {
           return {
