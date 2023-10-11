@@ -118,13 +118,16 @@ module.exports = function (eleventyConfig) {
     return [...allCategories]
   })
 
+  eleventyConfig.addPlugin(require('./_templates'))
+
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('digest', 'layouts/digest.njk')
   eleventyConfig.addLayoutAlias('feed', 'layouts/feed.njk')
   eleventyConfig.addLayoutAlias('note', 'layouts/note.njk')
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
 
-  eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.static}**/*`)
+  eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.js}**/*`)
+  eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.img}**/*`)
   eleventyConfig.addWatchTarget('./_helper/**/*')
 
   // copy static assets to dist folder
