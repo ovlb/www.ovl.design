@@ -2,11 +2,15 @@
   display: flex;
   flex-flow: row wrap;
   gap: var(--padding-base);
-  margin-top: 10vh;
-  padding-bottom: 5vh;
+  margin-top: calc(3 * var(--padding-base));
+  padding-bottom: calc(2 * var(--padding-base));
   padding-left: var(--padding-base);
 
   & > * {
-    flex: 0 1 320px;
+    flex: 0 1 var(--footer-flex-base, 20rem);
+  }
+
+  & > *:not(:first-child) {
+    --footer-flex-base: max-content;
   }
 }

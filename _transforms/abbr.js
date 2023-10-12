@@ -19,7 +19,6 @@ const commonAbbreviations = [
   { text: 'LLM', title: 'Large Language Model' },
   { text: 'ML', title: 'Machine Learning' },
   { text: 'NSU', title: 'Nationalsozialistischer Untergrund' },
-  { text: 'SPD', title: 'Sozialdemokratische Partei Deutschlands' },
   { text: 'TERF', title: 'Trans Exclusionary Radical Feminist' },
 ]
 

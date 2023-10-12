@@ -60,7 +60,9 @@ async function parseImages(container) {
   // and everything inside a markdown block
   const images = [
     ...container.querySelectorAll('[data-process-image]'),
-    ...container.querySelectorAll('.md-content img'),
+    ...container.querySelectorAll(
+      '.md-content img:not(:is(picture img, .tweet-card img))',
+    ),
   ]
 
   const staticImages = images.filter(
