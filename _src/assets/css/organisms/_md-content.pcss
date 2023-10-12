@@ -9,7 +9,13 @@
     grid-column: var(--content-grid-placement, main);
   }
 
-  & pre {
+  & > .-is-video {
+    aspect-ratio: 16/9;
+    margin: var(--space-s) 0;
+    width: 100%;
+  }
+
+  & :is(pre, .-is-video) {
     --content-grid-placement: full;
 
     border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
@@ -21,6 +27,10 @@
     & img {
       border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
     }
+  }
+
+  sup {
+    line-height: 1;
   }
 
   p + p {
