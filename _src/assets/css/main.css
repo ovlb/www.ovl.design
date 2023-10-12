@@ -10,11 +10,14 @@
 @import './elements/_icon.pcss';
 @import './elements/_pill.pcss';
 @import './elements/buttons/_icon-button.pcss';
+@import './elements/buttons/_switch-button.pcss';
 @import './elements/_hr.pcss';
 
 @import './organisms/lists/_root.pcss';
 @import './organisms/_blm-banner.pcss';
 @import './organisms/_site-header.pcss';
+@import './organisms/navs/_vertical-nav.pcss';
+@import './organisms/_site-footer.pcss';
 @import './organisms/_nav.pcss';
 @import './organisms/_blockquote.pcss';
 
