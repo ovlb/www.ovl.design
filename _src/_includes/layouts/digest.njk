@@ -5,7 +5,6 @@
   <main class="atw-post h-entry" id="main" tabindex="-1">
     <div class="atw-column-wrapper">
       <header class="atw-post-header">
-        <h1 class="main-headline p-name">{{ title }}</h1>
         <p>{% if issueTitle %}
           Around the Web<br>
         {% endif %}
@@ -29,11 +28,12 @@
         </nav>
       </aside>
     </div>
-    <section class="text__body e-content md-content" data-text-body>
+    <section class="text__body main-grid-content e-content md-content" data-text-body>
+      <h1 class="main-headline p-name">{{ title }}</h1>
       <p class="atw-post__intro u-floral-heart-gradient">{{ intro }}</p>
       {{ content | safe }}
     </section>
-    <section class="atw-post__collections" aria-labelledby="hdl-collections">
+    <section class="main-grid-content" aria-labelledby="hdl-collections">
       <h2 class="small-headline" id="hdl-collections">Collections</h2>
       <ul class="inline-list" role="list">
         {% for category in tags | getCategories | aToZ %}

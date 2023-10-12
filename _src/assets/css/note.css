@@ -3,7 +3,7 @@
 
 h1 {
   font-family: var(--fonts-headline);
-  font-size: var(--type-large);
+  font-size: var(--step-3);
   font-weight: bold;
 }
 
@@ -27,7 +27,6 @@ h1 {
       width: auto;
     }
   }
-
 }
 
 h2 {
@@ -92,7 +91,7 @@ h3 {
 
 .change {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-s);
   grid-template-columns: 10ch 1fr;
 
   & + & {

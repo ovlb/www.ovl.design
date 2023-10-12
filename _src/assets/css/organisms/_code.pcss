@@ -3,7 +3,7 @@ code {
   border: 1px solid #00000017;
   border-radius: 0.25rem;
   font-family: var(--fonts-mono);
-  font-size: 83%;
+  font-size: var(--step--1);
   padding: 0.1rem 0.3rem 0.2rem;
 }
 
@@ -38,9 +38,9 @@ pre[class*='language-'] {
 /* Code blocks */
 pre[class*='language-'] {
   border-radius: 0.3em;
-  margin: 0.5em 0;
+  margin: var(--space-xs) 0;
   overflow: auto;
-  padding: 1em;
+  padding: var(--padding-base);
 }
 
 :not(pre) > code[class*='language-'],

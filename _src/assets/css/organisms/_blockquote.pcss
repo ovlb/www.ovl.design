@@ -1,24 +1,22 @@
 blockquote:not(.tweet-card) {
   line-height: 1.4;
-  margin: 1rem 0 2rem;
-  margin-bottom: 0.5rem;
-  padding: 1rem 0 1rem 2vmin;
+  max-width: var(--size-content-3);
+  padding: var(--space-s) 0 var(--space-s) 0;
   position: relative;
 
   &::before {
     color: var(--clr-accent);
     content: '“';
     font-family: var(--fonts-headline);
-    font-size: var(--type-xlarge);
-    left: -0.125em;
+    font-size: var(--step-4);
+    left: calc(-1 * var(--padding-base));
     position: absolute;
-    top: 0;
+    top: calc(0.5 * var(--padding-base));
   }
 }
 
 .c-blockquote {
-  margin-bottom: 2rem;
-  max-width: 55ch;
+  padding-left: var(--padding-base);
 
   & blockquote {
     padding-bottom: 0;
@@ -27,11 +25,13 @@ blockquote:not(.tweet-card) {
 
 .c-blockquote__attribution {
   font-style: italic;
+  max-width: var(--size-content-3);
+  padding-left: 0;
 
   &::before {
     color: var(--clr-accent);
     content: '☞';
     display: inline-block;
-    margin-right: 0.5rem;
+    margin-right: var(--space-2xs);
   }
 }

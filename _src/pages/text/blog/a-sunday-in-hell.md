@@ -20,6 +20,7 @@ Garzweiler is one of three active coal mines in the region west of Aachen. The o
 Lützerath doesn’t exist anymore, RWE destroyed every building and cut down every tree as soon as there were no more activists to protect it. If you leave the motorway at Jackerath, a village next to where Lützerath used to be, the road to Lützerath is blocked and protected by a lone private security guard. You only know it’s the road because someone took a felt-tip pen and added Lützerath to the road sign.
 
 All the mines have small outlooks, so you can see the destruction for yourself - accompanied by signs from RWE advertising their climate bona fides, the engineering marvels of their bucket wheel excavators (basically they are very big and very good at moving large swathes of earth).
+
 !["View into the coal mine Garzweiler. In the front you can see a guard rail on which someone put a sticker reading «Nett hier». The background is blurry and shows the mine itself. Everything is brown, all shades of brown. The sky is cloudy and the view partially obscured by layers of fog."](_src/assets/img/blog/hambach/garzweiler-nett-hier-cropped.jpeg)
 
 The day was foggy, which added to the apocalyptic scenes of these mines. Pictures don’t really do it justice. There is an eerie silence in the mines, except for the rumble of the conveyor belts that carry away the mined material.

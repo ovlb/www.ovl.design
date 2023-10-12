@@ -1,0 +1,15 @@
+.main-grid-content {
+  display: grid;
+  grid-template-columns: var(--content-grid-columns);
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: 100ch;
+
+  & > * {
+    grid-column: var(--content-grid-placement, main);
+  }
+
+  & + & {
+    margin-top: var(--space-m);
+  }
+}

@@ -1,4 +1,7 @@
-@import './pages/_text-detail.pcss';
+/* @import './pages/_text-detail.pcss'; */
 @import './organisms/_code.pcss';
 @import './organisms/_pagination.pcss';
 @import './organisms/_webmentions.pcss';
+@import './organisms/_md-content.pcss';
+@import './organisms/_blog-header.pcss';
+@import './organisms/_main-grid-content.pcss';

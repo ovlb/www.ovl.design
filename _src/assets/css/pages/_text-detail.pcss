@@ -8,7 +8,7 @@
   grid-template-rows: max(30rem, calc(100vh - var(--layout-header-height))) auto;
   margin: 0 auto;
   max-width: 900px;
-  row-gap: 1rem;
+  row-gap: var(--space-s);
 
   @media screen and (min-width: 48rem) {
     grid-template-columns: [main-start content-start] minmax(65ch, 3fr) [main-end content-end aside-start] 2fr [aside-end];
@@ -33,7 +33,7 @@
   flex-direction: column;
   grid-column: main;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-s);
   padding: 1.6rem var(--padding-base) 3rem;
   transition: opacity 0.1s cubic-bezier(0, 0.1, 0.3, 1);
   width: 75%;
@@ -49,12 +49,12 @@
 
 .text__headline {
   color: var(--clr-accent);
-  margin-top: 1rem;
+  margin-top: var(--space-s);
 }
 
 .text__intro {
   /* color: var(--clr-fg); */
-  font-size: var(--type-medium);
+  font-size: var(--step-2);
 
   & > p {
     font-size: inherit;
@@ -103,7 +103,7 @@
   & > .-is-video {
     aspect-ratio: 16/9;
     grid-column: full;
-    margin: 1rem 0;
+    margin: var(--space-s) 0;
     width: 100%;
   }
 

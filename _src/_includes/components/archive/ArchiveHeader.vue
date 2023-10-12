@@ -3,7 +3,7 @@
     tag-name="header"
     flows="vertical"
     class="archive-header u-floral-heart-gradient"
-    style="--stack-space: 1rem; align-items: center"
+    style="--stack-space: var(--space-s); align-items: center"
   >
     <h1 class="main-headline">{{ title }}</h1>
     <p class="t-content-2">
