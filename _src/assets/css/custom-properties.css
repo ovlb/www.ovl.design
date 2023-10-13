@@ -45,7 +45,7 @@
   --clr-main-light: #ff4a4a;
   --clr-main-dark: #7d0000;
 
-  --clr-light: #f9f5eb;
+  --clr-light: #f3eee0;
   --clr-light-dark: #c7c1c2;
 
   --clr-dark: #0e0e0e;
@@ -66,7 +66,7 @@
     --clr-main-light: oklch(from var(--clr-main) 57% c h);
     --clr-main-dark: oklch(from var(--clr-main) 32% c h);
 
-    --clr-light: oklch(97.03% 0.0143 89.73);
+    --clr-light: oklch(0.95 0.02 90.42);
     --clr-light-dark: oklch(from var(--clr-light) 77% c h);
 
     --clr-dark: oklch(16.38% 0 0);
