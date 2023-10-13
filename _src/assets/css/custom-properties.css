@@ -32,7 +32,7 @@
   --content-grid-columns: [full-start] var(--padding-base) [main-start] 1fr
     [main-end] var(--padding-base) [full-end];
 
-  --layout-header-height: 5.75rem;
+  --layout-header-height: 3.75rem;
 
   @media (min-width: 380px) {
     --layout-header-height: 3.75rem;

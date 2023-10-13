@@ -1,14 +1,12 @@
 .site-header {
+  align-items: center;
   background-color: var(--clr-bg);
   border-bottom: 1px solid var(--clr-main-light);
   display: flex;
-  flex-flow: row nowrap;
-  height: var(--layout-header-height);
+  flex-flow: row wrap;
+  /* height: var(--layout-header-height); */
   overflow: hidden;
   padding: 0 var(--padding-base);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 
   & > * {
     display: flex;
@@ -20,10 +18,8 @@
   height: 100%;
   margin-right: var(--space-l);
   max-width: 100px;
+  padding: calc(0.5 * var(--padding-base)) 0;
   width: 33%;
-
-  @media (min-width: 380px) {
-  }
 
   & > svg {
     width: 100%;
