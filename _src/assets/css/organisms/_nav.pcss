@@ -1,13 +1,11 @@
 .site-nav {
+  align-self: stretch;
   overflow: hidden;
 
   & > ul {
     align-items: center;
     display: flex;
-  }
-
-  & li + li {
-    margin-left: 1em;
+    gap: var(--space-s);
   }
 }
 
@@ -20,6 +18,8 @@
 
 .site-nav li {
   --nav-highlight-owl: url('/img/nav/owl-01.webp');
+
+  display: contents;
 
   &:nth-of-type(2) {
     --nav-highlight-owl: url('/img/nav/owl-02.webp');
@@ -41,7 +41,7 @@
   align-items: center;
   /* needed for the transform to work */
   display: inline-flex;
-  height: var(--layout-header-height);
+  height: 100%;
   position: relative;
   text-decoration: none;
   white-space: nowrap;
@@ -53,17 +53,16 @@
 
   &::after {
     backface-visibility: hidden;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
     display: inline-block;
     height: 2rem;
     left: 0;
-    padding: 0.25rem;
     position: absolute;
     top: 100%;
-    /* transform: translateY(100%); */
+    transform-origin: center bottom;
     transition: inherit;
     width: 100%;
     z-index: -1;
@@ -81,7 +80,7 @@
 
   &.-is-active {
     &::after {
-      --highlight-y-transform: -75%;
+      --highlight-y-transform: -80%;
     }
   }
 }
