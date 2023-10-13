@@ -38,14 +38,18 @@
     --layout-header-height: 3.75rem;
   }
 
+  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
+
   --clr-main: #b00000;
   --clr-main-darker: #d23838;
   --clr-main-light: #ff4a4a;
   --clr-main-dark: #7d0000;
+
   --clr-light: #f9f5eb;
   --clr-light-dark: #c7c1c2;
+
   --clr-dark: #0e0e0e;
-  --clr-dark-lighter: #292929;
+  --clr-dark-lighter: #1b1b1b;
   --clr-dark-light: #685d5d;
 
   --clr-brown: #784f17;
@@ -58,14 +62,16 @@
 
   @media (color-gamut: p3) {
     --clr-main: oklch(47.21% 0.21 29.23);
-    --clr-main-darker: oklch(43.38% 0.187 25.57);
-    --clr-main-light: oklch(64.56% 0.271 25.269135618154134);
-    --clr-main-dark: oklch(32.94% 0.1383 23.5);
+    --clr-main-darker: oklch(from var(--clr-main) 40% c h);
+    --clr-main-light: oklch(from var(--clr-main) 57% c h);
+    --clr-main-dark: oklch(from var(--clr-main) 32% c h);
+
     --clr-light: oklch(97.03% 0.0143 89.73);
-    --clr-light-dark: oklch(81.6% 0.0077 0);
+    --clr-light-dark: oklch(from var(--clr-light) 77% c h);
+
     --clr-dark: oklch(16.38% 0 0);
-    --clr-dark-lighter: oklch(27.89% 0 24.57);
-    --clr-dark-light: oklch(48.88% 0.0274 14.96);
+    --clr-dark-lighter: oklch(from var(--clr-dark) 26% c h);
+    --clr-dark-light: oklch(from var(--clr-dark) 42% c h);
 
     --clr-brown: oklch(0.43 0.11 65.09);
     --clr-red: oklch(0.59 0.26 29.58);
@@ -74,6 +80,8 @@
     --clr-green: oklch(0.63 0.27 145.46);
     --clr-blue: oklch(0.5 0.28 262.82);
     --clr-purple: oklch(0.46 0.24 319.47);
+
+    --layout-fleuron: url('/img/icons/floral-heart-dark-red-lch.svg');
   }
 
   --clr-bg: var(--clr-light);
@@ -82,8 +90,6 @@
   --clr-accent-dark: var(--clr-main-dark);
   --clr-accent-light: var(--clr-main-light);
   --clr-discreet: var(--clr-dark-light);
-
-  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,6 +102,10 @@
     --clr-discreet: var(--clr-light-dark);
 
     --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+
+    @media (color-gamut: p3) {
+      --layout-fleuron: url('/img/icons/floral-heart-light-red-lch.svg');
+    }
   }
 }
 
@@ -108,4 +118,8 @@
   --clr-discreet: var(--clr-light-dark);
 
   --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+
+  @media (color-gamut: p3) {
+    --layout-fleuron: url('/img/icons/floral-heart-light-red-lch.svg');
+  }
 }
