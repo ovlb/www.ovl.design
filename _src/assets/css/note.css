@@ -12,7 +12,6 @@
 
 .note {
   margin: var(--padding-base) auto;
-  max-width: 75ch;
 
   .warning {
     --bg-opacity: 0.6;
@@ -20,6 +19,7 @@
 
     background-color: rgba(255, 255, 0, var(--bg-opacity));
     border-radius: var(--conditional-border-radius);
+    font-size: var(--step--1);
     margin: var(--padding-base) 0;
     padding: var(--padding-base);
 
