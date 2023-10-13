@@ -17,7 +17,7 @@ Die glorreiche GDL rief auf, Deutschland lahmzulegen. Das hat sie nie gesagt und
 
 Prüfling 99553 hingegen steht auf – beinahe zu spät – und setzt sich zu einem Stahl- und Betonbauer ins Taxi. Das morgendliche West-Berlin ist wunderschön. Am Görlitzer Bahnhof winkt uns ein sympathisch aufgekratzter Typ mit einer Flasche Henessy (halbvoll) zu. Würde es nicht um alles™ gehen, man würde mittrinken wollen. Einige Kilometer später grüßt das Aquarium in voller Infatilität mit überdimensionalen Plastikwindfischen, die Dingsbumskirche wurde entweder vom Schiss einer gigantischen Taube getroffen, oder aber Ziel einer Farbbombe. Goutieren könnte man beides.
 
-### I
+## I
 
 Am ICC angekommen. Eine kleine Riesenmenge Mitprüflinge ist schon da. Der Druck einer Abschlussprüfung scheint selbst Mediengestalter\*innen zu pünktlichen Menschen zu machen. Die einen Puls 5000 die anderen lieber saufen. Sehr zur Freude der anderen ist ins ICC eine Schankwirtschaft «Alt-Berlin» eingebaut. Sehr zur Ernüchterung jedoch Mittwochmorgen um 7.45 Uhr geschlossen.
 
@@ -29,7 +29,8 @@ Immerhin bleibt so Zeit für die Memoiren. WiSo geschafft.
 
 Pause.
 
-### II
+## II
+
 Eine Vierstelstunde vergeht wie zehn Minuten, wenn es nur zehn Minuten sind. Das Uhrwerk IHK rattert unaufhörlich und kennt keine Verspätungen.
 
 Prüfungsteil 2: Konzeption und Gestaltung. Prüfling 99553 schwimmt. Zum Glück hat er das Seepferdchen gemacht und einige Jahre später mit Müh und Not auch Bronze. Schwimmen ist wie Fahrrad fahren, das verlernt man nur, bis man zehn Minuten im Wasser war. Danach geht es wieder und mit lässig-verkrampften Zügen gleitet der Kugelschreiber durch die Ströme des Gehirns. Zugegebenermaßen: Diese Metapher ist auf halbem Wege verunglückt.
@@ -46,7 +47,8 @@ Nebenbei: Man hat es mit einer Institution zu tun, die nicht mal weiß, wie viel
 
 Pause.
 
-### III
+## III
+
 Ja, Panik. Das Medienproduktionswasser ist kalt und schlammig. Schockschwerenot und mein lieber Scholli.
 
 Nach dem Anfang geht es irgendwie weiter. Der Anfang war das Ende, also das Ende der Aufgaben. Punkte zusammenklauben. Wer hätte gedacht, dass Farbseperaration und Netzwerkkonfiguration zu Stolpersteinen werden? Rhetorische Frage.
@@ -73,7 +75,7 @@ Tiefpunkt erreicht. Ab jetzt geht es wieder aufwärts.
 
 Pause.
 
-### IV
+## IV
 
 Im Kommunikationsteil lernt man noch was. Gummiadler ist zum Beispiel ein dudenzertifiziertes Wort. Was soll das bedeuten? *ugs. scherz.* für [zähes] Brathähnchen.
 Außerdem: *Man schreibt «ineinander» mit dem folgenden Verb in der Regel zusammen, wenn es den gemeinsamen Hauptakzent trägt.* Ach so.
