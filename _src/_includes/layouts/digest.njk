@@ -3,14 +3,14 @@
 
 {% block content %}
   <main class="atw-post h-entry" id="main" tabindex="-1">
-    <div class="atw-column-wrapper">
-      <header class="atw-post-header">
+    <aside class="atw-column-wrapper">
+      <div class="atw-post-header">
         <p>{% if issueTitle %}
           Around the Web<br>
         {% endif %}
         Issue No.&nbsp;{{ page.fileSlug }}</p>
-      </header>
-      <aside class="atw-post-meta">
+      </div>
+      <div class="atw-post-meta">
         <p>Collected between {{ parsedDates.start | displayDate("short") }} and {{ parsedDates.publish | displayDate("short") }}. It discusses {{ sources.count }} links from {{ sources.distinct }} sources.</p>
 
         <nav aria-label="Follow Around the Web">
@@ -26,11 +26,13 @@
             </li>
           </ul>
         </nav>
-      </aside>
-    </div>
+      </div>
+    </aside>
     <section class="text__body main-grid-content e-content md-content" data-text-body>
-      <h1 class="main-headline p-name">{{ title }}</h1>
-      <p class="atw-post__intro u-floral-heart-gradient">{{ intro }}</p>
+      <div class="atw-post__intro">
+        <h1 class="main-headline p-name">{{ title }}</h1>
+        <p class="atw-post__claim u-floral-heart-gradient">{{ intro }}</p>
+      </div>
       {{ content | safe }}
     </section>
     <section class="main-grid-content" aria-labelledby="hdl-collections">

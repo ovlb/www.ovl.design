@@ -66,6 +66,10 @@
 }
 
 .atw-post__intro {
+  text-align: center;
+}
+
+.atw-post__claim {
   --gradient-bottom-offset: calc(100% - 0.5rem);
   --fleuron-bottom-offset: 0.06rem;
 
