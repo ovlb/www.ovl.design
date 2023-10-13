@@ -27,8 +27,7 @@
     {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
-        class="collections"
-        style="grid-column: main;"
+        class="main-grid-content"
         aria-label="Post likes"
       >
         {%- set postMentionCount = webmentions | webmentionCountForPage(permalink) -%}
@@ -51,7 +50,7 @@
         </ul>
       </section>
     {% endif %}
-    <section class="collections">
+    <section class="main-grid-content">
       <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
       <ul role="list" class="inline-list">
         {% for collection in tags | getCategories %}
@@ -66,7 +65,7 @@
       </ul>
     </section>
     {% if changes %}
-    <section class="collections" aria-labelledby="changelogHdl" id="changelog">
+    <section class="main-grid-content" aria-labelledby="changelogHdl" id="changelog">
       <h2
         class="pagination-navigation__sub-headline type-all-small-caps"
         id="changelogHdl"
