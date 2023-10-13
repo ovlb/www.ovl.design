@@ -42,11 +42,23 @@
   --clr-main-darker: #d23838;
   --clr-main-light: #ff4a4a;
   --clr-main-dark: #7d0000;
-  --clr-light: #f8f2e3;
+  --clr-light: #f9f5eb;
+  --clr-light-dark: #c7c1c2;
   --clr-dark: #0e0e0e;
-  --clr-dark-lighter: #161616;
+  --clr-dark-lighter: #292929;
   --clr-dark-light: #685d5d;
-  --clr-light-dark: #cdc9bd;
+
+  @media (color-gamut: p3) {
+    --clr-main: oklch(47.21% 0.21 29.23);
+    --clr-main-darker: oklch(43.38% 0.187 25.57);
+    --clr-main-light: oklch(64.56% 0.271 25.269135618154134);
+    --clr-main-dark: oklch(32.94% 0.1383 23.5);
+    --clr-light: oklch(97.03% 0.0143 89.73);
+    --clr-light-dark: oklch(81.6% 0.0077 0);
+    --clr-dark: oklch(16.38% 0 0);
+    --clr-dark-lighter: oklch(27.89% 0 24.57);
+    --clr-dark-light: oklch(48.88% 0.0274 14.96);
+  }
 
   --clr-bg: var(--clr-light);
   --clr-fg: var(--clr-dark);
