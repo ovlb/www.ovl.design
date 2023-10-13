@@ -58,8 +58,9 @@ export default {
       eleventyComputed: {
         permalink: (data) =>
           this.categoryPermalink(data.category, data.categoryBase),
-        title: (data) => this.displayCategory(data.category),
-        pageTitle: (data) => `${this.displayCategory(data.category)} | Text`,
+        title: (data) => this.capitaliser(data.category),
+        pageTitle: (data) =>
+          `${this.capitaliser(data.category)} | Collections | Text`,
       },
     }
   },

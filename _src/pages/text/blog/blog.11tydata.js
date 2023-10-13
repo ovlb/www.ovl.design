@@ -60,7 +60,7 @@ module.exports = {
         return ''
       }
 
-      return `${this.displayCategory(categories[0])} — `
+      return `${this.capitaliser(categories[0])} — `
     },
   },
 }

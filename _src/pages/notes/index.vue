@@ -24,7 +24,7 @@
       <ul class="inline-list" role="list">
         <li v-for="collection in collections.noteCategories" :key="collection">
           <a :href="categoryPermalink(collection, categoryBase)">
-            {{ displayCategory(collection) }}</a
+            {{ capitaliser(collection) }}</a
           >
         </li>
       </ul>

@@ -41,7 +41,7 @@
       <ul role="list" class="inline-list">
         <li v-for="category in collections.categories" :key="category">
           <a :href="categoryPermalink(category, '/everything')">{{
-            displayCategory(category)
+            capitaliser(category)
           }}</a>
         </li>
       </ul>
