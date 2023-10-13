@@ -1,0 +1,14 @@
+<nav aria-label="Breadcrumb" class>
+  <ul class="inline-list breadcrumb-list" style="--list-separator: ' » '">
+    {% for crumb in breadcrumb %}
+      <li>
+        <a
+          href="{{crumb.url}}"
+          {% if loop.last %} aria-current="page" {% endif %}
+        >
+          {{crumb.name}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

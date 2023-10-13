@@ -139,6 +139,9 @@
     {% if hideSiteNavigation !== true %}
       {% include "components/global/site-header.njk" %}
     {% endif %}
+    {% if breadcrumb and not hideBreadcrumb %}
+      {% include "components/global/breadcrumb.njk" %}
+    {% endif %}
     {% block content %}{% endblock %}
     {% if usesBlock !== true %}
       {{ content | safe }}

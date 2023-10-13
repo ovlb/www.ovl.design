@@ -66,6 +66,7 @@ export default {
   data() {
     return {
       permalink: '/everything/',
+      hideBreadcrumb: true,
       title: 'Everything',
       pageTitle: 'Everything',
     }

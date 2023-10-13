@@ -2,6 +2,7 @@
 permalink: '/imprint/'
 title: 'Imprint'
 pageTitle: 'Imprint'
+hideBreadcrumb: true
 subline: 'The important legal stuff'
 layout: 'layouts/page.njk'
 pageCSS:

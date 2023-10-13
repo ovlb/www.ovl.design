@@ -44,6 +44,7 @@ export default {
       permalink: '/notes/',
       pageCSS: ['note'],
       title: 'Notes',
+      hideBreadcrumb: true,
       pageTitle: 'Notes',
     }
   },

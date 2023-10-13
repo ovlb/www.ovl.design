@@ -5,7 +5,6 @@
 
 {% block content %}
   <main id="main" class="note h-entry l-stack" tabindex="-1" lang={{ locale }}>
-    <a href="/notes/">Back to archive</a>
     <header class="note-header main-grid-content">
       <aside class="warning">This post is a note. It’s a collection of thoughts, and as such might be incomplete or even wrong. If you think it can be improved, contact me.</aside>
       <h1 class="p-name sub-headline">{{ title }}</h1>
@@ -58,7 +57,7 @@
             <a
               href="{{ collection | categoryPermalink(categoryBase) }}"
             >
-              {{ collection | displayCategory }}
+              {{ collection | capitaliser }}
             </a>
           </li>
         {% endfor %}
