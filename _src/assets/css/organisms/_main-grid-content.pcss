@@ -1,4 +1,6 @@
 .main-grid-content {
+  --conditional-border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
+
   display: grid;
   grid-template-columns: var(--content-grid-columns);
   margin-inline-end: auto;

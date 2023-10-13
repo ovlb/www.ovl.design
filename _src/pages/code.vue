@@ -31,7 +31,7 @@ export default {
       title: 'Code',
       pageTitle: 'Code',
       templateClass: 'tmpl-code',
-      pageCSS: 'code',
+      pageCSS: ['code'],
       eleventyComputed: {
         meta: function ({ meta, site }) {
           return {

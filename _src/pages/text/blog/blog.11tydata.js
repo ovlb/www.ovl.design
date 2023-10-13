@@ -3,7 +3,7 @@ const Image = require('@11ty/eleventy-img')
 module.exports = {
   tags: ['blog'],
   layout: 'post',
-  pageCSS: 'text-detail',
+  pageCSS: ['text-detail'],
   templateClass: 'tmpl-single-post',
 
   eleventyComputed: {

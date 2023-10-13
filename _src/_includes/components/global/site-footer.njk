@@ -27,7 +27,7 @@
     <ul class="vertical-nav__list" role="list">
       {% for item in navigation.secondary %}
         <li>
-          <a href="{{ item.permalink }}">{{ item.title }}</a>
+          {% navLink item %}
         </li>
       {% endfor %}
     </ul>

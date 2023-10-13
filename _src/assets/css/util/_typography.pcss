@@ -1,7 +1,8 @@
 :where(h1, h2, h3, h4) {
+  font-family: var(--fonts-headline);
   font-size: var(--step-2);
   line-height: 1.2;
-  margin: 1em 0 0.5em 0;
+  margin: 1.2em 0 0.4em 0;
 }
 
 .main-headline {
@@ -33,17 +34,12 @@
   }
 }
 
-.md-content h4 {
-  font-family: var(--fonts-headline);
-  font-size: var(--step-0);
-}
-
-p {
+:is(p, .type-0) {
   font-size: var(--step-0);
   line-height: 1.6;
 }
 
-:is(small, .p-small) {
+:is(small, .type--1) {
   font-size: var(--step--1);
 }
 

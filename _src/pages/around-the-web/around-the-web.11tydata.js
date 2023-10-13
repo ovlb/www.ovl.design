@@ -2,7 +2,7 @@ module.exports = {
   pageTitle: 'Around the Web',
   templateClass: 'tmpl-article-list',
   categoryBase: '/around-the-web/collections',
-  pageCSS: 'text',
+  pageCSS: ['text'],
   meta: {
     description:
       'A digest of interesting links from – you might have guessed it – around the web.',

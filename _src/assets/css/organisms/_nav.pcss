@@ -11,6 +11,16 @@
   }
 }
 
+.nav__link {
+  &.-is-active {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    word-spacing: 0.02em;
+  }
+}
+
 .site-nav li {
   --nav-highlight-owl: url('/img/nav/owl-01.webp');
 
@@ -73,8 +83,6 @@
   }
 
   &.-is-active {
-    font-weight: bold;
-
     &::after {
       --highlight-y-transform: -75%;
     }

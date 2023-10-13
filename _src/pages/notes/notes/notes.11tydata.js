@@ -3,7 +3,7 @@ const { getChanges } = require('../../../../_helper/git-history')
 module.exports = {
   tags: ['notes'],
   layout: 'note',
-  pageCSS: 'note',
+  pageCSS: ['note', 'text-page'],
 
   eleventyComputed: {
     permalink: function ({ title }) {
