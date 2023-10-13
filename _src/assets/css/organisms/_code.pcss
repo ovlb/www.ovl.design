@@ -3,8 +3,13 @@ code {
   border: 1px solid #00000017;
   border-radius: 0.25rem;
   font-family: var(--fonts-mono);
-  font-size: var(--step--1);
+  font-size: var(--step--2);
   padding: 0.1rem 0.3rem 0.2rem;
+
+  @supports (color: rgb(from white r g b)) {
+    background-color: oklch(from var(--clr-main) l c h / 8%);
+    border: 1px solid oklch(from var(--clr-fg) l c h / 15%);
+  }
 }
 
 /**
@@ -16,7 +21,7 @@ code {
 code[class*='language-'],
 pre[class*='language-'] {
   background: none;
-  color: #f8f8f2;
+  color: var(--clr-light);
   font-family: var(--fonts-mono);
 
   -webkit-hyphens: none;

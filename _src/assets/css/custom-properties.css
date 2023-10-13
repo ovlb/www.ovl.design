@@ -5,15 +5,15 @@
   --fonts-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,2220,24,1.25,5,2,1700&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --step--2: clamp(0.7406rem, 0.7076rem + 0.1649vw, 0.955rem);
-  --step--1: clamp(0.8331rem, 0.785rem + 0.2404vw, 1.1456rem);
-  --step-0: clamp(0.9375rem, 0.8702rem + 0.3365vw, 1.375rem);
-  --step-1: clamp(1.055rem, 0.9635rem + 0.4577vw, 1.65rem);
-  --step-2: clamp(1.1863rem, 1.0641rem + 0.6106vw, 1.98rem);
-  --step-3: clamp(1.335rem, 1.1748rem + 0.801vw, 2.3763rem);
-  --step-4: clamp(1.5019rem, 1.2943rem + 1.038vw, 2.8513rem);
-  --step-5: clamp(1.6894rem, 1.4229rem + 1.3322vw, 3.4213rem);
-  --step-6: clamp(1.9006rem, 1.5614rem + 1.6962vw, 4.1056rem);
+  --step--2: clamp(0.79rem, 0.7713rem + 0.0933vw, 0.9113rem);
+  --step--1: clamp(0.8888rem, 0.8572rem + 0.1577vw, 1.0938rem);
+  --step-0: clamp(1rem, 0.9519rem + 0.2404vw, 1.3125rem);
+  --step-1: clamp(1.125rem, 1.0558rem + 0.3462vw, 1.575rem);
+  --step-2: clamp(1.2656rem, 1.1696rem + 0.4803vw, 1.89rem);
+  --step-3: clamp(1.4238rem, 1.2938rem + 0.6495vw, 2.2681rem);
+  --step-4: clamp(1.6019rem, 1.4296rem + 0.8615vw, 2.7219rem);
+  --step-5: clamp(1.8019rem, 1.5767rem + 1.126vw, 3.2656rem);
+  --step-6: clamp(2.0275rem, 1.7364rem + 1.4553vw, 3.9194rem);
 
   --space-3xs: clamp(0.25rem, 0.2308rem + 0.0962vw, 0.375rem);
   --space-2xs: clamp(0.5rem, 0.4712rem + 0.1442vw, 0.6875rem);
@@ -60,7 +60,7 @@
   --clr-blue: #004dff;
   --clr-purple: #750787;
 
-  @media (color-gamut: p3) {
+  @supports (color: rgb(from white r g b)) {
     --clr-main: oklch(47.21% 0.21 29.23);
     --clr-main-darker: oklch(from var(--clr-main) 40% c h);
     --clr-main-light: oklch(from var(--clr-main) 57% c h);
