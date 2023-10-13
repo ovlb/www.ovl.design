@@ -60,18 +60,18 @@
   --clr-blue: #004dff;
   --clr-purple: #750787;
 
-  @supports (color: rgb(from white r g b)) {
+  @supports (color: oklch(42% 0.1 161)) {
     --clr-main: oklch(47.21% 0.21 29.23);
-    --clr-main-darker: oklch(from var(--clr-main) 40% c h);
-    --clr-main-light: oklch(from var(--clr-main) 57% c h);
-    --clr-main-dark: oklch(from var(--clr-main) 32% c h);
+    --clr-main-darker: oklch(40% 0.21 29.23);
+    --clr-main-light: oklch(57% 0.21 29.23);
+    --clr-main-dark: oklch(32% 0.21 29.23);
 
-    --clr-light: oklch(0.95 0.02 90.42);
-    --clr-light-dark: oklch(from var(--clr-light) 77% c h);
+    --clr-light: oklch(95% 0.02 90.42);
+    --clr-light-dark: oklch(77% 0.02 90.42);
 
     --clr-dark: oklch(16.38% 0 0);
-    --clr-dark-lighter: oklch(from var(--clr-dark) 26% c h);
-    --clr-dark-light: oklch(from var(--clr-dark) 42% c h);
+    --clr-dark-lighter: oklch(26% 0 0);
+    --clr-dark-light: oklch(42% 0 0);
 
     --clr-brown: oklch(0.43 0.11 65.09);
     --clr-red: oklch(0.59 0.26 29.58);
