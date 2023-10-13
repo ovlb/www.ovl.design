@@ -1,12 +1,8 @@
 .md-content {
-  display: grid;
-  grid-template-columns: var(--content-grid-columns);
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  max-width: 100ch;
+  --conditional-border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
 
-  & > * {
-    grid-column: var(--content-grid-placement, main);
+  h2:not([class]) {
+    transform: translateX(calc(-1 * clamp(0rem, -1.4004rem + 7.0022vw, 2rem)));
   }
 
   & > .-is-video {
@@ -18,14 +14,14 @@
   & :is(pre, .-is-video) {
     --content-grid-placement: full;
 
-    border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
+    border-radius: var(--conditional-border-radius);
   }
 
   & figure {
     --content-grid-placement: full;
 
     & img {
-      border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
+      border-radius: var(--conditional-border-radius);
     }
   }
 
