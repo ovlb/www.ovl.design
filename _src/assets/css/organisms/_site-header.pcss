@@ -1,11 +1,15 @@
 .site-header {
-  align-items: center;
   background-color: var(--clr-bg);
   border-bottom: 1px solid var(--clr-main-light);
+  overflow: hidden;
+}
+
+.site-header__inner {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  /* height: var(--layout-header-height); */
-  overflow: hidden;
+  margin-inline: auto;
+  max-width: var(--content-width-large);
   padding: 0 var(--padding-base);
   position: relative;
   z-index: var(--layer-5);

@@ -37,6 +37,7 @@
   --content-width-small: calc(36 * var(--step-0));
   --content-width-base: calc(44 * var(--step-0));
   --content-width-medium: calc(66 * var(--step-0));
+  --content-width-large: calc(86 * var(--step-0));
 
   --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
 
