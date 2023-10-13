@@ -1,18 +1,24 @@
 .blog-header {
   --clip-path-width: 240px;
+
+  align-items: center;
   display: flex;
-  height: max(30rem, (100vh - 2 * var(--layout-header-height)));
+  height: calc(100vh - 2 * var(--layout-header-height));
   margin-block-end: var(--space-m);
+  max-width: calc(66 * var(--step-0));
+  margin-inline-end: auto;
+  margin-inline-start: auto;
   padding-block-end: calc(2 * var(--padding-base));
+  position: relative;
 }
 
 .blog-header__inner {
   display: flex;
-  flex: 1 0 50%;
   flex-flow: column;
   justify-content: center;
-  padding: 0 var(--padding-base);
+  width: min(95vw, 25 * var(--step-0));
   padding-block-start: var(--padding-base);
+  padding: 0 var(--padding-base);
 }
 
 .blog-header__subline {
@@ -28,6 +34,7 @@
 }
 
 .text__hero-image {
+  align-self: start;
   aspect-ratio: 1;
   background-color: var(--clr-accent);
   background-image: linear-gradient(
@@ -35,8 +42,17 @@
     var(--clr-accent-dark),
     var(--clr-main-light)
   );
+  border-radius: var(--radius-blob-4);
   margin: 0;
-  margin-left: auto;
+  overflow: hidden;
+  position: absolute;
+  top: var(--padding-base);
+  transform: translate(
+    clamp(0rem, 6.4286rem + -17.1429vw, 3rem),
+    clamp(-6rem, -12.8571rem + 34.2857vw, 0rem)
+  );
+  right: var(--padding-base);
+  width: clamp(7.5rem, 7.5rem + 33vmin, 42rem);
 
   & img {
     height: 100%;
