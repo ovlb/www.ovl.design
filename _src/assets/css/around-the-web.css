@@ -24,12 +24,12 @@
 }
 
 .atw-post {
-  padding: var(--padding-base);
-
   @media (min-width: 800px) {
     display: grid;
     gap: calc(2 * var(--padding-base));
     grid-template-columns: [aside-start] min(45vw, 30ch) [aside-end main-start] 1fr [main-end];
+    margin-right: var(--padding-base);
+    padding-top: var(--padding-base);
   }
 
   & > * {
@@ -39,7 +39,8 @@
 
 .atw-column-wrapper {
   grid-column: aside;
-  margin-bottom: 2vmin;
+  margin-bottom: var(--padding-base);
+  padding: var(--padding-base);
 
   @media (min-width: 1034px) {
     align-self: start;
@@ -49,8 +50,7 @@
 }
 
 .atw-post-header {
-  margin-bottom: 2vmin;
-  margin-top: var(--space-m);
+  margin-bottom: calc(0.5 * var(--padding-base));
 }
 
 .atw-post-meta {
@@ -76,10 +76,10 @@
 }
 
 .embeddable-buttondown-form {
+  --content-grid-placement: full;
+
   border: 1px solid var(--clr-fg);
-  border-radius: 0.25rem;
-  margin-left: calc(-1 * var(--padding-base));
-  margin-right: calc(-1 * var(--padding-base));
+  border-radius: var(--conditional-border-radius);
   margin-top: var(--padding-base);
   padding: var(--padding-base);
 
