@@ -56,5 +56,8 @@
         </ul>
       </section>
     {% endif %}
+    {% if changes %}
+      {% include "components/blog/changelog.njk" %}
+    {% endif %}
   </main>
 {% endblock %}

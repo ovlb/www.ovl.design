@@ -1,5 +1,7 @@
 const Image = require('@11ty/eleventy-img')
 
+const { getChanges } = require('../../../../_helper/git-history')
+
 module.exports = {
   tags: ['blog'],
   layout: 'post',
@@ -62,5 +64,7 @@ module.exports = {
 
       return `${this.capitaliser(categories[0])} — `
     },
+
+    changes: async ({ page }) => await getChanges(page),
   },
 }
