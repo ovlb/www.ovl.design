@@ -50,18 +50,28 @@ export default {
     posts() {
       return this.collections.aroundTheWeb
         .filter((post) => post.data.tags.includes(this.category))
-        .reverse()
+        .sort(
+          (postA, postB) =>
+            parseInt(postB.data.page.fileSlug) -
+            parseInt(postA.data.page.fileSlug),
+        )
     },
   },
 
   methods: {
     postToCardItem(post) {
+      const start = this.displayDate(post.data.parsedDates.start, 'short')
+      const end = this.displayDate(post.data.parsedDates.publish, 'short')
+
+      let title = `${start}–${end}`
+
+      if (post.data.issueTitle) {
+        title = `${post.data.issueTitle} (${start}–${end})`
+      }
+
       return {
         ...post.data,
-        title: `${this.displayDate(
-          post.data.parsedDates.start,
-          'short',
-        )}–${this.displayDate(post.data.parsedDates.publish, 'short')}`,
+        title,
       }
     },
   },
