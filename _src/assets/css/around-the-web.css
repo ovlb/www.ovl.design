@@ -21,8 +21,14 @@
     display: grid;
     gap: calc(2 * var(--padding-base));
     grid-template-columns: [aside-start] min(45vw, 30ch) [aside-end main-start] 1fr [main-end];
+    margin-inline: auto;
     margin-right: var(--padding-base);
+    max-width: var(--content-width-large);
     padding-top: var(--padding-base);
+
+    & > * {
+      margin: 0 !important;
+    }
   }
 
   & > * {
