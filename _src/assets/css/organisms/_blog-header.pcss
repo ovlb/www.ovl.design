@@ -3,7 +3,7 @@
 
   align-items: center;
   display: flex;
-  height: calc(100vh - 2 * var(--layout-header-height));
+  height: min(calc(100vh - 2 * var(--layout-header-height), 42rem));
   margin-block-end: var(--space-m);
   margin-inline-end: auto;
   margin-inline-start: auto;
@@ -26,9 +26,11 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  margin-block-start: auto;
+  margin-block-end: var(--space-xl);
   padding: 0 var(--padding-base);
   padding-block-start: var(--padding-base);
-  width: min(95vw, 25 * var(--step-0));
+  width: min(95vw, var(--content-width-small));
 }
 
 .blog-header__subline {
@@ -62,7 +64,7 @@
     clamp(0rem, 6.4286rem + -17.1429vw, 3rem),
     clamp(-6rem, -12.8571rem + 34.2857vw, 0rem)
   );
-  width: clamp(7.5rem, 7.5rem + 33vmin, 42rem);
+  width: clamp(7.5rem, 7.5rem + 25vmin, 36rem);
 
   & img {
     height: 100%;
