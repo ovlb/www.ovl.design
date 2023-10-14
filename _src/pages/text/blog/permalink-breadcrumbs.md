@@ -22,6 +22,8 @@ I decided on an approach that is based on the permalink of the pages, as this cu
 
 For more nuanced implementations, you might want to take a look at the official [Navigation Plugin](https://www.11ty.dev/docs/plugins/navigation/), as this allows for a high degree of customisation and more complex data structures.
 
+If you want to see it implemented, scroll to the bottom of the page. Why at the bottom, you might ask? Most of the pages of this website are blog posts (such as this) or issues of my newsletter, Around the Web. Those are linked in the header. As it isn’t sticky, I decided that the addional nav option when you reached the end is more useful.
+
 ## Setup
 
 [Most of the code is in this commit](https://github.com/ovlb/www.ovl.design/pull/5/commits/9462166f4f97994eb4886e0bbd5c19a84561504a), if you want to explore on your own.
