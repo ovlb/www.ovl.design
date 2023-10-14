@@ -1,8 +1,10 @@
 .u-floral-heart-gradient {
   @supports (color: var(--clr)) {
-    --gradient-size: 45% 0.125rem;
-    --gradient-bottom-offset: calc(100% - 2rem);
-    --fleuron-bottom-offset: 1.66rem;
+    --fleuron-bottom-offset: 0.76rem;
+    --fleuron-size: var(--space-s);
+
+    --gradient-size: calc(50% - 2 * var(--fleuron-size)) 0.125rem;
+    --gradient-bottom-offset: calc(100% - 1.2rem);
 
     background-image: linear-gradient(
         to right,
@@ -21,7 +23,8 @@
       center calc(100% - var(--fleuron-bottom-offset)),
       100% var(--gradient-bottom-offset);
     background-repeat: no-repeat;
-    background-size: var(--gradient-size), 1rem, var(--gradient-size);
+    background-size: var(--gradient-size), var(--fleuron-size),
+      var(--gradient-size);
   }
 }
 

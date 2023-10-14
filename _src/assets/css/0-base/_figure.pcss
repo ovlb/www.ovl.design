@@ -1,14 +1,13 @@
 figure {
   margin: 0.5rem 0;
-  margin-left: calc(-0.5 * var(--padding-base));
-  margin-right: calc(-0.5 * var(--padding-base));
 }
 
 figure figcaption {
-  font-size: smaller;
+  font-size: var(--step-0);
   font-style: italic;
-  padding-left: calc(0.5 * var(--padding-base));
-  padding-right: calc(0.5 * var(--padding-base));
+  letter-spacing: 0.01em;
+  padding-left: var(--padding-base);
+  word-spacing: 0.01em;
 }
 
 figure:has(img[src$='.gif']) figcaption {

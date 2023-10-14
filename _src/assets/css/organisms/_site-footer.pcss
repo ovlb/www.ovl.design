@@ -2,15 +2,23 @@
   display: flex;
   flex-flow: row wrap;
   gap: var(--padding-base);
+  margin-inline: auto;
   margin-top: calc(3 * var(--padding-base));
+  max-width: var(--content-width-large);
   padding-bottom: calc(2 * var(--padding-base));
-  padding-left: var(--padding-base);
+  padding-inline: var(--padding-base);
 
   & > * {
-    flex: 0 1 var(--footer-flex-base, 20rem);
+    flex: 0 1 var(--footer-flex-base, max-content);
   }
 
-  & > *:not(:first-child) {
-    --footer-flex-base: max-content;
+  .breadcrumbs {
+    flex: 0 0 100%;
+  }
+
+  .nav__link.-is-active {
+    font-style: italic;
+    letter-spacing: 0.01em;
+    word-spacing: 0.01em;
   }
 }

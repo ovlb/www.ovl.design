@@ -17,20 +17,14 @@
     background-size: contain;
     content: '';
     display: inline-block;
-    height: 1rem;
-    margin-right: 0.5rem;
-    width: 1rem;
+    height: var(--space-s);
+    margin-right: var(--space-2xs);
+    width: var(--space-s);
   }
 
   &.-is-mastodon {
     &::before {
       background-image: url('/img/mastodon-gradient.svg');
-    }
-  }
-
-  &.-is-twitter {
-    &::before {
-      background-image: url('/img/twitter-red.png');
     }
   }
 

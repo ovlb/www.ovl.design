@@ -1,6 +1,6 @@
 <template>
   <main id="main" class="homepage-content" tabindex="-1">
-    <archive-header title="Scribbles on digital paper">
+    <archive-header :title="title">
       <template #sub>
         {{ meta.description }}
       </template>
@@ -50,6 +50,8 @@ export default {
       permalink: '/text/',
       templateClass: 'tmpl-article-list',
       pageTitle: 'Text',
+      title: 'Scribbles on digital paper',
+      hideBreadcrumb: true,
       eleventyComputed: {
         meta: function (data) {
           return {

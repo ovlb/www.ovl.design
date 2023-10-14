@@ -1,6 +1,4 @@
-ul[role='list'],
-ul[class],
-ol[class] {
+:where(ul[role='list'], ul[class], ol[class]) {
   list-style: none;
   padding: 0;
 }
@@ -10,7 +8,25 @@ ol[class] {
     display: inline;
 
     &:not(:last-child)::after {
-      content: ' • ';
+      content: var(--list-separator, ' • ');
+    }
+  }
+}
+
+.breadcrumb-list {
+  a {
+    font-size: var(--step--1);
+    text-decoration: none;
+
+    :is(&:hover) {
+      text-decoration: none;
+    }
+
+    &[aria-current='page'] {
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 0.01em;
+      word-spacing: 0.01em;
     }
   }
 }

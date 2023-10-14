@@ -4,52 +4,93 @@
   --fonts-secondary: 'LautsprecherDJR', cursive;
   --fonts-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
-  /* Values based on http://www.modularscale.com/?1&em&1.125 */
-  --type-very-small: 0.694em;
-  --type-small: 0.833em;
-  --type-base: 1em;
-  --type-medium: 1.125em;
-  --type-large: 1.266em;
-  --type-xlarge: 1.424em;
-  --type-splash: 2.072em;
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,2220,24,1.25,5,2,1700&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.79rem, 0.7713rem + 0.0933vw, 0.9113rem);
+  --step--1: clamp(0.8888rem, 0.8572rem + 0.1577vw, 1.0938rem);
+  --step-0: clamp(1rem, 0.9519rem + 0.2404vw, 1.3125rem);
+  --step-1: clamp(1.125rem, 1.0558rem + 0.3462vw, 1.575rem);
+  --step-2: clamp(1.2656rem, 1.1696rem + 0.4803vw, 1.89rem);
+  --step-3: clamp(1.4238rem, 1.2938rem + 0.6495vw, 2.2681rem);
+  --step-4: clamp(1.6019rem, 1.4296rem + 0.8615vw, 2.7219rem);
+  --step-5: clamp(1.8019rem, 1.5767rem + 1.126vw, 3.2656rem);
+  --step-6: clamp(2.0275rem, 1.7364rem + 1.4553vw, 3.9194rem);
 
-  --layout-header-height: 5.75rem;
+  --space-3xs: clamp(0.25rem, 0.2308rem + 0.0962vw, 0.375rem);
+  --space-2xs: clamp(0.5rem, 0.4712rem + 0.1442vw, 0.6875rem);
+  --space-xs: clamp(0.6875rem, 0.6298rem + 0.2885vw, 1.0625rem);
+  --space-s: clamp(0.9375rem, 0.8702rem + 0.3365vw, 1.375rem);
+  --space-m: clamp(1.4375rem, 1.3413rem + 0.4808vw, 2.0625rem);
+  --space-l: clamp(1.875rem, 1.7404rem + 0.6731vw, 2.75rem);
+  --space-xl: clamp(2.8125rem, 2.6106rem + 1.0096vw, 4.125rem);
+  --space-2xl: clamp(3.75rem, 3.4808rem + 1.3462vw, 5.5rem);
+  --space-3xl: clamp(5.625rem, 5.2212rem + 2.0192vw, 8.25rem);
 
-  @media (min-width: 380px) {
-    --layout-header-height: 3.75rem;
-  }
+  --space-s-l: clamp(0.9375rem, 0.6587rem + 1.3942vw, 2.75rem);
 
-  @media (min-width: 37.5rem) {
-    /* Values based on http://www.modularscale.com/?1&em&1.2 */
-    --type-very-small: 0.694em;
-    --type-small: 0.833em;
-    --type-base: 1em;
-    --type-medium: 1.2em;
-    --type-large: 1.728em;
-    --type-xlarge: 2.488em;
-    --type-splash: 3.583em;
-  }
+  --padding-base: var(--space-s-l);
+
+  --content-grid-columns: [full-start] var(--padding-base) [main-start] 1fr
+    [main-end] var(--padding-base) [full-end];
+
+  --layout-header-height: 3.75rem;
+
+  --content-width-small: calc(36 * var(--step-0));
+  --content-width-base: calc(44 * var(--step-0));
+  --content-width-medium: calc(66 * var(--step-0));
+  --content-width-large: calc(86 * var(--step-0));
+
+  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
 
   --clr-main: #b00000;
   --clr-main-darker: #d23838;
   --clr-main-light: #ff4a4a;
   --clr-main-dark: #7d0000;
-  --clr-light: #f8f2e3;
+
+  --clr-light: #f3eee0;
+  --clr-light-dark: #c7c1c2;
+
   --clr-dark: #0e0e0e;
-  --clr-dark-lighter: #161616;
+  --clr-dark-lighter: #1b1b1b;
   --clr-dark-light: #685d5d;
-  --clr-light-dark: #cdc9bd;
+
+  --clr-brown: #784f17;
+  --clr-red: #e40303;
+  --clr-orange: #ff8c00;
+  --clr-yellow: #ffed00;
+  --clr-green: #008026;
+  --clr-blue: #004dff;
+  --clr-purple: #750787;
+
+  @supports (color: oklch(42% 0.1 161)) {
+    --clr-main: oklch(47.21% 0.21 29.23);
+    --clr-main-darker: oklch(40% 0.21 29.23);
+    --clr-main-light: oklch(63% 0.21 29.23);
+    --clr-main-dark: oklch(32% 0.21 29.23);
+
+    --clr-light: oklch(95% 0.02 90.42);
+    --clr-light-dark: oklch(77% 0.02 90.42);
+
+    --clr-dark: oklch(16% 0 0);
+    --clr-dark-lighter: oklch(21% 0 0);
+    --clr-dark-light: oklch(41% 0 0);
+
+    --clr-brown: oklch(0.43 0.11 65.09);
+    --clr-red: oklch(0.59 0.26 29.58);
+    --clr-orange: oklch(0.71 0.2 53.1);
+    --clr-yellow: oklch(0.92 0.22 103.48);
+    --clr-green: oklch(0.63 0.27 145.46);
+    --clr-blue: oklch(0.5 0.28 262.82);
+    --clr-purple: oklch(0.46 0.24 319.47);
+
+    --layout-fleuron: url('/img/icons/floral-heart-dark-red-lch.svg');
+  }
 
   --clr-bg: var(--clr-light);
   --clr-fg: var(--clr-dark);
   --clr-accent: var(--clr-main);
   --clr-accent-dark: var(--clr-main-dark);
   --clr-accent-light: var(--clr-main-light);
-  --clr-decent: var(--clr-dark-light);
-
-  --padding-base: 4vmin;
-
-  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
+  --clr-discreet: var(--clr-dark-light);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,9 +100,13 @@
     --clr-accent: var(--clr-main-light);
     --clr-accent-dark: var(--clr-main-darker);
     --clr-accent-light: var(--clr-main-dark);
-    --clr-decent: var(--clr-light-dark);
+    --clr-discreet: var(--clr-light-dark);
 
     --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+
+    @media (color-gamut: p3) {
+      --layout-fleuron: url('/img/icons/floral-heart-light-red-lch.svg');
+    }
   }
 }
 
@@ -71,7 +116,11 @@
   --clr-accent: var(--clr-main-light);
   --clr-accent-dark: var(--clr-main-darker);
   --clr-accent-light: var(--clr-main-dark);
-  --clr-decent: var(--clr-light-dark);
+  --clr-discreet: var(--clr-light-dark);
 
   --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+
+  @media (color-gamut: p3) {
+    --layout-fleuron: url('/img/icons/floral-heart-light-red-lch.svg');
+  }
 }

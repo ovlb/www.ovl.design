@@ -1,33 +1,25 @@
 .cta-banner {
   --clr-count: 8;
   --to-percentage: 100%;
-  background-color: var(--clr-dark);
 
+  background-color: var(--clr-dark);
   background-image: linear-gradient(
     270deg,
     black 0% calc(1 / var(--clr-count) * var(--to-percentage)),
-    #784f17 calc(1 / var(--clr-count) * var(--to-percentage))
+    var(--clr-brown) calc(1 / var(--clr-count) * var(--to-percentage))
       calc(2 / var(--clr-count) * var(--to-percentage)),
-    #e40303 calc(2 / var(--clr-count) * var(--to-percentage))
+    var(--clr-red) calc(2 / var(--clr-count) * var(--to-percentage))
       calc(3 / var(--clr-count) * var(--to-percentage)),
-    #ff8c00 calc(3 / var(--clr-count) * var(--to-percentage))
+    var(--clr-orange) calc(3 / var(--clr-count) * var(--to-percentage))
       calc(4 / var(--clr-count) * var(--to-percentage)),
-    #ffed00 calc(4 / var(--clr-count) * var(--to-percentage))
+    var(--clr-yellow) calc(4 / var(--clr-count) * var(--to-percentage))
       calc(5 / var(--clr-count) * var(--to-percentage)),
-    #008026 calc(5 / var(--clr-count) * var(--to-percentage))
+    var(--clr-green) calc(5 / var(--clr-count) * var(--to-percentage))
       calc(6 / var(--clr-count) * var(--to-percentage)),
-    #004dff calc(6 / var(--clr-count) * var(--to-percentage))
+    var(--clr-blue) calc(6 / var(--clr-count) * var(--to-percentage))
       calc(7 / var(--clr-count) * var(--to-percentage)),
-    #750787 calc(7 / var(--clr-count) * var(--to-percentage))
+    var(--clr-purple) calc(7 / var(--clr-count) * var(--to-percentage))
       calc(8 / var(--clr-count) * var(--to-percentage))
   );
-  color: var(--clr-dark);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
   height: 0.5rem;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-transform: uppercase;
-  word-spacing: 0.05em;
 }

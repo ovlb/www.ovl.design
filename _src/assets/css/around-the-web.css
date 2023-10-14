@@ -1,5 +1,3 @@
-@import './0-base/_img.pcss';
-@import './0-base/_figure.pcss';
 @import 'eleventy-plugin-embed-tweet/tweet.css';
 @import '@inframanufaktur/eleventy-plugin-embed-mastodon/post.css';
 
@@ -7,7 +5,7 @@
   --pme-description-display: block;
   --pme-description-width: min(55vw, 29rem);
 
-  margin: 1rem 0;
+  margin: var(--space-s) 0;
 
   & p + p {
     text-indent: 0;
@@ -19,18 +17,23 @@
 }
 
 .atw-post {
-  max-width: 120ch;
-  padding: var(--padding-base);
-
   @media (min-width: 800px) {
     display: grid;
     gap: calc(2 * var(--padding-base));
-    grid-template-columns: min(45vw, 30ch) 1fr;
+    grid-template-columns: [aside-start] min(45vw, 30ch) [aside-end main-start] 1fr [main-end];
+    margin-right: var(--padding-base);
+    padding-top: var(--padding-base);
+  }
+
+  & > * {
+    grid-column: main;
   }
 }
 
 .atw-column-wrapper {
-  margin-bottom: 2vmin;
+  grid-column: aside;
+  margin-bottom: var(--padding-base);
+  padding: var(--padding-base);
 
   @media (min-width: 1034px) {
     align-self: start;
@@ -40,12 +43,7 @@
 }
 
 .atw-post-header {
-  margin-bottom: 2vmin;
-
-  h1 {
-    font-size: var(--type-xlarge);
-    margin-bottom: 0.5rem;
-  }
+  margin-bottom: calc(0.5 * var(--padding-base));
 }
 
 .atw-post-meta {
@@ -61,29 +59,24 @@
 }
 
 .atw-post__intro {
+  text-align: center;
+}
+
+.atw-post__claim {
   --gradient-bottom-offset: calc(100% - 0.5rem);
   --fleuron-bottom-offset: 0.06rem;
 
   font-style: italic;
-  margin-bottom: 2rem;
-  padding: 0 2vmin 2rem;
-  /* font-size: var(--type-medium); */
-}
-
-.text__body {
-  max-width: max(75vw, 75ch);
-}
-
-.atw-post__collections {
-  grid-column-end: -1;
-  margin-top: 4vmin;
+  margin-bottom: var(--space-l);
+  padding: 0 2vmin var(--space-l);
+  /* font-size: var(--step-2); */
 }
 
 .embeddable-buttondown-form {
+  --content-grid-placement: full;
+
   border: 1px solid var(--clr-fg);
-  border-radius: 0.25rem;
-  margin-left: calc(-1 * var(--padding-base));
-  margin-right: calc(-1 * var(--padding-base));
+  border-radius: var(--conditional-border-radius);
   margin-top: var(--padding-base);
   padding: var(--padding-base);
 

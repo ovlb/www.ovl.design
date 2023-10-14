@@ -180,7 +180,7 @@ export default {
         )
 
         enriched.push({
-          name: this.displayCategory(category),
+          name: this.capitaliser(category),
           href: this.categoryPermalink(category, this.categoryBase),
           count: posts.length,
         })

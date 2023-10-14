@@ -5,7 +5,6 @@
 @import './elements/base/_main.pcss';
 @import './util/_typography.pcss';
 @import './0-base/_img.pcss';
-@import './0-base/_figure.pcss';
 @import './elements/_a.pcss';
 @import './elements/_icon.pcss';
 @import './elements/_pill.pcss';
@@ -19,7 +18,6 @@
 @import './organisms/navs/_vertical-nav.pcss';
 @import './organisms/_site-footer.pcss';
 @import './organisms/_nav.pcss';
-@import './organisms/_blockquote.pcss';
 
 @import './util/_visual.pcss';
 @import './util/_accessibility.pcss';

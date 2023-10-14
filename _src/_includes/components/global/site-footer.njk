@@ -1,5 +1,8 @@
 <footer class="site-footer">
-  <section>
+  {% if breadcrumb and not hideBreadcrumb %}
+    {% include "components/global/breadcrumb.njk" %}
+  {% endif %}
+  <section style="--footer-flex-base: 20rem">
     <p>My name is Oscar. I write <a href="/code/">Code</a>. I design for web and print. I like owls. And this is my website.</p>
 
     <p hidden class="switch-button js-theme-switch">
@@ -27,7 +30,7 @@
     <ul class="vertical-nav__list" role="list">
       {% for item in navigation.secondary %}
         <li>
-          <a href="{{ item.permalink }}">{{ item.title }}</a>
+          {% navLink item %}
         </li>
       {% endfor %}
     </ul>

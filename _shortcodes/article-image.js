@@ -3,10 +3,10 @@ module.exports = function (img) {
 
   const widths = [205, 310, 360, 510, 710, 1110]
 
-  const imgSizes = '(min-width: 1500px) 33vw, 25vw'
+  const imgSizes = '(min-width: 700px) 33vmin, 25vw'
 
   return `
-      <figure class="text__hero-image"><picture class="">
+      <figure class="text__hero-image">
         <img
           src="_src/assets/img/blog/${img.title}"
           alt="${img.alt}"
@@ -14,6 +14,6 @@ module.exports = function (img) {
           data-image-widths=${JSON.stringify(widths)}
           data-image-sizes=${imgSizes}
         />
-      </picture></figure>
+      </figure>
     `
 }

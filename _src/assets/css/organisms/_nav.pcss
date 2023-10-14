@@ -1,23 +1,51 @@
 .site-nav {
+  align-self: stretch;
+  min-height: var(--layout-header-height);
   overflow: hidden;
 
   & > ul {
     align-items: center;
     display: flex;
+    gap: var(--space-s);
+  }
+}
+
+.nav__link {
+  &.-is-active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.site-nav li {
+  --nav-highlight-owl: url('/img/nav/owl-01.webp');
+
+  display: contents;
+
+  &:nth-of-type(2) {
+    --nav-highlight-owl: url('/img/nav/owl-02.webp');
   }
 
-  & li + li {
-    margin-left: 1em;
+  &:nth-of-type(3) {
+    --nav-highlight-owl: url('/img/nav/owl-03.webp');
+  }
+
+  &:nth-of-type(4) {
+    --nav-highlight-owl: url('/img/nav/owl-04.webp');
   }
 }
 
 .site-nav .nav__link {
+  --highlight-skew: 7deg;
+  --highlight-y-transform: -50%;
+
   align-items: center;
   /* needed for the transform to work */
   display: inline-flex;
-  height: var(--layout-header-height);
+  height: 100%;
   position: relative;
   text-decoration: none;
+  white-space: nowrap;
   z-index: 1;
 
   @media (prefers-reduced-motion: no-preference) {
@@ -26,49 +54,34 @@
 
   &::after {
     backface-visibility: hidden;
-    background-image: url('/img/highlight-owl-32c.png');
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
     display: inline-block;
     height: 2rem;
     left: 0;
-    padding: 0.25rem;
     position: absolute;
     top: 100%;
-    /* transform: translateY(100%); */
+    transform-origin: center bottom;
     transition: inherit;
     width: 100%;
     z-index: -1;
   }
 
-  &:hover,
-  &:focus {
-    &::after {
-      transform: translateY(-50%);
+  :where(&:hover, &:focus, &.-is-active) {
+    transform: skewY(calc(-1 * var(--highlight-skew)));
 
-      @media (min-width: 380px) {
-        transform: translateY(-45%);
-      }
+    &::after {
+      background-image: var(--nav-highlight-owl);
+      transform: translateY(var(--highlight-y-transform))
+        skewY(var(--highlight-skew));
     }
   }
 
-  &:hover,
-  &:focus,
   &.-is-active {
-    transform: skewY(-7deg);
-  }
-
-  &.-is-active {
-    font-weight: bold;
-
     &::after {
-      transform: translateY(-100%) skewY(7deg);
-
-      @media (min-width: 380px) {
-        transform: translateY(-66%) skewY(7deg);
-      }
+      --highlight-y-transform: -80%;
     }
   }
 }

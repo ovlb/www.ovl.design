@@ -1,76 +1,49 @@
-h1,
-h2,
-h3,
-h4 {
+:where(h1, h2, h3, h4) {
+  font-size: var(--step-2);
   line-height: 1.2;
-  margin: 1em 0 0.5em 0;
+  margin: 1.2em 0 0.4em 0;
 }
 
 .main-headline {
   color: var(--clr-accent);
   font-family: var(--fonts-secondary);
-  font-size: var(--type-splash);
+  font-size: var(--step-6);
 
   &:first-child {
     margin-top: 0;
   }
 }
 
-.sub-headline,
-.text__body h2:not([class]) {
+:is(.sub-headline, .md-content h2:not([class])) {
   font-family: var(--fonts-headline);
-  font-size: var(--type-xlarge);
+  font-size: var(--step-4);
   font-weight: bold;
-  margin-left: -2vmin;
-  /*margin: space(full, relative) 0 space(half, relative);*/
 
   @media (min-width: 1500px) {
-    margin-left: -var(--padding-base);
   }
 }
 
-.small-headline,
-.text__body h3 {
+:is(.small-headline, .md-content h3) {
   font-family: var(--fonts-headline);
-  font-size: var(--type-large);
-  font-weight: 600;
-
-  @media (min-width: 1500px) {
-    margin-left: -2vmin;
-  }
+  font-size: var(--step-2);
+  font-weight: bold;
 }
 
-.text__body h4 {
-  font-family: var(--fonts-headline);
-  font-size: var(--type-medium);
-}
-
-p {
-  font-size: var(--type-base);
+:is(p, .type-0) {
+  font-size: var(--step-0);
   line-height: 1.6;
-  margin-bottom: 0.25em;
 }
 
-.text__body p + p {
-  margin-top: 0.5rem;
-
-  @media (min-width: 777px) {
-    margin-top: 0.25rem;
-    text-indent: 1rem;
-  }
-}
-
-small,
-.p-small {
-  font-size: var(--type-small);
+:is(small, .type--1) {
+  font-size: var(--step--1);
 }
 
 .type-is-aside {
-  color: var(--clr-decent);
-  font-size: var(--type-small);
+  color: var(--clr-discreet);
+  font-size: var(--step--1);
 }
 
-:where(.text__body > :is(h2, h3, h4, p)):target {
+:where(.md-content > :is(h2, h3, h4, p)):target {
   background-image: linear-gradient(
     -100deg,
     rgba(255, 224, 0, 0.13),
@@ -95,11 +68,9 @@ abbr,
 }
 
 .type-small-caps {
-  @supports (font-variant-caps: small-caps) {
-    font-size: inherit;
-    font-variant-caps: small-caps;
-    text-transform: none;
-  }
+  font-size: inherit;
+  font-variant-caps: small-caps;
+  text-transform: none;
 }
 
 .t-content-1 {

@@ -276,7 +276,7 @@ But, this quickly became tedious. Even with only ten or so categories. Plus, Iâ€
 
 And most of my mapping were basically a slug-like string to a title cased string. In other words: A boring, routine task. This is the thing computers excel at. (Sorry, computer.)
 
-In the end, I decided to create a `displayCategory` filter, which does this.
+In the end, I decided to create a `capitaliser` filter, which does this.
 
 ```js
 const { startCase, camelCase } = require('lodash')
@@ -325,7 +325,7 @@ Here, the pieces I added earlier fell into place easily:
   {% for category in tags | getCategories | aToZ %}
   <li>
     <a href="{{ category | categoryPermalink(categoryBase) }}"
-      >{{ category | displayCategory }}</a
+      >{{ category | capitaliser }}</a
     >
   </li>
   {% endfor %}

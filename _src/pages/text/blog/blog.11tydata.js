@@ -1,9 +1,11 @@
 const Image = require('@11ty/eleventy-img')
 
+const { getChanges } = require('../../../../_helper/git-history')
+
 module.exports = {
   tags: ['blog'],
   layout: 'post',
-  pageCSS: 'text-detail',
+  pageCSS: ['text-detail', 'text-page'],
   templateClass: 'tmpl-single-post',
 
   eleventyComputed: {
@@ -60,7 +62,9 @@ module.exports = {
         return ''
       }
 
-      return `${this.displayCategory(categories[0])} — `
+      return `${this.capitaliser(categories[0])} — `
     },
+
+    changes: async ({ page }) => await getChanges(page),
   },
 }

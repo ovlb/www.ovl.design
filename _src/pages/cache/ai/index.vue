@@ -37,7 +37,11 @@
         class="content-block"
       >
         <h2 class="sub-headline">{{ collection.title }}</h2>
-        <the-stack tag-name="ul" class="post-list" style="--stack-space: 1rem">
+        <the-stack
+          tag-name="ul"
+          class="post-list"
+          style="--stack-space: var(--space-s)"
+        >
           <li
             v-for="item in collection.data"
             :key="slug(item.title)"
@@ -53,7 +57,7 @@
                 class="type-is-aside l-stack--wraps"
               >
                 <span>{{ getHost(item.url) }}</span>
-                <span style="--stack-space: 1rem">
+                <span style="--stack-space: var(--space-s)">
                   {{
                     item.topics
                       ?.sort((a, b) =>
@@ -118,13 +122,13 @@ export default {
 <style>
 .cache-content .main-headline {
   font-family: var(--fonts-mono);
-  font-size: var(--type-medium);
+  font-size: var(--step-2);
 }
 
 .cache-content .sub-headline,
 .cache-content .small-headline {
   font-family: var(--fonts-main);
-  font-size: var(--type-base);
+  font-size: var(--step-0);
 }
 
 .cache-content .sub-headline {
@@ -169,6 +173,6 @@ export default {
 
 .id-list li a {
   color: var(--clr-fg);
-  font-size: var(--type-small);
+  font-size: var(--step--1);
 }
 </style>

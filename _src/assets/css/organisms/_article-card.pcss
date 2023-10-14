@@ -1,20 +1,21 @@
 .article-card {
   --card-offset: 2vmin;
+  --fleuron-size: var(--space-s);
 
   align-items: start;
   background-image: var(--layout-fleuron);
   background-position: calc(50% + calc(0.5 * var(--card-offset)))
-    calc(100% - 0.5rem);
+    calc(100% - 0.5 * var(--fleuron-size));
   background-repeat: no-repeat;
-  background-size: 1rem;
+  background-size: var(--fleuron-size);
   contain: content;
   display: flex;
   flex-flow: column;
-  gap: 0.25rem;
+  gap: var(--space-3xs);
   list-style: none;
   margin-left: calc(-1 * var(--card-offset));
   overflow: hidden;
-  padding-bottom: 2rem;
+  padding-bottom: var(--space-l);
   /* offset margin */
   padding-left: var(--card-offset);
   position: relative;
@@ -46,7 +47,7 @@
   backface-visibility: hidden;
   display: inline-block;
   font-family: var(--fonts-headline);
-  font-size: var(--type-medium);
+  font-size: var(--step-1);
 
   margin-top: 0;
   position: relative;
@@ -54,7 +55,7 @@
 
   &::before {
     backface-visibility: hidden;
-    background-color: var(--clr-decent);
+    background-color: var(--clr-discreet);
     bottom: 0;
     content: '';
     height: 0.125rem;

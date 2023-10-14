@@ -1,0 +1,26 @@
+.change {
+  display: grid;
+  gap: var(--space-s);
+  grid-template-columns: 10ch 1fr;
+
+  & + & {
+    margin-block-start: var(--size-4);
+  }
+}
+
+.change__time {
+  opacity: 0.8;
+}
+
+.change__title {
+  font-family: var(--fonts-main);
+  font-size: var(--step-0);
+  font-style: normal;
+  font-weight: bold;
+  margin-block-start: 0;
+
+  a {
+    color: var(--clr-fg);
+    text-decoration: none;
+  }
+}

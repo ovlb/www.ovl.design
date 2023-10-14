@@ -1,6 +1,6 @@
 <template>
   <main id="main" tabindex="-1">
-    <archive-header :title="displayCategory(category)">
+    <archive-header :title="capitaliser(category)">
       <template #sub>
         <p>
           This is an automatically generated archive of
@@ -39,8 +39,9 @@ export default {
       eleventyComputed: {
         permalink: (data) =>
           this.categoryPermalink(data.category, data.categoryBase),
+        title: (data) => this.capitaliser(data.category),
         pageTitle: (data) =>
-          `${this.displayCategory(data.category)} | Around the Web`,
+          `${this.capitaliser(data.category)} | Collections | Around the Web`,
       },
     }
   },

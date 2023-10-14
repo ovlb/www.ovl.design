@@ -62,6 +62,7 @@ export default {
   data() {
     return {
       title: 'Around the Web',
+      hideBreadcrumb: true,
       permalink: '/around-the-web/',
     }
   },

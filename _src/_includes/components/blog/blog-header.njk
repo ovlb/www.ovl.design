@@ -1,0 +1,27 @@
+<header class="blog-header u-floral-heart-gradient">
+  <div class="blog-header__inner">
+    <h1 class="main-headline p-name">{{ title }}</h1>
+      <p class="blog-header__subline type-is-aside">
+        {{ categoriesString }}
+        {% if date %}
+          <time
+            datetime="{{ date }}"
+            class="dt-published"
+          >{{ date | displayDate }}</time>
+        {% endif %}
+      </p>
+      {% if subtitle %}
+        <p class="blog-header__intro p-summary">
+          {{ subtitle }}
+        </p>
+      {% endif %}
+  </div>
+  {% articleImage image %}
+  <svg width="0" height="0" viewBox="0 0 1 1" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+  <defs>
+      <clipPath id="rounded-hexagon" clipPathUnits="objectBoundingBox">
+        <path d="M0.06,0.003c0.017,0.009 0.034,0.019 0.05,0.029c0.001,0.019 0.001,0.039 0,0.058c-0.016,0.01 -0.033,0.02 -0.05,0.029c-0.017,-0.009 -0.034,-0.019 -0.05,-0.029c-0.001,-0.019 -0.001,-0.039 -0,-0.058c0.016,-0.01 0.033,-0.02 0.05,-0.029Z" />
+    </clipPath>
+    </defs>
+  </svg>
+</header>

@@ -46,9 +46,8 @@
     />
     <meta name="theme-color" content="#f8f2e3" />
 
-    {% metaTags meta, post %} {% metaRobots %} {#
-    <link rel="stylesheet" href="/css/main.css" />
-    #}
+    {% metaTags meta, post %}
+    {% metaRobots %}
 
     <link
       rel="preload"
@@ -105,7 +104,9 @@
     <link rel="stylesheet" href="/css/custom-properties.css" />
     <link rel="stylesheet" href="/css/main.css" />
     {% if pageCSS %}
-      <link rel="stylesheet" href="/css/{{pageCSS}}.css">
+      {% for css in pageCSS %}
+        <link rel="stylesheet" href="/css/{{css}}.css">
+      {% endfor %}
     {% endif %}
     <style>
       {{page.url | getVueComponentCssForPage | safe}}
@@ -147,4 +148,5 @@
     {% endif %}
     <script type="module" src="/js/main.js"></script>
   </body>
+
 </html>

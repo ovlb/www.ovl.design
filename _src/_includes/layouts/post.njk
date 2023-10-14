@@ -5,32 +5,14 @@
 
 {% block content %}
   <main id="main" class="text h-entry l-stack" tabindex="-1" lang={{ locale }}>
-    <header class="text__header u-floral-heart-gradient">
-      <h1 class="main-headline p-name">{{ title }}</h1>
-      <p class="text__subline type-is-aside">
-        {{ categoriesString }}
-        {% if date %}
-          <time
-            datetime="{{ date }}"
-            class="dt-published"
-          >{{ date | displayDate }}</time>
-        {% endif %}
-      </p>
-      {% if subtitle %}
-        <p class="text__intro p-summary">
-          {{ subtitle }}
-        </p>
-      {% endif %}
-    </header>
-    {% articleImage image %}
-    <div class="text__body e-content md-content" data-text-body>
+    {% include "components/blog/blog-header.njk" %}
+    <div class="main-grid-content e-content md-content" data-text-body>
       {{ content | safe }}
     </div>
     {%- set currentPostMentions = webmentions | webmentionsForPage(permalink) -%}
     {% if currentPostMentions.likes.length %}
       <section
-        class="u-global-padding"
-        style="grid-column: main;"
+        class="main-grid-content"
         aria-label="Post likes"
       >
         {%- set postMentionCount = webmentions | webmentionCountForPage(permalink) -%}
@@ -55,7 +37,11 @@
       </section>
     {% endif %}
     {% if tags.length %}
-      <section role="region" class="text__pagination" aria-labelledby="pgntn-hdln">
+      <section
+        role="region"
+        class="text__pagination main-grid-content"
+        aria-labelledby="pgntn-hdln"
+      >
         <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
         <ul class="inline-list" role="list">
           {% for tag in tags | getCategories %}
@@ -63,12 +49,15 @@
               <a
                 href="{{ tag | categoryPermalink(categoryBase) }}"
               >
-                {{ tag | displayCategory }}
+                {{ tag | capitaliser }}
               </a>
             </li>
           {% endfor %}
         </ul>
       </section>
+    {% endif %}
+    {% if changes %}
+      {% include "components/blog/changelog.njk" %}
     {% endif %}
   </main>
 {% endblock %}

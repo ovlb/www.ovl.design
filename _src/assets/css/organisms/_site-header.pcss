@@ -1,14 +1,18 @@
 .site-header {
   background-color: var(--clr-bg);
   border-bottom: 1px solid var(--clr-main-light);
-  display: flex;
-  flex-flow: row nowrap;
-  height: var(--layout-header-height);
   overflow: hidden;
+  position: relative;
+  z-index: var(--layer-5);
+}
+
+.site-header__inner {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-inline: auto;
+  max-width: var(--content-width-large);
   padding: 0 var(--padding-base);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 
   & > * {
     display: flex;
@@ -18,12 +22,10 @@
 .site-header__logo {
   flex: 0 0 33%;
   height: 100%;
-  margin-right: 2rem;
+  margin-right: var(--space-l);
   max-width: 100px;
+  padding: calc(0.5 * var(--padding-base)) 0;
   width: 33%;
-
-  @media (min-width: 380px) {
-  }
 
   & > svg {
     width: 100%;

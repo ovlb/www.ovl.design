@@ -3,7 +3,7 @@ const { parseHTML } = require('linkedom')
 module.exports = {
   layout: 'digest',
   tags: ['aroundTheWeb'],
-  pageCSS: 'around-the-web',
+  pageCSS: ['around-the-web', 'text-page'],
   eleventyComputed: {
     meta: function (data) {
       return {
