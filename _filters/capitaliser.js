@@ -7,11 +7,11 @@ module.exports = function (rawName) {
     ['cat:nft', 'NFT'],
     ['cat:climate', 'Climate Crisis'],
     ['cat:web', 'World Wide Web'],
-    ['Around The Web', 'Around the Web'],
+    ['around-the-web', 'Around the Web'],
   ])
 
   return (
     displayNames.get(rawName) ||
-    startCase(camelCase(rawName.replace('cat:', '').replace('-', ' ')))
+    startCase(camelCase(rawName.replace('cat:', '').replaceAll('-', ' ')))
   )
 }
