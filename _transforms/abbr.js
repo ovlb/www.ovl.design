@@ -20,6 +20,7 @@ const commonAbbreviations = [
   { text: 'ML', title: 'Machine Learning' },
   { text: 'NSU', title: 'Nationalsozialistischer Untergrund' },
   { text: 'TERF', title: 'Trans Exclusionary Radical Feminist' },
+  { text: 'WCAG', title: 'Web Content Accessibility Guidelines' },
 ]
 
 const stylistic = ['DALL-E', 'BLOOM']
