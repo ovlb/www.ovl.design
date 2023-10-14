@@ -1,5 +1,6 @@
-.webmention-likes {
+.webmention-profile-grid {
   display: grid;
+  flex: 1 0 auto;
   grid-gap: var(--space-xs);
   grid-template-columns: repeat(auto-fill, var(--space-l));
 
@@ -8,5 +9,31 @@
     border-radius: 50%;
     height: var(--space-l);
     overflow: hidden;
+  }
+}
+
+.webmentions {
+  .sub-headline {
+    font-size: var(--step-2);
+  }
+
+  h3 {
+    font-size: var(--step-0);
+  }
+}
+
+.webmentions__counts {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-s);
+
+  h3 {
+    flex: 0 0 5rem;
+    margin-bottom: 0;
+  }
+
+  & + & {
+    margin-block-start: var(--space-m);
   }
 }
