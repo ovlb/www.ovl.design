@@ -5,7 +5,7 @@ const getFullSource = require('../_helper/get-full-source')
 const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
 const defaultOptions = {
-  widths: [140, 320, 680, 790, 1024, null],
+  widths: [320, 680, 1024, 1400, 2000, null],
   sizes: process.env.CONTENT_IMAGE_SIZES || '100%',
   formats: ['avif', 'webp', 'jpeg'],
   urlPath: '/img/',
