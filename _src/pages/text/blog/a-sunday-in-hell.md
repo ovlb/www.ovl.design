@@ -21,7 +21,7 @@ Lützerath doesn’t exist anymore, RWE destroyed every building and cut down ev
 
 All the mines have small outlooks, so you can see the destruction for yourself - accompanied by signs from RWE advertising their climate bona fides, the engineering marvels of their bucket wheel excavators (basically they are very big and very good at moving large swathes of earth).
 
-!["View into the coal mine Garzweiler. In the front you can see a guard rail on which someone put a sticker reading «Nett hier». The background is blurry and shows the mine itself. Everything is brown, all shades of brown. The sky is cloudy and the view partially obscured by layers of fog."](_src/assets/img/blog/hambach/garzweiler-nett-hier-cropped.jpeg)
+!["View into the coal mine Garzweiler. In the front you can see a guard rail on which someone put a sticker reading «Nett hier». The background is blurry and shows the mine itself. Everything is brown, all shades of brown. The sky is cloudy and the view partially obscured by layers of fog."](/blog/hambach/garzweiler-nett-hier-cropped.jpeg)
 
 The day was foggy, which added to the apocalyptic scenes of these mines. Pictures don’t really do it justice. There is an eerie silence in the mines, except for the rumble of the conveyor belts that carry away the mined material.
 
@@ -33,12 +33,12 @@ To the south of the mine is a small ray of hope. The Hambach Forest is an old-gr
 
 During the eviction, [activist and documentary filmmaker Steffen Meyn died](https://hambacherforst.org/blog/2018/09/20/presseerklaerung-20-09-18-tragischer-todesfall-im-hambacher-forst/). If you are in Berlin, the Berlinale is showing «[Vergiss Meyn Nicht](https://www.berlinale.de/de/2023/programm/202305614.html)», a film based on Meyn’s material and his time in the forest.
 
-!["A part of the tree house squats in the Hambacher Forst. High in the top of the tress tree hosuses have been built. Those are connected by skywalks, a net in the middle protects from falling down. Larger constructions are near the earth."](_src/assets/img/blog/hambach/hambacher-forst-tree-village.JPG)
+!["A part of the tree house squats in the Hambacher Forst. High in the top of the tress tree hosuses have been built. Those are connected by skywalks, a net in the middle protects from falling down. Larger constructions are near the earth."](/blog/hambach/hambacher-forst-tree-village.JPG)
 
 
 As soon as you leave the forest, you are back on the edge of Mordor. RWE has driven the mine as close to the forest as possible. The long-term effects aren’t clear yet. The soil can no longer hold water, increasing drought stress. The mine itself – an endless mass of brown and black – leads to higher temperatures than in the surrounding landscape. The closer the mine is to the forest, the greater the likelihood of serious damage, [according to the German NGO BUND](https://www.bund-nrw.de/themen/braunkohle/hintergruende-und-publikationen/braunkohlentagebaue/hambach/keinen-meter-weiter/).
 
-!["The edge of the mine directly behind the forest. You see roughly 50 meters of earth until it suddenly disappears. A muddy service road is leads along the edge, someone lit a small fire on it."](_src/assets/img/blog/hambach/hambacher-forst-edge.jpeg "The edge of the mine directly behind the forest.")
+!["The edge of the mine directly behind the forest. You see roughly 50 meters of earth until it suddenly disappears. A muddy service road is leads along the edge, someone lit a small fire on it."](/blog/hambach/hambacher-forst-edge.jpeg "The edge of the mine directly behind the forest.")
 
 
 Which makes the next part even stranger: Manheim is a village a few hundred metres from the edge of the mine. It’s to be destroyed so that the Hambacher Forest can be further enclosed by the mine. But not because RWE needs the coal under the village. Because they require the earth.
@@ -51,15 +51,15 @@ Manheim and Morschenich, another village near the forest, are – for now – st
 
 RWE’s force of destruction is creeping ever closer to the village. Remnants of the A4, still passable by bike a few months ago, are now gone, leaving only a muddy path and the median strip as evidence of its existence.
 
-!["The vacated church in Manheim. All windows have been barricaded. In the front you see some construction fences."](_src/assets/img/blog/hambach/manheim-church.jpeg "The church in Manheim has been evacuated, awaiting its destruction as the rest of the village.")
+!["The vacated church in Manheim. All windows have been barricaded. In the front you see some construction fences."](/blog/hambach/manheim-church.jpeg "The church in Manheim has been evacuated, awaiting its destruction as the rest of the village.")
 
 Drive on, and you’ll find the next viewpoint into the pit. RWE has built a restaurant here. For some reason, they didn’t call it Restaurant at the End of the World, but Forum Terra Nova. I guess nobody knows what this new earth is supposed to be.
 
-!["View into the coal mine Hambach. A footbridge leads to some metal chairs and parasols. In the background the cast nothingness of the mine reveals itself."](_src/assets/img/blog/hambach/hambach-beach.jpeg "Terra Nova Beach Life – turning the end of the world in a place to enjoy a cocktail.")
+!["View into the coal mine Hambach. A footbridge leads to some metal chairs and parasols. In the background the cast nothingness of the mine reveals itself."](/blog/hambach/hambach-beach.jpeg "Terra Nova Beach Life – turning the end of the world in a place to enjoy a cocktail.")
 
 
 Somehow, all this is supposed to be for the betterment of society – and the environment.
 
 I can’t really believe it. Not seeing the destruction. Hearing the rumble of the machines. Smelling the air devoid of life.
 
-!["Closer look into the mine Hambach. Some giant exvacators are at work in pits up to some hundred meters deep. Everything is brown and black. The sky is dark and cloudy and fog obscures part of the view."](_src/assets/img/blog/hambach/hambach-mordor.jpeg "The mines of Mordor")
+!["Closer look into the mine Hambach. Some giant exvacators are at work in pits up to some hundred meters deep. Everything is brown and black. The sky is dark and cloudy and fog obscures part of the view."](/blog/hambach/hambach-mordor.jpeg "The mines of Mordor")

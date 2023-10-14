@@ -1,3 +1,5 @@
+const { img } = require('./paths')
+
 /**
  * Check if the image starts with the remote upload path and set MEDIA_HOST if it does
  *
@@ -5,7 +7,9 @@
  * @returns
  */
 module.exports = (orig) => {
-  return orig.startsWith(process.env.MEDIA_ROOT_FOLDER)
-    ? `${process.env.MEDIA_HOST}${orig}`
-    : orig
+  if (orig.startsWith('http')) {
+    return orig
+  }
+
+  return `${img}${orig.replace('^/', '')}`
 }

@@ -8,7 +8,7 @@ module.exports = function (img) {
   return `
       <figure class="text__hero-image">
         <img
-          src="_src/assets/img/blog/${img.title}"
+          src="blog/${img.title}"
           alt="${img.alt}"
           data-process-image
           data-image-widths=${JSON.stringify(widths)}
