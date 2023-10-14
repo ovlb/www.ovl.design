@@ -53,8 +53,7 @@
   border-radius: 0.25em;
 }
 
-abbr,
-.type-all-small-caps {
+:where(abbr, .type-all-small-caps) {
   font-size: 80%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -67,7 +66,7 @@ abbr,
   }
 }
 
-.type-small-caps {
+:where(.type-small-caps) {
   font-size: inherit;
   font-variant-caps: small-caps;
   text-transform: none;

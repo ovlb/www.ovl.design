@@ -24,20 +24,9 @@
       {{ content | safe }}
     </div>
     {% include "components/blog/webmentions.njk" %}
-    <section class="main-grid-content">
-      <h2 class="pagination-navigation__sub-headline type-all-small-caps">Filed under</h2>
-      <ul role="list" class="inline-list">
-        {% for collection in tags | getCategories %}
-          <li>
-            <a
-              href="{{ collection | categoryPermalink(categoryBase) }}"
-            >
-              {{ collection | capitaliser }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+    {% if tags.length %}
+      {% include "components/blog/collections.njk" %}
+    {% endif %}
     {% if changes %}
       {% include "components/blog/changelog.njk" %}
     {% endif %}

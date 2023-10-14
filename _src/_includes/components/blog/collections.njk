@@ -1,0 +1,22 @@
+<section
+  role="region"
+  class="text-meta-box main-grid-content"
+  aria-label="Collections"
+>
+  <h2
+    class="type-all-small-caps"
+  >
+    Filed under
+  </h2>
+  <ul class="inline-list" role="list">
+    {% for tag in tags | getCategories | aToZ %}
+      <li>
+        <a
+          href="{{ tag | categoryPermalink(categoryBase) }}"
+        >
+          {{ tag | capitaliser }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

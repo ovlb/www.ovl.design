@@ -35,18 +35,9 @@
       </div>
       {{ content | safe }}
     </section>
-    <section class="main-grid-content" aria-labelledby="hdl-collections">
-      <h2 class="small-headline" id="hdl-collections">Collections</h2>
-      <ul class="inline-list" role="list">
-        {% for category in tags | getCategories | aToZ %}
-          <li>
-            <a
-              href="{{ category | categoryPermalink(categoryBase) }}"
-            >{{ category | capitaliser }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
     {% include "components/blog/webmentions.njk" %}
+    {% if tags.length %}
+      {% include "components/blog/collections.njk" %}
+    {% endif %}
   </main>
 {% endblock %}
