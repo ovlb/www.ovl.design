@@ -4,6 +4,7 @@
       <li>
         <a
           href="{{crumb.url}}"
+          {% if loop.first %} aria-label="Home" {% endif %}
           {% if loop.last %} aria-current="page" {% endif %}
         >
           {{crumb.name}}
