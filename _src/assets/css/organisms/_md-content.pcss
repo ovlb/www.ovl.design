@@ -8,6 +8,16 @@
     font-size: var(--step-0);
   }
 
+  :any-link {
+    color: var(--clr-fg);
+    text-decoration-color: var(--clr-accent);
+    text-decoration-thickness: 1.5px;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
   & > .-is-video {
     aspect-ratio: 16/9;
     margin: var(--space-s) 0;
