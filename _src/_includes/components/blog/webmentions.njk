@@ -6,14 +6,19 @@
   aria-labelledby="hdl-webmentions"
 >
   <h2
-    class="sub-headline"
+    class="sr-only"
     id="hdl-webmentions"
   >
     {{ postMentionCount}} Webmentions
   </h2>
-  {% if currentPostMentions.likes.length %}
-    <section class="webmentions__counts">
-      <h3>{{ currentPostMentions.likes.length }} Likes</h3>
+  <section class="webmentions-info">
+    <details
+      class="webmentions__counts"
+      style="--content-count: {{ currentPostMentions.likes.length }}"
+    >
+      <summary>
+        <h3 class="webmentions__headline">{{ currentPostMentions.likes.length }} Likes</h3>
+      </summary>
       <ul class="webmention-profile-grid">
         {% for post in currentPostMentions.likes %}
           <li><a
@@ -30,11 +35,14 @@
           </a>
         {% endfor %}
       </ul>
-    </section>
-  {% endif %}
-  {% if currentPostMentions.reposts.length %}
-    <section class="webmentions__counts">
-      <h3>{{ currentPostMentions.reposts.length }} Reposts</h3>
+    </details>
+    <details
+      class="webmentions__counts"
+      style="--content-count: {{ currentPostMentions.reposts.length }}"
+    >
+      <summary>
+        <h3 class="webmentions__headline">{{ currentPostMentions.reposts.length }} Reposts</h3>
+      </summary>
       <ul class="webmention-profile-grid">
         {% for post in currentPostMentions.reposts %}
           <li><a
@@ -51,7 +59,11 @@
           </a>
         {% endfor %}
       </ul>
-    </section>
-  {% endif %}
-
+    </details>
+  </section>
+  <p class="t-end">
+    <small>
+      Using <a href="https://indieweb.org/Webmention">Webmentions</a> and <a href="https://webmention.io">webmention.io</a>.
+    </small>
+  </p>
 </section>

@@ -1,14 +1,23 @@
 .webmention-profile-grid {
-  display: grid;
   flex: 1 0 auto;
-  grid-gap: var(--space-xs);
   grid-template-columns: repeat(auto-fill, var(--space-l));
 
   li {
     aspect-ratio: 1;
+    border: 1px solid var(--clr-bg);
     border-radius: 50%;
-    height: var(--space-l);
+    display: inline-block;
+    margin-left: calc(-0.2 * var(--space-l));
+    opacity: 0.9;
     overflow: hidden;
+    position: relative;
+    transition: opacity 0.2s var(--ease-in-1);
+    width: var(--space-l);
+
+    :is(&:hover, &:focus-within) {
+      opacity: 1;
+      z-index: var(--layer-1);
+    }
 
     &:focus-within {
       outline: 2px solid var(--clr-accent);
@@ -22,6 +31,8 @@
 }
 
 .webmentions {
+  grid-row-gap: var(--space-s);
+
   .sub-headline {
     font-size: var(--step-2);
   }
@@ -31,18 +42,23 @@
   }
 }
 
-.webmentions__counts {
-  align-items: center;
+.webmentions-info {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--space-s);
+  gap: var(--space-m);
 
-  h3 {
-    flex: 0 0 5rem;
-    margin-bottom: 0;
+  & > * {
+    flex: 0 1 max-content;
   }
 
-  & + & {
-    margin-block-start: var(--space-m);
+  & > [open] {
+    flex-basis: calc(var(--content-cound) * var(--space-l));
   }
+}
+
+.webmentions__counts {
+}
+
+.webmentions__headline {
+  display: inline-block;
 }
