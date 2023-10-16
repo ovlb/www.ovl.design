@@ -1,5 +1,5 @@
 <template>
-  <article class="article-card" :aria-labelledby="`title-${id}`">
+  <article class="article-card u-has-fleuron" :aria-labelledby="`title-${id}`">
     <p class="type-is-aside"><slot name="eyebrow" /></p>
     <h2 :id="`title-${id}`" class="article-card__headline">
       <a :href="href" class="article-card__link" :class="extraClasses">
