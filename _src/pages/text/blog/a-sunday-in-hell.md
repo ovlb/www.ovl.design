@@ -9,6 +9,7 @@ image:
   alt: 'The vacated church in Manheim. All windows have been barricaded. In the front you see some construction fences.'
 tags:
   - 'cat:climate'
+  - 'cat:cycling'
 ---
 
 I have heard many stories about the sheer scale and surreality of RWE’s coal mining operations in North Rhine-Westphalia. They prompted me to visit the Rhenish Brown Coal region myself. There really is no better day than a foggy Sunday in mid-February.

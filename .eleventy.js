@@ -86,7 +86,22 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addCollection('categories', function (collectionAPI) {
-    return [...allCategories]
+    const categories = new Set()
+    const posts = collectionAPI.getFilteredByGlob('_src/pages/**/*.md')
+
+    for (const post of posts) {
+        const { tags } = post.data
+
+        if (!tags) {
+          continue
+        }
+
+        tags
+          .filter((tag) => tag.startsWith('cat:'))
+          .forEach((tag) => categories.add(tag) && allCategories.add(tag))
+      }
+
+    return [...categories]
   })
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')

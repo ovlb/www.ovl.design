@@ -1,3 +1,4 @@
 @import './organisms/_archive-header.pcss';
 @import './organisms/lists/_article-list.pcss';
 @import './organisms/_article-card.pcss';
+@import './organisms/_main-grid-content.pcss';

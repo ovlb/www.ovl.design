@@ -4,7 +4,7 @@
       <template #sub>
         <p>
           Welcome to chaos.<br />
-          Every page of this website.<br />
+          All {{ allTheThings.length }} pages of this website.<br />
           Ordered randomly on every build.
         </p>
       </template>
@@ -22,21 +22,16 @@
         </the-stack>
       </template>
     </archive-header>
-    <ul class="article-list u-global-padding t-center" role="list">
-      <li
-        v-for="thing in allTheThings.filter(
-          (post) => !!post.data.external !== true,
-        )"
-        :key="thing"
-      >
-        <h2>
+    <ul class="article-list main-grid-content t-center" role="list">
+      <li v-for="thing in allTheThings" :key="thing">
+        <h2 class="type-0">
           <a :href="thing.permalink || thing.data.page.url">{{
             thing.data.pageTitle || thing.title || thing.data.title
           }}</a>
         </h2>
       </li>
     </ul>
-    <section class="u-global-padding t-content-wide">
+    <section class="main-grid-content">
       <h2 class="sub-headline">Collections</h2>
       <ul role="list" class="inline-list">
         <li v-for="category in collections.categories" :key="category">
@@ -74,12 +69,14 @@ export default {
 
   computed: {
     allTheThings() {
-      return [...this.collections.all].sort((a, b) => {
-        const sortA = Math.random() || a
-        const sortB = Math.random() || b
+      return [...this.collections.all]
+        .filter((post) => !!post.data.external !== true)
+        .sort((a, b) => {
+          const sortA = Math.random() || a
+          const sortB = Math.random() || b
 
-        return sortA - sortB
-      })
+          return sortA - sortB
+        })
     },
   },
 }
