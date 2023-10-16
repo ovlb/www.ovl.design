@@ -5,7 +5,7 @@ pageTitle: 'Imprint'
 hideBreadcrumb: true
 subline: 'The important legal stuff'
 layout: 'layouts/page.njk'
-pageCSS:
+override:pageCSS:
   - 'text-detail'
   - 'text-page'
 ---

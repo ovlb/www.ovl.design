@@ -5,7 +5,7 @@ pageTitle: 'Colophon'
 subline: 'Saying thank you'
 hideBreadcrumb: true
 layout: 'layouts/page.njk'
-pageCSS:
+override:pageCSS:
   - 'text-detail'
   - 'text-page'
 meta:

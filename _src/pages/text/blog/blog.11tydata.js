@@ -5,7 +5,7 @@ const { getChanges } = require('../../../../_helper/git-history')
 module.exports = {
   tags: ['blog'],
   layout: 'post',
-  pageCSS: ['text-detail', 'text-page'],
+  ['override:pageCSS']: ['text-detail', 'text-page'],
   templateClass: 'tmpl-single-post',
 
   eleventyComputed: {
