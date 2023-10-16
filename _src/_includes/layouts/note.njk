@@ -10,7 +10,7 @@
       <h1 class="p-name sub-headline">{{ title }}</h1>
       <p>Note started: {{ date | displayDate(short) }}</p>
       {% if state === 'frozen' %}
-        This note is currently {{ state }}. I might get back to it later.
+        <p>This note is currently {{ state }}. I might get back to it later.</p>
       {% elif state === 'done' %}
         <p>I consider this note done.</p>
       {% elif state === 'evolving' %}
