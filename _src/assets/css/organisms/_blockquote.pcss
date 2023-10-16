@@ -3,9 +3,10 @@
 
   line-height: 1.4;
   margin-block: var(--space-s);
-  max-width: var(--content-width-small);
   padding-left: var(--padding-base);
+  padding-right: var(--padding-base);
   position: relative;
+  width: min(90%, var(--content-width-small));
 
   &::before {
     color: var(--clr-accent);
@@ -19,7 +20,7 @@
 }
 
 .c-blockquote {
-  --bq-decorator-offset: calc(-0.75 * var(--padding-base));
+  --bq-decorator-offset: calc(-0.5 * var(--padding-base));
 
   margin-block: var(--space-s);
   padding-left: var(--padding-base);
@@ -31,14 +32,14 @@
 }
 
 .c-blockquote__attribution {
+  display: flex;
   font-style: italic;
+  gap: var(--space-2xs);
   max-width: var(--content-width-small);
   padding-top: var(--space-2xs);
 
   &::before {
-    color: var(--clr-accent);
     content: '☞';
-    display: inline-block;
-    margin-right: var(--space-2xs);
+    display: block;
   }
 }
