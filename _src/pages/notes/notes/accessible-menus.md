@@ -5,6 +5,7 @@ state: done
 tags:
   - cat:web-development
   - cat:accessibility
+  - cat:javascript
 ---
 
 From a recent discussion at work about how to implement a dropdown navigation menu and why `role=menu` is not the right tool for the job.

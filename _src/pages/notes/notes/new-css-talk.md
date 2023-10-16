@@ -4,9 +4,10 @@ date: '2023-02-15'
 state: done
 tags:
   - 'cat:web-development'
+  - cat:css
 ---
 
-# Features
+Link dump for a tech talk I gave at DeepL.
 
 ## The Foundation
 

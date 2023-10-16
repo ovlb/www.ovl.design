@@ -9,6 +9,7 @@ image:
   alt: 'Aerial view of a warehouse with trucks parked ready to be loaded'
 tags:
   - cat:web-development
+  - cat:javascript
 ---
 
 This article shows a pattern of creating dynamic Vuex getters by leveraging functions that return the getter function. This is a pattern I came up with for use in larger projects that shared functionality and data structures between store modules. It’s not the only way to solve this problem, but one I found handy so far.

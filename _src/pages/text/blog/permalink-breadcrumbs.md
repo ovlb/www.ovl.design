@@ -10,6 +10,7 @@ tags:
   - cat:web-development
   - cat:eleventy
   - cat:accessibility
+  - cat:javascript
 image:
   og: 'ovl-og-image-breadcrumbs.jpg'
   title: 'title-image-breadcrumb.jpg'

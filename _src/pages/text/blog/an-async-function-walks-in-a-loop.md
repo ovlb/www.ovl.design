@@ -10,6 +10,7 @@ image:
 tags:
   - cat:web-development
   - cat:eleventy
+  - cat:javascript
 ---
 
 Recently I tried to render an async Eleventy shortcode inside a template `for` loop. Spoiler: It didn’t work. Which lead me to learn about async functionality in loops. Here’s what I tried, what failed, and what worked in the end.

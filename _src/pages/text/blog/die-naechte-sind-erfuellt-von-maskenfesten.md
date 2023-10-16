@@ -9,6 +9,7 @@ image:
   alt: 'Detailed photograph of a fully illuminated earth moon'
 tags:
   - cat:web-development
+  - cat:css
 ---
 
 I’m late to the party. I can’t help it. If there is a possibility to be late, I am. But I do like a party. Sometimes I even do like parties in dark rooms. So, implementing dark mode has been out of question.

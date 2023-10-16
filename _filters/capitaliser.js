@@ -7,6 +7,7 @@ module.exports = function (rawName) {
     ['cat:nft', 'NFT'],
     ['cat:climate', 'Climate Crisis'],
     ['cat:web', 'World Wide Web'],
+    ['cat:css', 'CSS'],
     ['around-the-web', 'Around the Web'],
   ])
 

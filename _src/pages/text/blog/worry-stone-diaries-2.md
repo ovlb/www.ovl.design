@@ -13,6 +13,7 @@ tags:
   - cat:web-development
   - cat:eleventy
   - cat:accessibility
+  - cat:javascript
 ---
 
 In [post number one of the Worry Stone Diaries,](/text/worry-stone-diaries-no-1/) I explained why I decided to change the architecture of the site and start from a clean slate. It’s version number Eleven(ty) of this page.

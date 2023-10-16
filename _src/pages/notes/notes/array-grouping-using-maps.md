@@ -4,6 +4,7 @@ date: '2023-07-06'
 state: done
 tags:
   - 'cat:web-development'
+  - cat:javascript
 ---
 
 Over the last few days, I’ve been, slowly, rebuilding the Rillendisco website, using my [11ty starter, No. 11](https://github.com/inframanufaktur/no-11).
