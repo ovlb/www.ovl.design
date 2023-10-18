@@ -46,5 +46,5 @@ module.exports = async function () {
 
   const rawCollectionData = await fetchCollection(username)
 
-  return parseCollectionToArray(rawCollectionData)
+  return parseCollectionToArray(rawCollectionData).slice(0, 10)
 }

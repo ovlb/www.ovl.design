@@ -19,10 +19,8 @@ permalink: /now/
     </li>
     {% endfor %}
   </ol>
-  <h3>The Latest from Bandcamp</h3>
-  <ol>
-    {% for item in bandcampCollection %}
-    <li>{{ item.artist }} – {{ item.title }}</li>
-    {% endfor %}
-  </ol>
+  <section class="now-section bandcamp-section" aria-labelledby="hdl-bandcamp">
+    <h3 class="type-0" id="hdl-bandcamp">Last bought items</h3>
+    {% include "components/music/bandcamp.njk" %}
+  </section>
 </main>
