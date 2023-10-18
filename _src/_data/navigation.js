@@ -9,11 +9,12 @@ module.exports = {
     { permalink: '/code/', title: 'Code' },
   ],
   secondary: [
-    { permalink: 'https://talks.ovl.design/', title: 'Talks' },
+    { permalink: '/now/', title: 'Now' },
     {
       title: 'Notes',
       permalink: '/notes/',
     },
+    { permalink: 'https://talks.ovl.design/', title: 'Talks' },
     {
       title: 'Everything',
       permalink: '/everything/',

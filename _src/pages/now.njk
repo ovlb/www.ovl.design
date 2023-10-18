@@ -1,0 +1,29 @@
+---
+pageTitle: Now
+permalink: /now/
+hideBreadcrumb: true
+pageCSS:
+  - now
+---
+
+<main class="now">
+  <header class="now-section">
+    <h1 class="main-headline">{{ pageTitle }}</h1>
+    <p>This is a <a href="https://nownownow.com/about">/now</a> page.</p>
+  </header>
+  <section class="now-section">
+    <h2 class="sub-headline">Listening</h2>
+    <p>
+      Based on <a href="https://www.last.fm/user/ovlb">my last.fm data</a> of
+      the past month and <a href="https://bandcamp.com/vndnc">Bandcamp collection</a>.
+    </p>
+    <h3 class="type-0">Top Artists</h3>
+    {% include "components/music/lastfm-artists.njk" %}
+    <h3 class="type-0">Top Albums</h3>
+    {% include "components/music/lastfm-albums.njk" %}
+  </section>
+  <section class="now-section bandcamp-section" aria-labelledby="hdl-bandcamp">
+    <h3 class="type-0" id="hdl-bandcamp">Last purchases</h3>
+    {% include "components/music/bandcamp.njk" %}
+  </section>
+</main>

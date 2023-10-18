@@ -1,0 +1,46 @@
+.lastfm-items {
+  --grid-size: calc(var(--space-3xl));
+  display: grid;
+  gap: var(--space-m);
+  grid-template-columns: repeat(auto-fill, var(--grid-size));
+}
+
+.lastfm-item {
+  aspect-ratio: 1;
+  background-image: var(--gradient-13);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+  position: relative;
+
+  &:not(:has(img)) {
+    background-blend-mode: screen;
+    background-image: url('/img/icons/floral-heart-light-red-lch.svg'),
+      var(--gradient-13);
+    background-position:
+      center,
+      top left;
+    background-repeat: no-repeat;
+    background-size: 25%, cover;
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 2px;
+  }
+
+  a {
+    inset: 0;
+    position: absolute;
+
+    &:focus-visible {
+      outline: unset;
+    }
+  }
+}
+
+.lastfm-item__placeholder {
+  height: 100%;
+  inset: 0;
+  position: relative;
+}

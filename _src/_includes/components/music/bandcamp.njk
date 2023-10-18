@@ -1,0 +1,22 @@
+<ol role="list" class="bandcamp-items">
+  {% for item in bandcampCollection %}
+  <li>
+    <article class="bandcamp-item">
+      <img
+        src="{{ item.img }}"
+        class="bandcamp-item__image"
+        alt=""
+        data-process-image
+        data-image-widths="[190, 280, 370]"
+        data-image-sizes="(min-width: 1800px) 16.5rem, 11rem"
+      />
+      <section class="bandcamp-item__info">
+        <h4 class="bandcamp-item__album-title">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </h4>
+        <p class="bandcamp-item__artist">by {{ item.artist }}</p>
+      </section>
+    </article>
+  </li>
+  {% endfor %}
+</ol>
