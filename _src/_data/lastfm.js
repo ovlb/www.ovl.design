@@ -116,11 +116,11 @@ async function processArtists(artists) {
   return Promise.all(
     artists.map(async (artist) => {
       const { name } = artist
-      const tidalData = await searchSpotifyForArtist(name)
+      const spotifyData = await searchSpotifyForArtist(name)
 
       return {
         ...artist,
-        image: tidalData ? await getSpotifyImage(tidalData) : null,
+        image: spotifyData ? await getSpotifyImage(spotifyData) : null,
       }
     }),
   )
