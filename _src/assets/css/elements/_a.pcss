@@ -10,13 +10,18 @@
 
 .skip-link {
   background-color: var(--clr-bg);
+  border: 1px solid var(--clr-accent);
   color: var(--clr-accent);
   left: 0;
   padding: var(--space-s);
   position: absolute;
   top: 0;
   transform: translate(-500%);
-  transition: transform 0.2s ease-out;
+  z-index: var(--layer-important);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: transform 0.2s ease-out;
+  }
 
   &:focus {
     transform: translate(0);
