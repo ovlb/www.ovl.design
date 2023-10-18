@@ -34,7 +34,7 @@ function parseItem(htmlData) {
  *
  * @return {object}
  */
-function parseCollectionToHTML(raw) {
+function parseCollectionToArray(raw) {
   const { document } = parseHTML(raw)
   const items = document.querySelectorAll('.collection-grid > li')
 
@@ -46,5 +46,5 @@ module.exports = async function () {
 
   const rawCollectionData = await fetchCollection(username)
 
-  return parseCollectionToHTML(rawCollectionData)
+  return parseCollectionToArray(rawCollectionData)
 }
