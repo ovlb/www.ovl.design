@@ -5,6 +5,7 @@
         cache_img_httpHeader = false
 
         cache_assets = '../.cache'
+        cache_other = ['../.bandcamp', '../.lastfm']
 
 [[redirects]]
   from = "https://11ty.owlish.dev/*"

@@ -1,0 +1,28 @@
+---
+permalink: /now/
+---
+
+<main class="u-global-padding">
+  <h1 class="main-headline">Now</h1>
+  <h2 class="sub-headline">Listening</h2>
+  <h3>Top Artists</h3>
+  <ol>
+    {% for artist in lastfm.artist %}
+    <li>{{ artist.name }} ({{ artist.playcount }} plays)</li>
+    {% endfor %}
+  </ol>
+  <h3>Top Albums</h3>
+  <ol>
+    {% for album in lastfm.album %}
+    <li>
+      {{ album.artist.name }} – {{ album.name }} ({{ album.playcount }} plays)
+    </li>
+    {% endfor %}
+  </ol>
+  <h3>The Latest from Bandcamp</h3>
+  <ol>
+    {% for item in bandcampCollection %}
+    <li>{{ item.artist }} – {{ item.title }}</li>
+    {% endfor %}
+  </ol>
+</main>
