@@ -1,8 +1,8 @@
 .lastfm-items {
   --grid-size: calc(var(--space-3xl));
   display: grid;
-  grid-template-columns: repeat(auto-fill, var(--grid-size));
   gap: var(--space-m);
+  grid-template-columns: repeat(auto-fill, var(--grid-size));
 }
 
 .lastfm-item {
@@ -10,13 +10,13 @@
   background-image: var(--gradient-13);
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-2);
-  position: relative;
   overflow: hidden;
+  position: relative;
 
   &:not(:has(img)) {
+    background-blend-mode: screen;
     background-image: url('/img/icons/floral-heart-light-red-lch.svg'),
       var(--gradient-13);
-    background-blend-mode: screen;
     background-position:
       center,
       top left;
@@ -30,8 +30,8 @@
   }
 
   a {
-    position: absolute;
     inset: 0;
+    position: absolute;
 
     &:focus-visible {
       outline: unset;
