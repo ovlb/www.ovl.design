@@ -1,0 +1,17 @@
+<ol class="lastfm-items">
+  {% for artist in lastfm.artist %}
+  <li>
+    <article class="lastfm-item">
+      {% if artist.image %}
+        {% generateImageHtml artist.image, '{{ artist.name }}', '4rem' %}
+      {% else %}
+        <div class="lastfm-item__placeholder"></div>
+      {% endif %}
+      <h4 class="lastfm-item__title sr-only">
+        {{ artist.name }}
+      </h4>
+      <a href="{{ artist.url }}" aria-label="{{ artist.name }}"></a>
+    </article>
+  </li>
+  {% endfor %}
+</ol>
