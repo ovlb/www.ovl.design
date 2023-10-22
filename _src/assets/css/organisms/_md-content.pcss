@@ -15,7 +15,7 @@
     text-indent: 0;
   }
 
-  :any-link {
+  :any-link:not(.mastodon-embed :any-link) {
     color: var(--clr-fg);
     text-decoration-color: var(--clr-accent);
     text-decoration-thickness: 1.5px;
@@ -31,7 +31,7 @@
     width: 100%;
   }
 
-  & :is(pre, .-is-video) {
+  & :is(pre, .-is-video, .mastodon-embed) {
     --content-grid-placement: full;
 
     border-radius: var(--conditional-border-radius);
@@ -49,13 +49,22 @@
     line-height: 1;
   }
 
-  p + p {
+  :is(p + p):not(.mastodon-embed p) {
     margin-top: var(--space-s);
 
     @media (min-width: 777px) {
       margin-top: var(--space-2xs);
       text-indent: var(--content-text-indent, var(--space-s));
     }
+  }
+
+  .mastodon-embed {
+    padding-inline: var(--padding-base);
+  }
+
+  .mastodon-embed p + p {
+    line-height: 1.4;
+    margin-top: var(--space-2xs);
   }
 
   & > *:nth-child(1n + 4) {

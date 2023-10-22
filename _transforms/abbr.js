@@ -19,6 +19,7 @@ const commonAbbreviations = [
   { text: 'LLM', title: 'Large Language Model' },
   { text: 'ML', title: 'Machine Learning' },
   { text: 'NSU', title: 'Nationalsozialistischer Untergrund' },
+  { text: 'OSINT', title: 'Open-Source Intelligence' },
   { text: 'TERF', title: 'Trans Exclusionary Radical Feminist' },
   { text: 'WCAG', title: 'Web Content Accessibility Guidelines' },
 ]
