@@ -13,14 +13,14 @@
     content: '“';
     font-family: var(--fonts-headline);
     font-size: var(--step-4);
-    left: var(--bq-decorator-offset, 0);
+    left: var(--bq-decorator-offset, calc(0.25 * var(--padding-base)));
     position: absolute;
     top: calc(-0.25 * var(--padding-base));
   }
 }
 
 .c-blockquote {
-  --bq-decorator-offset: calc(-0.5 * var(--padding-base));
+  --bq-decorator-offset: calc(-0.75 * var(--padding-base));
 
   margin-block: var(--space-s);
   padding-left: var(--padding-base);
