@@ -65,17 +65,22 @@
 }
 
 .atw-post__intro {
+  --gradient-bottom-offset: calc(100% - 0.5rem);
+
+  --fleuron-bottom-offset: 0.06rem;
+  margin-block-end: var(--space-2xl);
+  padding-block-end: var(--space-2xl);
+  padding-block-start: var(--padding-base);
   text-align: center;
+
+  & > * + * {
+    margin-block-start: var(--space-xl);
+  }
 }
 
 .atw-post__claim {
-  --gradient-bottom-offset: calc(100% - 0.5rem);
-  --fleuron-bottom-offset: 0.06rem;
-
   font-style: italic;
-  margin-bottom: var(--space-l);
-  padding: 0 2vmin var(--space-l);
-  /* font-size: var(--step-2); */
+  text-wrap: balance;
 }
 
 .embeddable-buttondown-form {
