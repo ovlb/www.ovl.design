@@ -8,6 +8,11 @@
   margin: 0;
   scroll-margin-block-end: calc(2 * var(--layout-header-height));
   scroll-margin-block-start: calc(2 * var(--layout-header-height));
+
+  @mixin dark-mode {
+    letter-spacing: 0.01em;
+    word-spacing: 0.01em;
+  }
 }
 
 ::selection {
