@@ -1,6 +1,44 @@
 {
-  "lastFetched": "2023-10-22T13:10:18.800Z",
+  "lastFetched": "2023-10-30T10:46:20.415Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sblw",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/9734a38ca182d54fba20596adb7835a26fda5c7a6e508349224df43682d21f6b.jpg",
+        "url": "https://chaos.social/@sblw"
+      },
+      "url": "https://chaos.social/@o/111279215762183649#favorited-by-109285346224374041",
+      "published": null,
+      "wm-received": "2023-10-23T12:45:46Z",
+      "wm-id": 1729108,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111279215762183649/109285346224374041",
+      "wm-target": "https://www.ovl.design/around-the-web/023-the-denkzwerge-are-it-again/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/around-the-web/023-the-denkzwerge-are-it-again/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sblw",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/9734a38ca182d54fba20596adb7835a26fda5c7a6e508349224df43682d21f6b.jpg",
+        "url": "https://chaos.social/@sblw"
+      },
+      "url": "https://chaos.social/@o/111279215762183649#reblogged-by-109285346224374041",
+      "published": null,
+      "wm-received": "2023-10-23T12:45:46Z",
+      "wm-id": 1729109,
+      "wm-source": "https://brid.gy/repost/mastodon/@o@chaos.social/111279215762183649/109285346224374041",
+      "wm-target": "https://www.ovl.design/around-the-web/023-the-denkzwerge-are-it-again/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.ovl.design/around-the-web/023-the-denkzwerge-are-it-again/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
