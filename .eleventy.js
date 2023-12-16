@@ -90,16 +90,16 @@ module.exports = function (eleventyConfig) {
     const posts = collectionAPI.getFilteredByGlob('_src/pages/**/*.md')
 
     for (const post of posts) {
-        const { tags } = post.data
+      const { tags } = post.data
 
-        if (!tags) {
-          continue
-        }
-
-        tags
-          .filter((tag) => tag.startsWith('cat:'))
-          .forEach((tag) => categories.add(tag) && allCategories.add(tag))
+      if (!tags) {
+        continue
       }
+
+      tags
+        .filter((tag) => tag.startsWith('cat:'))
+        .forEach((tag) => categories.add(tag) && allCategories.add(tag))
+    }
 
     return [...categories]
   })
@@ -124,7 +124,7 @@ module.exports = function (eleventyConfig) {
   return {
     templateFormats: ['md', '11ty.js', 'njk'],
     htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: false,
+    markdownTemplateEngine: 'njk',
     dir: {
       input: '_src',
       output: 'dist',
