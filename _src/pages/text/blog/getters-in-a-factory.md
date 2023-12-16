@@ -157,12 +157,15 @@ export default {
 
 The published articles can be used without any more configuration, as the getter works solely with data that is always available (the published state).
 
+{% raw %}
 ```html
 <h2>Published articles</h2>
 <ul>
   <li v-for="article in publishedArticles" :key="article.id">{{ article.title }}</li>
 </ul>
 ```
+{% endraw %}
+
 [Published articles template source file](https://github.com/ovlb/shared-getters-demo/blob/master/src/App.vue#L21)
 
 To search, we need some more code to pass the search term into the getter.
@@ -199,11 +202,13 @@ In the template, we can update the search string through an `input` and `v-model
 
 And similar to the published post list render a list that updates automatically with the search term. Nice.
 
+{% raw %}
 ```html
 <ul v-if="articleSearchString">
   <li v-for="article in searchedArticles" :key="article.id">{{ article.title }}</li>
 </ul>
 ```
+{% endraw %}
 
 And that’s a wrap. By using factory functions, we have explored a pattern with which you can reduce repeating code throughout your store modules. By sticking to Vue standards, the resulting code is easily usable, and in the final templates, nothing much has changed.
 

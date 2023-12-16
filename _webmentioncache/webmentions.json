@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2023-10-30T10:46:20.415Z",
+  "lastFetched": "2023-12-16T10:08:00.750Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thoth Makes",
+        "photo": "https://webmention.io/avatar/chaos.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.green/@thothmakes"
+      },
+      "url": "https://chaos.social/@o/111211665110703546#reblogged-by-110967194851978600",
+      "published": null,
+      "wm-received": "2023-11-24T15:43:27Z",
+      "wm-id": 1744134,
+      "wm-source": "https://brid.gy/repost/mastodon/@o@chaos.social/111211665110703546/110967194851978600",
+      "wm-target": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.ovl.design/notes/the-cost-of-ai-licensing/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
