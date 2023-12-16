@@ -6,6 +6,10 @@ tags:
   - cat:pop-culture
 intro: A non-ordered list of music that got me through 2023, not necessarily released in 2023. What is time anyway?
 date: 2023-12-15
+image:
+  og: 'ovl-og-image-music2023.jpg'
+  title: 'music2023.jpg'
+  alt: 'A heap of vinyl recods on a carpet'
 ---
 
 A non-ordered, non-comprehensive list of music that got me through 2023, not necessarily released in 2023.
@@ -63,6 +67,8 @@ I’m easily impressed when it comes to Ambient. The less happening, the better.
 {% bandcampEmbed 3067848923 %}
 
 ## Vertical67 – Shades of Acid
+
+![""](/blog/music2023/vertical67-shades.jpg)
 
 Acid is a weird thing. It sounds like noise, but at the same time it’s one of the best elements ever added to House and Techno. _Vertical67_ took this, applied various shades to it on all of the tracks of this EP and it’s good. Especially Woozy is such a banger.
 
@@ -131,6 +137,8 @@ Punk rock to [stay at home to](https://splizz.bandcamp.com/track/nichtstun).
 {% bandcampEmbed 1457551481 %}
 
 ## Black Light Smoke – Ghosts
+
+![""](/blog/music2023/bls-ghosts.jpg)
 
 This was released very close to my birthday and I couldn’t have thought of a better gift. _Black Light Smoke_ already produced _[Firefly](https://blacklightsmoke.bandcamp.com/track/firefly-2)_, one of my all time favourite moody house tracks.
 
