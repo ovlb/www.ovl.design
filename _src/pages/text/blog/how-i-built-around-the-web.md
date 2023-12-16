@@ -79,11 +79,13 @@ The great thing here is that I can use registered filters in my Eleventy compute
 
 This title is great, except for the archive pages. Reading «Around the Web» too often adds nothing. [I don’t use this there](https://github.com/ovlb/www.ovl.design/blob/main/_src/pages/around-the-web/index.njk#L29), and have already violated my advice that every piece of data I can process before rendering is a good piece of data. Thanks, me!
 
+{% raw %}
 ```html
 <h2 class="article-card__headline">
 	{{ post.data.parsedDates.start | displayDate("short") }}–{{ post.data.parsedDates.publish | displayDate("short") }}
 </h2>
 ```
+{% endraw %}
 
 But in this case, style is substance, so I’ll go ahead and forgive myself.
 
@@ -320,6 +322,7 @@ There’s only one piece missing. Making the categories accessible to my readers
 
 Here, the pieces I added earlier fell into place easily:
 
+{% raw %}
 ```html
 <ul class="inline-list" role="list">
   {% for category in tags | getCategories | aToZ %}
@@ -330,8 +333,8 @@ Here, the pieces I added earlier fell into place easily:
   </li>
   {% endfor %}
 </ul>
-
 ```
+{% endraw %}
 
 I get my categories, sort them from A to Z, and link to them. That was easy (after some days of work).
 
