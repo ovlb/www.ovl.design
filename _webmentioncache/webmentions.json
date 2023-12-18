@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2023-12-16T10:08:00.750Z",
+  "lastFetched": "2023-12-18T12:03:25.129Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "xhlllk",
+        "photo": "https://webmention.io/avatar/assets.chaos.social/805e883ff4d418840081991e22b8083431bb52763170fc4f760d2be2a4f730cf.jpg",
+        "url": "https://mastodon.social/@xhlllk"
+      },
+      "url": "https://chaos.social/@o/111590267550081211#favorited-by-108209007211255849",
+      "published": null,
+      "wm-received": "2023-12-16T17:54:20Z",
+      "wm-id": 1754710,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/111590267550081211/108209007211255849",
+      "wm-target": "https://www.ovl.design/text/music-to-survive-2023/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/text/music-to-survive-2023/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
