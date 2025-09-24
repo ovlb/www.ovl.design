@@ -10,7 +10,8 @@ module.exports = {
       ]
       const { length } = headings
 
-      const middle = headings[Math.ceil(length / 2)]
+      const middle =
+        headings.length >= 2 ? headings[Math.ceil(length / 2)] : headings[0]
 
       const form = `<form
   action="https://buttondown.email/api/emails/embed-subscribe/around-the-web"
@@ -20,8 +21,8 @@ module.exports = {
   class="embeddable-buttondown-form"
 >
   <h2 class="small-headline">Can I talk to you about e-mails?</h2>
-  <p>Thanks for making it this far. Maybe you are interested in getting Around the Web as an e-mail whenever a new issue is published?</p>
-  <p>There’s also an <a href="/around-the-web/feed.xml">RSS feed</a>. It’s like e-mail, but better (imho).</p>
+  <p>Thanks for reading this issue. Maybe you are interested in getting Around the Web as an e-mail whenever a new issue is published?</p>
+  <p>There’s also an <a href="/around-the-web/feed.xml">RSS feed</a> if that’s your jam.</p>
   <div class="form-section">
     <label for="bd-email">E-mail</label>
     <input type="email" name="email" id="bd-email" />
