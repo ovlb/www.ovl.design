@@ -81,13 +81,16 @@ export default {
 
   methods: {
     postToCardItem(post) {
-      const start = this.displayDate(post.data.parsedDates.start, 'short')
-      const end = this.displayDate(post.data.parsedDates.publish, 'short')
+      let title
+      if (!post.data.issueTitle) {
+        const start = this.displayDate(post.data.parsedDates.start, 'short')
+        const end = this.displayDate(post.data.parsedDates.publish, 'short')
 
-      let title = `${start}–${end}`
+        title = `${start}–${end}`
+      }
 
       if (post.data.issueTitle) {
-        title = `${post.data.issueTitle} (${start}–${end})`
+        title = post.data.issueTitle
       }
 
       return {
