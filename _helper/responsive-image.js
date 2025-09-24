@@ -2,7 +2,7 @@ const Image = require('@11ty/eleventy-img')
 
 const getFullSource = require('../_helper/get-full-source')
 
-const IS_PROD = process.env.ELEVENTY_ENV === 'production'
+// const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
 const defaultOptions = {
   widths: [320, 680, 1024, 1400, 2000, null],
@@ -12,7 +12,7 @@ const defaultOptions = {
   outputDir: './dist/img/',
 }
 
-function renderPictureHTML($el, meta, options) {
+/* function renderPictureHTML($el, meta, options) {
   return `<picture>
     ${options.formats
       .map((format) => {
@@ -23,9 +23,9 @@ function renderPictureHTML($el, meta, options) {
       .join('\n')}
     ${$el.outerHTML}
   </picture>`
-}
+} */
 
-function setImgAttributes(img, meta, options) {
+/* function setImgAttributes(img, meta, options) {
   let origType = options.formats.includes('png') ? 'png' : 'jpeg'
 
   if (img.getAttribute('src').endsWith('.gif')) {
@@ -52,7 +52,7 @@ function setImgAttributes(img, meta, options) {
     img.removeAttribute('data-image-formats')
     img.removeAttribute('data-process-image')
   }
-}
+} */
 
 // Basic implementation is based on this Gist: https://gist.github.com/Alexs7zzh/d92ae991ad05ed585d072074ea527b5c
 async function parseImages(container) {
@@ -80,13 +80,21 @@ async function parseImages(container) {
       sharpOptions: {
         animated: true,
       },
+      returnType: 'html',
+      htmlOptions: {
+        imgAttributes: {
+          alt: gif.getAttribute('alt') || '',
+          loading: 'lazy',
+          decoding: 'async',
+        },
+      },
     }
 
-    const meta = await Image(getFullSource(src), options)
+    const html = await Image(getFullSource(src), options)
 
-    setImgAttributes(gif, meta, options)
+    // setImgAttributes(gif, meta, options)
 
-    gif.outerHTML = renderPictureHTML(gif, meta, options)
+    gif.outerHTML = html
   }
 
   for (const img of staticImages) {
@@ -111,11 +119,19 @@ async function parseImages(container) {
       ...(formats && { formats }),
     }
 
-    const meta = await Image(getFullSource(src), options)
+    const html = await Image(getFullSource(src), {
+      ...options,
+      returnType: 'html',
+      htmlOptions: {
+        imgAttributes: {
+          alt: img.getAttribute('alt') || '',
+          loading: 'lazy',
+          decoding: 'async',
+        },
+      },
+    })
 
-    setImgAttributes(img, meta, options)
-
-    img.outerHTML = renderPictureHTML(img, meta, options)
+    img.outerHTML = html
   }
 
   return container.documentElement.outerHTML
