@@ -42,7 +42,7 @@ module.exports = class AtwFeed {
       baseURL,
     )
 
-    return `${this.getMetaInfoString(post.data)}<hr />${parsed}`
+    return parsed
   }
 
   makeFeed(baseData, collection) {

@@ -17,12 +17,21 @@ module.exports = {
       }
     },
     parsedDates: function (data) {
+      if (!data.dates.start)
+        return {
+          publish: this.setPublishDate(new Date(data.dates.publish)),
+        }
+
       return {
         start: new Date(data.dates.start),
         publish: this.setPublishDate(new Date(data.dates.publish)),
       }
     },
     pageTitle: function (data) {
+      if (!data.dates.start) {
+        return `${data.issueTitle} | Around the Web`.trim()
+      }
+
       const { start, publish } = data.parsedDates
 
       if (start && publish) {

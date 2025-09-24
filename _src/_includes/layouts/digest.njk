@@ -1,44 +1,40 @@
-{% extends 'layouts/base.njk' %}
-{% set usesBlock = true %}
-
-{% block content %}
-  <main class="atw-post h-entry" id="main" tabindex="-1">
-    <aside class="atw-column-wrapper">
-      <div class="atw-post-header">
-        <p>{% if issueTitle %}
-          Around the Web<br>
-        {% endif %}
-        Issue No.&nbsp;{{ page.fileSlug }}</p>
-      </div>
-      <div class="atw-post-meta">
-        <p>Collected between {{ parsedDates.start | displayDate("short") }} and {{ parsedDates.publish | displayDate("short") }}. It discusses {{ sources.count }} links from {{ sources.distinct }} sources.</p>
-
-        <nav aria-label="Follow Around the Web">
-          <ul role="list">
-            <li>
-              <a href="/around-the-web/feed.xml">RSS Feed</a>
-            </li>
-            <li>
-              <a href="https://buttondown.email/around-the-web">Newsletter</a>
-            </li>
-            <li>
-              <a href="/around-the-web/">Archive</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-    <section class="text__body main-grid-content e-content md-content" data-text-body>
-      <div class="atw-post__intro u-floral-heart-gradient">
-        <h1 class="main-headline p-name">{{ title }}</h1>
-        <p class="atw-post__claim">{{ intro }}</p>
-      </div>
-      {{ content | safe }}
-    </section>
-    {% include "components/blog/webmentions.njk" %}
-    {% if tags.length %}
-      {% include "components/blog/collections.njk" %}
-    {% endif %}
-    <div class="main-grid-content u-has-fleuron"></div>
-  </main>
+{% extends 'layouts/base.njk' %} {% set usesBlock = true %} {% block content %}
+<main class="atw-post h-entry" id="main" tabindex="-1">
+  <aside class="atw-column-wrapper">
+    <div class="atw-post-header">
+      <p>
+        {% if issueTitle %} Around the Web<br />
+        {% endif %} Issue No.&nbsp;{{ page.fileSlug }}
+      </p>
+    </div>
+    <div class="atw-post-meta">
+      <nav aria-label="Follow Around the Web">
+        <ul role="list">
+          <li>
+            <a href="/around-the-web/feed.xml">RSS Feed</a>
+          </li>
+          <li>
+            <a href="https://buttondown.email/around-the-web">Newsletter</a>
+          </li>
+          <li>
+            <a href="/around-the-web/">Archive</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <section
+    class="text__body main-grid-content e-content md-content"
+    data-text-body
+  >
+    <div class="atw-post__intro u-floral-heart-gradient">
+      <h1 class="main-headline p-name">{{ title }}</h1>
+      <p class="atw-post__claim">{{ intro }}</p>
+    </div>
+    {{ content | safe }}
+  </section>
+  {% include "components/blog/webmentions.njk" %} {% if tags.length %} {%
+  include "components/blog/collections.njk" %} {% endif %}
+  <div class="main-grid-content u-has-fleuron"></div>
+</main>
 {% endblock %}
