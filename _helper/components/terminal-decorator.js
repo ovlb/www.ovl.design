@@ -1,0 +1,8 @@
+function renderTerminalDecorator({ terminalPath, command }) {
+  return `
+<div aria-hidden="true" class="terminal-row__path">${terminalPath}</div>
+<div aria-hidden="true" class="terminal-row__input">${command}</div>
+  `.trim()
+}
+
+module.exports = { renderTerminalDecorator }
