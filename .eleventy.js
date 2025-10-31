@@ -1,8 +1,10 @@
+require('dotenv').config()
+
 const { PAGE_STATE } = process.env
 
 const STATIC_FOLDERS = require('./_helper/paths')
 
-const IS_LIVE = PAGE_STATE === 'live'
+const IS_LIVE = PAGE_STATE === 'production'
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require('./_libraries'))
@@ -24,9 +26,15 @@ module.exports = function (eleventyConfig) {
     )
 
     const published = posts.filter((post) => {
-      const isFuture = post.date && new Date(post.date) > Date.now()
+      if (!IS_LIVE) {
+        return true
+      }
 
-      return IS_LIVE ? !post.tags.includes('state:draft') || !isFuture : true
+      const hasPastPublishDate = post.date && new Date(post.date) <= Date.now()
+      const isPublished =
+        hasPastPublishDate && !post.data.tags.includes('state:draft')
+
+      return isPublished
     })
 
     return published
