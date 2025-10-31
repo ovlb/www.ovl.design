@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2025-09-24T17:45:54.765Z",
+  "lastFetched": "2025-10-31T20:19:38.241Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Emma Stamm",
+        "photo": "https://avatars.webmention.io/assets.chaos.social/8f02e98be8fdecd097051e215de24949b13d5896137ad29ebaa2ca19822f4cd1.png",
+        "url": "https://assemblag.es/@emma"
+      },
+      "url": "https://chaos.social/@o/115270862169896460#favorited-by-109299666605095712",
+      "published": null,
+      "wm-received": "2025-09-26T20:01:39Z",
+      "wm-id": 1942413,
+      "wm-source": "https://brid.gy/like/mastodon/@o@chaos.social/115270862169896460/109299666605095712",
+      "wm-target": "https://www.ovl.design/around-the-web/024-on-a-road-to-nowhere/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.ovl.design/around-the-web/024-on-a-road-to-nowhere/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
