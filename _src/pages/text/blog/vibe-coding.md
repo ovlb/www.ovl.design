@@ -27,9 +27,9 @@ On February 3rd, 2025 OpenAI co-founder Andrej Karpathy [published a tweet](http
 
 > There's a new kind of coding I call "vibe coding", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. It's possible because the LLMs (e.g. Cursor Composer w Sonnet) are getting too good. […]  I ask for the dumbest things like "decrease the padding on the sidebar by half" because I'm too lazy to find it. I "Accept All" always, I don't read the diffs anymore. When I get error messages I just copy paste them in with no comment, usually that fixes it. The code grows beyond my usual comprehension, I'd have to really read through it for a while. Sometimes the LLMs can't fix a bug so I just work around it or ask for random changes until it goes away. It's not too bad for throwaway weekend projects, but still quite amusing. I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.
 
-There is a lot in it already. Frankly, it summed up the problem pretty well without realising it is a problem. We will get to that.
+There is a lot in it already. Frankly, it summed up the problem pretty well without realising it is a problem.
 
-The term quickly catched on in development circles and beyond. It came at the right time. LLMs were becoming good at coding. Too good? We will get to that too.
+The term quickly [catched on](https://www.wsj.com/articles/vibe-coding-has-arrived-for-businesses-5528e942) in development circles and beyond. It came at the right time. LLMs were becoming good at coding. Too good? We will get to that.
 
 So over the last year or so there has been a steady encroachment of AI into developer tools.
 
@@ -37,7 +37,7 @@ It has been as subtle as everywhere else. Suddenly, pressing tab in your IDE of 
 
 In latest versions of Cursor, one of the few products with any meaningful kind of user base and revenue (not profit, but we will get to that too!), this has become a weirdly Kafkaesque mini game where something gets generated, and if you accept it, the next generation proposes to delete the just added code – and then some.
 
-«That’s not vibe coding!» Proponents of the vibe will proclaim now. Whatever. _It is_ the default users of IDE with Claude, Copilot or whatever experience these days. And it sucks.
+«That’s not vibe coding!» proponents of the vibe will proclaim. Whatever. _It is_ the default users of IDE with Claude, Copilot or whatever experience these days. And it sucks.
 
 
 
@@ -46,6 +46,16 @@ In latest versions of Cursor, one of the few products with any meaningful kind o
 The section where I situate technological solutions in the realm of the social
 
 ### Every tab you take, every prompt you make
+
+It’s easy to forget to reduce the debate over generated code to lines of code, shipped features. To get lost in technicalities, and forget how all of this comes to be.
+
+This is no article that aims to explain generative AI more general, or Large Language Models in particular. But we can’t have an argument about coding assistants and not talk about the material realities these assitants are embedded in.
+
+For one, this reality is situated in data centers. This year alone, companies are expected to [spend as much as $375 billion](https://www.nytimes.com/2025/08/27/business/economy/ai-investment-economic-growth.html) to expand data center capacity. These centers house more and more chips, need more and more energy and water.
+
+Data center development has become a point of contention, as centers prop up the electricity bills of neighbouring communities, poison their drinking water, and send a constang hummmmm through the air. _Business Insider_ tracked this in their [The True Cost of Data Centers](https://www.businessinsider.com/ai-data-center-development-true-cost-environmental-impact-2025-6) report. The activist group _The Maybe_ compiled five global stories in [Where Clouds Meets Cement](https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement). Data centers already [gobble up 20% of Ireland’s electricity](https://www.nytimes.com/2025/10/20/technology/ai-data-center-backlash-mexico-ireland.html), and are increasingly met with disdain and resistance by local communities.
+
+With every code completion, every question we ask in chat, every time we are to lazy to fix this unused variable ourselves, we make use of resources our planet might not be able to sustain. Ignoring this, is making a fool out of the whole discussion.
 
 ### Accessibility
 
