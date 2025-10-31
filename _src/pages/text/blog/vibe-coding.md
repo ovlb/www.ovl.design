@@ -23,7 +23,7 @@ So, how did we end up in this very peculiar moment? How can there companies that
 
 To make one thing very clear: I strongly believe that, for good or for worse, probably for both, software development _will change drastically_. Used responsibly, AI coding tools can be an incredible tool. I have used them myself. But it is despite, not because of it, that I’m weary of the debate. And antagonistic to the hype.
 
-On February 3rd, 2025 Andrej Karpathy [published a tweet](https://x.com/karpathy/status/1886192184808149383) in which he referred to a specific approach of development as «vibe coding».
+On February 3rd, 2025 OpenAI co-founder Andrej Karpathy [published a tweet](https://x.com/karpathy/status/1886192184808149383) in which he referred to a specific approach of development as «vibe coding».
 
 > There's a new kind of coding I call "vibe coding", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. It's possible because the LLMs (e.g. Cursor Composer w Sonnet) are getting too good. […]  I ask for the dumbest things like "decrease the padding on the sidebar by half" because I'm too lazy to find it. I "Accept All" always, I don't read the diffs anymore. When I get error messages I just copy paste them in with no comment, usually that fixes it. The code grows beyond my usual comprehension, I'd have to really read through it for a while. Sometimes the LLMs can't fix a bug so I just work around it or ask for random changes until it goes away. It's not too bad for throwaway weekend projects, but still quite amusing. I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.
 
@@ -37,13 +37,15 @@ It has been as subtle as everywhere else. Suddenly, pressing tab in your IDE of 
 
 In latest versions of Cursor, one of the few products with any meaningful kind of user base and revenue (not profit, but we will get to that too!), this has become a weirdly Kafkaesque mini game where something gets generated, and if you accept it, the next generation proposes to delete the just added code – and then some.
 
-That’s not vibe codign! Proponents of the vibe will proclaim now. Whatever. It is the default experience users of IDE with Claude, Copilot or whatever have these days. And it sucks.
+«That’s not vibe coding!» Proponents of the vibe will proclaim now. Whatever. _It is_ the default users of IDE with Claude, Copilot or whatever experience these days. And it sucks.
 
 
 
 ## Development is a social activity – yes, even if you code alone
 
 The section where I situate technological solutions in the realm of the social
+
+### Every tab you take, every prompt you make
 
 ### Accessibility
 
@@ -69,7 +71,7 @@ In this nut piece I mentioned earlier, the author claims «LLMs only produce shi
 
 Yes, true. All of todays coding assistant are _incredibly good_ at producing code. They will write a lot of it, and — if you’ve mastered the skill of writing the prompts — most it will solve your ~problems~ thing you mentioned in your prompts.
 
-### Or sorry that happened
+### … or sorry that happened
 
 Sooner or later the context will collapse. The output will repeat and repeat and repeat and repeat and rep… sorry.
 
