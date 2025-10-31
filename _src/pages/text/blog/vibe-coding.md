@@ -23,6 +23,24 @@ So, how did we end up in this very peculiar moment? How can there companies that
 
 To make one thing very clear: I strongly believe that, for good or for worse, probably for both, software development _will change drastically_. Used responsibly, AI coding tools can be an incredible tool. I have used them myself. But it is despite, not because of it, that I’m weary of the debate. And antagonistic to the hype.
 
+On February 3rd, 2025 Andrej Karpathy [published a tweet](https://x.com/karpathy/status/1886192184808149383) in which he referred to a specific approach of development as «vibe coding».
+
+> There's a new kind of coding I call "vibe coding", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. It's possible because the LLMs (e.g. Cursor Composer w Sonnet) are getting too good. […]  I ask for the dumbest things like "decrease the padding on the sidebar by half" because I'm too lazy to find it. I "Accept All" always, I don't read the diffs anymore. When I get error messages I just copy paste them in with no comment, usually that fixes it. The code grows beyond my usual comprehension, I'd have to really read through it for a while. Sometimes the LLMs can't fix a bug so I just work around it or ask for random changes until it goes away. It's not too bad for throwaway weekend projects, but still quite amusing. I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.
+
+There is a lot in it already. Frankly, it summed up the problem pretty well without realising it is a problem. We will get to that.
+
+The term quickly catched on in development circles and beyond. It came at the right time. LLMs were becoming good at coding. Too good? We will get to that too.
+
+So over the last year or so there has been a steady encroachment of AI into developer tools.
+
+It has been as subtle as everywhere else. Suddenly, pressing tab in your IDE of choice doesn’t auto-fill the useful suggestion your IDE makes anyway but something a model calculcated as somehow useful. Sometimes it is, often not.
+
+In latest versions of Cursor, one of the few products with any meaningful kind of user base and revenue (not profit, but we will get to that too!), this has become a weirdly Kafkaesque mini game where something gets generated, and if you accept it, the next generation proposes to delete the just added code – and then some.
+
+That’s not vibe codign! Proponents of the vibe will proclaim now. Whatever. It is the default experience users of IDE with Claude, Copilot or whatever have these days. And it sucks.
+
+
+
 ## Development is a social activity – yes, even if you code alone
 
 The section where I situate technological solutions in the realm of the social
@@ -63,9 +81,9 @@ All of the engineers I’ve seen so far have been pretty vigilant during the fir
 
 Software engineering is really making an art out of a making a fool of itself.
 
-But truly, it’s not just software engineering. Mathy math slop machines are shoved into every corner of the economy and our lives at breakneck speed, and [slow success](https://www.ft.com/content/e93e56df-dd9b-40c1-b77a-dba1ca01e473). Everything is generated so much that [no one is really keeping up](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity).
+But truly, it’s not just software engineering. Mathy math slop machines are shoved into every corner of the economy and our lives at breakneck speed, and [slow success](https://www.ft.com/content/e93e56df-dd9b-40c1-b77a-dba1ca01e473). Everything is generated so much that [no one can keep up anymore](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity).
 
-I’m sorry that happened for us all.
+I’m sorry that happened, for us all.
 
 Luckily there is:
 
@@ -73,6 +91,10 @@ Luckily there is:
 
 Just kidding.
 
-### The breakdown
+### I really don’t have a PhD in economics, but how is this supposed to work?
+
+Usage numbers of Lovable seem to have [tanked over the past few months](https://www.linkedin.com/posts/chris-pisarski_is-lovable-dying-web-traffic-has-declined-activity-7381424054764806144-Vo6h). According to Deutsche Bank research, even OpenAI is [flatlining in Europe](https://fortune.com/2025/10/14/openai-subscriptions-flatlined-europe-deutsche-bank/).
+
+Flat-lining, declining is something no capitalist will ever like to hear. But for an industry that needs exponential growth yesterday, that’s especially bad news.
 
 ##
