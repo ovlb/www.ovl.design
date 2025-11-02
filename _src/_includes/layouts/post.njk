@@ -10,6 +10,9 @@
       {{ content | safe }}
     </div>
     {% include "components/blog/webmentions.njk" %}
+    {% if image.credit %}
+      {% include "components/figure-credit.njk" with { credit: image.credit } %}
+    {% endif %}
     {% if tags.length %}
       {% include "components/blog/collections.njk" %}
     {% endif %}

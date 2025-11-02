@@ -10,7 +10,14 @@ tags:
   - cat:accessibility
   - state:draft
 intro: Vibe coding might be the answer, but how much is the fish?
-date: 2025-11-01
+date: 2025-11-02
+image:
+  og: 'ovl-og-image-vibe-coding.jpg'
+  title: 'vibe-coding.jpg'
+  alt: 'A close-up photo of red and black lava flowing down a brown stony shallow slope, but the image is slightly distorted by digital artefacts.'
+  credit:
+    - source: https://betterimagesofai.org/images?artist=LoneThomasky&title=DistortedLavaFlow
+    - name: Distorted Lava Flow by Lone Thomasky & Bits&Bäume
 ---
 
 Being a developer in the year 2025 is easy. All you need to do is get 20 dollar, hand them over to Cursor, Claude Code, Windsurf or whatever the tool de jour might be, and off you go. Others, have [been but a fraud](https://www.businesstoday.in/technology/news/story/700-indian-engineers-posed-as-ai-the-london-startup-that-took-microsoft-for-a-ride-478514-2025-05-31).
@@ -168,6 +175,8 @@ Coding assistants can be an incredible helpful tool if used consciously. As with
 
 At the same time, I’m deeply troubled by those pushing these tools and sell them as the future without any concern for their externalities and consequences. If you treat any technology just as the technology, you are fooled. Technologies are complex and intertwined, with material realities and effects beyond the prompt window.
 
-It’s all too easy to forget about effects of our choices. The promotion of the tools reinforces that believe. Let’s not be fooled by the PR departments of tech companies, that in the end care about one thing only: shareholder value.
+It’s all too easy to forget about effects of our choices. The promotion of the tools reinforces that believe. The PR departments, CEOs and CTOs of these tech companies care about one thing: shareholder value. And the specter of automation has always been a great way to drive this number up.
+
+We, as humans, should not be tricked into this game.
 
 ![A meme with two frongs sitting in front a fireplace, toasting to each other in an overall very comfy surrounding. The top part of the meme reads «Stop glamorizing ‹the Grind› and start glamorizing whatever this is.](/blog/mindset.jpg)
