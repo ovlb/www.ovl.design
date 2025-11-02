@@ -16,8 +16,8 @@ image:
   title: 'vibe-coding.jpg'
   alt: 'A close-up photo of red and black lava flowing down a brown stony shallow slope, but the image is slightly distorted by digital artefacts.'
   credit:
-    - source: https://betterimagesofai.org/images?artist=LoneThomasky&title=DistortedLavaFlow
-    - name: Distorted Lava Flow by Lone Thomasky & Bits&Bäume
+    source: https://betterimagesofai.org/images?artist=LoneThomasky&title=DistortedLavaFlow
+    name: Distorted Lava Flow by Lone Thomasky & Bits&Bäume
 ---
 
 Being a developer in the year 2025 is easy. All you need to do is get 20 dollar, hand them over to Cursor, Claude Code, Windsurf or whatever the tool de jour might be, and off you go. Others, have [been but a fraud](https://www.businesstoday.in/technology/news/story/700-indian-engineers-posed-as-ai-the-london-startup-that-took-microsoft-for-a-ride-478514-2025-05-31).
