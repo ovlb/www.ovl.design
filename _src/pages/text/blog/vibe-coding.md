@@ -39,7 +39,9 @@ In latest versions of Cursor, one of the few products with any meaningful kind o
 
 «That’s not vibe coding!» proponents of the vibe will proclaim. Whatever. _It is_ the default users of IDE with Claude, Copilot or whatever experience these days. And it sucks.
 
+This text will not try to define vibe coding any further, if you search for a one-by-one guide how to make the best out of coding models, this is also not the text for you.
 
+Instead, I’ll try to frame assisted coding in a broader socio-politcal frame. What are immediate but hidden effects of using these tools. Effects on you, on the world we are living in but also on the future of the software industry more general?
 
 ## Development is a social activity – yes, even if you code alone
 
@@ -55,7 +57,9 @@ For one, this reality is situated in data centers. This year alone, companies ar
 
 Data center development has become a point of contention, as centers prop up the electricity bills of neighbouring communities, poison their drinking water, and send a constang hummmmm through the air. _Business Insider_ tracked this in their [The True Cost of Data Centers](https://www.businessinsider.com/ai-data-center-development-true-cost-environmental-impact-2025-6) report. The activist group _The Maybe_ compiled five global stories in [Where Clouds Meets Cement](https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement). Data centers already [gobble up 20% of Ireland’s electricity](https://www.nytimes.com/2025/10/20/technology/ai-data-center-backlash-mexico-ireland.html), and are increasingly met with disdain and resistance by local communities.
 
-With every code completion, every question we ask in chat, every time we are to lazy to fix this unused variable ourselves, we make use of resources our planet might not be able to sustain. Ignoring this, is making a fool out of the whole discussion.
+Whenever [someone says](https://fly.io/blog/youre-all-nuts/) «An LLM can be instructed to just figure all that shit out» a model is not «just figuring shit out», it runs inference in data centers. And, as the code models are reasoning models, this inference can be ridicolously compute expensive.
+
+With every code completion, every question we ask in chat, every time we are to lazy to fix this unused variable ourselves, we make use of resources our planet might not be able to sustain. You can try to ignore this, but it is the uncomfortable ground truth of every interaction with these models.
 
 ### Accessibility
 
@@ -109,4 +113,14 @@ Usage numbers of Lovable seem to have [tanked over the past few months](https://
 
 Flat-lining, declining is something no capitalist will ever like to hear. But for an industry that needs exponential growth yesterday, that’s especially bad news.
 
-##
+## So what?
+
+I admire any person who stand by a definitve «No» to any of these technologies for their stedfastness. For me, the reality is more murky than that.
+
+Coding assistants can be an incredible helpful tool, if used consciously. As with every tool, we need to keep reminding ourselves when a nail is a nail. Thinking about assistants requires a reframing of the discussion. Scratch any «just» when describing how they work. Scratch any trust when reviewing their output.
+
+At the same time, I’m deeply troubled by those pushing these tools and sell them as the future without any – visible, at least – concern for their externalities and consequences. If you treat any technology just as the technology, you are fooled. Technologies are complex and intertwined, with material realities and effects beyond the prompt window.
+
+It’s all too easy to forget about effects of our choices. The promotion of the tools reinforces that believe. Let’s not be fooled by the PR departments of tech companies that in the end care about thing only: shareholder value.
+
+![A meme with two frongs sitting in front a fireplace, toasting to each other in an overall very comfy surrounding. The top part of the meme reads «Stop glamorizing ‹the Grind› and start glamorizing whatever this is.](/blog/music2023/daughter-stereo-mind-game.jpg)
