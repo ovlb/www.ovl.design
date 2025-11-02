@@ -8,7 +8,6 @@ tags:
   - cat:technology
   - cat:web-development
   - cat:accessibility
-  - state:draft
 intro: Vibe coding might be the answer, but how much is the fish?
 date: 2025-11-02
 image:
