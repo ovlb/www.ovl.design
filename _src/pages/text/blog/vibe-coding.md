@@ -25,7 +25,7 @@ Being an AI-skeptic developer in the year 2025 is not that easy. [You might be c
 
 ## Setting the field
 
-So, how did we end up in this very peculiar moment? How can there be companies that promise that you can just insta-wish the app you’ve been dreaming off into being, and how can there be pundits that believe this?
+So, how did we end up in this very peculiar moment? How can there be companies that promise that you can just insta-wish the app you’ve been dreaming of into being, and how can there be pundits that believe this?
 
 To make one thing clear: I strongly believe that, for good or for worse, probably for both, software development _will change drastically_. Used responsibly, AI coding tools can be an incredible tool. I have used them myself. But it is despite, not because of it, that I’m weary of the debate. And antagonistic to the hype.
 
@@ -35,7 +35,7 @@ On February 3rd, 2025 OpenAI co-founder Andrej Karpathy [published a tweet](http
 
 There is a lot in it already. Frankly, it summed up the problem pretty well without realising it is a problem.
 
-The term quickly [catched on](https://www.wsj.com/articles/vibe-coding-has-arrived-for-businesses-5528e942) in development circles and beyond. It came at the right time. LLMs were becoming good at coding. Too good? We will get to that.
+The term quickly [caught on](https://www.wsj.com/articles/vibe-coding-has-arrived-for-businesses-5528e942) in development circles and beyond. It came at the right time. LLMs were becoming good at coding. Too good? We will get to that.
 
 So over the last year or so there has been a steady encroachment of AI into developer tools.
 
