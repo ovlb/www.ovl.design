@@ -104,17 +104,26 @@ The small number of carefully curated, tested, and robust examples will – unfo
 
 Creating code with the help of agents can be incredibly rewarding. Even though the user experience itself is, frankly, annoying. The bots are helpful, but their tone of voice is so obedient it at times makes me want to [poison a dataset](https://www.anthropic.com/research/small-samples-poison).
 
-Anyway, you will likely hit the ground running and have something
+Anyway, you will likely hit the ground running and have something resembling a product quickly.
 
-In this nut piece I mentioned earlier, the author claims «LLMs only produce shitty code if you let them». At the same time, he also claims that experienced vibe coders have agents running and only review the code.
-
-Yes, true. All of today’s coding assistant are _incredibly good_ at producing code. The 273 developers on Vibe Rank have burned almost a million dollars combined.
-
- They will write a lot of it, and — if you’ve mastered the skill of writing the prompts — most of it will solve your ~~problems~~ thing you mentioned in your prompts.
+They will write a lot of code for you, and — if you’ve mastered the skill of writing the prompts — most of it will solve your ~~problems~~ thing you mentioned in your prompts. All of today’s coding assistant are _incredibly good_ at producing code. The 273 developers on [Vibe Rank](https://www.viberank.app/) have burned almost a million dollars combined.
 
 But it will also generate code over and over again, instead of reusing existing functions or asking if code needs to be written at all. After a short while, the immediate feeling of progress starts to sour.
 
-But it will also generate code over and over again, instead of reusing existing functions or asking if code needs to be written at all.
+And, does it solve a problem? Which one? Your own particular one maybe. And that’s great. Don’t get me wrong.
+
+At any larger scale the hard part of software, is _not_ writing code. It’s what comes before and after it:
+
+> Good software flows from good requirements analysis, from understanding the real problem that is to be solved and it’s domain and organizational embedding, from understanding the needs, abilities and situation of the people using the software, it flows from thinking about good architecture that describes the structure of the whole construct often even before a line of code has been typed.
+> -- [tante — On Vibe Coding](https://tante.cc/2025/05/23/on-vibe-coding/)
+
+The better this messy, human part of software is handled, the easier the actual coding is. Even without coding assitants.
+
+In this nut piece I mentioned earlier, the author claims «LLMs only produce shitty code if you let them». At the same time, he also claims that experienced vibe coders have agents running and only review the code.
+
+But how do we define good and shitty code? Is clever code good code, elegant code? Is good code only a technicality?
+
+And at which point will you just stop reviewing every single line as carefully as you should?
 
 ### … or sorry that happened
 
@@ -134,7 +143,9 @@ Chatbot-like experiences present an interesting conundrum: Historically, trust i
 
 Another contributing factor is cognitive overload. Counter-intuitively, the harder it is to review the output, the more likely humans are [to trust the machine](https://academic.oup.com/jamia/article-abstract/24/2/423/2631492).
 
-Which gets us back to the mountains of code generated. There will be a point at which the amount of it surpasses our level of understanding, and we give up reviewing it as carefully as we should. This will be the time at which we[delete databases](https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/).
+Which gets us back to the mountains of code generated. There will be a point at which the amount of it surpasses our level of understanding, and we give up reviewing it as carefully as we should. This will be the time at which we [delete databases](https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/).
+
+Or, even worse, we don’t just give up on a single task, but lose the [ability to comprehend](https://www.newyorker.com/culture/infinite-scroll/ai-is-homogenizing-our-thoughts) the output and [ask critical questions](https://sverhulst.medium.com/generative-ai-and-the-new-tabula-rasa-why-question-literacy-matters-0d78a8b7576e) altogether.
 
 I’m sorry that happened, for all of us.
 
@@ -156,6 +167,10 @@ I, hopefully, don’t need to tell you what an incredible shortsighted approach 
 
 This bet might make sense if you trust in the progress of AI enough to believe that we will have [Artificial General Intelligence by 2030](https://www.techspot.com/news/109644-sam-altman-predicts-artificial-general-intelligence-2030-ai.html). It’s careless nonetheless.
 
+At the same time, we might see a different trend, where even if companies re-hire previusly laid off staff, they will do so paying the same people less, or [try to offshore the work](https://www.theregister.com/2025/10/29/forrester_ai_rehiring/).
+
+AI becomes thus becomes a de-skilling project. A cruel one at that. Companies will constantly threaten their workforce that they might, at any moment now, be laid off or have to accept paycuts to keep their jobs.
+
 ### I don’t hold a PhD in economics, but how is this supposed to work?
 
 Usage numbers of Lovable seem to have [tanked over the past few months](https://www.linkedin.com/posts/chris-pisarski_is-lovable-dying-web-traffic-has-declined-activity-7381424054764806144-Vo6h). According to Deutsche Bank research, even OpenAI is [flatlining in Europe](https://fortune.com/2025/10/14/openai-subscriptions-flatlined-europe-deutsche-bank/). Cursor is valued at almost [$10 billion dollars, reports $500 million in Annual Recurring Revenue,](https://news.crunchbase.com/ai/anysphere-cursor-venture-funding-thrive/) and still can’t turn a profit. While at the same time competing against Anthropic, while being their largest customer.
@@ -165,6 +180,8 @@ Flat-lining, declining is something no capitalist will ever like to hear. But fo
 The numbers that are thrown around grow ever more fantastical by the day. When the USA’s Stargate project was announced, the $500 billion investment was raising eyebrows. In September, Gartner calculated that in 2025, $1.5 trillion were spent on AI. With $2 trillion projected for 2026.
 
 Bain & Company claim that the AI industry requires [$2 trillion in annual revenue](https://www.bain.com/about/media-center/press-releases/20252/$2-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/) by 2030 to make today’s bets work. AI companies in the USA today make a [combined $41 billion in revenue](https://finance.yahoo.com/news/us-ai-revenue-2025-nearly-141217858.html). That’s 0.205% of the goal.
+
+OpenAI might have, last quarter alone, [lost around $11.5 billion](https://www.theregister.com/2025/10/29/microsoft_earnings_q1_26_openai_loss/). Horny chatbots [will save them](https://www.404media.co/chatgpt-erotica-age-gating-verified-adults/), surely.
 
 ## So what?
 
