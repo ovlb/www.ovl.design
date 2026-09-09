@@ -121,6 +121,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.js}**/*`)
   eleventyConfig.addWatchTarget(`./${STATIC_FOLDERS.img}**/*`)
   eleventyConfig.addWatchTarget('./_helper/**/*')
+  // .pcss partials aren’t template extensions, so chokidar ignores them by
+  // default. Without this, edits to CSS dependencies never trigger a rebuild
+  // (the `addDependencies` graph in _templates/css.js only maps changes it sees).
+  eleventyConfig.addWatchTarget('./_src/assets/css/**/*.pcss')
 
   // copy static assets to dist folder
   eleventyConfig.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img/' })
