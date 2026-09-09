@@ -2,3 +2,6 @@
 @import './organisms/lists/_article-list.pcss';
 @import './organisms/_article-card.pcss';
 @import './organisms/_main-grid-content.pcss';
+@import './organisms/_icon-link.pcss';
+@import './organisms/_featured-stat.pcss';
+@import './organisms/_block-stats.pcss';

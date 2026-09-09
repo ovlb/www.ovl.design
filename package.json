@@ -10,9 +10,11 @@
     "clean": "rimraf dist",
     "lint": "concurrently \"npm:lint:*\"",
     "lint:css": "stylelint '**/*.pcss' --fix",
-    "lint:js": "eslint \"**/*.{js,vue,mjs}\" --ignore-pattern 'node_modules/**/*' --fix",
+    "lint:js": "eslint \"**/*.{js,mjs}\" --ignore-pattern 'node_modules/**/*' --fix",
+    "new:post": "node _helper/new-post.js",
     "serve": "ELEVENTY_ENV=development eleventy --serve --quiet --incremental --port 7777",
     "test": "ava",
+    "ts": "tsc --build",
     "prepare": "node scripts/prepare.js"
   },
   "engines": {
@@ -29,19 +31,17 @@
   },
   "homepage": "https://github.com/ovlb/www.ovl.design#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "@11ty/eleventy-plugin-vue": "^1.0.0-canary.8",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.2",
     "@inframanufaktur/eleventy-plugin-embed-mastodon": "^0.4.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
-    "@rollup/plugin-alias": "^3.1.8",
     "autoprefixer": "^10.4.16",
     "ava": "^4.3.3",
     "axios": "^0.24.0",
@@ -55,7 +55,6 @@
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-vue": "^8.2.0",
     "feed": "^5.1.0",
     "html-minifier": "^4.0.0",
     "husky": "^7.0.0",
@@ -87,10 +86,12 @@
     "stylelint-config-standard": "^34.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-prettier": "^4.0.2",
+    "tsc": "^2.0.4",
+    "typescript": "^7.0.2",
     "uuid": "^9.0.0"
   },
   "lint-staged": {
-    "**/*.{js,vue,mjs}": [
+    "**/*.{js,mjs}": [
       "eslint --fix"
     ],
     "_src/**/*.(p)?css": [
@@ -98,9 +99,10 @@
     ]
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
     "@netlify/functions": "^0.10.0",
+    "esbuild": "^0.28.2",
     "simple-git": "^3.20.0",
-    "textics": "^1.2.0",
-    "vue-material-design-icons": "^5.0.0"
+    "textics": "^1.2.0"
   }
 }

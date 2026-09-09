@@ -1,0 +1,57 @@
+/* Styles migrated from _src/pages/cache/ai/index.vue <style> block. */
+
+.cache-content .main-headline {
+  font-family: var(--fonts-mono);
+  font-size: var(--step-2);
+}
+
+.cache-content .sub-headline,
+.cache-content .small-headline {
+  font-family: var(--fonts-main);
+  font-size: var(--step-0);
+}
+
+.cache-content .sub-headline {
+  margin-left: 0;
+}
+
+.cache-content .small-headline {
+  font-style: italic;
+}
+
+.cache-content .type-is-aside {
+  font-family: var(--fonts-mono);
+}
+
+.cache-content {
+  display: grid;
+  gap: var(--padding-base);
+  padding: var(--padding-base);
+  padding-top: calc(2 * var(--padding-base));
+}
+
+@media (min-width: 1000px) {
+  .cache-content {
+    grid-template-columns: 25% 1fr;
+  }
+}
+
+.cache-content__header {
+  font-family: var(--fonts-mono);
+}
+
+.content-block + .content-block {
+  margin-top: calc(2 * var(--padding-base));
+}
+
+.id-list {
+  background-color: var(--clr-bg);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+.id-list li a {
+  color: var(--clr-fg);
+  font-size: var(--step--1);
+}
