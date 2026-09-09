@@ -1,35 +1,27 @@
 export function themeSwitchControl() {
-  const $switchContainer = document.querySelector('.js-theme-switch')
+  const $switchContainer =
+    document.querySelector<HTMLElement>('.js-theme-switch')
 
   if (!$switchContainer) return
 
-  /**
-   * @type HTMLButtonElement
-   */
-  const $switcher = $switchContainer.querySelector('.js-theme-switcher')
-  /**
-   * @type HTMLButtonElement
-   */
-  const $clearer = $switchContainer.querySelector('.js-theme-switch-clear')
-  /**
-   * @type String
-   */
+  const $switcher =
+    $switchContainer.querySelector<HTMLButtonElement>('.js-theme-switcher')
+  const $clearer = $switchContainer.querySelector<HTMLButtonElement>(
+    '.js-theme-switch-clear',
+  )
+
+  if (!$switcher || !$clearer) return
+
   const userThemeSetting = localStorage.getItem('ovlUserTheme')
-  /**
-   * @type Boolean
-   */
-  let isDarkMode
+  let isDarkMode = false
 
   if (userThemeSetting) {
-    const userSettingPrefersDark = userThemeSetting === 'dark'
+    isDarkMode = userThemeSetting === 'dark'
 
-    isDarkMode = userSettingPrefersDark
     document.documentElement.setAttribute('data-user-theme', userThemeSetting)
     $clearer.hidden = false
   } else {
-    const isDark = matchMedia('(prefers-color-scheme: dark)').matches
-
-    isDarkMode = isDark
+    isDarkMode = matchMedia('(prefers-color-scheme: dark)').matches
   }
 
   $switcher.setAttribute('aria-checked', isDarkMode.toString())
@@ -51,7 +43,7 @@ export function themeSwitchControl() {
     isDarkMode = matchMedia('(prefers-color-scheme: dark)').matches
     localStorage.removeItem('ovlUserTheme')
     document.documentElement.removeAttribute('data-user-theme')
-    $switcher.setAttribute('aria-checked', isDarkMode)
+    $switcher.setAttribute('aria-checked', isDarkMode.toString())
     $clearer.hidden = true
   })
 

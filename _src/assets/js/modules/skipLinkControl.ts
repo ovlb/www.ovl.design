@@ -3,10 +3,14 @@ export function skipLinkControl() {
   var $skipLink = document.querySelector('.js-skip-link')
 
   // reset tabindex if script is running
-  $main.removeAttribute('tabindex')
+  $main?.removeAttribute('tabindex')
 
-  $skipLink.addEventListener('click', function (evt) {
+  $skipLink?.addEventListener('click', function (evt) {
     evt.preventDefault()
+
+    if (!$main) {
+      return
+    }
 
     $main.setAttribute('tabindex', '0')
     $main.focus()

@@ -1,0 +1,17 @@
+{
+  "include": ["_src/assets/js/**/*.ts"],
+  "exclude": ["./dist"],
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ESNext",
+    "noEmit": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "types": []
+  }
+}
