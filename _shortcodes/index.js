@@ -4,6 +4,10 @@ module.exports = function (eleventyConfig) {
   const shortcodes = getFolderExports(__dirname)
 
   shortcodes.forEach(({ name, func }) => {
-    eleventyConfig.addShortcode(name, func)
+    if (func.constructor.name === 'AsyncFunction') {
+      eleventyConfig.addAsyncShortcode(name, func)
+    } else {
+      eleventyConfig.addShortcode(name, func)
+    }
   })
 }
