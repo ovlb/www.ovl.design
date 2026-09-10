@@ -1,5 +1,5 @@
-const fs = require('node:fs')
-const path = require('node:path')
+import fs from 'node:fs'
+import path from 'node:path'
 
 const CACHE_DIR = '.mastodon'
 
@@ -82,4 +82,4 @@ function migrateMastodonCache(cacheDir = CACHE_DIR) {
   return migrated
 }
 
-module.exports = { migrateMastodonCache }
+export { migrateMastodonCache }

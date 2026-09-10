@@ -1,6 +1,6 @@
 import 'dotenv/config'
 
-const { migrateMastodonCache } = require('./_helper/migrate-mastodon-cache')
+import { migrateMastodonCache } from './_helper/migrate-mastodon-cache.js'
 
 // restore cache entries written by older eleventy-fetch versions so
 // deleted Mastodon posts stay available (see _helper/migrate-mastodon-cache)
