@@ -40,7 +40,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@inframanufaktur/eleventy-plugin-clean-urls": "^1.0.2",
-    "@inframanufaktur/eleventy-plugin-embed-mastodon": "^0.4.0",
+    "@inframanufaktur/eleventy-plugin-embed-mastodon": "^0.6.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "autoprefixer": "^10.4.16",
     "ava": "^4.3.3",

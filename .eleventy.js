@@ -1,5 +1,11 @@
 require('dotenv').config()
 
+const { migrateMastodonCache } = require('./_helper/migrate-mastodon-cache')
+
+// restore cache entries written by older eleventy-fetch versions so
+// deleted Mastodon posts stay available (see _helper/migrate-mastodon-cache)
+migrateMastodonCache()
+
 const { PAGE_STATE } = process.env
 
 const STATIC_FOLDERS = require('./_helper/paths')
