@@ -1,3 +1,5 @@
-const { startCase } = require('lodash')
+import lodash from 'lodash'
 
-module.exports = startCase
+const { startCase } = lodash
+
+export default startCase

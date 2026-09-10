@@ -1,7 +1,7 @@
-const { parseHTML } = require('linkedom')
-const { parseImages } = require('../_helper/responsive-image')
+import { parseHTML } from 'linkedom'
+import { parseImages } from '../_helper/responsive-image.js'
 
-module.exports = async function (content) {
+export default async function (content) {
   const { document } = parseHTML(
     `<div class="md-content h-entry text__body">${content}</div>`,
   )

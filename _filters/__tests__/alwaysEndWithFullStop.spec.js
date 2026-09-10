@@ -1,6 +1,6 @@
-const test = require('ava')
+import test from 'ava'
 
-const alwaysEndWithFullstop = require('../always-end-with-fullstop')
+import alwaysEndWithFullstop from '../always-end-with-fullstop.js'
 
 test('returns the unchanged string, if ends with `.`', (t) => {
   t.is(alwaysEndWithFullstop('String.'), 'String.')

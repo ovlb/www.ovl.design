@@ -1,17 +1,17 @@
-const { parseHTML } = require('linkedom')
+import { parseHTML } from 'linkedom'
 
-module.exports = {
-  transform: function (content) {
-    if (this.outputPath && this.outputPath.endsWith('.html')) {
-      const { document } = parseHTML(content)
+export function transform(content) {
+  if (this.outputPath && this.outputPath.endsWith('.html')) {
+    const { document } = parseHTML(content)
 
-      document.body.innerHTML = document.body.innerHTML
-        .replaceAll('&lt;cite&gt;', '<cite>')
-        .replaceAll('&lt;/cite&gt;', '</cite>')
+    document.body.innerHTML = document.body.innerHTML
+      .replaceAll('&lt;cite&gt;', '<cite>')
+      .replaceAll('&lt;/cite&gt;', '</cite>')
 
-      return `<!DOCTYPE html>${document.documentElement.outerHTML}`
-    }
+    return `<!DOCTYPE html>${document.documentElement.outerHTML}`
+  }
 
-    return content
-  },
+  return content
 }
+
+export default { transform }

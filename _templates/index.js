@@ -1,9 +1,15 @@
-const getFiles = require('../_helper/get-files')
+import { createRequire } from 'node:module'
 
-module.exports = function (eleventyConfig) {
-  getFiles(__dirname)
+const require = createRequire(import.meta.url)
+
+import getFiles from '../_helper/get-files.js'
+
+export default function (eleventyConfig) {
+  getFiles(import.meta.dirname)
     .filter((fileName) => fileName !== 'index.js')
     .forEach((templateFile) => {
-      eleventyConfig.addPlugin(require(`./${templateFile}`))
+      const required = require(`./${templateFile}`)
+
+      eleventyConfig.addPlugin(required.default ?? required)
     })
 }

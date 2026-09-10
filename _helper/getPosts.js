@@ -1,18 +1,20 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
 
-const contentful = require('contentful')
+dotenv.config()
+
+import { createClient } from 'contentful'
 const host =
   process.env.CF_STAGE === 'preview'
     ? 'preview.contentful.com'
     : 'https://cdn.contentful.com'
 
-const clt = contentful.createClient({
+const clt = createClient({
   space: process.env.CF_SPACE,
   accessToken: process.env.CF_TOKEN,
   host,
 })
 
-module.exports = async function ({ type, order = '-sys.createdAt' }) {
+export default async function ({ type, order = '-sys.createdAt' }) {
   try {
     const { items } = await clt.getEntries({
       content_type: type,
@@ -24,6 +26,6 @@ module.exports = async function ({ type, order = '-sys.createdAt' }) {
       return { id: item.sys.id, ...item.fields }
     })
   } catch (e) {
-    throw new Error(e.message)
+    throw new Error(e.message, { cause: e })
   }
 }

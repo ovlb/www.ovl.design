@@ -1,4 +1,4 @@
-const { parseHTML } = require('linkedom')
+import { parseHTML } from 'linkedom'
 
 const commonAbbreviations = [
   { text: 'AGI', title: 'Artificial General Intelligence' },
@@ -26,42 +26,42 @@ const commonAbbreviations = [
 
 const stylistic = ['DALL-E', 'BLOOM']
 
-module.exports = {
-  transform: function (content) {
-    if (this.outputPath && this.outputPath.endsWith('.html')) {
-      const { document } = parseHTML(content)
+export function transform(content) {
+  if (this.outputPath && this.outputPath.endsWith('.html')) {
+    const { document } = parseHTML(content)
 
-      const textContent = document.querySelector('[data-text-body]')
+    const textContent = document.querySelector('[data-text-body]')
 
-      if (!textContent) return content
+    if (!textContent) return content
 
-      let { innerHTML } = textContent
+    let { innerHTML } = textContent
 
-      const getMatcher = (text) => {
-        const punctuation = '[ .,:;?’#+«»”“\\-—<>]'
+    const getMatcher = (text) => {
+      const punctuation = '[ .,:;?’#+«»”“\\-—<>]'
 
-        return new RegExp(`(${punctuation})${text}(s?)(${punctuation})`, 'gm')
-      }
-
-      for (const { text, title } of commonAbbreviations) {
-        innerHTML = innerHTML.replace(
-          getMatcher(text),
-          `$1<abbr title="${title}">${text}</abbr>$2$3`,
-        )
-      }
-
-      for (const style of stylistic) {
-        innerHTML = innerHTML.replaceAll(
-          getMatcher(style),
-          `$1<span class="type-all-small-caps">${style}</span>$2$3`,
-        )
-      }
-
-      textContent.innerHTML = innerHTML
-
-      return `<!DOCTYPE html>${document.documentElement.outerHTML}`
+      return new RegExp(`(${punctuation})${text}(s?)(${punctuation})`, 'gm')
     }
 
-    return content
-  },
+    for (const { text, title } of commonAbbreviations) {
+      innerHTML = innerHTML.replace(
+        getMatcher(text),
+        `$1<abbr title="${title}">${text}</abbr>$2$3`,
+      )
+    }
+
+    for (const style of stylistic) {
+      innerHTML = innerHTML.replaceAll(
+        getMatcher(style),
+        `$1<span class="type-all-small-caps">${style}</span>$2$3`,
+      )
+    }
+
+    textContent.innerHTML = innerHTML
+
+    return `<!DOCTYPE html>${document.documentElement.outerHTML}`
+  }
+
+  return content
 }
+
+export default { transform }

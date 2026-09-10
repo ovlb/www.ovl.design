@@ -1,5 +1,5 @@
-const startCase = require('../../../../_filters/start-case')
-const { escapeHtml, slugify } = require('../../../../_helper/archive-html')
+import startCase from '../../../../_filters/start-case.js'
+import { escapeHtml, slugify } from '../../../../_helper/archive-html.js'
 
 function getHost(url) {
   return new URL(url).host.replace('www.', '')
@@ -99,4 +99,4 @@ ${blocks}
   }
 }
 
-module.exports = AiCache
+export default AiCache

@@ -1,7 +1,7 @@
-const getFolderExports = require('../_helper/get-folder-exports')
+import getFolderExports from '../_helper/get-folder-exports.js'
 
-module.exports = function (eleventyConfig) {
-  const filters = getFolderExports(__dirname)
+export default function (eleventyConfig) {
+  const filters = getFolderExports(import.meta.dirname)
 
   filters.forEach(({ name, func }) => {
     eleventyConfig.addFilter(name, func)

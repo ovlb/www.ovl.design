@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   categoryBase: '/everything',
   pageCSS: ['text'],
 }

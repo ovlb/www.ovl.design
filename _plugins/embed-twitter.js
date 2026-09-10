@@ -1,6 +1,6 @@
-const pluginEmbedTweet = require('eleventy-plugin-embed-tweet')
+import pluginEmbedTweet from 'eleventy-plugin-embed-tweet'
 
-module.exports = {
+export default {
   plugin: pluginEmbedTweet,
   pluginOptions: {
     cacheDirectory: 'tweets',

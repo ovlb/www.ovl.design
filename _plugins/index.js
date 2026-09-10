@@ -1,10 +1,17 @@
-const path = require('path')
-const getFilesOfType = require('../_helper/get-files')
+import { createRequire } from 'node:module'
+import path from 'path'
+import getFilesOfType from '../_helper/get-files.js'
 
-module.exports = function (eleventyConfig) {
-  const plugins = getFilesOfType(__dirname)
+const require = createRequire(import.meta.url)
+
+export default function (eleventyConfig) {
+  const plugins = getFilesOfType(import.meta.dirname)
     .filter((file) => file !== 'index.js')
-    .map((file) => require(path.join(__dirname, file)))
+    .map((file) => {
+      const required = require(path.join(import.meta.dirname, file))
+
+      return required.default ?? required
+    })
 
   plugins.forEach((plugin) => {
     eleventyConfig.addPlugin(plugin.plugin, plugin.pluginOptions || {})

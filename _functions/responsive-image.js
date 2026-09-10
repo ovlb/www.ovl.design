@@ -1,5 +1,5 @@
-const Image = require('@11ty/eleventy-img')
-const getFullSource = require('../_helper/get-full-source')
+import Image from '@11ty/eleventy-img'
+import getFullSource from '../_helper/get-full-source.js'
 
 const defaultOptions = {
   widths: [140, 320, null],
@@ -9,7 +9,7 @@ const defaultOptions = {
   outputDir: './dist/img/',
 }
 
-module.exports = async function (src, alt, sizes, imgAttrs = {}, options = {}) {
+export default async function (src, alt, sizes, imgAttrs = {}, options = {}) {
   const fullSrc = getFullSource(src)
 
   let metadata = await Image(fullSrc, {

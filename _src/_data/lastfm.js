@@ -1,5 +1,5 @@
-const EleventyFetch = require('@11ty/eleventy-fetch')
-const Image = require('@11ty/eleventy-img')
+import EleventyFetch from '@11ty/eleventy-fetch'
+import Image from '@11ty/eleventy-img'
 
 const BASE_URL = `http://ws.audioscrobbler.com/2.0/`
 let SPOTIFY_TOKEN
@@ -147,7 +147,7 @@ async function processAlbums(albums) {
   return processed
 }
 
-module.exports = async function () {
+export default async function () {
   SPOTIFY_TOKEN = await getSpotifyToken()
 
   const {

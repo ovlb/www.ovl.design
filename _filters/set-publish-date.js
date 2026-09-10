@@ -3,7 +3,7 @@
  *
  * @param {Date} date
  */
-module.exports = function (date) {
+export default function (date) {
   date.setHours(14)
   date.setMinutes(12)
   date.setSeconds(0)

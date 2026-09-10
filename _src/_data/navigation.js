@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   main: [
     { permalink: '/', title: 'Home', exact: true },
     { permalink: '/text/', title: 'Text' },

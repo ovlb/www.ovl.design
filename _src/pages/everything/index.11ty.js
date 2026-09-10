@@ -1,11 +1,11 @@
-const capitaliser = require('../../../_filters/capitaliser')
-const categoryPermalink = require('../../../_filters/category-permalink')
-const {
+import capitaliser from '../../../_filters/capitaliser.js'
+import categoryPermalink from '../../../_filters/category-permalink.js'
+import {
   escapeHtml,
   archiveHeader,
   iconLink,
   iconStack,
-} = require('../../../_helper/archive-html')
+} from '../../../_helper/archive-html.js'
 
 class EverythingIndex {
   data() {
@@ -59,4 +59,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = EverythingIndex
+export default EverythingIndex

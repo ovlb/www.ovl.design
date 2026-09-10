@@ -1,5 +1,5 @@
-const terminalLogin = require('../../_filters/terminal-login')
-const { escapeHtml } = require('../../_helper/archive-html')
+import terminalLogin from '../../_filters/terminal-login.js'
+import { escapeHtml } from '../../_helper/archive-html.js'
 
 function terminalDecorator(path, command) {
   return `<div aria-hidden="true" class="terminal-row__path">${escapeHtml(
@@ -89,4 +89,4 @@ class CodePage {
   }
 }
 
-module.exports = CodePage
+export default CodePage

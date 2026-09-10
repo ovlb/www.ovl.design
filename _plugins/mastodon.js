@@ -1,8 +1,8 @@
-const pluginMastodon = require('@inframanufaktur/eleventy-plugin-embed-mastodon')
+import pluginMastodon from '@inframanufaktur/eleventy-plugin-embed-mastodon'
 
 const { MASTODON_TOKEN: token } = process.env
 
-module.exports = {
+export default {
   plugin: pluginMastodon,
   pluginOptions: {
     baseOptions: {

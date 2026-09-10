@@ -1,4 +1,4 @@
-module.exports = function (items) {
+export default function (items) {
   return `<ul class="vertical-nav__list" role="list">
       ${items
         .map(({ url, title, rel }) => {

@@ -1,3 +1,3 @@
-const pluginCleanUrls = require('@inframanufaktur/eleventy-plugin-clean-urls')
+import pluginCleanUrls from '@inframanufaktur/eleventy-plugin-clean-urls'
 
-module.exports = { plugin: pluginCleanUrls }
+export default { plugin: pluginCleanUrls }

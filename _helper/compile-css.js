@@ -1,10 +1,12 @@
-const path = require('path')
-const fs = require('fs')
-const { minify } = require('csso')
+import path from 'path'
+import fs from 'fs'
+import { minify } from 'csso'
 
-const { compiler } = require('./postcss')
+import postcssConfig from './postcss/index.js'
 
-const STATIC_FOLDERS = require('./paths')
+const { compiler } = postcssConfig
+
+import STATIC_FOLDERS from './paths.js'
 
 const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
@@ -15,7 +17,7 @@ const compile = async function (cssFileName) {
 
     const { css } = await compiler.process(cssContent, {
       from: cssPath,
-      to: path.join(__dirname, 'dist/css', cssFileName),
+      to: path.join(import.meta.dirname, 'dist/css', cssFileName),
     })
 
     if (IS_PROD) {
@@ -32,25 +34,28 @@ const compile = async function (cssFileName) {
   } catch (e) {
     console.error(e)
 
-    throw new Error(e.message)
+    throw new Error(e.message, { cause: e })
   }
 }
 
-module.exports = {
-  compileCss: async (sources) => {
-    const results = {}
+async function compileCss(sources) {
+  const results = {}
 
-    await Promise.all(
-      Object.keys(sources).map(async (source) => {
-        const parsed = await compile(sources[source])
+  await Promise.all(
+    Object.keys(sources).map(async (source) => {
+      const parsed = await compile(sources[source])
 
-        results[source] = {
-          permalink: `/css/${sources[source]}`,
-          parsed,
-        }
-      }),
-    )
+      results[source] = {
+        permalink: `/css/${sources[source]}`,
+        parsed,
+      }
+    }),
+  )
 
-    return results
-  },
+  return results
+}
+
+export { compileCss }
+export default {
+  compileCss,
 }

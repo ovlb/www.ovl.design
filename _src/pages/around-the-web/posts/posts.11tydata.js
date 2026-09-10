@@ -1,6 +1,6 @@
-const { parseHTML } = require('linkedom')
+import { parseHTML } from 'linkedom'
 
-module.exports = {
+export default {
   layout: 'digest',
   tags: ['aroundTheWeb'],
   ['override:pageCSS']: ['around-the-web', 'text-page'],

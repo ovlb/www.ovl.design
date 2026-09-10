@@ -1,12 +1,14 @@
-const { Feed } = require('feed')
-const { baseURL } = require(`${process.cwd()}/_src/_data/site`)
-const {
+import { Feed } from 'feed'
+import siteData from '../../_data/site.js'
+
+const { baseURL } = siteData
+import {
   absoluteUrl,
   convertHtmlToAbsoluteUrls,
   getNewestCollectionItemDate,
-} = require('@11ty/eleventy-plugin-rss')
+} from '@11ty/eleventy-plugin-rss'
 
-module.exports = class TextFeed {
+export default class TextFeed {
   data() {
     return {
       layout: null,

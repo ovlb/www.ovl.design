@@ -1,6 +1,6 @@
-const test = require('ava')
+import test from 'ava'
 
-const findMetaValue = require('../findMetaValue')
+import findMetaValue from '../findMetaValue.js'
 
 test('returns the content value', (t) => {
   t.is(findMetaValue('name="13"', '<meta name="13" content="12" />'), '12')

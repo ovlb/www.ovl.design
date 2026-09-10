@@ -1,8 +1,10 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const { API_HOST, API_KEY, API_STAGE } = process.env
 
-const axios = require('axios')
+import axios from 'axios'
 
 const apiService = axios.create({
   baseURL: API_HOST,
@@ -24,4 +26,4 @@ apiService.interceptors.request.use(
   },
 )
 
-module.exports = apiService
+export default apiService

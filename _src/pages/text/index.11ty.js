@@ -1,11 +1,11 @@
-const { dateToRfc3339 } = require('@11ty/eleventy-plugin-rss')
-const displayDate = require('../../../_filters/display-date')
-const {
+import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss'
+import displayDate from '../../../_filters/display-date.js'
+import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
-} = require('../../../_helper/archive-html')
+} from '../../../_helper/archive-html.js'
 
 class TextIndex {
   data() {
@@ -59,4 +59,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = TextIndex
+export default TextIndex

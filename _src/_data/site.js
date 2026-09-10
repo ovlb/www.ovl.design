@@ -8,7 +8,7 @@ const { BASE_URL } = process.env
   return BASE_URL || 'https://www.ovl.design'
 } */
 
-module.exports = {
+export default {
   locale: 'en',
   title: 'ovl',
   description: 'code & design',

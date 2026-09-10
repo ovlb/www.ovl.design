@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-const paths = require('../_helper/paths')
+import paths from '../_helper/paths.js'
 
-module.exports = function (clsName) {
+export default function (clsName) {
   const logo = fs.readFileSync(
     path.resolve(process.cwd(), paths.img, 'logo', 'ovl-logo-bridge-main.svg'),
     { encoding: 'utf-8' },

@@ -1,7 +1,7 @@
-const getFolderExports = require('../_helper/get-folder-exports')
+import getFolderExports from '../_helper/get-folder-exports.js'
 
-module.exports = function (eleventyConfig) {
-  const shortcodes = getFolderExports(__dirname)
+export default function (eleventyConfig) {
+  const shortcodes = getFolderExports(import.meta.dirname)
 
   shortcodes.forEach(({ name, func }) => {
     if (func.constructor.name === 'AsyncFunction') {

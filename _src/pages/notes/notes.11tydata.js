@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   categoryBase: '/notes/collections',
   pageCSS: ['text'],
   meta: {

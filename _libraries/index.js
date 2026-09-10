@@ -1,7 +1,7 @@
-const getFolderExports = require('../_helper/get-folder-exports')
+import getFolderExports from '../_helper/get-folder-exports.js'
 
-module.exports = function (eleventyConfig) {
-  const libraries = getFolderExports(__dirname)
+export default function (eleventyConfig) {
+  const libraries = getFolderExports(import.meta.dirname)
 
   libraries.forEach(({ name, func }) => {
     eleventyConfig.setLibrary(name, func)

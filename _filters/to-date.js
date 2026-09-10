@@ -1,1 +1,1 @@
-module.exports = (str) => new Date(str)
+export default (str) => new Date(str)

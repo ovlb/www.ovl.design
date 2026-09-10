@@ -1,6 +1,6 @@
-const capitaliser = require('../../../_filters/capitaliser')
-const categoryPermalink = require('../../../_filters/category-permalink')
-const { escapeHtml, archiveHeader } = require('../../../_helper/archive-html')
+import capitaliser from '../../../_filters/capitaliser.js'
+import categoryPermalink from '../../../_filters/category-permalink.js'
+import { escapeHtml, archiveHeader } from '../../../_helper/archive-html.js'
 
 class NotesCategory {
   data() {
@@ -45,4 +45,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = NotesCategory
+export default NotesCategory

@@ -1,11 +1,11 @@
-const test = require('ava')
+import test from 'ava'
 
-const {
+import {
   slugify,
   buildFrontmatter,
   createPost,
   parseTags,
-} = require('../new-post')
+} from '../new-post.js'
 
 test('slugifies a plain title', (t) => {
   t.is(slugify('Vibe Coding'), 'vibe-coding')

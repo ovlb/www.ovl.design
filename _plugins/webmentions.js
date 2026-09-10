@@ -1,8 +1,8 @@
-const Webmentions = require('eleventy-plugin-webmentions')
+import Webmentions from 'eleventy-plugin-webmentions'
 
 const { WEBMENTIONS_TOKEN: token } = process.env
 
-module.exports = {
+export default {
   plugin: Webmentions,
   pluginOptions: {
     domain: 'www.ovl.design',

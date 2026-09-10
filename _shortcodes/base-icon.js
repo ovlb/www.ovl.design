@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-const paths = require('../_helper/paths')
+import paths from '../_helper/paths.js'
 
-module.exports = function (name, { size = 24 } = {}) {
+export default function (name, { size = 24 } = {}) {
   const iconContent = fs.readFileSync(
     path.resolve(process.cwd(), paths.img, 'icons/', `${name}.svg`),
   )

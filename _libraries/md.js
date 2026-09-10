@@ -1,12 +1,12 @@
-const md = require('markdown-it')
-const anchor = require('markdown-it-anchor')
-const prism = require('markdown-it-prism')
-const footnotes = require('markdown-it-footnote')
-const abbr = require('markdown-it-abbr')
-const attribution = require('markdown-it-attribution')
-const container = require('markdown-it-container')
-const attrs = require('markdown-it-attrs')
-const implicitFigures = require('markdown-it-image-figures')
+import md from 'markdown-it'
+import anchor from 'markdown-it-anchor'
+import prism from 'markdown-it-prism'
+import footnotes from 'markdown-it-footnote'
+import abbr from 'markdown-it-abbr'
+import attribution from 'markdown-it-attribution'
+import container from 'markdown-it-container'
+import attrs from 'markdown-it-attrs'
+import implicitFigures from 'markdown-it-image-figures'
 
 const markdown = md({
   html: true,
@@ -35,7 +35,7 @@ markdown.renderer.rules.footnote_block_open = () =>
   '<h2 class="small-headline">Footnotes</h2>\n' +
   '<ol class="footnotes-list">\n'
 
-exports.mdItPackages = [
+export const mdItPackages = [
   'markdown-it',
   'markdown-it-anchor',
   'markdown-it-prism',
@@ -45,4 +45,4 @@ exports.mdItPackages = [
   'markdown-it-container',
 ]
 
-module.exports = markdown
+export default markdown

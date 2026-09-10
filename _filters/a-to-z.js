@@ -6,7 +6,7 @@
  * @param {string} [sortKey=null]
  * @returns
  */
-module.exports = function (arr, sortKey = null) {
+export default function (arr, sortKey = null) {
   return arr.sort((a, b) => {
     /** @type string */
     const nameA = sortKey ? a[sortKey] : a

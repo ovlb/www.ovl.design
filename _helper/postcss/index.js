@@ -1,21 +1,26 @@
-const path = require('path')
-const postcss = require('postcss')
-const postcssJitProps = require('postcss-jit-props')
-const OpenProps = require('open-props')
+import path from 'path'
+import postcss from 'postcss'
+import postcssJitProps from 'postcss-jit-props'
+import OpenProps from 'open-props'
+import postcssMixins from 'postcss-mixins'
+import postcssImport from 'postcss-import'
+import postcssNested from 'postcss-nested'
+import autoprefixer from 'autoprefixer'
 
 let PLUGINS = [
-  require('postcss-mixins')({
-    mixinsDir: path.join(__dirname, 'mixins/'),
+  postcssMixins({
+    mixinsDir: path.join(import.meta.dirname, 'mixins/'),
   }),
-  require('postcss-import'),
-  require('postcss-nested'),
+  postcssImport,
+  postcssNested,
   postcssJitProps(OpenProps),
-  require('autoprefixer'),
+  autoprefixer,
 ]
 
 let compiler = postcss(PLUGINS)
 
-module.exports = {
+export { PLUGINS, compiler }
+export default {
   PLUGINS,
   compiler,
 }

@@ -1,19 +1,19 @@
-const { parseHTML } = require('linkedom')
-const { parseImages } = require('../_helper/responsive-image')
+import { parseHTML } from 'linkedom'
+import { parseImages } from '../_helper/responsive-image.js'
 
-module.exports = {
-  // async transforms work, even though the docs don’t tell you about it.
-  transform: async function (content) {
-    const { outputPath } = this
+// async transforms work, even though the docs don’t tell you about it.
+export async function transform(content) {
+  const { outputPath } = this
 
-    if (outputPath && outputPath.endsWith('.html')) {
-      let { document } = parseHTML(content)
+  if (outputPath && outputPath.endsWith('.html')) {
+    let { document } = parseHTML(content)
 
-      const formatted = await parseImages(document)
+    const formatted = await parseImages(document)
 
-      return `<!DOCTYPE html>${formatted}`
-    }
+    return `<!DOCTYPE html>${formatted}`
+  }
 
-    return content
-  },
+  return content
 }
+
+export default { transform }

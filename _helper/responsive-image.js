@@ -1,6 +1,6 @@
-const Image = require('@11ty/eleventy-img')
+import Image from '@11ty/eleventy-img'
 
-const getFullSource = require('../_helper/get-full-source')
+import getFullSource from '../_helper/get-full-source.js'
 
 // const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
@@ -137,4 +137,5 @@ async function parseImages(container) {
   return container.documentElement.outerHTML
 }
 
-module.exports = { parseImages }
+export { parseImages }
+export default { parseImages }

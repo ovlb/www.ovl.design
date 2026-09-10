@@ -1,4 +1,4 @@
-module.exports = function (img) {
+export default function (img) {
   if (!img) return '<div class="text__hero-image"></div>'
 
   const widths = [320, 510, 710, 1110]
