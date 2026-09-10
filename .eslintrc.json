@@ -1,6 +1,6 @@
 {
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-  "ignorePatterns": ["node_modules/"],
+  "ignorePatterns": ["node_modules/", "dist/"],
   "env": {
     "es2021": true,
     "node": true
