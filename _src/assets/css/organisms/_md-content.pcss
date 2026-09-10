@@ -31,7 +31,7 @@
     width: 100%;
   }
 
-  & :is(pre, .-is-video, .mastodon-embed) {
+  & :is(pre, .-is-video, .mastodon-embed, [data-is-table-wrapper]) {
     --content-grid-placement: full;
 
     border-radius: var(--conditional-border-radius);
@@ -45,7 +45,7 @@
     }
   }
 
-  :is(.bandcamp-embed, .tidal-embed) {
+  :is(.bandcamp-embed, .tidal-embed, [data-is-table-wrapper]) {
     margin: var(--padding-base) 0;
     width: 100%;
   }

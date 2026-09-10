@@ -11,6 +11,7 @@
 @import './elements/buttons/_icon-button.pcss';
 @import './elements/buttons/_switch-button.pcss';
 @import './elements/_hr.pcss';
+@import './elements/_table.pcss';
 
 @import './organisms/lists/_root.pcss';
 @import './organisms/_blm-banner.pcss';

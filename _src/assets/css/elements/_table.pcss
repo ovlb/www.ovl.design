@@ -1,0 +1,21 @@
+/**
+ * Scrolling container for responsive data tables.
+ * Selector enforces Roselli's accessible markup: table must sit in a
+ * labelled, focusable region, otherwise no clipping occurs.
+ * See https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html
+ * Focus outline comes from the global :focus rule.
+ */
+[role='region'][aria-labelledby][tabindex] {
+  overflow: auto;
+}
+
+thead {
+  padding-bottom: var(--space-4);
+}
+
+th,
+td {
+  padding: var(--size-2);
+  text-align-last: left;
+  vertical-align: top;
+}
