@@ -101,5 +101,8 @@
     "esbuild": "^0.28.2",
     "simple-git": "^3.20.0",
     "textics": "^1.2.0"
+  },
+  "overrides": {
+    "sharp": "^0.33.5"
   }
 }
