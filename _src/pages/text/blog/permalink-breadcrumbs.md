@@ -39,7 +39,7 @@ Before I do anything, let’s get rid of pages that don’t have a permalink (e.
 
 ```js
 if (!permalink) {
-	return
+  return
 }
 ```
 
@@ -52,7 +52,7 @@ const segments = permalink.replace(/^\/|\/$/g, '').split('/')
 First, I replace the slashes at the beginning and end of the permalink. If I wouldn’t do this, the array would hold one empty string at the beginning and one at the end. Alternatively, you might split and then filter:
 
 ```js
-const segments = permalink.split('/').filter(path => !!path)
+const segments = permalink.split('/').filter((path) => !!path)
 ```
 
 I guess using the reg ex is slightly more efficient for _really_ large pages and/or deeply nested permalinks.
@@ -72,14 +72,14 @@ Next, the actual loop:
 
 ```js
 for (const segment of segments) {
-	accumulatedPath += '/' + segment
+  accumulatedPath += '/' + segment
 
-	breadcrumb.push({
-		url: `${accumulatedPath}/`,
-		name: segment,
-	})
+  breadcrumb.push({
+    url: `${accumulatedPath}/`,
+    name: segment,
+  })
 
-	index++
+  index++
 }
 ```
 
@@ -127,11 +127,8 @@ Using this, we can make the output a bit nicer:
 
 ```js
 breadcrumb.push({
-	url: `${accumulatedPath}/`,
-	name:
-		index === segments.length && title
-		? title
-		: this.capitaliser(segment),
+  url: `${accumulatedPath}/`,
+  name: index === segments.length && title ? title : this.capitaliser(segment),
 })
 ```
 
@@ -147,19 +144,33 @@ Now that all my pages contain the data, I can use it:
 
 ```html
 <nav aria-label="Breadcrumb" class>
-	<ul class="inline-list breadcrumb-list" style="--list-separator: ' » '">
-		{% for crumb in breadcrumb %}
-		<li>
-			<a
-				href="{{crumb.url}}"
-				{% if loop.first %} aria-label="Home" {% endif %}
-				{% if loop.last %} aria-current="page" {% endif %}
-			>
-				{{crumb.name}}
-			</a>
-		</li>
-		{% endfor %}
-	</ul>
+  <ul class="inline-list breadcrumb-list" style="--list-separator: ' » '">
+    {% for crumb in breadcrumb %}
+    <li>
+      <a
+        href="{{crumb.url}}"
+        {%
+        if
+        loop.first
+        %}
+        aria-label="Home"
+        {%
+        endif
+        %}
+        {%
+        if
+        loop.last
+        %}
+        aria-current="page"
+        {%
+        endif
+        %}
+      >
+        {{crumb.name}}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </nav>
 ```
 
