@@ -34,7 +34,7 @@ const compile = async function (cssFileName) {
   } catch (e) {
     console.error(e)
 
-    throw new Error(e.message)
+    throw new Error(e.message, { cause: e })
   }
 }
 
