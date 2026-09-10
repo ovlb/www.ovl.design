@@ -1,4 +1,4 @@
-require('dotenv').config()
+import 'dotenv/config'
 
 const { migrateMastodonCache } = require('./_helper/migrate-mastodon-cache')
 
@@ -8,22 +8,29 @@ migrateMastodonCache()
 
 const { PAGE_STATE } = process.env
 
-const STATIC_FOLDERS = require('./_helper/paths')
+import STATIC_FOLDERS from './_helper/paths.js'
+import libraries from './_libraries/index.js'
+import templates from './_templates/index.js'
+import filters from './_filters/index.js'
+import functions from './_functions/index.js'
+import shortcodes from './_shortcodes/index.js'
+import plugins from './_plugins/index.js'
+import transforms from './_transforms/index.js'
 
 const IS_LIVE = PAGE_STATE === 'production'
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(require('./_libraries'))
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(libraries)
 
-  eleventyConfig.addPlugin(require('./_templates'))
+  eleventyConfig.addPlugin(templates)
 
-  eleventyConfig.addPlugin(require('./_filters'))
-  eleventyConfig.addPlugin(require('./_functions'))
-  eleventyConfig.addPlugin(require('./_shortcodes'))
+  eleventyConfig.addPlugin(filters)
+  eleventyConfig.addPlugin(functions)
+  eleventyConfig.addPlugin(shortcodes)
 
-  eleventyConfig.addPlugin(require('./_plugins'))
+  eleventyConfig.addPlugin(plugins)
 
-  eleventyConfig.addPlugin(require('./_transforms'))
+  eleventyConfig.addPlugin(transforms)
 
   eleventyConfig.addCollection('publishedPosts', function (collectionAPI) {
     /** @type Array */

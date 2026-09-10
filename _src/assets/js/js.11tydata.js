@@ -1,5 +1,5 @@
 export default {
   layout: null,
   eleventyExcludeFromCollections: true,
-  tags: ['css'],
+  tags: ['js'],
 }

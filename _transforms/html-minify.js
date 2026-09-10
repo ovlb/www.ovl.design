@@ -1,19 +1,19 @@
-const htmlmin = require('html-minifier')
+import htmlmin from 'html-minifier'
 
-module.exports = {
-  when: 'always',
-  disabled: true,
-  transform: function (content) {
-    if (this.outputPath && this.outputPath.endsWith('.html')) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      })
+export const when = 'always'
+export const disabled = true
+export function transform(content) {
+  if (this.outputPath && this.outputPath.endsWith('.html')) {
+    let minified = htmlmin.minify(content, {
+      useShortDoctype: true,
+      removeComments: true,
+      collapseWhitespace: true,
+    })
 
-      return minified
-    }
+    return minified
+  }
 
-    return content
-  },
+  return content
 }
+
+export default { when, disabled, transform }

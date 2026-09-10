@@ -41,7 +41,7 @@
 //   return [...items].map((item) => parseItem(item))
 // }
 
-module.exports = async function () {
+export default async function () {
   // const username = process.env.BANDCAMP_USERNAME
 
   return []

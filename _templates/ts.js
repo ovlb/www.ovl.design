@@ -1,8 +1,8 @@
-const { build } = require('esbuild')
+import { build } from 'esbuild'
 
 const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('ts')
   eleventyConfig.addExtension('ts', {
     outputFileExtension: 'js',

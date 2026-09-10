@@ -1,7 +1,14 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-const BLOG_DIR = path.join(__dirname, '..', '_src', 'pages', 'text', 'blog')
+const BLOG_DIR = path.join(
+  import.meta.dirname,
+  '..',
+  '_src',
+  'pages',
+  'text',
+  'blog',
+)
 
 const UMLAUTS = { ä: 'ae', ö: 'oe', ü: 'ue', ß: 'ss' }
 
@@ -85,8 +92,9 @@ function run(args) {
   }
 }
 
-module.exports = { slugify, buildFrontmatter, createPost, parseTags, run }
+export { slugify, buildFrontmatter, createPost, parseTags, run }
+export default { slugify, buildFrontmatter, createPost, parseTags, run }
 
-if (require.main === module) {
+if (process.argv[1] === import.meta.filename) {
   process.exitCode = run(process.argv.slice(2))
 }

@@ -1,6 +1,6 @@
-const Image = require('@11ty/eleventy-img')
+import Image from '@11ty/eleventy-img'
 
-module.exports = function (metadata, alt = '', sizes = '5rem') {
+export default function (metadata, alt = '', sizes = '5rem') {
   let imageAttributes = {
     alt,
     sizes,

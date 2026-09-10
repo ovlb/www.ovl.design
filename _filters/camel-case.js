@@ -1,3 +1,5 @@
-const { camelCase } = require('lodash')
+import lodash from 'lodash'
 
-module.exports = camelCase
+const { camelCase } = lodash
+
+export default camelCase

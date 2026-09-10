@@ -1,8 +1,8 @@
-const Image = require('@11ty/eleventy-img')
+import Image from '@11ty/eleventy-img'
 
-const { getChanges } = require('../../../../_helper/git-history')
+import { getChanges } from '../../../../_helper/git-history.js'
 
-module.exports = {
+export default {
   tags: ['blog'],
   layout: 'post',
   ['override:pageCSS']: ['text-detail', 'text-page'],

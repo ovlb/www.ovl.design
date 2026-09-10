@@ -1,6 +1,6 @@
-const { getChanges } = require('../../../../_helper/git-history')
+import { getChanges } from '../../../../_helper/git-history.js'
 
-module.exports = {
+export default {
   tags: ['notes'],
   layout: 'note',
   ['override:pageCSS']: ['note', 'text-page'],

@@ -1,4 +1,4 @@
-module.exports = function (meta = {}) {
+export default function (meta = {}) {
   this.tags = [
     { attrName: 'name', attrValue: 'description', key: 'description' },
     {

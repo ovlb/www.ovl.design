@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     model: 'DeepSeek v4 Pro',
     tokens: {

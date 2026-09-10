@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-module.exports = function (name) {
+export default function (name) {
   const content = fs.readFileSync(
-    path.resolve(__dirname, '_helper', `${name}.js`),
+    path.resolve(import.meta.dirname, '_helper', `${name}.js`),
   )
 
   return `<script>${content.toString()}</script>`

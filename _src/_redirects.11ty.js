@@ -1,6 +1,6 @@
 const paths = new Map([['text', 'notes']])
 
-module.exports = class Redirects {
+export default class Redirects {
   data() {
     return {
       layout: null,

@@ -1,8 +1,14 @@
-const path = require('path')
-const { camelCase } = require('lodash')
-const getFilesOfType = require('./get-files')
+import { createRequire } from 'node:module'
 
-module.exports = function getFolderExports(folder) {
+const require = createRequire(import.meta.url)
+
+import path from 'path'
+import pkg from 'lodash'
+
+const { camelCase } = pkg
+import getFilesOfType from './get-files.js'
+
+export default function getFolderExports(folder) {
   const functions = []
   const files = getFilesOfType(folder)
 
@@ -10,7 +16,9 @@ module.exports = function getFolderExports(folder) {
     if (fileName !== 'index.js') {
       const name = camelCase(fileName.replace('.js', ''))
 
-      const func = require(path.join(folder, fileName))
+      const required = require(path.join(folder, fileName))
+
+      const func = required.default ?? required
 
       functions.push({ name, func })
     }

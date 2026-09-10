@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   eleventyComputed: {
     /**
      * Splits current permalink and generates permalink data

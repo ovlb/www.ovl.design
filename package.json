@@ -1,6 +1,7 @@
 {
   "name": "www.ovl.design",
   "version": "11.1.0",
+  "type": "module",
   "description": "My homepage",
   "main": ".eleventy.js",
   "scripts": {

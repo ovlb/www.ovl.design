@@ -50,13 +50,13 @@ function slugify(str = '') {
     .replace(/(^-|-$)/g, '')
 }
 
-const {
+import {
   mdiRssBox,
   mdiFolderOutline,
   mdiHomeOutline,
   mdiMailboxUp,
   mdiFinance,
-} = require('@mdi/js')
+} from '@mdi/js'
 
 const ICONS = {
   rssBox: { className: 'rss-box-icon', path: mdiRssBox },
@@ -88,7 +88,17 @@ function iconStack(links) {
   return `<section class="archive-header__icons l-stack l-stack--horizontal l-stack--wraps">${links}</section>`
 }
 
-module.exports = {
+export {
+  escapeHtml,
+  articleCard,
+  archiveHeader,
+  slugify,
+  cardHref,
+  mdiIcon,
+  iconLink,
+  iconStack,
+}
+export default {
   escapeHtml,
   articleCard,
   archiveHeader,

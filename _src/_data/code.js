@@ -1,6 +1,6 @@
-const getPosts = require('../../_helper/getPosts')
+import getPosts from '../../_helper/getPosts.js'
 
-module.exports = async function () {
+export default async function () {
   return {
     projects: await getPosts({ type: 'code', order: '-fields.publishingDate' }),
   }

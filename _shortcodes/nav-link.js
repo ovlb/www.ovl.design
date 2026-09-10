@@ -1,6 +1,6 @@
 const BASE_LINK_CLASSES = 'nav__link'
 
-module.exports = function (menuItem, extraClasses = '') {
+export default function (menuItem, extraClasses = '') {
   const { url } = this.page
   const { attributes = {}, classes = '' } = menuItem
 

@@ -1,10 +1,10 @@
-const defaultRows = require('../_src/_data/jokeset.js')
+import defaultRows from '../_src/_data/jokeset.js'
 
 // The same markdown-it instance Eleventy is configured with (set via
 // `setLibrary('md', …)` in `_libraries/md.js`). Reuse it so the jokeset
 // output renders through the project's configured Markdown pipeline instead
 // of escaping the raw string.
-const markdown = require('../_libraries/md.js')
+import markdown from '../_libraries/md.js'
 
 function escapeHtml(value) {
   return String(value)
@@ -19,7 +19,7 @@ function formatTokens(value) {
   return Number(value).toLocaleString('en-UK')
 }
 
-module.exports = function (
+export default function (
   rows = defaultRows,
   caption = 'Python one-liner jokes by model, with token usage and cost',
   captionId = 'jokeset-caption',

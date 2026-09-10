@@ -1,4 +1,4 @@
-module.exports = function (direction, paginationLink, allItems) {
+export default function (direction, paginationLink, allItems) {
   if (!paginationLink) return ''
 
   const infos = new Map([

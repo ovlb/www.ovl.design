@@ -1,13 +1,13 @@
-const { dateToRfc3339 } = require('@11ty/eleventy-plugin-rss')
-const capitaliser = require('../../../_filters/capitaliser')
-const categoryPermalink = require('../../../_filters/category-permalink')
-const displayDate = require('../../../_filters/display-date')
-const {
+import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss'
+import capitaliser from '../../../_filters/capitaliser.js'
+import categoryPermalink from '../../../_filters/category-permalink.js'
+import displayDate from '../../../_filters/display-date.js'
+import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
-} = require('../../../_helper/archive-html')
+} from '../../../_helper/archive-html.js'
 
 class TextCategory {
   data() {
@@ -62,4 +62,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = TextCategory
+export default TextCategory

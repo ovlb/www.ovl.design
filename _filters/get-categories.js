@@ -1,3 +1,3 @@
-module.exports = function (tags) {
+export default function (tags) {
   return tags.filter((tag) => tag.startsWith('cat:'))
 }

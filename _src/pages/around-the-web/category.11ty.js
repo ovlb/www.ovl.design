@@ -1,11 +1,11 @@
-const capitaliser = require('../../../_filters/capitaliser')
-const categoryPermalink = require('../../../_filters/category-permalink')
-const displayDate = require('../../../_filters/display-date')
-const {
+import capitaliser from '../../../_filters/capitaliser.js'
+import categoryPermalink from '../../../_filters/category-permalink.js'
+import displayDate from '../../../_filters/display-date.js'
+import {
   escapeHtml,
   articleCard,
   archiveHeader,
-} = require('../../../_helper/archive-html')
+} from '../../../_helper/archive-html.js'
 
 class AroundTheWebCategory {
   data() {
@@ -58,4 +58,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = AroundTheWebCategory
+export default AroundTheWebCategory

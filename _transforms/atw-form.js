@@ -1,19 +1,18 @@
-const { parseHTML } = require('linkedom')
+import { parseHTML } from 'linkedom'
 
-module.exports = {
-  transform: function (content) {
-    if (/\/around-the-web\/\d+/.test(this.outputPath)) {
-      const { document } = parseHTML(content)
+export function transform(content) {
+  if (/\/around-the-web\/\d+/.test(this.outputPath)) {
+    const { document } = parseHTML(content)
 
-      const headings = [
-        ...document.querySelectorAll('.text__body h2:not([class])'),
-      ]
-      const { length } = headings
+    const headings = [
+      ...document.querySelectorAll('.text__body h2:not([class])'),
+    ]
+    const { length } = headings
 
-      const middle =
-        headings.length >= 2 ? headings[Math.ceil(length / 2)] : headings[0]
+    const middle =
+      headings.length >= 2 ? headings[Math.ceil(length / 2)] : headings[0]
 
-      const form = `<form
+    const form = `<form
   action="https://buttondown.email/api/emails/embed-subscribe/around-the-web"
   method="post"
   target="popupwindow"
@@ -33,11 +32,12 @@ module.exports = {
   </p>
 </form>`
 
-      middle.insertAdjacentHTML('beforebegin', form)
+    middle.insertAdjacentHTML('beforebegin', form)
 
-      return `<!DOCTYPE html>${document.documentElement.outerHTML}`
-    }
+    return `<!DOCTYPE html>${document.documentElement.outerHTML}`
+  }
 
-    return content
-  },
+  return content
 }
+
+export default { transform }

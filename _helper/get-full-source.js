@@ -1,4 +1,6 @@
-const { img } = require('./paths')
+import paths from './paths.js'
+
+const { img } = paths
 
 /**
  * Check if the image starts with the remote upload path and set MEDIA_HOST if it does
@@ -6,7 +8,7 @@ const { img } = require('./paths')
  * @param {String} orig
  * @returns
  */
-module.exports = (orig) => {
+export default (orig) => {
   if (orig.startsWith('http')) {
     return orig
   }

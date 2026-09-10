@@ -1,4 +1,4 @@
-module.exports = function (rawDate) {
+export default function (rawDate) {
   const dateOptions = {
     weekday: 'short',
     month: 'short',

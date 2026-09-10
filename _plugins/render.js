@@ -1,3 +1,3 @@
-const { EleventyRenderPlugin } = require('@11ty/eleventy')
+import { EleventyRenderPlugin } from '@11ty/eleventy'
 
-module.exports = { plugin: EleventyRenderPlugin }
+export default { plugin: EleventyRenderPlugin }

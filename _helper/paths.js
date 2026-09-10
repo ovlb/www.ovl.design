@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   static: '_src/assets/',
   files: '_src/assets/files/',
   css: '_src/assets/css/',

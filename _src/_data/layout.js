@@ -1,1 +1,1 @@
-module.exports = 'base'
+export default 'base'

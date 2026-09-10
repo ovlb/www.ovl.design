@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['stylelint-prettier/recommended'],
   plugins: ['stylelint-order'],
   rules: {

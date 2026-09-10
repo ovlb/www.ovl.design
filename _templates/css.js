@@ -1,7 +1,12 @@
-const { minify } = require('csso')
+import { minify } from 'csso'
+
+import postcssConfig from '../_helper/postcss/index.js'
+
+const { compiler } = postcssConfig
+
 const IS_PROD = process.env.ELEVENTY_ENV === 'production'
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('css')
   eleventyConfig.addExtension('css', {
     outputFileExtension: 'css',
@@ -15,8 +20,6 @@ module.exports = function (eleventyConfig) {
       },
     },
     compile: async function (inputContent, inputPath) {
-      const { compiler } = require('../_helper/postcss')
-
       const { css, messages } = await compiler.process(inputContent, {
         from: inputPath,
       })

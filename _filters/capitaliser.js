@@ -1,6 +1,8 @@
-const { startCase, camelCase } = require('lodash')
+import lodash from 'lodash'
 
-module.exports = function (rawName) {
+const { startCase, camelCase } = lodash
+
+export default function (rawName) {
   const displayNames = new Map([
     ['cat:ai', 'Artificial (Un)intelligence'],
     ['cat:climate', 'Climate Crisis'],

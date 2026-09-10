@@ -1,11 +1,11 @@
-const displayDate = require('../../../_filters/display-date')
-const {
+import displayDate from '../../../_filters/display-date.js'
+import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
   iconStack,
-} = require('../../../_helper/archive-html')
+} from '../../../_helper/archive-html.js'
 
 function postToCardItem(post, displayDateFn) {
   let title
@@ -76,4 +76,4 @@ ${archiveHeader({
   }
 }
 
-module.exports = AroundTheWebIndex
+export default AroundTheWebIndex

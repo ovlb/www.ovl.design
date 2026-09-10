@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   pageTitle: 'Around the Web',
   templateClass: 'tmpl-article-list',
   categoryBase: '/around-the-web/collections',

@@ -1,6 +1,8 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
 
-const contentful = require('contentful')
+dotenv.config()
+
+import contentful from 'contentful'
 const host =
   process.env.CF_STAGE === 'preview'
     ? 'preview.contentful.com'
@@ -12,7 +14,7 @@ const clt = contentful.createClient({
   host,
 })
 
-module.exports = async function ({ type, order = '-sys.createdAt' }) {
+export default async function ({ type, order = '-sys.createdAt' }) {
   try {
     const { items } = await clt.getEntries({
       content_type: type,

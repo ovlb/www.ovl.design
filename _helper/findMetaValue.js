@@ -7,7 +7,7 @@
  * @param {String} input String content
  * @returns {String}
  */
-module.exports = function findMetaValue(name, input) {
+export default function findMetaValue(name, input) {
   let regEx = new RegExp(`${name} content="(.+?)"`, 'm')
 
   let [, result] = regEx.exec(input)
