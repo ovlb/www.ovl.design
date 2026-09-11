@@ -1,10 +1,13 @@
 import { Feed } from 'feed'
-import siteData from '../../_data/site.js'
+import siteData from '../../_data/site.ts'
 
 const { baseURL } = siteData
 import {
+  // @ts-ignore
   absoluteUrl,
+  // @ts-ignore
   convertHtmlToAbsoluteUrls,
+  // @ts-ignore
   getNewestCollectionItemDate,
 } from '@11ty/eleventy-plugin-rss'
 
@@ -23,7 +26,7 @@ export default class TextFeed {
     return `${baseURL}${this.metadata.feedID}/feed.xml`
   }
 
-  async enrichContent(post) {
+  async enrichContent(this: any, post: any) {
     const parsed = await convertHtmlToAbsoluteUrls(
       await this.feedImages(this.fixCite(post.templateContent)),
       this.feedURL,
@@ -40,7 +43,7 @@ export default class TextFeed {
     }
   }
 
-  makeFeed(baseData, collection) {
+  makeFeed(this: any, baseData: any, collection: any) {
     return new Feed({
       ...baseData,
       ...this.metadata,
@@ -55,7 +58,7 @@ export default class TextFeed {
     })
   }
 
-  async render({ feed: feedData, collections, site }) {
+  async render(this: any, { feed: feedData, collections, site }: any) {
     const { blog } = collections
 
     const feed = this.makeFeed(feedData, blog)

@@ -2,7 +2,7 @@ import EleventyFetch from '@11ty/eleventy-fetch'
 import Image from '@11ty/eleventy-img'
 
 const BASE_URL = `http://ws.audioscrobbler.com/2.0/`
-let SPOTIFY_TOKEN
+let SPOTIFY_TOKEN: string | undefined
 
 async function getSpotifyToken() {
   const { SPOTIFY_CLIENT, SPOTIFY_SECRET } = process.env
@@ -32,19 +32,19 @@ async function getSpotifyToken() {
   }
 }
 
-const defaultArguments = new Map([
+const defaultArguments: Map<string, any> = new Map([
   ['format', 'json'],
   ['api_key', process.env.LASTFM_KEY],
   ['limit', '10'],
   ['user', process.env.LASTFM_USER],
   ['period', '1month'],
 ])
-const methodMap = new Map([
+const methodMap: Map<string, any> = new Map([
   ['artists', 'user.gettopartists'],
   ['albums', 'user.gettopalbums'],
 ])
 
-function getApiPath(method) {
+function getApiPath(method: any) {
   const base = new URL(BASE_URL)
 
   base.searchParams.set('method', methodMap.get(method))
@@ -56,7 +56,7 @@ function getApiPath(method) {
   return base.toString()
 }
 
-async function getMedia(url, folder = 'media') {
+async function getMedia(url: any, folder = 'media') {
   return Image(url, {
     cacheOptions: {
       duration: '*',
@@ -68,7 +68,7 @@ async function getMedia(url, folder = 'media') {
   })
 }
 
-async function makeRequest(method) {
+async function makeRequest(method: any) {
   return EleventyFetch(getApiPath(method), {
     cacheDuration: '1d',
     directory: '.lastfm',
@@ -76,7 +76,7 @@ async function makeRequest(method) {
   })
 }
 
-async function searchSpotifyForArtist(name) {
+async function searchSpotifyForArtist(name: any) {
   const { artists } = await EleventyFetch(
     `https://api.spotify.com/v1/search?q=${encodeURIComponent(
       `artist:${name}`,
@@ -102,19 +102,21 @@ async function searchSpotifyForArtist(name) {
   return bestMatch
 }
 
-async function getSpotifyImage(artistData) {
+async function getSpotifyImage(artistData: any) {
   const { images } = artistData
 
-  const largest = [...images.sort((a, b) => b.width - a.width)].shift()
+  const largest = [
+    ...images.sort((a: any, b: any) => b.width - a.width),
+  ].shift()
 
   const stats = await getMedia(largest.url, 'artists')
 
   return stats
 }
 
-async function processArtists(artists) {
+async function processArtists(artists: any) {
   return Promise.all(
-    artists.map(async (artist) => {
+    artists.map(async (artist: any) => {
       const { name } = artist
       const spotifyData = await searchSpotifyForArtist(name)
 
@@ -126,9 +128,9 @@ async function processArtists(artists) {
   )
 }
 
-async function processAlbums(albums) {
+async function processAlbums(albums: any) {
   const processed = await Promise.all(
-    albums.map(async (album) => {
+    albums.map(async (album: any) => {
       const { image } = album
       const highestLastFMResolution = [...image].pop()['#text']
 

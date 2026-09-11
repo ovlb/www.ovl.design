@@ -5,7 +5,7 @@ export default {
   tags: ['aroundTheWeb'],
   ['override:pageCSS']: ['around-the-web', 'text-page'],
   eleventyComputed: {
-    meta: function (data) {
+    meta: function (this: any, data: any) {
       return {
         description: data.intro,
         image: {
@@ -16,7 +16,7 @@ export default {
         ogImageType: 'image/jpg',
       }
     },
-    parsedDates: function (data) {
+    parsedDates: function (this: any, data: any) {
       if (!data.dates.start)
         return {
           publish: this.setPublishDate(new Date(data.dates.publish)),
@@ -27,7 +27,7 @@ export default {
         publish: this.setPublishDate(new Date(data.dates.publish)),
       }
     },
-    pageTitle: function (data) {
+    pageTitle: function (this: any, data: any) {
       if (!data.dates.start) {
         return `${data.issueTitle} | Around the Web`.trim()
       }
@@ -47,8 +47,8 @@ export default {
         return `${title} | Around the Web`.trim()
       }
     },
-    title: ({ issueTitle }) => issueTitle || 'Around the Web',
-    permalink: function (data) {
+    title: ({ issueTitle }: any) => issueTitle || 'Around the Web',
+    permalink: function (this: any, data: any) {
       if (data.issueTitle) {
         return `/around-the-web/${data.page.fileSlug}-${this.slugify(
           data.issueTitle,
@@ -57,7 +57,7 @@ export default {
 
       return `/around-the-web/${data.page.fileSlug}/`
     },
-    sources: async function (data) {
+    sources: async function (this: any, data: any) {
       if (!data.page) return
 
       const rendered = await this.renderFile(data.page.inputPath)

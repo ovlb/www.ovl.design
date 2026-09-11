@@ -1,4 +1,4 @@
-import siteData from './site.js'
+import siteData from './site.ts'
 
 const { baseURL } = siteData
 

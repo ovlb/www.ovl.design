@@ -1,11 +1,11 @@
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
-import displayDate from '../../../_filters/display-date.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
+import displayDate from '../../../_filters/display-date.ts'
 import {
   escapeHtml,
   articleCard,
   archiveHeader,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class AroundTheWebCategory {
   data() {
@@ -17,25 +17,25 @@ class AroundTheWebCategory {
         addAllPagesToCollections: true,
       },
       eleventyComputed: {
-        permalink: (data) =>
+        permalink: (data: any) =>
           categoryPermalink(data.category, data.categoryBase),
-        title: (data) => capitaliser(data.category),
-        pageTitle: (data) =>
+        title: (data: any) => capitaliser(data.category),
+        pageTitle: (data: any) =>
           `${capitaliser(data.category)} | Collections | Around the Web`,
       },
     }
   }
 
-  render({ collections, category }) {
+  render({ collections, category }: any) {
     const posts = (collections.aroundTheWeb || [])
-      .filter((post) => post.data.tags.includes(category))
+      .filter((post: any) => post.data.tags.includes(category))
       .sort(
-        (a, b) =>
+        (a: any, b: any) =>
           parseInt(b.data.page.fileSlug) - parseInt(a.data.page.fileSlug),
       )
 
     const items = posts
-      .map((post) => {
+      .map((post: any) => {
         const start = displayDate(post.data.parsedDates.start, 'short')
         const end = displayDate(post.data.parsedDates.publish, 'short')
         let title = `${start}–${end}`

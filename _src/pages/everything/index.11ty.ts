@@ -1,11 +1,11 @@
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
 import {
   escapeHtml,
   archiveHeader,
   iconLink,
   iconStack,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class EverythingIndex {
   data() {
@@ -17,13 +17,13 @@ class EverythingIndex {
     }
   }
 
-  render({ collections }) {
+  render({ collections }: any) {
     const all = [...(collections.all || [])]
       .filter((post) => post.data.external !== true)
       .sort(() => Math.random() - 0.5)
 
     const items = all
-      .map((thing) => {
+      .map((thing: any) => {
         const href = escapeHtml(
           thing.data.permalink || thing.data.page.url || '#',
         )
@@ -34,7 +34,7 @@ class EverythingIndex {
 
     const cats = (collections.categories || [])
       .map(
-        (c) =>
+        (c: any) =>
           `<li><a href="${escapeHtml(
             categoryPermalink(c, '/everything'),
           )}">${escapeHtml(capitaliser(c))}</a></li>`,
@@ -50,7 +50,7 @@ ${archiveHeader({
       href: '/',
       icon: 'home',
       content: 'Take me back to order',
-    }),
+    } as any),
   ),
 })}
 <ul class="article-list main-grid-content t-center" role="list">${items}</ul>

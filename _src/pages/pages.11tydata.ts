@@ -10,7 +10,10 @@ export default {
      *
      * @returns any[]
      */
-    breadcrumb: function ({ permalink, title = '', hideBreadcrumb }) {
+    breadcrumb: function (
+      this: any,
+      { permalink, title = '', hideBreadcrumb }: any,
+    ) {
       if (!permalink || hideBreadcrumb) {
         return
       }

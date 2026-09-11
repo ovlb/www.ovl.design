@@ -1,13 +1,13 @@
-import displayDate from '../../../_filters/display-date.js'
+import displayDate from '../../../_filters/display-date.ts'
 import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
   iconStack,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
-function postToCardItem(post, displayDateFn) {
+function postToCardItem(post: any, displayDateFn: any) {
   let title
   if (!post.data.issueTitle) {
     const start = displayDateFn(post.data.parsedDates.start, 'short')
@@ -28,7 +28,7 @@ class AroundTheWebIndex {
     }
   }
 
-  render({ collections, meta }) {
+  render({ collections, meta }: any) {
     const posts = [...(collections.aroundTheWeb || [])].sort((a, b) => {
       if (parseInt(a.data.page.fileSlug) < parseInt(b.data.page.fileSlug))
         return 1

@@ -1,6 +1,6 @@
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
-import { escapeHtml, archiveHeader } from '../../../_helper/archive-html.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
+import { escapeHtml, archiveHeader } from '../../../_helper/archive-html.ts'
 
 class NotesCategory {
   data() {
@@ -12,23 +12,23 @@ class NotesCategory {
         addAllPagesToCollections: true,
       },
       eleventyComputed: {
-        permalink: (data) =>
+        permalink: (data: any) =>
           categoryPermalink(data.category, data.categoryBase),
-        title: (data) => capitaliser(data.category),
-        pageTitle: (data) =>
+        title: (data: any) => capitaliser(data.category),
+        pageTitle: (data: any) =>
           `${capitaliser(data.category)} | Collections | Notes`,
       },
     }
   }
 
-  render({ collections, category }) {
+  render({ collections, category }: any) {
     const posts = (collections.notes || [])
-      .filter((post) => post.data.tags.includes(category))
-      .sort((a, b) => a.data.title.localeCompare(b.data.title))
+      .filter((post: any) => post.data.tags.includes(category))
+      .sort((a: any, b: any) => a.data.title.localeCompare(b.data.title))
 
     const items = posts
       .map(
-        (post) =>
+        (post: any) =>
           `<li><h3><a href="${escapeHtml(post.data.page.url)}">${escapeHtml(
             post.data.title,
           )}</a></h3></li>`,

@@ -1,7 +1,7 @@
-import terminalLogin from '../../_filters/terminal-login.js'
-import { escapeHtml } from '../../_helper/archive-html.js'
+import terminalLogin from '../../_filters/terminal-login.ts'
+import { escapeHtml } from '../../_helper/archive-html.ts'
 
-function terminalDecorator(path, command) {
+function terminalDecorator(path: any, command: any) {
   return `<div aria-hidden="true" class="terminal-row__path">${escapeHtml(
     path,
   )}</div><div aria-hidden="true" class="terminal-row__input">${escapeHtml(
@@ -9,7 +9,7 @@ function terminalDecorator(path, command) {
   )}</div>`
 }
 
-function codeCard(project) {
+function codeCard(project: any) {
   const path = `~/dev/${project.slug}`
   const links = `
     <ul aria-label="Detail links ${escapeHtml(
@@ -60,7 +60,7 @@ class CodePage {
       pageCSS: ['code'],
       hideBreadcrumb: true,
       eleventyComputed: {
-        meta: ({ meta, site }) => ({
+        meta: ({ meta, site }: any) => ({
           ...meta,
           description:
             '01000011 01101111 01100100 01100101 00100000 01001001 00100000 01101000 01100001 01110110 01100101 00100000 01110111 01110010 01101001 01110100 01110100 01100101 01101110',
@@ -73,9 +73,9 @@ class CodePage {
     }
   }
 
-  render({ code, build }) {
+  render({ code, build }: any) {
     const projects = (code?.projects || [])
-      .map((p) => `<li>${codeCard(p)}</li>`)
+      .map((p: any) => `<li>${codeCard(p)}</li>`)
       .join('\n')
     return `<main id="main" class="content-code" tabindex="-1">
 <h1 class="sr-only">Code</h1>

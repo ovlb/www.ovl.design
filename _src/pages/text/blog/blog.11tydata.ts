@@ -1,6 +1,6 @@
 import Image from '@11ty/eleventy-img'
 
-import { getChanges } from '../../../../_helper/git-history.js'
+import { getChanges } from '../../../../_helper/git-history.ts'
 
 export default {
   tags: ['blog'],
@@ -9,7 +9,7 @@ export default {
   templateClass: 'tmpl-single-post',
 
   eleventyComputed: {
-    permalink: function ({ title, external, permalink }) {
+    permalink: function (this: any, { title, external, permalink }: any) {
       if (external) {
         return false
       }
@@ -21,7 +21,10 @@ export default {
       return `/text/${this.slugify(title.trim())}/`
     },
 
-    meta: async function ({ site, meta, displayIntro: description, image }) {
+    meta: async function (
+      this: any,
+      { site, meta, displayIntro: description, image }: any,
+    ) {
       const metaData = { ...meta, ogType: 'article' }
 
       if (image) {
@@ -33,7 +36,12 @@ export default {
           },
           urlPath: '/img/',
           outputDir: './dist/img/',
-          filenameFormat: function (id, src, number, format) {
+          filenameFormat: function (
+            id: any,
+            src: any,
+            number: any,
+            format: any,
+          ) {
             const originalName = image.og.split('.')[0]
 
             return `${originalName}.${format}`
@@ -53,10 +61,11 @@ export default {
       return metaData
     },
 
-    displayIntro: ({ intro, subtitle }) => intro || subtitle || false,
+    displayIntro: ({ intro, subtitle }: any) => intro || subtitle || false,
 
-    categoriesString: function ({ tags }) {
-      const categories = tags && tags.filter((tag) => tag.startsWith('cat:'))
+    categoriesString: function (this: any, { tags }: any) {
+      const categories =
+        tags && tags.filter((tag: any) => tag.startsWith('cat:'))
 
       if (!categories || !categories.length) {
         return ''
@@ -65,6 +74,6 @@ export default {
       return `${this.capitaliser(categories[0])} — `
     },
 
-    changes: async ({ page }) => await getChanges(page),
+    changes: async ({ page }: any) => await getChanges(page),
   },
 }

@@ -1,11 +1,14 @@
-import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss'
-import displayDate from '../../../_filters/display-date.js'
+import {
+  // @ts-ignore
+  dateToRfc3339,
+} from '@11ty/eleventy-plugin-rss'
+import displayDate from '../../../_filters/display-date.ts'
 import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class TextIndex {
   data() {
@@ -16,7 +19,7 @@ class TextIndex {
       title: 'Scribbles on digital paper',
       hideBreadcrumb: true,
       eleventyComputed: {
-        meta: (data) => ({
+        meta: (data: any) => ({
           ...data.meta,
           description: 'Mostly coherent.',
         }),
@@ -24,7 +27,7 @@ class TextIndex {
     }
   }
 
-  render({ collections, meta }) {
+  render({ collections, meta }: any) {
     const posts = [...(collections.publishedPosts || [])]
       .filter((post) => post.data.skipInArchive !== true)
       .reverse()

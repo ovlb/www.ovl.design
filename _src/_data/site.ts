@@ -8,7 +8,21 @@ const { BASE_URL } = process.env
   return BASE_URL || 'https://www.ovl.design'
 } */
 
-export default {
+type SiteData = {
+  locale: string
+  title: string
+  description: string
+  author: {
+    name: string
+    email: string
+  }
+  baseURL: string | undefined
+  strings: {
+    skip_to_content: string
+  }
+}
+
+const site: SiteData = {
   locale: 'en',
   title: 'ovl',
   description: 'code & design',
@@ -21,3 +35,5 @@ export default {
     skip_to_content: 'Skip to main content',
   },
 }
+
+export default site

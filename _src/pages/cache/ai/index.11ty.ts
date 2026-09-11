@@ -1,7 +1,7 @@
-import startCase from '../../../../_filters/start-case.js'
-import { escapeHtml, slugify } from '../../../../_helper/archive-html.js'
+import startCase from '../../../../_filters/start-case.ts'
+import { escapeHtml, slugify } from '../../../../_helper/archive-html.ts'
 
-function getHost(url) {
+function getHost(url: any) {
   return new URL(url).host.replace('www.', '')
 }
 
@@ -12,16 +12,16 @@ class AiCache {
       permalink: '/cache/ai/',
       pageCSS: ['cache'],
       eleventyComputed: {
-        meta: ({ meta }) => ({
+        meta: ({ meta }: any) => ({
           ...meta,
           description: 'fragments on ai/machine learning and society',
         }),
-        title: (data) => `${data.headline} | Cache`,
+        title: (data: any) => `${data.headline} | Cache`,
       },
     }
   }
 
-  render(data) {
+  render(data: any) {
     const {
       collections,
       journalism,
@@ -32,16 +32,16 @@ class AiCache {
     } = data
 
     const postCollections = [journalism, science, talks, podcasts].filter(
-      (c) => c?.data.length > 0,
+      (c: any) => c?.data.length > 0,
     )
 
     const aroundTheWebIssues = (collections.aroundTheWeb || [])
-      .filter((post) => post.data.tags.includes(aroundTheWebCategory))
+      .filter((post: any) => post.data.tags.includes(aroundTheWebCategory))
       .reverse()
 
     const nav = postCollections
       .map(
-        (c) =>
+        (c: any) =>
           `<li><a href="#${slugify(c.title)}" aria-label="${escapeHtml(
             c.title,
           )}">#${slugify(c.title)}</a></li>`,
@@ -50,7 +50,7 @@ class AiCache {
 
     const issueList = aroundTheWebIssues
       .map(
-        (issue) =>
+        (issue: any) =>
           `<li><a href="${escapeHtml(issue.data.permalink)}">${escapeHtml(
             issue.data.page.fileSlug,
           )}</a></li>`,
@@ -58,12 +58,14 @@ class AiCache {
       .join('\n')
 
     const blocks = postCollections
-      .map((collection) => {
+      .map((collection: any) => {
         const items = collection.data
-          .map((item) => {
+          .map((item: any) => {
             const topics = (item.topics || [])
-              .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-              .map((t) => startCase(t))
+              .sort((a: any, b: any) =>
+                a.toLowerCase().localeCompare(b.toLowerCase()),
+              )
+              .map((t: any) => startCase(t))
               .join(', ')
             return `<li class="post-item post-list__item"><article class="l-stack l-stack--vertical" style="--stack-space: 0.25rem">
 <h3 class="small-headline"><a href="${escapeHtml(item.url)}">${escapeHtml(

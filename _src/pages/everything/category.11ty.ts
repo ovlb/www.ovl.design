@@ -1,10 +1,10 @@
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
 import {
   escapeHtml,
   archiveHeader,
   iconLink,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class EverythingCategory {
   data() {
@@ -16,22 +16,22 @@ class EverythingCategory {
         addAllPagesToCollections: true,
       },
       eleventyComputed: {
-        permalink: (data) =>
+        permalink: (data: any) =>
           categoryPermalink(data.category, data.categoryBase),
-        pageTitle: (data) => `${capitaliser(data.category)} | Everything`,
+        pageTitle: (data: any) => `${capitaliser(data.category)} | Everything`,
       },
     }
   }
 
-  render({ collections, category }) {
+  render({ collections, category }: any) {
     const posts = (collections.all || [])
-      .filter((post) => post.data.tags?.includes(category))
+      .filter((post: any) => post.data.tags?.includes(category))
       .sort(() => Math.random() - 0.5)
-      .filter((post) => post.data.external !== true)
+      .filter((post: any) => post.data.external !== true)
 
     const items = posts
       .map(
-        (post) =>
+        (post: any) =>
           `<li><h2><a href="${escapeHtml(post.data.page.url)}">${escapeHtml(
             post.data.pageTitle || post.data.title,
           )}</a></h2></li>`,
@@ -47,12 +47,12 @@ ${archiveHeader({
       href: '/everything/',
       icon: 'folder',
       content: 'Everything',
-    }),
+    } as any),
     iconLink({
       href: '/',
       icon: 'home',
       content: 'Back home',
-    }),
+    } as any),
   ].join(''),
 })}
 <ol class="article-list u-global-padding" role="list">${items}</ol>

@@ -1,13 +1,16 @@
-import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss'
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
-import displayDate from '../../../_filters/display-date.js'
+import {
+  // @ts-ignore
+  dateToRfc3339,
+} from '@11ty/eleventy-plugin-rss'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
+import displayDate from '../../../_filters/display-date.ts'
 import {
   escapeHtml,
   articleCard,
   archiveHeader,
   iconLink,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class TextCategory {
   data() {
@@ -19,22 +22,22 @@ class TextCategory {
         addAllPagesToCollections: true,
       },
       eleventyComputed: {
-        permalink: (data) =>
+        permalink: (data: any) =>
           categoryPermalink(data.category, data.categoryBase),
-        title: (data) => capitaliser(data.category),
-        pageTitle: (data) =>
+        title: (data: any) => capitaliser(data.category),
+        pageTitle: (data: any) =>
           `${capitaliser(data.category)} | Collections | Text`,
       },
     }
   }
 
-  render({ collections, category }) {
+  render({ collections, category }: any) {
     const posts = (collections.blog || [])
-      .filter((post) => post.data.tags?.includes(category))
-      .sort((a, b) => a.data.title.localeCompare(b.data.title))
+      .filter((post: any) => post.data.tags?.includes(category))
+      .sort((a: any, b: any) => a.data.title.localeCompare(b.data.title))
 
     const items = posts
-      .map((post) => {
+      .map((post: any) => {
         const date = post.data.date
           ? `<span class="sr-only">Published in </span><time datetime="${dateToRfc3339(
               new Date(post.data.date),
@@ -55,7 +58,7 @@ ${archiveHeader({
     href: '/text/',
     icon: 'folder',
     content: 'All posts',
-  }),
+  } as any),
 })}
 <ol class="article-list u-global-padding" role="list">${items}</ol>
 </main>`

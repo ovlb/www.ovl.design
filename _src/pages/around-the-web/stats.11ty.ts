@@ -1,13 +1,13 @@
 import texticsPkg from 'textics'
 
 const { textics } = texticsPkg
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
 import {
   escapeHtml,
   archiveHeader,
   iconLink,
-} from '../../../_helper/archive-html.js'
+} from '../../../_helper/archive-html.ts'
 
 class AroundTheWebStats {
   data() {
@@ -15,7 +15,7 @@ class AroundTheWebStats {
       permalink: '/around-the-web/statistics/',
       pageTitle: 'Around the Numbers | Around the Web',
       eleventyComputed: {
-        meta: ({ meta, site }) => ({
+        meta: ({ meta, site }: any) => ({
           ...meta,
           description: 'Statistics for Around the Web',
           image: {
@@ -27,13 +27,13 @@ class AroundTheWebStats {
     }
   }
 
-  render({ collections, meta, categoryBase }) {
+  render({ collections, meta, categoryBase }: any) {
     const atw = collections.aroundTheWeb || []
     const atwCats = collections.atwCategories || []
 
     let countLinks = 0
-    let allLinks = []
-    let sources = new Set()
+    let allLinks: any[] = []
+    let sources: any = new Set()
     for (const { data } of atw) {
       allLinks = [...allLinks, ...(data.sources?.links || [])]
       countLinks += data.sources?.count || 0
@@ -52,32 +52,38 @@ class AroundTheWebStats {
     const categories = atwCats.length
 
     const mostLinks = [...atw].sort(
-      (a, b) => b.data.sources.count - a.data.sources.count,
+      (a: any, b: any) => b.data.sources.count - a.data.sources.count,
     )[0]
     const mostUnique = [...atw].sort(
-      (a, b) => b.data.sources.distinct - a.data.sources.distinct,
+      (a: any, b: any) => b.data.sources.distinct - a.data.sources.distinct,
     )[0]
 
-    const domainCounts = []
+    const domainCounts: any[] = []
     for (const source of sources) {
-      const matched = allLinks.filter((link) => {
+      const matched = allLinks.filter((link: any) => {
         if (!link.href.startsWith('http')) return false
         return new URL(link.href).origin === source
       })
-      domainCounts.push({ host: new URL(source).host, count: matched.length })
+      domainCounts.push({
+        host: new URL(source as string).host,
+        count: matched.length,
+      })
     }
     const topDomains = domainCounts
-      .sort((a, b) => b.count - a.count)
+      .sort((a: any, b: any) => b.count - a.count)
       .slice(0, 15)
 
-    const enrichedCats = atwCats.map((category) => ({
+    const enrichedCats = atwCats.map((category: any) => ({
       name: capitaliser(category),
       href: categoryPermalink(category, categoryBase),
-      count: atw.filter((post) => post.data.tags.includes(category)).length,
+      count: atw.filter((post: any) => post.data.tags.includes(category))
+        .length,
     }))
-    const topCats = enrichedCats.sort((a, b) => b.count - a.count).slice(0, 15)
+    const topCats = enrichedCats
+      .sort((a: any, b: any) => b.count - a.count)
+      .slice(0, 15)
 
-    const stat = (n, t) =>
+    const stat = (n: any, t: any) =>
       `<section class="featured-stat"><b class="main-headline">${n}</b><p>${t}</p></section>`
 
     return `<main id="main" tabindex="-1">
@@ -109,11 +115,11 @@ ${archiveHeader({
     )}</b> characters.</p></section>
 <section class="block-stats">
 <section><h2 class="sub-headline">Top Domains</h2><ol>${topDomains
-      .map((d) => `<li>${escapeHtml(d.host)} (${d.count})</li>`)
+      .map((d: any) => `<li>${escapeHtml(d.host)} (${d.count})</li>`)
       .join('\n')}</ol></section>
 <section><h2 class="sub-headline">Top Categories</h2><ol>${topCats
       .map(
-        (c) =>
+        (c: any) =>
           `<li><a href="${escapeHtml(c.href)}">${escapeHtml(c.name)}</a> (${
             c.count
           })</li>`,

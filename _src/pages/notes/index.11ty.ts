@@ -1,6 +1,6 @@
-import capitaliser from '../../../_filters/capitaliser.js'
-import categoryPermalink from '../../../_filters/category-permalink.js'
-import { escapeHtml } from '../../../_helper/archive-html.js'
+import capitaliser from '../../../_filters/capitaliser.ts'
+import categoryPermalink from '../../../_filters/category-permalink.ts'
+import { escapeHtml } from '../../../_helper/archive-html.ts'
 
 class NotesIndex {
   data() {
@@ -13,7 +13,7 @@ class NotesIndex {
     }
   }
 
-  render({ collections, categoryBase }) {
+  render({ collections, categoryBase }: any) {
     const notes = [...(collections.notes || [])].sort((a, b) =>
       a.data.title.localeCompare(b.data.title),
     )
@@ -29,7 +29,7 @@ class NotesIndex {
 
     const cats = (collections.noteCategories || [])
       .map(
-        (c) =>
+        (c: any) =>
           `<li><a href="${escapeHtml(
             categoryPermalink(c, categoryBase),
           )}">${escapeHtml(capitaliser(c))}</a></li>`,

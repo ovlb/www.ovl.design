@@ -1,4 +1,4 @@
-import { getChanges } from '../../../../_helper/git-history.js'
+import { getChanges } from '../../../../_helper/git-history.ts'
 
 export default {
   tags: ['notes'],
@@ -6,9 +6,9 @@ export default {
   ['override:pageCSS']: ['note', 'text-page'],
 
   eleventyComputed: {
-    permalink: function ({ title }) {
+    permalink: function (this: any, { title }: any) {
       return `/notes/${this.slugify(title)}/`
     },
-    changes: async ({ page }) => await getChanges(page),
+    changes: async ({ page }: any) => await getChanges(page),
   },
 }

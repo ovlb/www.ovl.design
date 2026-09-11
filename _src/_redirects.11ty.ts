@@ -9,20 +9,20 @@ export default class Redirects {
     }
   }
 
-  createAtwRedirects(posts) {
+  createAtwRedirects(posts: any) {
     return posts
-      .filter((post) => !!post.data.issueTitle)
-      .map((post) => {
+      .filter((post: any) => !!post.data.issueTitle)
+      .map((post: any) => {
         return `/around-the-web/${post.data.page.fileSlug}/ ${post.data.permalink} 301`
       })
       .join('\n')
   }
 
-  createLegacyRedirects(collection, currentBase) {
+  createLegacyRedirects(this: any, collection: any, currentBase: any) {
     const slugify = this.slugify.bind(this)
 
     return collection
-      .map((item) => {
+      .map((item: any) => {
         const { permalink, external } = item.data
 
         if (external) return ''
@@ -32,7 +32,7 @@ export default class Redirects {
         const redirects = []
 
         if (item.data.oldTitles) {
-          item.data.oldTitles.forEach((title) =>
+          item.data.oldTitles.forEach((title: any) =>
             redirects.push(
               `/${currentBase}/${slugify(title)}/ ${permalink} 301`,
             ),
@@ -50,7 +50,7 @@ export default class Redirects {
       .join('\n')
   }
 
-  render({ collections }) {
+  render(this: any, { collections }: any) {
     const { blog, notes, aroundTheWeb } = collections
 
     return `
