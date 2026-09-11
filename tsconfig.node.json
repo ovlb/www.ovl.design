@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.js", "**/*.mjs", "_src/assets/js/main.ts"],
+  "include": ["**/*.js", "**/*.mjs", "**/*.ts", "_src/assets/js/main.ts"],
   "exclude": ["_src/assets/js/**", "dist/**", "node_modules/**"],
   "compilerOptions": {
     "composite": true,
@@ -10,6 +10,10 @@
     "allowJs": true,
     "checkJs": false,
     "noEmit": true,
+    // Eleventy v4 loads .ts via Node type stripping: only erasable syntax,
+    // explicit .ts import extensions, no emit.
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
