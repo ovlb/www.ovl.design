@@ -8,7 +8,7 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "build:clean": "npm run clean && npm run build",
     "build:debug": "npm run build --debug",
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "lint": "concurrently \"npm:lint:*\"",
     "lint:css": "stylelint '**/*.pcss' --fix",
     "lint:js": "eslint \"**/*.{js,mjs}\" --ignore-pattern 'node_modules/**/*' --fix",
