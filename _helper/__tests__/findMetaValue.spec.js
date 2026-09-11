@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import findMetaValue from '../findMetaValue.js'
+import findMetaValue from '../findMetaValue.ts'
 
 test('returns the content value', (t) => {
   t.is(findMetaValue('name="13"', '<meta name="13" content="12" />'), '12')
