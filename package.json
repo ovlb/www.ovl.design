@@ -96,6 +96,9 @@
       "eslint --fix",
       "prettier --write"
     ],
+    "**/*.{ts,tsx}": [
+      "prettier --write"
+    ],
     "_src/**/*.(p)?css": [
       "stylelint --fix"
     ]
@@ -104,6 +107,7 @@
     "@mdi/js": "^7.4.47",
     "@netlify/functions": "^6.0.0",
     "esbuild": "^0.28.2",
+    "lodash": "^4.18.1",
     "simple-git": "^3.36.0",
     "textics": "^1.2.0"
   },
