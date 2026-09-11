@@ -1,0 +1,88 @@
+import { Feed } from 'feed'
+import siteData from '../../_data/site.ts'
+
+const { baseURL } = siteData
+import {
+  // @ts-ignore
+  absoluteUrl,
+  // @ts-ignore
+  convertHtmlToAbsoluteUrls,
+  // @ts-ignore
+  getNewestCollectionItemDate,
+} from '@11ty/eleventy-plugin-rss'
+
+export default class AtwFeed {
+  data() {
+    return {
+      layout: null,
+      permalink: '/around-the-web/feed.xml',
+      eleventyExcludeFromCollections: true,
+      collection: 'aroundTheWeb',
+      metadata: this.metadata,
+    }
+  }
+
+  get feedURL() {
+    return `${baseURL}${this.metadata.feedID}/feed.xml`
+  }
+
+  get metadata() {
+    return {
+      title: 'ovl.design » around the web',
+      subtitle: 'links from around the web',
+      feedID: '/around-the-web',
+    }
+  }
+
+  getMetaInfoString(this: any, { parsedDates }: any) {
+    const startDate = this.displayDate(parsedDates.start, 'short')
+    const endDate = this.displayDate(parsedDates.publish, 'short')
+
+    return `<p>Collected between ${startDate} and ${endDate}.</p>`
+  }
+
+  async enrichContent(this: any, post: any, baseURL: any) {
+    const parsed = await convertHtmlToAbsoluteUrls(
+      await this.feedImages(this.fixCite(post.templateContent)),
+      baseURL,
+    )
+
+    return parsed
+  }
+
+  makeFeed(this: any, baseData: any, collection: any) {
+    return new Feed({
+      ...baseData,
+      ...this.metadata,
+      id: this.feedURL,
+      link: absoluteUrl(`${this.metadata.feedID}/`, baseURL),
+      updated: getNewestCollectionItemDate(collection),
+      feedLinks: {
+        json: this.feedURL,
+        atom: this.feedURL,
+      },
+    })
+  }
+
+  async render(this: any, { feed: feedData, collections, site }: any) {
+    const { aroundTheWeb } = collections
+
+    const feed = this.makeFeed(feedData, aroundTheWeb)
+
+    for (const post of aroundTheWeb.reverse()) {
+      const link = absoluteUrl(post.data.permalink, site.baseURL)
+
+      feed.addItem({
+        title: post.data.title,
+        link,
+        id: link,
+        date: post.data.parsedDates.publish,
+        description: post.data.intro,
+        content: await this.enrichContent(post, site.baseURL),
+        image: post.data.meta.image.src,
+      })
+    }
+
+    return feed.atom1()
+  }
+}

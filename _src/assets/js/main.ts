@@ -1,5 +1,5 @@
-import { skipLinkControl } from './modules/skipLinkControl'
-import { themeSwitchControl } from './modules/themeSwitch'
+import { skipLinkControl } from './modules/skipLinkControl.js'
+import { themeSwitchControl } from './modules/themeSwitch.js'
 
 function init() {
   if ('requestIdleCallback' in window) {

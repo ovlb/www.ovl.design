@@ -36,3 +36,11 @@
   to = "/around-the-web/014-just-go-aahh-hardcore/"
   status = 301
   force = true
+
+# slugify 2.x -> 3.x changed apostrophe handling in v4 (can't: c-a-n-t -> cant).
+# Preserves backlinks to post 020 published under Eleventy v3.
+[[redirects]]
+  from = "/around-the-web/020-you-c-a-n-t-spell-ai-without-c-a-p-i-t-a-l-i-s-m/"
+  to = "/around-the-web/020-you-cant-spell-ai-without-c-a-p-i-t-a-l-i-s-m/"
+  status = 301
+  force = true
